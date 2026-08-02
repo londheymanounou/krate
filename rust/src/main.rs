@@ -14,6 +14,18 @@ fn main() -> std::process::ExitCode {
         list();
         return std::process::ExitCode::SUCCESS;
     }
+    
+    if args.len() > 1 && (args[1] == "--help" || args[1] == "-h") {
+        if let Some(tool) = krate_core::find(&args[0]) {
+            println!("{} — {}", tool.name(), tool.description());
+            println!("Category: {}", tool.category_name());
+            let aliases = tool.aliases();
+            if !aliases.is_empty() {
+                println!("Aliases: {}", aliases.join(", "));
+            }
+            return std::process::ExitCode::SUCCESS;
+        }
+    }
 
     match args[0].as_str() {
         "--version" | "-v" => {
@@ -31,8 +43,11 @@ fn main() -> std::process::ExitCode {
     let input = if args.len() > 1 {
         args[1..].join(" ")
     } else {
+        use std::io::IsTerminal;
         let mut buffer = String::new();
-        std::io::stdin().read_to_string(&mut buffer).ok();
+        if !std::io::stdin().is_terminal() {
+            std::io::stdin().read_to_string(&mut buffer).ok();
+        }
         buffer.trim_end_matches(['\n', '\r']).to_string()
     };
 
