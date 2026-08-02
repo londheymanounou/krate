@@ -1,95 +1,72 @@
-# Krate Toolkit
+<div align="center">
+  <img src="assets/krate-logo-256.png" alt="Krate Logo" width="128"/>
+  <h1>Krate Toolkit</h1>
+  <p><strong>A beautiful, fast, offline utility toolbox for Windows, Android, and your Terminal.</strong></p>
+</div>
 
-**Krate Toolkit** (just "Krate" for short) — an offline utility toolbox. Logic lives in `KRATE.Core`;
-the GUI and CLI are facades.
+---
 
-    src/KRATE.Core   business logic + localized strings (.resx, 17 languages)
-    src/KRATE.Cli    console facade  -> krate.exe
-    src/KRATE.Gui    WinUI 3 facade  -> KRATE.exe
-    tests/KRATE.Tests
+Krate is a multi-platform collection of everyday developer tools, calculators, and converters packed into a single, offline application. It is designed to be instantly accessible whether you are at your desk, on the go, or deep in a terminal session.
 
-## Just run it (no coding needed)
+<div align="center">
+  <h3>Windows Desktop</h3>
+  <img src="images/desktop-home.png" alt="Desktop Home" width="800" style="border-radius: 8px;"/>
+</div>
 
-The desktop app, once built, is a normal Windows program — double-click:
+## ✨ Features
 
-    src/KRATE.Gui/bin/Debug/net8.0-windows10.0.19041.0/win-x64/KRATE.exe
+- **Multi-Platform:** Native Windows App (WinUI 3), Native Android App (Kotlin), and a UNIX-style CLI.
+- **100% Offline:** Everything happens locally on your device. Zero telemetry, zero cloud processing.
+- **Lightning Fast:** Powered by a shared Rust Core library for instant startup and execution.
+- **Beautiful UI:** Uses Windows 11 Fluent Design and Android Material You for a premium feel.
 
-It opens on a **Home** page listing the tools you used most recently; pick any tool
-from the left, or type in the search box at the top. Everything runs offline.
+## 📸 Screenshots
 
-The command-line version (`krate`):
+### Windows Experience
+<p align="center">
+  <img src="images/desktop-tool1.png" alt="Desktop Tool" width="32%"/>
+  <img src="images/desktop-tool2.png" alt="Desktop Tool" width="32%"/>
+  <img src="images/desktop-tool3.png" alt="Desktop Tool" width="32%"/>
+</p>
 
-    krate                      # list all tools
-    krate --help               # usage + examples
-    krate --version
-    krate sha256 hello         # run a tool
-    echo hello | krate sha256  # or pipe via stdin
-    krate search color         # find tools by keyword
-    krate calc --help          # help for one tool
-    krate --lang fr            # switch interface language (persisted)
+### Android Experience
+<p align="center">
+  <img src="images/android-home.png" alt="Android Home" width="22%"/>
+  <img src="images/android-tool1.png" alt="Android Tool" width="22%"/>
+  <img src="images/android-tool2.png" alt="Android Tool" width="22%"/>
+  <img src="images/android-tool3.png" alt="Android Tool" width="22%"/>
+</p>
 
-Tab-completion (adds all tool names + commands):
+## 🚀 Download & Install
 
-    krate completion powershell >> $PROFILE      # PowerShell
-    krate completion bash       >> ~/.bashrc     # bash
-    krate completion zsh        >> ~/.zshrc      # zsh
+You can download the latest official versions from the **[GitHub Releases Page](../../releases)**.
 
-Tools print to stdout; a tool's own error goes to stderr with exit code 1.
+- **Windows:** Download and run `Krate-Windows-Setup.exe`.
+- **Android:** Download and install `Krate-Android-arm64.apk`.
+- **Command Line:** Download `krate-cli.exe` and add it to your system PATH.
 
-## Build & run
+## 💻 CLI Usage
 
-    dotnet test
-    dotnet run --project src/KRATE.Cli -- sha256 hello
-    dotnet run --project src/KRATE.Cli -- --lang en
-    dotnet build src/KRATE.Gui -r win-x64 && src/KRATE.Gui/bin/Debug/net8.0-windows10.0.19041.0/win-x64/KRATE.exe
+Krate provides a fast command-line interface that behaves exactly like standard UNIX tools:
 
-    dotnet publish src/KRATE.Cli -r win-x64 -c Release   # Native AOT
+```bash
+# Get help for any tool
+krate md5 --help
 
-## Adding a tool
+# Run tools directly
+krate coin
+krate dice
 
-1. Pure function in `src/KRATE.Core/Tools/`.
-2. One line in `Catalog.Tools` (`Tool.cs`).
-3. `Tool_<Id>_Name` / `_Desc` / `_Aliases` in **every** `Resources/Strings*.resx` (17 languages).
-   `EveryTool_IsFullyLocalised` fails for any tool missing them in any language — a missing key
-   is not an exception, it renders as the literal `Tool_Foo_Name` in the UI.
-4. A test.
+# Pipe data directly into Krate
+echo "Hello World" | krate md5
+```
 
-Edit the `.resx` files with a UTF-8-aware editor. A PowerShell fixup script once rewrote them
-through the ANSI codepage and double-encoded 5331 strings across all 17 languages; nothing
-failed, the apps just displayed `Ð¤Ð°Ð¹Ð»`. `Resources_AreNotDoubleEncoded` now catches that.
+## ❤️ Support & Links
 
-Text-in/text-out tools then appear in the CLI and GUI automatically — no UI code.
-File tools take a path as their text, so dropping a file on the GUI window feeds them.
+If Krate makes your daily workflow easier, consider supporting the development!
 
-## Interactive GUI tools
+- **GitHub:** [londheymanounou](https://github.com/londheymanounou)
+- **Ko-fi:** [Support me on Ko-fi](https://ko-fi.com/londhey)
 
-A few tools need real controls, not the shared text box (image convert/resize/compress,
-timer/pomodoro). They live as `UserControl` pages in `KRATE.Gui` and are registered in the
-`_interactive` list in `MainWindow.xaml.cs` — never in `Core`, so `Core` keeps no UI dependency.
-The right pane swaps between the shared `ToolView` and these pages on selection.
-
-## Dependencies
-
-All of them live in `KRATE.Core`; the CLI and GUI add none of their own.
-
-- **QRCoder** — QR encoding is not worth hand-rolling (a subtly invalid code is worse than none).
-- **PDFsharp** — PDF split/merge.
-- **SixLabors.ImageSharp** — image convert/resize/compress and metadata stripping. Pinned to the
-  2.1.x line, which is Apache-2.0; 3.x onward is under the Six Labors Split License. Keep it at
-  2.1.11 or later — 2.1.3 carried four high-severity advisories.
-- **SharpCompress** — tar/gz/bz2, and extraction of everything 7-Zip is not needed for.
-- **Squid-Box.SevenZipSharp** + **SevenZipSharp.Interop** — creating `.7z` only. See below.
-
-## Notes for building
-
-- Native AOT publish needs the MSVC C++ linker (VS "Desktop development with C++"). Without it,
-  `dotnet publish -r win-x64` fails at the link step; trim-only publish works and is what CI here uses.
-- SevenZipSharp is COM-based, so `KRATE.Cli` must set `<BuiltInComInteropSupport>true</...>`:
-  `PublishAot` disables built-in COM interop in *every* build, not just published ones, and 7z
-  compression then fails with a message that blames the 7-Zip library. Under real Native AOT,
-  COM interop is unavailable outright, so 7z creation would need an out-of-process `7z.exe`.
-- `7z.dll` reaches the CLI/GUI output only because `KRATE.Core.csproj` declares it as `Content`.
-  The Interop package ships it through an MSBuild `.targets`, and targets do not flow across a
-  `ProjectReference` — so `KRATE.Core/bin` had it and the apps that shipped did not.
-- GUI pages are verified to build and launch (`crash.log` is written next to the exe on any
-  unhandled UI exception); interaction paths are not automatically tested.
+---
+*Built with Rust, C# (WinUI 3), and Kotlin.*
