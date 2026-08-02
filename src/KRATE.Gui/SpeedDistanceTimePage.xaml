@@ -1,0 +1,40 @@
+<UserControl
+    x:Class="Krate.Gui.SpeedDistanceTimePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls">
+
+    <StackPanel Padding="24" Spacing="14" MaxWidth="480" HorizontalAlignment="Center">
+        <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+        <TextBlock x:Name="Hint" Opacity="0.7" TextWrapping="Wrap" />
+
+        <Grid ColumnSpacing="10" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="DistLabel" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" />
+            <muxc:NumberBox x:Name="DistValue" Grid.Row="0" Grid.Column="1" ValueChanged="OnChanged" />
+            <ComboBox x:Name="DistUnit" Grid.Row="0" Grid.Column="2" MinWidth="86" SelectionChanged="OnChanged" />
+
+            <TextBlock x:Name="TimeLabel" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" />
+            <muxc:NumberBox x:Name="TimeValue" Grid.Row="1" Grid.Column="1" ValueChanged="OnChanged" />
+            <ComboBox x:Name="TimeUnit" Grid.Row="1" Grid.Column="2" MinWidth="86" SelectionChanged="OnChanged" />
+
+            <TextBlock x:Name="SpeedLabel" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" />
+            <muxc:NumberBox x:Name="SpeedValue" Grid.Row="2" Grid.Column="1" ValueChanged="OnChanged" />
+            <ComboBox x:Name="SpeedUnit" Grid.Row="2" Grid.Column="2" MinWidth="86" SelectionChanged="OnChanged" />
+        </Grid>
+
+        <Border CornerRadius="8" Padding="16" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+            <TextBlock x:Name="Result" FontFamily="Consolas" TextWrapping="Wrap" />
+        </Border>
+    </StackPanel>
+</UserControl>

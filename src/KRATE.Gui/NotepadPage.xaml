@@ -1,0 +1,43 @@
+<UserControl
+    x:Class="Krate.Gui.NotepadPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Padding="20" RowSpacing="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <CommandBar Grid.Row="0" DefaultLabelPosition="Right" Background="Transparent" HorizontalAlignment="Stretch">
+            <CommandBar.Content>
+                <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" Margin="4,0,0,0" VerticalAlignment="Center" />
+            </CommandBar.Content>
+            <AppBarButton x:Name="NewBtn" Icon="Page2" Click="OnNew" />
+            <AppBarButton x:Name="OpenBtn" Icon="OpenFile" Click="OnOpen" />
+            <AppBarButton x:Name="SaveBtn" Icon="Save" Click="OnSaveAs" />
+            <AppBarSeparator />
+            <AppBarToggleButton x:Name="WrapBtn" Icon="Font" Click="OnWrap" />
+            <AppBarButton x:Name="ZoomOutBtn" Icon="ZoomOut" Click="OnZoomOut" />
+            <AppBarButton x:Name="ZoomInBtn" Icon="ZoomIn" Click="OnZoomIn" />
+        </CommandBar>
+
+        <Border Grid.Row="1" CornerRadius="8" BorderThickness="1"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+            <TextBox x:Name="Editor" BorderThickness="0" Background="Transparent"
+                     AcceptsReturn="True" TextWrapping="Wrap"
+                     FontFamily="Consolas" FontSize="14"
+                     ScrollViewer.VerticalScrollBarVisibility="Auto"
+                     ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                     TextChanged="OnChanged" SelectionChanged="OnSelection" />
+        </Border>
+
+        <Grid Grid.Row="2" Margin="4,0">
+            <TextBlock x:Name="Position" Opacity="0.7" FontSize="12" HorizontalAlignment="Left" />
+            <TextBlock x:Name="Counts" Opacity="0.7" FontSize="12" HorizontalAlignment="Center" />
+            <TextBlock x:Name="Saved" Opacity="0.55" FontSize="12" HorizontalAlignment="Right" />
+        </Grid>
+    </Grid>
+</UserControl>

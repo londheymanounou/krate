@@ -1,0 +1,33 @@
+<UserControl
+    x:Class="Krate.Gui.CoinPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel Padding="24" Spacing="24" MaxWidth="420" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" HorizontalAlignment="Center" />
+
+        <Grid HorizontalAlignment="Center" Height="180">
+            <Border x:Name="Coin" Width="170" Height="170" CornerRadius="85" BorderThickness="5"
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    BorderBrush="#B8860B">
+                <Border.Projection>
+                    <PlaneProjection x:Name="Flip" />
+                </Border.Projection>
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#F4D35E" Offset="0" />
+                        <GradientStop Color="#E3B11E" Offset="0.5" />
+                        <GradientStop Color="#C8901A" Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBlock x:Name="Face" FontSize="30" FontWeight="Bold" Foreground="#5A3E0A"
+                           HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+        </Grid>
+
+        <Button x:Name="FlipButton" Click="OnFlip" Style="{StaticResource AccentButtonStyle}"
+                HorizontalAlignment="Center" MinWidth="140" />
+
+        <TextBlock x:Name="Tally" HorizontalAlignment="Center" Opacity="0.75" FontSize="15" />
+    </StackPanel>
+</UserControl>

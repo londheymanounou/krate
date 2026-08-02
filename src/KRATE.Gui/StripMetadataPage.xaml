@@ -1,0 +1,27 @@
+<UserControl
+    x:Class="Krate.Gui.StripMetadataPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Loaded="OnLoaded">
+
+    <Grid Padding="20" RowSpacing="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Strip Metadata" Style="{StaticResource TitleTextBlockStyle}" />
+            <TextBlock Text="Remove EXIF, IPTC, and XMP metadata from a photo, or metadata from audio/video files." Opacity="0.7" TextWrapping="Wrap" />
+        </StackPanel>
+
+        <Border Grid.Row="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" CornerRadius="8" Padding="20">
+            <StackPanel Spacing="16" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="SelectFileBtn" Content="Select File" Click="OnSelectImage" Style="{StaticResource AccentButtonStyle}" />
+                <TextBlock x:Name="SelectedFileText" Opacity="0.7" TextWrapping="Wrap" />
+                <Button x:Name="StripBtn" Content="Strip Metadata" Click="OnStrip" IsEnabled="False" />
+                <TextBlock x:Name="ResultText" FontWeight="Bold" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

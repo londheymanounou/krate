@@ -1,0 +1,1033 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence><xs:element name="value" type="xsd:string" minOccurs="0" /></xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence><xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" /></xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="App_Name" xml:space="preserve"><value>KRATE</value></data>
+  <data name="App_FullName" xml:space="preserve"><value>Krate Toolkit</value></data>
+  <data name="App_Tagline" xml:space="preserve"><value>Десятки инструментов. Все локально, все офлайн.</value></data>
+  <data name="Cli_Usage" xml:space="preserve"><value>Использование: krate &lt;tool&gt; [текст] (нет текста = чтение стандартного ввода)</value></data>
+  <data name="Cli_Options" xml:space="preserve"><value>Опции: --lang &lt;код&gt; устанавливает язык интерфейса (например, en, fr), --lang auto следует за системным.</value></data>
+  <data name="Cli_Tools" xml:space="preserve"><value>Инструменты ({0}) — запустите «поиск по ящику &lt;слово&gt;», чтобы отфильтровать:</value></data>
+  <data name="Cli_UnknownTool" xml:space="preserve"><value>Неизвестный инструмент: {0}. Запустите «krate», чтобы просмотреть список доступных инструментов.</value></data>
+  <data name="Cli_LanguageSet" xml:space="preserve"><value>Язык установлен на {0}.</value></data>
+  <data name="Gui_Copy" xml:space="preserve"><value>Копировать</value></data>
+  <data name="Gui_SearchPlaceholder" xml:space="preserve"><value>Поиск инструмента…</value></data>
+  <data name="Gui_Error" xml:space="preserve"><value>Ошибка: {0}</value></data>
+  <data name="Text_Count_Characters" xml:space="preserve"><value>Персонажи {0}</value></data>
+  <data name="Text_Count_CharactersNoSpaces" xml:space="preserve"><value>Без пробелов {0}</value></data>
+  <data name="Text_Count_Words" xml:space="preserve"><value>Слова {0}</value></data>
+  <data name="Text_Count_Lines" xml:space="preserve"><value>Линии {0}</value></data>
+  <data name="Text_Count_ReadingTime" xml:space="preserve"><value>Время чтения ~{0} мин.</value></data>
+  <data name="Dates_Exact" xml:space="preserve"><value>{0} лет, {1} месяцев, {2} дней</value></data>
+  <data name="Dates_TotalDays" xml:space="preserve"><value>Всего дней {0}</value></data>
+  <data name="Dates_TotalWeeks" xml:space="preserve"><value>Всего недель {0} недель и {1} дней</value></data>
+  <data name="Dates_BusinessDays" xml:space="preserve"><value>Рабочие дни {0} (праздничные дни не учитываются)</value></data>
+  <data name="Json_Valid" xml:space="preserve"><value>Действительный JSON.</value></data>
+  <data name="Json_Invalid" xml:space="preserve"><value>Неверный JSON в строке {0}, столбец {1}.</value></data>
+  <data name="Random_Heads" xml:space="preserve"><value>Руководители</value></data>
+  <data name="Random_Tails" xml:space="preserve"><value>Решка</value></data>
+  <data name="Error_BadColor" xml:space="preserve"><value>Не цвет: {0}. Попробуйте #3af, #33aaff, rgb(51170255) или hsl(204100%,60%).</value></data>
+  <data name="Error_BadDate" xml:space="preserve"><value>Не дата: {0}.</value></data>
+  <data name="Error_NeedDate" xml:space="preserve"><value>Введите одну или две даты.</value></data>
+  <data name="Error_NeedNumber" xml:space="preserve"><value>Введите номер.</value></data>
+  <data name="Error_BadDice" xml:space="preserve"><value>Используйте обозначение кубиков, например. 2d6 или d20.</value></data>
+  <data name="Error_EmptyList" xml:space="preserve"><value>Введите хотя бы одну запись, по одной в строке.</value></data>
+  <data name="Error_OutOfRange" xml:space="preserve"><value>Введите число от {0} до {1}.</value></data>
+  <data name="Error_ConvertUsage" xml:space="preserve"><value>Введите значение и две единицы измерения, например. «10 км миль».</value></data>
+  <data name="Error_UnknownUnit" xml:space="preserve"><value>Неизвестная единица: {0}.</value></data>
+  <data name="Error_AmbiguousUnit" xml:space="preserve"><value>Неоднозначная единица: {0}. Имейте в виду: {1}.</value></data>
+  <data name="Error_DimensionMismatch" xml:space="preserve"><value>{0} и {1} не измеряют одно и то же.</value></data>
+  <data name="Error_RomanRange" xml:space="preserve"><value>Римские цифры идут от 1 до 3999.</value></data>
+  <data name="Error_BadRoman" xml:space="preserve"><value>Недопустимая римская цифра: {0}.</value></data>
+  <data name="Error_NeedText" xml:space="preserve"><value>Введите текст.</value></data>
+  <data name="Error_NeedTwoNumbers" xml:space="preserve"><value>Введите два числа.</value></data>
+  <data name="Error_DivideByZero" xml:space="preserve"><value>Деление на ноль.</value></data>
+  <data name="Error_DiffUsage" xml:space="preserve"><value>Разделите два текста строкой, содержащей только ---</value></data>
+  <data name="Error_RegexUsage" xml:space="preserve"><value>Первая строка: узор. Следующие строки: текст для проверки.</value></data>
+  <data name="Error_SequenceUsage" xml:space="preserve"><value>Попробуйте «фибо 10», «простые числа 20», «ариф 2 3 10» или «геом 2 3 10».</value></data>
+  <data name="Error_SolveUsage" xml:space="preserve"><value>Введите коэффициенты: «1 -3 2» для x² - 3x + 2 = 0.</value></data>
+  <data name="Error_BadJwt" xml:space="preserve"><value>Это не JWT: ожидается три части, разделенные точками.</value></data>
+  <data name="Error_UnsupportedLanguage" xml:space="preserve"><value>Язык не поддерживается: {0}. Доступно: англ., фр.</value></data>
+  <data name="Error_BmiUsage" xml:space="preserve"><value>Введите вес в кг и рост, например: «70 175».</value></data>
+  <data name="Error_LoanUsage" xml:space="preserve"><value>Введите сумму, годовую ставку и количество лет, например. «200000 3,5 25».</value></data>
+  <data name="Error_CidrUsage" xml:space="preserve"><value>Введите адрес IPv4 в форме CIDR, например. «192.168.1.10/24».</value></data>
+  <data name="Diff_Identical" xml:space="preserve"><value>Оба текста идентичны.</value></data>
+  <data name="Regex_NoMatch" xml:space="preserve"><value>Нет совпадений.</value></data>
+  <data name="Regex_MatchCount" xml:space="preserve"><value>{0} совпадений:</value></data>
+  <data name="Xml_Valid" xml:space="preserve"><value>Правильно сформированный XML.</value></data>
+  <data name="Xml_Invalid" xml:space="preserve"><value>Неверный XML-код в строке {0}, столбец {1}.</value></data>
+  <data name="Jwt_Header" xml:space="preserve"><value>ЗАГОЛОВОК</value></data>
+  <data name="Jwt_Payload" xml:space="preserve"><value>ПОЛЕЗНАЯ НАГРУЗКА</value></data>
+  <data name="Jwt_Dates" xml:space="preserve"><value>ДАТЫ</value></data>
+  <data name="Jwt_Expired" xml:space="preserve"><value>(истек)</value></data>
+  <data name="Jwt_Valid" xml:space="preserve"><value>(все еще действует)</value></data>
+  <data name="Jwt_NotVerified" xml:space="preserve"><value>Подпись НЕ проверяется — только декодирование.</value></data>
+  <data name="Math_Prime" xml:space="preserve"><value>(простой)</value></data>
+  <data name="Math_Gcd" xml:space="preserve"><value>НОД = {0}</value></data>
+  <data name="Math_Lcm" xml:space="preserve"><value>НЦМ = {0}</value></data>
+  <data name="Math_NoSolution" xml:space="preserve"><value>Нет решения.</value></data>
+  <data name="Math_ComplexRoots" xml:space="preserve"><value>Нет настоящего корня — два комплексных корня:</value></data>
+  <data name="Percent_Of" xml:space="preserve"><value>{0}% от {1} = {2}</value></data>
+  <data name="Percent_Ratio" xml:space="preserve"><value>{0} составляет {2}% от {1}</value></data>
+  <data name="Percent_Change" xml:space="preserve"><value>С {0} по {1}: {2}%</value></data>
+  <data name="Bmi_Under" xml:space="preserve"><value>Недостаточный вес (до 18,5)</value></data>
+  <data name="Bmi_Normal" xml:space="preserve"><value>Нормальный (от 18,5 до 25)</value></data>
+  <data name="Bmi_Over" xml:space="preserve"><value>Избыточный вес (от 25 до 30)</value></data>
+  <data name="Bmi_Obese" xml:space="preserve"><value>Ожирение (30 лет и старше)</value></data>
+  <data name="Bmi_Disclaimer" xml:space="preserve"><value>Показатель, а не диагноз.</value></data>
+  <data name="Tip_Tip" xml:space="preserve"><value>Совет ({0}%) {1}</value></data>
+  <data name="Tip_Total" xml:space="preserve"><value>Всего {0}</value></data>
+  <data name="Tip_Each" xml:space="preserve"><value>Каждый ({0}) {1}</value></data>
+  <data name="Loan_Monthly" xml:space="preserve"><value>Ежемесячный платеж {0}</value></data>
+  <data name="Loan_Total" xml:space="preserve"><value>Всего погашено {0}</value></data>
+  <data name="Loan_Interest" xml:space="preserve"><value>Проценты выплачены {0}</value></data>
+  <data name="Loan_Payments" xml:space="preserve"><value>Платежи {0}</value></data>
+  <data name="Cidr_Private" xml:space="preserve"><value>Частный диапазон (RFC 1918).</value></data>
+  <data name="Cidr_Public" xml:space="preserve"><value>Общественный диапазон.</value></data>
+  <data name="Gui_DropHint" xml:space="preserve"><value>Используйте этот путь</value></data>
+  <data name="Error_NoFile" xml:space="preserve"><value>Файл не найден: {0}</value></data>
+  <data name="Error_NoFolder" xml:space="preserve"><value>Папка не найдена: {0}</value></data>
+  <data name="Error_FileExists" xml:space="preserve"><value>{0} уже существует. Сначала переместите или переименуйте его — ничего не будет перезаписано.</value></data>
+  <data name="Error_BadSize" xml:space="preserve"><value>Нечитаемый размер: {0}. Попробуйте 10 МБ, 512 КБ или 2 ГБ.</value></data>
+  <data name="Error_NeedTwoFiles" xml:space="preserve"><value>Укажите два пути к файлам, по одному в строке.</value></data>
+  <data name="Error_SplitUsage" xml:space="preserve"><value>Укажите путь к файлу, а затем размер детали, например. «C:\big.zip 10 МБ».</value></data>
+  <data name="Error_JoinUsage" xml:space="preserve"><value>Наведите указатель мыши на один из файлов .part.</value></data>
+  <data name="Error_TestFileUsage" xml:space="preserve"><value>Укажите путь, затем размер, например. «C:\test.bin 100 МБ».</value></data>
+  <data name="Files_Name" xml:space="preserve"><value>ИМЯ</value></data>
+  <data name="Files_Size" xml:space="preserve"><value>РАЗМЕР</value></data>
+  <data name="Files_Created" xml:space="preserve"><value>СОЗДАНО</value></data>
+  <data name="Files_Modified" xml:space="preserve"><value>МОДИФИЦИРОВАННЫЙ</value></data>
+  <data name="Files_Total" xml:space="preserve"><value>{0} в {1} файлах</value></data>
+  <data name="Files_Largest" xml:space="preserve"><value>Самые большие файлы:</value></data>
+  <data name="Files_ByType" xml:space="preserve"><value>По типу файла:</value></data>
+  <data name="Files_Empty" xml:space="preserve"><value>Эта папка пуста.</value></data>
+  <data name="Files_AccessDenied" xml:space="preserve"><value>(доступ запрещен)</value></data>
+  <data name="Files_TreeTruncated" xml:space="preserve"><value>… усечено до {0} записей.</value></data>
+  <data name="Files_NoDuplicates" xml:space="preserve"><value>Дубликатов файлов не обнаружено.</value></data>
+  <data name="Files_DuplicatesFound" xml:space="preserve"><value>{0} групп одинаковых файлов, {1} потрачено впустую.</value></data>
+  <data name="Files_DuplicatesReadOnly" xml:space="preserve"><value>Ничего не удалялось — это отчет.</value></data>
+  <data name="Files_Identical" xml:space="preserve"><value>Эти два файла идентичны.</value></data>
+  <data name="Files_Different" xml:space="preserve"><value>Файлы различаются ({0} и {1}).</value></data>
+  <data name="Files_SplitDone" xml:space="preserve"><value>Разделить на {0} частей:</value></data>
+  <data name="Files_JoinDone" xml:space="preserve"><value>{0} перестроен из {1} частей ({2}).</value></data>
+  <data name="Files_TestFileDone" xml:space="preserve"><value>Создано {0} ({1}).</value></data>
+  <data name="Error_UnknownImage" xml:space="preserve"><value>Нераспознанное изображение (PNG, JPEG, GIF, BMP, WebP): {0}</value></data>
+  <data name="Error_RatioUsage" xml:space="preserve"><value>Введите размеры, например «1920x1080», или соотношение и размер, например «16:9 1920».</value></data>
+  <data name="Images_Format" xml:space="preserve"><value>ФОРМАТ</value></data>
+  <data name="Images_Size" xml:space="preserve"><value>РАЗМЕРЫ</value></data>
+  <data name="Images_Pixels" xml:space="preserve"><value>ПИКСЕЛИ</value></data>
+  <data name="Images_Ratio" xml:space="preserve"><value>СООТНОШЕНИЕ</value></data>
+  <data name="Images_Orientation" xml:space="preserve"><value>ОРИЕНТАЦИЯ</value></data>
+  <data name="Images_Landscape" xml:space="preserve"><value>пейзаж</value></data>
+  <data name="Images_Portrait" xml:space="preserve"><value>портрет</value></data>
+  <data name="Images_Square" xml:space="preserve"><value>квадрат</value></data>
+  <data name="Images_FromWidth" xml:space="preserve"><value>фиксированная ширина</value></data>
+  <data name="Images_FromHeight" xml:space="preserve"><value>фиксированная высота</value></data>
+  <data name="Img_Title" xml:space="preserve"><value>Конвертер изображений</value></data>
+  <data name="Img_Subtitle" xml:space="preserve"><value>Конвертируйте, изменяйте размер и сжимайте изображение. Перетащите сюда или используйте «Сохранить как».</value></data>
+  <data name="Img_DropHint" xml:space="preserve"><value>Перетащите изображение сюда</value></data>
+  <data name="Img_Format" xml:space="preserve"><value>Выходной формат</value></data>
+  <data name="Img_MaxWidth" xml:space="preserve"><value>Максимальная ширина (пикселей, 0 = оставить)</value></data>
+  <data name="Img_Quality" xml:space="preserve"><value>Качество (JPEG/WebP)</value></data>
+  <data name="Img_Save" xml:space="preserve"><value>Сохранить как…</value></data>
+  <data name="Img_Saved" xml:space="preserve"><value>Сохранено {0}</value></data>
+  <data name="Timer_Title" xml:space="preserve"><value>Таймер</value></data>
+  <data name="Timer_Start" xml:space="preserve"><value>Старт</value></data>
+  <data name="Timer_Pause" xml:space="preserve"><value>Пауза</value></data>
+  <data name="Timer_Reset" xml:space="preserve"><value>Сброс</value></data>
+  <data name="Timer_Stopwatch" xml:space="preserve"><value>Секундомер</value></data>
+  <data name="Timer_Focus" xml:space="preserve"><value>Фокус 25 мин.</value></data>
+  <data name="Timer_Break" xml:space="preserve"><value>Перерыв 5 минут</value></data>
+  <data name="Error_JsonNotArray" xml:space="preserve"><value>Ожидался массив объектов JSON, например [{&quot;a&quot;:1},{&quot;a&quot;:2}].</value></data>
+  <data name="Error_CronUsage" xml:space="preserve"><value>Ожидается 5 полей cron (минуты, часы, день, месяц, будни) или ярлык, например @daily.</value></data>
+  <data name="Fancy_Bold" xml:space="preserve"><value>Жирный</value></data>
+  <data name="Fancy_Italic" xml:space="preserve"><value>Курсив</value></data>
+  <data name="Fancy_Script" xml:space="preserve"><value>Скрипт</value></data>
+  <data name="Fancy_Fraktur" xml:space="preserve"><value>Фрактур</value></data>
+  <data name="Fancy_Mono" xml:space="preserve"><value>Моноширинный</value></data>
+  <data name="Fancy_Double" xml:space="preserve"><value>Двухместный</value></data>
+  <data name="Fancy_Circled" xml:space="preserve"><value>Обведено кружком</value></data>
+  <data name="Fancy_Wide" xml:space="preserve"><value>Полная ширина</value></data>
+  <data name="Cron_AtTime" xml:space="preserve"><value>в {0}</value></data>
+  <data name="Cron_Minute" xml:space="preserve"><value>минута</value></data>
+  <data name="Cron_Hour" xml:space="preserve"><value>час</value></data>
+  <data name="Cron_DayOfMonth" xml:space="preserve"><value>день месяца</value></data>
+  <data name="Cron_EveryUnit" xml:space="preserve"><value>каждые {0}</value></data>
+  <data name="Cron_EveryN" xml:space="preserve"><value>каждые {0} {1} с.</value></data>
+  <data name="Cron_EveryNBare" xml:space="preserve"><value>каждые {0}</value></data>
+  <data name="Cron_Range" xml:space="preserve"><value>{0} от {1} до {2}</value></data>
+  <data name="Cron_List" xml:space="preserve"><value>{0} {1}</value></data>
+  <data name="Cron_At" xml:space="preserve"><value>{0} {1}</value></data>
+  <data name="Cron_InMonths" xml:space="preserve"><value>в {0}</value></data>
+  <data name="Cron_OnDays" xml:space="preserve"><value>{0}</value></data>
+  <data name="Pw_Entropy" xml:space="preserve"><value>Энтропия ~{0} бит</value></data>
+  <data name="Pw_Rating" xml:space="preserve"><value>Рейтинг {0}</value></data>
+  <data name="Pw_Crack" xml:space="preserve"><value>Взлом {0}</value></data>
+  <data name="Pw_Note" xml:space="preserve"><value>Примечание: повторы или последовательности еще больше ослабляют его.</value></data>
+  <data name="Pw_VeryWeak" xml:space="preserve"><value>очень слабый</value></data>
+  <data name="Pw_Weak" xml:space="preserve"><value>слабый</value></data>
+  <data name="Pw_Reasonable" xml:space="preserve"><value>разумный</value></data>
+  <data name="Pw_Strong" xml:space="preserve"><value>сильный</value></data>
+  <data name="Pw_VeryStrong" xml:space="preserve"><value>очень сильный</value></data>
+  <data name="Time_Instant" xml:space="preserve"><value>мгновенно</value></data>
+  <data name="Time_Seconds" xml:space="preserve"><value>{0} секунд</value></data>
+  <data name="Time_Minutes" xml:space="preserve"><value>{0} минут</value></data>
+  <data name="Time_Hours" xml:space="preserve"><value>{0} часов</value></data>
+  <data name="Time_Days" xml:space="preserve"><value>{0} дней</value></data>
+  <data name="Time_Months" xml:space="preserve"><value>{0} месяцев</value></data>
+  <data name="Time_Years" xml:space="preserve"><value>{0} лет</value></data>
+  <data name="Time_Centuries" xml:space="preserve"><value>века</value></data>
+  <data name="Week_Date" xml:space="preserve"><value>ДАТА</value></data>
+  <data name="Week_Iso" xml:space="preserve"><value>НЕДЕЛЯ ИСО</value></data>
+  <data name="Week_DayOfYear" xml:space="preserve"><value>ДЕНЬ ГОДА</value></data>
+  <data name="Week_Quarter" xml:space="preserve"><value>КВАРТАЛ</value></data>
+  <data name="Week_Weekend" xml:space="preserve"><value>ВЫХОДНЫЕ</value></data>
+  <data name="Week_Yes" xml:space="preserve"><value>да</value></data>
+  <data name="Week_No" xml:space="preserve"><value>нет</value></data>
+  <data name="Error_NeedExpression" xml:space="preserve"><value>Введите выражение, например. «2 * (3 + 4)» или «sqrt(2)».</value></data>
+  <data name="Error_BadExpression" xml:space="preserve"><value>Не удалось проанализировать выражение.</value></data>
+  <data name="Error_MissingParen" xml:space="preserve"><value>Закрывающая скобка отсутствует.</value></data>
+  <data name="Error_UnknownFunction" xml:space="preserve"><value>Неизвестная функция: {0}.</value></data>
+  <data name="Error_UnknownName" xml:space="preserve"><value>Неизвестное имя: {0}.</value></data>
+  <data name="Error_BadFactorial" xml:space="preserve"><value>Для факториала требуется целое число от 0 до 170.</value></data>
+  <data name="Error_Undefined" xml:space="preserve"><value>Результат не определен (например, sqrt отрицательного значения или 0/0).</value></data>
+  <data name="Error_Overflow" xml:space="preserve"><value>Результат слишком велик.</value></data>
+  <data name="Error_NeedTwoColors" xml:space="preserve"><value>Введите два цвета, по одному на строку.</value></data>
+  <data name="Error_KelvinRange" xml:space="preserve"><value>Введите температуру от 1000 до 40000 К.</value></data>
+  <data name="Error_BadCssUnit" xml:space="preserve"><value>Нечитаемый размер: {0}. Попробуйте 16 пикселей, 1,5 рем или 12 пт.</value></data>
+  <data name="Color_Base" xml:space="preserve"><value>База</value></data>
+  <data name="Color_Complementary" xml:space="preserve"><value>Дополнительный</value></data>
+  <data name="Color_Triadic" xml:space="preserve"><value>Триадический</value></data>
+  <data name="Color_Analogous" xml:space="preserve"><value>Аналогичный</value></data>
+  <data name="Color_SplitComp" xml:space="preserve"><value>Сплит-комп.</value></data>
+  <data name="Color_Tetradic" xml:space="preserve"><value>тетрадный</value></data>
+  <data name="Color_Ratio" xml:space="preserve"><value>Соотношение</value></data>
+  <data name="Color_Pass" xml:space="preserve"><value>пройти</value></data>
+  <data name="Color_Fail" xml:space="preserve"><value>потерпеть неудачу</value></data>
+  <data name="Color_NormalText" xml:space="preserve"><value>нормальный</value></data>
+  <data name="Color_LargeText" xml:space="preserve"><value>большой</value></data>
+  <data name="Error_GitignoreUsage" xml:space="preserve"><value>Назовите один или несколько языков/инструментов. Доступно: {0}.</value></data>
+  <data name="Error_GitignoreUnknown" xml:space="preserve"><value>Ничего из этого неизвестно: {0}. Доступно: {1}.</value></data>
+  <data name="Text_NoHeadings" xml:space="preserve"><value>Заголовки Markdown не найдены.</value></data>
+  <data name="Error_SdtUsage" xml:space="preserve"><value>Дайте ровно два значения скорости, расстояния и времени, например. «100км 2ч».</value></data>
+  <data name="Error_SdtDuplicate" xml:space="preserve"><value>Были заданы два значения одного и того же типа ({0}).</value></data>
+  <data name="Error_SdtToken" xml:space="preserve"><value>Невозможно прочитать «{0}»: ожидается число и единица измерения, например 100 км.</value></data>
+  <data name="Error_SdtUnit" xml:space="preserve"><value>Неизвестная единица: {0}. Используйте км, м, мили/ч, мин, с/км/ч, мили/ч…</value></data>
+  <data name="Error_SdtZeroSpeed" xml:space="preserve"><value>Скорость равна нулю — время будет бесконечным.</value></data>
+  <data name="Error_SdtZeroTime" xml:space="preserve"><value>Время равно нулю — скорость была бы бесконечной.</value></data>
+  <data name="Sdt_Distance" xml:space="preserve"><value>РАССТОЯНИЕ</value></data>
+  <data name="Sdt_Time" xml:space="preserve"><value>ВРЕМЯ</value></data>
+  <data name="Sdt_Speed" xml:space="preserve"><value>СКОРОСТЬ</value></data>
+  <data name="Error_TooLarge" xml:space="preserve"><value>Это число слишком велико, чтобы его можно было вычислить здесь.</value></data>
+  <data name="Error_CombinatoricsUsage" xml:space="preserve"><value>Введите «n k» с 0 ≤ k ≤ n, например. «49 6».</value></data>
+  <data name="Error_TransferUsage" xml:space="preserve"><value>Укажите размер и пропускную способность, например. «5 ГБ 100 Мбит/с».</value></data>
+  <data name="Error_TransferRate" xml:space="preserve"><value>Нечитаемая полоса пропускания: {0}. Попробуйте 100 Мбит/с, 50 ​​МБ/с или 1 Гбит/с.</value></data>
+  <data name="Transfer_Size" xml:space="preserve"><value>РАЗМЕР</value></data>
+  <data name="Transfer_Rate" xml:space="preserve"><value>СТАВКА</value></data>
+  <data name="Transfer_TimeLabel" xml:space="preserve"><value>ВРЕМЯ</value></data>
+  <data name="Error_ShoeUsage" xml:space="preserve"><value>Введите размер и его систему, например. «42 ЕС» или «26 см Ш».</value></data>
+  <data name="Shoe_Men" xml:space="preserve"><value>Мужские</value></data>
+  <data name="Shoe_Women" xml:space="preserve"><value>Женский</value></data>
+  <data name="Shoe_Note" xml:space="preserve"><value>Приблизительные размеры зависят от бренда.</value></data>
+  <data name="Cli_Search" xml:space="preserve"><value>Поиск: поиск ящика &lt;слово&gt;</value></data>
+  <data name="Cli_NoMatch" xml:space="preserve"><value>Ни один инструмент не подходит.</value></data>
+  <data name="Home_Title" xml:space="preserve"><value>Главная</value></data>
+  <data name="Home_Recent" xml:space="preserve"><value>Последние инструменты</value></data>
+  <data name="Home_Empty" xml:space="preserve"><value>Выберите инструмент из списка или выполните поиск вверху. Здесь появятся те, которые вы используете.</value></data>
+  <data name="Error_NoCharset" xml:space="preserve"><value>Включите хотя бы один тип символов.</value></data>
+  <data name="Pwd_Title" xml:space="preserve"><value>Генератор паролей</value></data>
+  <data name="Pwd_Length" xml:space="preserve"><value>Длина</value></data>
+  <data name="Pwd_Upper" xml:space="preserve"><value>Прописные буквы (A–Z)</value></data>
+  <data name="Pwd_Lower" xml:space="preserve"><value>Строчные буквы (a–z)</value></data>
+  <data name="Pwd_Digits" xml:space="preserve"><value>Цифры (0–9)</value></data>
+  <data name="Pwd_Symbols" xml:space="preserve"><value>Символы (!@#…)</value></data>
+  <data name="Pwd_Regenerate" xml:space="preserve"><value>Создать новый</value></data>
+  <data name="Cp_Title" xml:space="preserve"><value>Выбор цвета</value></data>
+  <data name="Rnd_Title" xml:space="preserve"><value>Случайность</value></data>
+  <data name="Rnd_Flip" xml:space="preserve"><value>Перевернуть</value></data>
+  <data name="Rnd_Roll" xml:space="preserve"><value>Ролл</value></data>
+  <data name="Rnd_Draw" xml:space="preserve"><value>Ничья</value></data>
+  <data name="Rnd_Generate" xml:space="preserve"><value>Генерировать</value></data>
+  <data name="Conv_Category" xml:space="preserve"><value>Мера</value></data>
+  <data name="Conv_Value" xml:space="preserve"><value>Значение</value></data>
+  <data name="Date_From" xml:space="preserve"><value>От</value></data>
+  <data name="Date_To" xml:space="preserve"><value>Чтобы</value></data>
+  <data name="Contrast_Fg" xml:space="preserve"><value>Цвет текста</value></data>
+  <data name="Contrast_Bg" xml:space="preserve"><value>Фон</value></data>
+  <data name="Contrast_Sample" xml:space="preserve"><value>Пример текста — Аа Бб 123</value></data>
+  <data name="Bmi_Weight" xml:space="preserve"><value>Вес (кг)</value></data>
+  <data name="Bmi_Height" xml:space="preserve"><value>Высота (см)</value></data>
+  <data name="Tip_Bill" xml:space="preserve"><value>Билл</value></data>
+  <data name="Tip_Percent" xml:space="preserve"><value>Чаевые (%)</value></data>
+  <data name="Tip_People" xml:space="preserve"><value>Разделить между</value></data>
+  <data name="Loan_Amount" xml:space="preserve"><value>Сумма</value></data>
+  <data name="Loan_Rate" xml:space="preserve"><value>Годовая ставка (%)</value></data>
+  <data name="Loan_Years" xml:space="preserve"><value>Годы</value></data>
+  <data name="Calc_DivZero" xml:space="preserve"><value>Невозможно разделить на ноль</value></data>
+  <data name="Calc_Error" xml:space="preserve"><value>Неверный ввод</value></data>
+  <data name="Calc_Standard" xml:space="preserve"><value>Стандартный</value></data>
+  <data name="Calc_Scientific" xml:space="preserve"><value>Научный</value></data>
+  <data name="Calc_Programmer" xml:space="preserve"><value>Программист</value></data>
+  <data name="Calc_History" xml:space="preserve"><value>История</value></data>
+  <data name="Calc_HistoryEmpty" xml:space="preserve"><value>Пока нет истории</value></data>
+  <data name="Tool_Graph_Name" xml:space="preserve"><value>График функции</value></data>
+  <data name="Graph_NoPoints" xml:space="preserve"><value>В этом диапазоне нет ничего, что можно было бы построить.</value></data>
+  <data name="Settings_Title" xml:space="preserve"><value>Настройки</value></data>
+  <data name="Settings_Theme" xml:space="preserve"><value>Внешний вид</value></data>
+  <data name="Theme_System" xml:space="preserve"><value>Использовать системные настройки</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Свет</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Темный</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Язык</value></data>
+  <data name="Settings_About" xml:space="preserve"><value>KRATE – {0} инструментов, все локальные и офлайн. Никакие данные никогда не покидают вашу машину.</value></data>
+  <data name="Home_Favorites" xml:space="preserve"><value>Избранное</value></data>
+  <data name="Settings_ThemeCard" xml:space="preserve"><value>Тема приложения</value></data>
+  <data name="Settings_ThemeDesc" xml:space="preserve"><value>Выберите светлый, темный или следуйте Windows.</value></data>
+  <data name="Settings_LangDesc" xml:space="preserve"><value>Сразу меняет язык интерфейса.</value></data>
+  <data name="Settings_AboutHeader" xml:space="preserve"><value>О</value></data>
+  <data name="Gui_Input" xml:space="preserve"><value>Ввод</value></data>
+  <data name="Gui_Output" xml:space="preserve"><value>Выход</value></data>
+  <data name="Gui_Paste" xml:space="preserve"><value>Вставить</value></data>
+  <data name="Gui_Clear" xml:space="preserve"><value>Очистить</value></data>
+  <data name="Gui_Count" xml:space="preserve"><value>{0} символов · {1} строк</value></data>
+  <data name="Cli_HelpLine" xml:space="preserve"><value>Справка: krate &lt;инструмент&gt; --help · krate --help</value></data>
+  <data name="Cli_Examples" xml:space="preserve"><value>Примеры:</value></data>
+  <data name="Cli_UsageLabel" xml:space="preserve"><value>Использование:</value></data>
+  <data name="Cli_KeywordsLabel" xml:space="preserve"><value>Ключевые слова:</value></data>
+  <data name="Cli_CompletionUsage" xml:space="preserve"><value>Использование: завершение ящика &lt;bash|zsh|powershell&gt;</value></data>
+  <data name="Archive_Zipped" xml:space="preserve"><value>Создано {0} ({1}).</value></data>
+  <data name="Archive_Extracted" xml:space="preserve"><value>Извлечено в {0} ({1} файлов).</value></data>
+  <data name="Archive_Format" xml:space="preserve"><value>Формат</value></data>
+  <data name="Archive_Compress" xml:space="preserve"><value>Сжать</value></data>
+  <data name="Archive_Title" xml:space="preserve"><value>Архивы</value></data>
+  <data name="Archive_Open" xml:space="preserve"><value>Открыть архив</value></data>
+  <data name="Archive_ExtractAll" xml:space="preserve"><value>Извлечь все</value></data>
+  <data name="Archive_Name" xml:space="preserve"><value>Имя</value></data>
+  <data name="Archive_Size" xml:space="preserve"><value>Размер</value></data>
+  <data name="Archive_Modified" xml:space="preserve"><value>Модифицированный</value></data>
+  <data name="Archive_Info" xml:space="preserve"><value>{0} — {1} шт., {2}</value></data>
+  <data name="Tool_Encrypt_Name" xml:space="preserve"><value>Зашифровать файл</value></data>
+  <data name="Tool_Encrypt_Desc" xml:space="preserve"><value>Шифрует файл паролем (AES-256, аутентифицирован). «путь | пароль» или используйте страницу.</value></data>
+  <data name="Tool_Encrypt_Aliases" xml:space="preserve"><value>шифровать, шифрование, AES, пароль, безопасный, защитить, зашифровать, заблокировать, криптовать</value></data>
+  <data name="Tool_Decrypt_Name" xml:space="preserve"><value>Расшифровать файл</value></data>
+  <data name="Tool_Decrypt_Desc" xml:space="preserve"><value>Расшифровывает файл .krate обратно в оригинал. «путь | пароль» или используйте страницу.</value></data>
+  <data name="Tool_Decrypt_Aliases" xml:space="preserve"><value>расшифровать, расшифровка, AES, пароль, разблокировать, криптовать, открыть</value></data>
+  <data name="Error_CryptUsage" xml:space="preserve"><value>Используйте «путь | пароль».</value></data>
+  <data name="Error_NeedPassword" xml:space="preserve"><value>Введите пароль.</value></data>
+  <data name="Error_NotEncrypted" xml:space="preserve"><value>{0} не является файлом, зашифрованным с помощью KRATE.</value></data>
+  <data name="Error_WrongPassword" xml:space="preserve"><value>Неправильный пароль или файл был изменен.</value></data>
+  <data name="Crypt_Encrypted" xml:space="preserve"><value>Зашифровано в {0}. Храните свой пароль в безопасности — восстановления нет.</value></data>
+  <data name="Crypt_Decrypted" xml:space="preserve"><value>Расшифровано до {0}.</value></data>
+  <data name="Cli_CryptUsage" xml:space="preserve"><value>Использование: krate encrypt|decrypt &lt;файл&gt;</value></data>
+  <data name="Cli_Password" xml:space="preserve"><value>Пароль:</value></data>
+  <data name="Cli_Confirm" xml:space="preserve"><value>Подтвердите пароль:</value></data>
+  <data name="Cli_PasswordMismatch" xml:space="preserve"><value>Пароли не совпадают.</value></data>
+  <data name="Encrypt_Title" xml:space="preserve"><value>Шифрование файлов</value></data>
+  <data name="Encrypt_Subtitle" xml:space="preserve"><value>AES-256, аутентифицирован. Шифрование создает файл .krate рядом с оригиналом; расшифровка восстанавливает его. Восстановление пароля отсутствует.</value></data>
+  <data name="Encrypt_Password" xml:space="preserve"><value>Пароль</value></data>
+  <data name="Encrypt_Confirm" xml:space="preserve"><value>Подтвердите пароль (для шифрования)</value></data>
+  <data name="Encrypt_Do" xml:space="preserve"><value>Шифровать</value></data>
+  <data name="Decrypt_Do" xml:space="preserve"><value>Расшифровать</value></data>
+  <data name="Yt_Title" xml:space="preserve"><value>Загрузчик видео</value></data>
+  <data name="Yt_Subtitle" xml:space="preserve"><value>Загрузите видео или аудио с YouTube и многих других сайтов, которые поддерживает yt-dlp.</value></data>
+  <data name="Yt_Url" xml:space="preserve"><value>URL-адрес видео</value></data>
+  <data name="Yt_Format" xml:space="preserve"><value>Формат</value></data>
+  <data name="Yt_Folder" xml:space="preserve"><value>Папка</value></data>
+  <data name="Yt_Change" xml:space="preserve"><value>Изменить…</value></data>
+  <data name="Yt_Download" xml:space="preserve"><value>Скачать</value></data>
+  <data name="Yt_Get" xml:space="preserve"><value>Настройте yt-dlp</value></data>
+  <data name="Yt_Getting" xml:space="preserve"><value>Загрузка yt-dlp…</value></data>
+  <data name="Yt_Ready" xml:space="preserve"><value>yt-dlp готов.</value></data>
+  <data name="Yt_NeedSetup" xml:space="preserve"><value>yt-dlp еще не настроен — необходимо скачать.</value></data>
+  <data name="Yt_NoYtDlp" xml:space="preserve"><value>yt-dlp не настроен. Сначала используйте «Настроить yt-dlp».</value></data>
+  <data name="Yt_NeedUrl" xml:space="preserve"><value>Введите URL-адрес видео.</value></data>
+  <data name="Yt_NeedFfmpeg" xml:space="preserve"><value>Для извлечения аудио требуется ffmpeg — сначала настройте его в конвертере файлов.</value></data>
+  <data name="Yt_Downloading" xml:space="preserve"><value>Загрузка…</value></data>
+  <data name="Yt_Done" xml:space="preserve"><value>Скачано {0}</value></data>
+  <data name="Yt_CliUsage" xml:space="preserve"><value>Использование: создать youtube &lt;url&gt; [mp4|mp3|m4a|…] |   настройка ютуба в ящике</value></data>
+  <data name="Archive_Staged" xml:space="preserve"><value>Готово: {0} — выберите формат и нажмите «Сжать».</value></data>
+  <data name="Ctx_Compress" xml:space="preserve"><value>Сжать с помощью Krate</value></data>
+  <data name="Ctx_Extract" xml:space="preserve"><value>Извлечь с помощью ящика</value></data>
+  <data name="Ctx_Encrypt" xml:space="preserve"><value>Шифровать с помощью Krate</value></data>
+  <data name="Ctx_Convert" xml:space="preserve"><value>Конвертировать с помощью Krate</value></data>
+  <data name="Ctx_Edit" xml:space="preserve"><value>Редактировать с помощью Krate</value></data>
+  <data name="Ctx_TextTools" xml:space="preserve"><value>Текстовые инструменты с Krate</value></data>
+  <data name="Ctx_Krate" xml:space="preserve"><value>Ящик</value></data>
+  <data name="Settings_Integration" xml:space="preserve"><value>Интеграция с Windows</value></data>
+  <data name="Settings_ContextCard" xml:space="preserve"><value>Меню, вызываемое правой кнопкой мыши</value></data>
+  <data name="Settings_ContextDesc" xml:space="preserve"><value>Добавьте подменю «Ящик» в контекстное меню Проводника — инструменты «Сжатие», «Шифрование», «Извлечение», «Преобразование», «Редактирование» и «Текст» при наведении курсора мыши (в разделе «Показать дополнительные параметры в Windows 11»).</value></data>
+  <data name="Error_CannotCreate" xml:space="preserve"><value>Архивы {0} можно извлекать, но нельзя создавать.</value></data>
+  <data name="Error_UnknownFormat" xml:space="preserve"><value>Неизвестный формат архива: {0}.</value></data>
+  <data name="Error_NotZip" xml:space="preserve"><value>Не ZIP-файл: {0}</value></data>
+  <data name="Md_Preview_Name" xml:space="preserve"><value>Предварительный просмотр уценки</value></data>
+  <data name="Cvd_Normal" xml:space="preserve"><value>Нормальный</value></data>
+  <data name="Cvd_Protan" xml:space="preserve"><value>Протанопия</value></data>
+  <data name="Cvd_Deuter" xml:space="preserve"><value>Дейтеранопия</value></data>
+  <data name="Cvd_Tritan" xml:space="preserve"><value>Тританопия</value></data>
+  <data name="Cvd_Achroma" xml:space="preserve"><value>Ахроматопсия</value></data>
+  <data name="Error_BarcodeAscii" xml:space="preserve"><value>Код 128 принимает только печатный ASCII.</value></data>
+  <data name="Error_NotArchive" xml:space="preserve"><value>Не поддерживаемый архив: {0}. Попробуйте .zip, .7z, .rar, .tar, .gz…</value></data>
+  <data name="Exif_None" xml:space="preserve"><value>Метаданные EXIF ​​не найдены.</value></data>
+  <data name="Error_RenameUsage" xml:space="preserve"><value>Используйте «папку | найти | заменить», например. «C:\pics | IMG | фото».</value></data>
+  <data name="Rename_NoMatch" xml:space="preserve"><value>Ни одно имя файла не содержит «{0}».</value></data>
+  <data name="Rename_Preview" xml:space="preserve"><value>{0} файлы будут переименованы:</value></data>
+  <data name="Rename_ApplyHint" xml:space="preserve"><value>Добавьте «| применить», чтобы переименовать их.</value></data>
+  <data name="Rename_Done" xml:space="preserve"><value>Переименовано {0} файлов.</value></data>
+  <data name="Error_PdfMergeUsage" xml:space="preserve"><value>Укажите как минимум два пути к PDF-файлу, по одному на строку.</value></data>
+  <data name="Error_NotPdf" xml:space="preserve"><value>Не PDF-файл: {0}</value></data>
+  <data name="Pdf_Merged" xml:space="preserve"><value>Создано {0} — {1} страниц из {2} файлов.</value></data>
+  <data name="Pdf_Split" xml:space="preserve"><value>Разделить на {0} страниц ({1}_p01.pdf…).</value></data>
+  <data name="Error_CurrencyUsage" xml:space="preserve"><value>Введите сумму и два кода валюты, например. «100 долларов США евро».</value></data>
+  <data name="Error_UnknownCurrency" xml:space="preserve"><value>Неизвестная валюта: {0}.</value></data>
+  <data name="Error_NoRates" xml:space="preserve"><value>Никаких кэшированных тарифов и интернета — чтобы получить их, подключитесь один раз.</value></data>
+  <data name="Cur_Rate" xml:space="preserve"><value>СТАВКА</value></data>
+  <data name="Cur_Updated" xml:space="preserve"><value>ОБНОВЛЕНО</value></data>
+  <data name="Cur_Offline" xml:space="preserve"><value>(офлайн — последние известные ставки)</value></data>
+  <data name="Notepad_Title" xml:space="preserve"><value>Блокнот</value></data>
+  <data name="Notepad_Saved" xml:space="preserve"><value>Автосохранено</value></data>
+  <data name="Clipboard_Title" xml:space="preserve"><value>История буфера обмена</value></data>
+  <data name="Clipboard_Clear" xml:space="preserve"><value>Очистить</value></data>
+  <data name="Clipboard_Hint" xml:space="preserve"><value>Скопируйте текст, пока KRATE открыт — он появится здесь. Щелкните элемент, чтобы скопировать его еще раз.</value></data>
+  <data name="Img_Open" xml:space="preserve"><value>Открыть изображение</value></data>
+  <data name="Exif_Drop" xml:space="preserve"><value>Перетащите сюда фотографию или используйте «Открыть изображение».</value></data>
+  <data name="Rename_ChooseFolder" xml:space="preserve"><value>Выбрать папку</value></data>
+  <data name="Rename_Apply" xml:space="preserve"><value>Переименовать</value></data>
+  <data name="Rename_Count" xml:space="preserve"><value>{0} файлы будут переименованы.</value></data>
+  <data name="Rename_NoMatchShort" xml:space="preserve"><value>Нет соответствующих файлов.</value></data>
+  <data name="Pdf_Title" xml:space="preserve"><value>Объединение и разделение PDF-файлов</value></data>
+  <data name="Pdf_MergeLabel" xml:space="preserve"><value>Объедините эти PDF-файлы (по порядку):</value></data>
+  <data name="Pdf_Drop" xml:space="preserve"><value>Перетащите PDF-файлы сюда или используйте «Добавить PDF-файлы».</value></data>
+  <data name="Pdf_Add" xml:space="preserve"><value>Добавить PDF-файлы</value></data>
+  <data name="Pdf_MergeBtn" xml:space="preserve"><value>Объединить</value></data>
+  <data name="Pdf_SplitBtn" xml:space="preserve"><value>Разделить PDF-файл…</value></data>
+  <data name="Base_Invalid" xml:space="preserve"><value>Недействительно для этой базы.</value></data>
+  <data name="Lorem_Words" xml:space="preserve"><value>Слова</value></data>
+  <data name="Lorem_Paragraphs" xml:space="preserve"><value>Абзацы</value></data>
+  <data name="Lorem_NWords" xml:space="preserve"><value>{0} слов</value></data>
+  <data name="Lorem_NPara" xml:space="preserve"><value>{0} абзацев</value></data>
+  <data name="Seq_Step" xml:space="preserve"><value>Шаг</value></data>
+  <data name="Seq_Ratio" xml:space="preserve"><value>Соотношение</value></data>
+  <data name="Cron_NextRuns" xml:space="preserve"><value>Следующие запуски</value></data>
+  <data name="Palette_Hint" xml:space="preserve"><value>Инструменты поиска… (Ctrl+K)</value></data>
+  <data name="Ts_FromUnix" xml:space="preserve"><value>Из временной метки Unix</value></data>
+  <data name="Ts_FromDate" xml:space="preserve"><value>С даты и времени</value></data>
+  <data name="Ts_Now" xml:space="preserve"><value>Сейчас</value></data>
+  <data name="Pick_ChooseFile" xml:space="preserve"><value>Выбрать файл</value></data>
+  <data name="Pick_ChooseFolder" xml:space="preserve"><value>Выбрать папку</value></data>
+  <data name="Pick_DropFile" xml:space="preserve"><value>Выберите файл выше или перетащите его сюда.</value></data>
+  <data name="Pick_DropFolder" xml:space="preserve"><value>Выберите папку выше или перетащите ее сюда.</value></data>
+  <data name="Compare_FileA" xml:space="preserve"><value>Первый файл — выберите или удалите</value></data>
+  <data name="Compare_FileB" xml:space="preserve"><value>Второй файл — выбрать или удалить</value></data>
+  <data name="Fs_Go" xml:space="preserve"><value>Иди</value></data>
+  <data name="Fs_FileName" xml:space="preserve"><value>Имя файла</value></data>
+  <data name="Comb_N" xml:space="preserve"><value>п (всего)</value></data>
+  <data name="Comb_R" xml:space="preserve"><value>р (выбран)</value></data>
+  <data name="Factor_Number" xml:space="preserve"><value>Число</value></data>
+  <data name="Ruler_Title" xml:space="preserve"><value>Правитель</value></data>
+  <data name="Ruler_Calib" xml:space="preserve"><value>Калибровка: поднесите банковскую карту к экрану и регулируйте ее до тех пор, пока 0–8,56 см не совпадет с ее длинным краем.</value></data>
+  <data name="Gamepad_Title" xml:space="preserve"><value>Тестер геймпадов</value></data>
+  <data name="Gamepad_None" xml:space="preserve"><value>Подключите контроллер (Xbox или совместимый). Ввод читается, даже если это окно не в фокусе.</value></data>
+  <data name="Gamepad_Connected" xml:space="preserve"><value>Контроллер подключен — нажимайте кнопки, перемещайте стики и триггеры.</value></data>
+  <data name="Gamepad_LT" xml:space="preserve"><value>Левый триггер</value></data>
+  <data name="Gamepad_RT" xml:space="preserve"><value>Правый триггер</value></data>
+  <data name="Gamepad_NoXInput" xml:space="preserve"><value>XInput недоступен в этой системе.</value></data>
+  <data name="Gamepad_Generic" xml:space="preserve"><value>Контроллер</value></data>
+  <data name="Gamepad_GenericHint" xml:space="preserve"><value>Контроллер DirectInput/HID — кнопки пронумерованы, поскольку площадки, отличные от Xbox, не соответствуют фиксированной раскладке A/B/X/Y.</value></data>
+  <data name="Gamepad_Extra" xml:space="preserve"><value>Другие кнопки</value></data>
+  <data name="Cli_GamepadWindowsOnly" xml:space="preserve"><value>Тестер геймпада пока доступен только для Windows.</value></data>
+  <data name="Cli_GamepadHeader" xml:space="preserve"><value>Тестер геймпадов KRATE — нажмите любую клавишу, чтобы остановить.</value></data>
+  <data name="Media_Downloading" xml:space="preserve"><value>Загрузка ffmpeg (~110 МБ, единоразово)…</value></data>
+  <data name="Media_Extracting" xml:space="preserve"><value>Извлечение ffmpeg…</value></data>
+  <data name="Media_ExtractFailed" xml:space="preserve"><value>Не удалось найти ffmpeg в скачанном архиве.</value></data>
+  <data name="Media_UnknownFormat" xml:space="preserve"><value>Неизвестный формат: {0}</value></data>
+  <data name="Media_NoFfmpeg" xml:space="preserve"><value>ffmpeg не установлен. Сначала запустите «настройку носителя».</value></data>
+  <data name="Media_NoOutput" xml:space="preserve"><value>Преобразование не привело к созданию выходного файла.</value></data>
+  <data name="Media_Done" xml:space="preserve"><value>Преобразовано → {0} ({1})</value></data>
+  <data name="Media_Ready" xml:space="preserve"><value>ffmpeg готов.</value></data>
+  <data name="Media_NeedSetup" xml:space="preserve"><value>ffmpeg не установлен — запустите «настройку носителя» (однократная загрузка ~ 110 МБ).</value></data>
+  <data name="Media_CliUsage" xml:space="preserve"><value>Использование: krate Convert &lt;файл&gt; &lt;формат&gt; |   настройка носителя в ящике |   создавать медиаформаты</value></data>
+  <data name="Media_Converting" xml:space="preserve"><value>Преобразование {0} → {1}…</value></data>
+  <data name="Converter_Title" xml:space="preserve"><value>Конвертер файлов</value></data>
+  <data name="Converter_Subtitle" xml:space="preserve"><value>Конвертируйте аудио, видео и изображения между форматами.</value></data>
+  <data name="Converter_AddFiles" xml:space="preserve"><value>Добавить файлы…</value></data>
+  <data name="Converter_Clear" xml:space="preserve"><value>Очистить</value></data>
+  <data name="Converter_Convert" xml:space="preserve"><value>Конвертировать</value></data>
+  <data name="Converter_Download" xml:space="preserve"><value>Скачать ffmpeg</value></data>
+  <data name="Converter_DropHint" xml:space="preserve"><value>Перетащите сюда файлы или воспользуйтесь «Добавить файлы».</value></data>
+  <data name="Converter_NeedFfmpeg" xml:space="preserve"><value>Для конвертации требуется ffmpeg (однократная загрузка размером около 110 МБ). Впоследствии он сохраняется и повторно используется в автономном режиме.</value></data>
+  <data name="Converter_AllDone" xml:space="preserve"><value>Сделанный.</value></data>
+  <data name="Converter_Cat_audio" xml:space="preserve"><value>аудио</value></data>
+  <data name="Converter_Cat_video" xml:space="preserve"><value>видео</value></data>
+  <data name="Converter_Cat_image" xml:space="preserve"><value>изображение</value></data>
+  <data name="Coin_Tally" xml:space="preserve"><value>Орел {0} · Решка {1}</value></data>
+  <data name="Dice_Total" xml:space="preserve"><value>Всего {0}</value></data>
+  <data name="Dice_Type" xml:space="preserve"><value>умереть</value></data>
+  <data name="Dice_Count" xml:space="preserve"><value>Сколько</value></data>
+  <data name="Rnd_Min" xml:space="preserve"><value>Минимум</value></data>
+  <data name="Rnd_Max" xml:space="preserve"><value>Максимум</value></data>
+  <data name="Category_Text" xml:space="preserve"><value>Текст</value></data>
+  <data name="Category_Encoding" xml:space="preserve"><value>Кодирование и данные</value></data>
+  <data name="Category_Hashing" xml:space="preserve"><value>Хеширование и безопасность</value></data>
+  <data name="Category_Developer" xml:space="preserve"><value>Разработчик</value></data>
+  <data name="Category_Colors" xml:space="preserve"><value>Цвета и дизайн</value></data>
+  <data name="Category_Conversions" xml:space="preserve"><value>Конверсии</value></data>
+  <data name="Category_Dates" xml:space="preserve"><value>Даты и время</value></data>
+  <data name="Category_Random" xml:space="preserve"><value>Случайность</value></data>
+  <data name="Category_Maths" xml:space="preserve"><value>Математика</value></data>
+  <data name="Category_Everyday" xml:space="preserve"><value>Каждый день</value></data>
+  <data name="Category_Files" xml:space="preserve"><value>Файлы и папки</value></data>
+  <data name="Category_Images" xml:space="preserve"><value>Изображения</value></data>
+  <data name="Tool_Count_Name" xml:space="preserve"><value>Текстовый счетчик</value></data>
+  <data name="Tool_Count_Desc" xml:space="preserve"><value>Подсчитывает символы, слова, строки и оценивает время чтения.</value></data>
+  <data name="Tool_Count_Aliases" xml:space="preserve"><value>подсчет, слова, символы, строки, статистика, время чтения</value></data>
+  <data name="Tool_Upper_Name" xml:space="preserve"><value>ПРОПИСНЫЕ РЕГИСТРЫ</value></data>
+  <data name="Tool_Upper_Desc" xml:space="preserve"><value>Преобразует текст в верхний регистр.</value></data>
+  <data name="Tool_Upper_Aliases" xml:space="preserve"><value>регистр, прописные буквы, прописные буквы, маюскулы</value></data>
+  <data name="Tool_Lower_Name" xml:space="preserve"><value>строчные буквы</value></data>
+  <data name="Tool_Lower_Desc" xml:space="preserve"><value>Преобразует текст в нижний регистр.</value></data>
+  <data name="Tool_Lower_Aliases" xml:space="preserve"><value>регистр, строчные буквы, минускулы</value></data>
+  <data name="Tool_Title_Name" xml:space="preserve"><value>Название регистра</value></data>
+  <data name="Tool_Title_Desc" xml:space="preserve"><value>Делает первую букву каждого слова заглавной.</value></data>
+  <data name="Tool_Title_Aliases" xml:space="preserve"><value>регистр, название, заглавная буква, заголовок</value></data>
+  <data name="Tool_Invert_Name" xml:space="preserve"><value>ПЕРЕВЕРНУТЫЙ СЛУЧАЙ</value></data>
+  <data name="Tool_Invert_Desc" xml:space="preserve"><value>Меняет местами верхний и нижний регистр.</value></data>
+  <data name="Tool_Invert_Aliases" xml:space="preserve"><value>футляр, инверт, замена, зеркало</value></data>
+  <data name="Tool_Base64_Name" xml:space="preserve"><value>Кодировка Base64</value></data>
+  <data name="Tool_Base64_Desc" xml:space="preserve"><value>Кодирует текст в Base64 (UTF-8).</value></data>
+  <data name="Tool_Base64_Aliases" xml:space="preserve"><value>base64, кодировать, b64</value></data>
+  <data name="Tool_Base64Decode_Name" xml:space="preserve"><value>Декодирование Base64</value></data>
+  <data name="Tool_Base64Decode_Desc" xml:space="preserve"><value>Декодирует Base64 обратно в текст (UTF-8).</value></data>
+  <data name="Tool_Base64Decode_Aliases" xml:space="preserve"><value>base64, декодирование, b64</value></data>
+  <data name="Tool_UrlEncode_Name" xml:space="preserve"><value>URL-кодирование</value></data>
+  <data name="Tool_UrlEncode_Desc" xml:space="preserve"><value>Процентное кодирование текста для использования в URL-адресе.</value></data>
+  <data name="Tool_UrlEncode_Aliases" xml:space="preserve"><value>URL, uri, процент, кодирование, экранирование</value></data>
+  <data name="Tool_UrlDecode_Name" xml:space="preserve"><value>декодирование URL-адреса</value></data>
+  <data name="Tool_UrlDecode_Desc" xml:space="preserve"><value>Декодирует URL-адрес в процентном кодировании.</value></data>
+  <data name="Tool_UrlDecode_Aliases" xml:space="preserve"><value>URL, uri, процент, декодирование, unescape</value></data>
+  <data name="Tool_HtmlEncode_Name" xml:space="preserve"><value>HTML-объекты кодируют</value></data>
+  <data name="Tool_HtmlEncode_Desc" xml:space="preserve"><value>Экранирует &amp;, &lt; и &gt; как объекты HTML.</value></data>
+  <data name="Tool_HtmlEncode_Aliases" xml:space="preserve"><value>HTML, сущности, экранирование, кодирование</value></data>
+  <data name="Tool_HtmlDecode_Name" xml:space="preserve"><value>HTML-объекты декодируют</value></data>
+  <data name="Tool_HtmlDecode_Desc" xml:space="preserve"><value>Превращает объекты HTML обратно в символы.</value></data>
+  <data name="Tool_HtmlDecode_Aliases" xml:space="preserve"><value>html, сущности, unescape, декодирование</value></data>
+  <data name="Tool_Bases_Name" xml:space="preserve"><value>Конвертер системы счисления</value></data>
+  <data name="Tool_Bases_Desc" xml:space="preserve"><value>Показывает числа в двоичном, восьмеричном, десятичном и шестнадцатеричном формате. Префикс ввода с 0b, 0o или 0x.</value></data>
+  <data name="Tool_Bases_Aliases" xml:space="preserve"><value>основание, двоичное, восьмеричное, шестнадцатеричное, шестнадцатеричное, десятичное, основание системы счисления</value></data>
+  <data name="Tool_Md5_Name" xml:space="preserve"><value>MD5-хеш</value></data>
+  <data name="Tool_Md5_Desc" xml:space="preserve"><value>Вычисляет MD5-хеш текста. Только контрольные суммы, а не безопасность.</value></data>
+  <data name="Tool_Md5_Aliases" xml:space="preserve"><value>хэш, md5, контрольная сумма, дайджест</value></data>
+  <data name="Tool_Sha1_Name" xml:space="preserve"><value>SHA-1 хеш</value></data>
+  <data name="Tool_Sha1_Desc" xml:space="preserve"><value>Вычисляет хэш SHA-1 текста. Только контрольные суммы, а не безопасность.</value></data>
+  <data name="Tool_Sha1_Aliases" xml:space="preserve"><value>хеш, sha1, контрольная сумма, дайджест</value></data>
+  <data name="Tool_Sha256_Name" xml:space="preserve"><value>SHA-256 хеш</value></data>
+  <data name="Tool_Sha256_Desc" xml:space="preserve"><value>Вычисляет хэш SHA-256 текста.</value></data>
+  <data name="Tool_Sha256_Aliases" xml:space="preserve"><value>хеш, ша, sha256, контрольная сумма, дайджест, отпечаток пальца</value></data>
+  <data name="Tool_Sha512_Name" xml:space="preserve"><value>SHA-512 хэш</value></data>
+  <data name="Tool_Sha512_Desc" xml:space="preserve"><value>Вычисляет хэш SHA-512 текста.</value></data>
+  <data name="Tool_Sha512_Aliases" xml:space="preserve"><value>хэш, ша, sha512, контрольная сумма, дайджест</value></data>
+  <data name="Tool_HashAll_Name" xml:space="preserve"><value>Все хеши</value></data>
+  <data name="Tool_HashAll_Desc" xml:space="preserve"><value>MD5, SHA-1, SHA-256 и SHA-512 одного и того же текста одновременно.</value></data>
+  <data name="Tool_HashAll_Aliases" xml:space="preserve"><value>хэш, все, md5, ша, контрольная сумма, сравнение</value></data>
+  <data name="Tool_Password_Name" xml:space="preserve"><value>Генератор паролей</value></data>
+  <data name="Tool_Password_Desc" xml:space="preserve"><value>Генерирует надежный пароль. Введите длину (по умолчанию 20). Неоднозначные символы исключены.</value></data>
+  <data name="Tool_Password_Aliases" xml:space="preserve"><value>пароль, генерировать, случайный, безопасный, парольная фраза</value></data>
+  <data name="Tool_Uuid_Name" xml:space="preserve"><value>Генератор UUID/GUID</value></data>
+  <data name="Tool_Uuid_Desc" xml:space="preserve"><value>Генерирует случайные UUID. Введите количество, чтобы получить несколько.</value></data>
+  <data name="Tool_Uuid_Aliases" xml:space="preserve"><value>uuid, guid, id, идентификатор, случайный</value></data>
+  <data name="Tool_JsonFormat_Name" xml:space="preserve"><value>Форматер JSON</value></data>
+  <data name="Tool_JsonFormat_Desc" xml:space="preserve"><value>Переформатирует JSON с отступами.</value></data>
+  <data name="Tool_JsonFormat_Aliases" xml:space="preserve"><value>json, формат, красивый, отступ, украшение</value></data>
+  <data name="Tool_JsonMinify_Name" xml:space="preserve"><value>Минификатор JSON</value></data>
+  <data name="Tool_JsonMinify_Desc" xml:space="preserve"><value>Удаляет все пробелы из JSON.</value></data>
+  <data name="Tool_JsonMinify_Aliases" xml:space="preserve"><value>json, минимизировать, сжать, сжать</value></data>
+  <data name="Tool_JsonValidate_Name" xml:space="preserve"><value>JSON-валидатор</value></data>
+  <data name="Tool_JsonValidate_Desc" xml:space="preserve"><value>Проверяет корректность JSON и указывает на первую ошибку.</value></data>
+  <data name="Tool_JsonValidate_Aliases" xml:space="preserve"><value>json, проверка, проверка, ворс, ошибка</value></data>
+  <data name="Tool_Color_Name" xml:space="preserve"><value>Конвертер цветов</value></data>
+  <data name="Tool_Color_Desc" xml:space="preserve"><value>Показывает цвет в формате HEX, RGB и HSL. Принимает #3af, rgb(...) или hsl(...).</value></data>
+  <data name="Tool_Color_Aliases" xml:space="preserve"><value>цвет, цвет, шестнадцатеричный, RGB, HSL, конвертировать, CSS</value></data>
+  <data name="Tool_Convert_Name" xml:space="preserve"><value>Конвертер единиц измерения</value></data>
+  <data name="Tool_Convert_Desc" xml:space="preserve"><value>Преобразует между единицами измерения: введите «10 км миль», «100 F C», «5 ГиБ МБ».</value></data>
+  <data name="Tool_Convert_Aliases" xml:space="preserve"><value>конвертировать, единицы, единицы, метрические, имперские, длину, вес, температуру, данные, скорость</value></data>
+  <data name="Tool_Roman_Name" xml:space="preserve"><value>Римские цифры</value></data>
+  <data name="Tool_Roman_Desc" xml:space="preserve"><value>Преобразует римские цифры в арабские и обратно.</value></data>
+  <data name="Tool_Roman_Aliases" xml:space="preserve"><value>римские, цифры, латынь, номер</value></data>
+  <data name="Tool_Timestamp_Name" xml:space="preserve"><value>Временная метка Unix</value></data>
+  <data name="Tool_Timestamp_Desc" xml:space="preserve"><value>Преобразует временную метку в дату и обратно. Оставьте пустым для текущего времени.</value></data>
+  <data name="Tool_Timestamp_Aliases" xml:space="preserve"><value>временная метка, unix, эпоха, дата, время, конвертировать</value></data>
+  <data name="Tool_DateDiff_Name" xml:space="preserve"><value>Разница дат</value></data>
+  <data name="Tool_DateDiff_Desc" xml:space="preserve"><value>Время между двумя датами в годах, днях, неделях и рабочих днях. Одна дата сравнивается с сегодняшним днем.</value></data>
+  <data name="Tool_DateDiff_Aliases" xml:space="preserve"><value>дата, разница, возраст, дни, между, рабочие дни, календарь</value></data>
+  <data name="Tool_Duration_Name" xml:space="preserve"><value>Конвертер длительности</value></data>
+  <data name="Tool_Duration_Desc" xml:space="preserve"><value>Разбивает длительность и суммирует ее в каждой единице. Принимает «90000», «1д 2ч 30м», «1,5ч» или «2:30:00».</value></data>
+  <data name="Error_DurationUsage" xml:space="preserve"><value>Введите продолжительность, например «90000», «1д 2ч 30м» или «2:30:00».</value></data>
+  <data name="Tool_Duration_Aliases" xml:space="preserve"><value>продолжительность, секунды, минуты, часы, время, конвертировать</value></data>
+  <data name="Tool_Random_Name" xml:space="preserve"><value>Случайное число</value></data>
+  <data name="Tool_Random_Desc" xml:space="preserve"><value>Рисует число в диапазоне. Введите «1 100» или оставьте пустым для значений от 1 до 100.</value></data>
+  <data name="Tool_Random_Aliases" xml:space="preserve"><value>случайное число, число, розыгрыш, диапазон, кольцо</value></data>
+  <data name="Tool_Dice_Name" xml:space="preserve"><value>Бросок кубиков</value></data>
+  <data name="Tool_Dice_Desc" xml:space="preserve"><value>Бросает кубик в формате 2d6. Пустой бросает один шестигранный кубик.</value></data>
+  <data name="Tool_Dice_Aliases" xml:space="preserve"><value>кости, кубик, бросок, d20, ролевая игра, случайный</value></data>
+  <data name="Tool_Coin_Name" xml:space="preserve"><value>Подбрасывание монеты</value></data>
+  <data name="Tool_Coin_Desc" xml:space="preserve"><value>Орел или решка.</value></data>
+  <data name="Tool_Coin_Aliases" xml:space="preserve"><value>монета, подброс, бросок, орел, решка, случайный</value></data>
+  <data name="Tool_Pick_Name" xml:space="preserve"><value>Случайный выбор</value></data>
+  <data name="Tool_Pick_Desc" xml:space="preserve"><value>Случайным образом выбирает одну запись из вашего списка (по одной в строке или через запятую).</value></data>
+  <data name="Tool_Pick_Aliases" xml:space="preserve"><value>выбирать, рисовать, случайный, выбирать, лотерею, список</value></data>
+  <data name="Tool_Shuffle_Name" xml:space="preserve"><value>Перемешать список</value></data>
+  <data name="Tool_Shuffle_Desc" xml:space="preserve"><value>Помещает список в случайном порядке (по одному в строке или через запятую).</value></data>
+  <data name="Tool_Shuffle_Aliases" xml:space="preserve"><value>перемешивание, случайный порядок, команды, микс, список</value></data>
+  <data name="Tool_RandomColor_Name" xml:space="preserve"><value>Случайный цвет</value></data>
+  <data name="Tool_RandomColor_Desc" xml:space="preserve"><value>Генерирует случайный цвет в HEX, RGB и HSL.</value></data>
+  <data name="Tool_RandomColor_Aliases" xml:space="preserve"><value>случайный, цвет, цвет, шестигранник, палитра</value></data>
+  <data name="Tool_Naming_Name" xml:space="preserve"><value>Соглашения об именах</value></data>
+  <data name="Tool_Naming_Desc" xml:space="preserve"><value>Показывает идентификатор в CamelCase, PascalCase, Snake_case, Kebab-Case и CONSTANT_CASE.</value></data>
+  <data name="Tool_Naming_Aliases" xml:space="preserve"><value>именование, регистр, верблюд, паскаль, змея, кебаб, константа, идентификатор, переменная</value></data>
+  <data name="Tool_Slug_Name" xml:space="preserve"><value>Генератор слизней</value></data>
+  <data name="Tool_Slug_Desc" xml:space="preserve"><value>Превращает заголовок в URL-адрес: акценты сглаживаются, слова соединяются дефисами.</value></data>
+  <data name="Tool_Slug_Aliases" xml:space="preserve"><value>слаг, URL, постоянная ссылка, поисковая оптимизация, ссылка</value></data>
+  <data name="Tool_Deaccent_Name" xml:space="preserve"><value>Убрать акценты</value></data>
+  <data name="Tool_Deaccent_Desc" xml:space="preserve"><value>é становится e, ç становится c. Все остальное остается в покое.</value></data>
+  <data name="Tool_Deaccent_Aliases" xml:space="preserve"><value>акценты, диакритические знаки, ascii, нормализация, юникод</value></data>
+  <data name="Tool_Clean_Name" xml:space="preserve"><value>Очистить текст</value></data>
+  <data name="Tool_Clean_Desc" xml:space="preserve"><value>Сворачивает повторяющиеся пробелы, обрезает строки и удаляет пустые строки.</value></data>
+  <data name="Tool_Clean_Aliases" xml:space="preserve"><value>очистить, пробелы, пробелы, обрезать, вставить, привести в порядок, отформатировать</value></data>
+  <data name="Tool_SortLines_Name" xml:space="preserve"><value>Сортировать строки</value></data>
+  <data name="Tool_SortLines_Desc" xml:space="preserve"><value>Сортирует строки по алфавиту, используя правила языка интерфейса.</value></data>
+  <data name="Tool_SortLines_Aliases" xml:space="preserve"><value>сортировка, строки, по алфавиту, порядок, список</value></data>
+  <data name="Tool_SortByLength_Name" xml:space="preserve"><value>Сортировать строки по длине</value></data>
+  <data name="Tool_SortByLength_Desc" xml:space="preserve"><value>Сортирует строки от самых коротких до самых длинных.</value></data>
+  <data name="Tool_SortByLength_Aliases" xml:space="preserve"><value>сортировка, линии, длина, размер, порядок</value></data>
+  <data name="Tool_Dedupe_Name" xml:space="preserve"><value>Удалить повторяющиеся строки</value></data>
+  <data name="Tool_Dedupe_Desc" xml:space="preserve"><value>Сохраняет первое вхождение каждой строки и исходный порядок.</value></data>
+  <data name="Tool_Dedupe_Aliases" xml:space="preserve"><value>дубликат, дедупликация, уникальный, отдельный, линии</value></data>
+  <data name="Tool_Reverse_Name" xml:space="preserve"><value>Обратный текст</value></data>
+  <data name="Tool_Reverse_Desc" xml:space="preserve"><value>Переворачивает текст посимвольно, включая эмодзи и акценты.</value></data>
+  <data name="Tool_Reverse_Aliases" xml:space="preserve"><value>перевернуть, зеркало, назад, перевернуть</value></data>
+  <data name="Tool_ReverseLines_Name" xml:space="preserve"><value>Обратный порядок строк</value></data>
+  <data name="Tool_ReverseLines_Desc" xml:space="preserve"><value>Ставит последнюю строку первой.</value></data>
+  <data name="Tool_ReverseLines_Aliases" xml:space="preserve"><value>обратный ход, линии, порядок, переворот, инвертирование</value></data>
+  <data name="Tool_WordFrequency_Name" xml:space="preserve"><value>Частота слов</value></data>
+  <data name="Tool_WordFrequency_Desc" xml:space="preserve"><value>Подсчитывает, как часто встречается каждое слово, начиная с самого частого.</value></data>
+  <data name="Tool_WordFrequency_Aliases" xml:space="preserve"><value>частота, слова, количество, случаи, статистика</value></data>
+  <data name="Tool_FrenchTypography_Name" xml:space="preserve"><value>Французская типографика</value></data>
+  <data name="Tool_FrenchTypography_Desc" xml:space="preserve"><value>Добавляет неразрывные пробелы, необходимые для французской типографии перед ; : ! ? и внутри кавычек.</value></data>
+  <data name="Tool_FrenchTypography_Aliases" xml:space="preserve"><value>французский, типографика, пробелы, пунктуация, nbsp, кавычки</value></data>
+  <data name="Tool_Mask_Name" xml:space="preserve"><value>Анонимизировать текст</value></data>
+  <data name="Tool_Mask_Desc" xml:space="preserve"><value>Заменяет электронные письма, номера телефонов и длинные цифры заполнителями.</value></data>
+  <data name="Tool_Mask_Aliases" xml:space="preserve"><value>маска, анонимизировать, редактировать, конфиденциальность, GDPR, электронная почта, телефон</value></data>
+  <data name="Tool_Lorem_Name" xml:space="preserve"><value>Лорем Ипсум</value></data>
+  <data name="Tool_Lorem_Desc" xml:space="preserve"><value>Генерирует текст-заполнитель. Введите количество слов или «3p» для трех абзацев.</value></data>
+  <data name="Tool_Lorem_Aliases" xml:space="preserve"><value>lorem, ipsum, заполнитель, заполнитель, манекен, текст</value></data>
+  <data name="Tool_Morse_Name" xml:space="preserve"><value>Азбука Морзе</value></data>
+  <data name="Tool_Morse_Desc" xml:space="preserve"><value>Текст на языке Морзе и обратно, направление определяется автоматически.</value></data>
+  <data name="Tool_Morse_Aliases" xml:space="preserve"><value>азбука Морзе, телеграф, точки, тире, sos</value></data>
+  <data name="Tool_Diff_Name" xml:space="preserve"><value>Сравните два текста</value></data>
+  <data name="Tool_Diff_Desc" xml:space="preserve"><value>Построчные различия. Разделите два текста строкой, содержащей только ---</value></data>
+  <data name="Tool_Diff_Aliases" xml:space="preserve"><value>разница, сравнение, разница, изменения, слияние, исправление</value></data>
+  <data name="Tool_JsonEscape_Name" xml:space="preserve"><value>Побег JSON</value></data>
+  <data name="Tool_JsonEscape_Desc" xml:space="preserve"><value>Экранирует текст, чтобы его можно было вставить в строку JSON.</value></data>
+  <data name="Tool_JsonEscape_Aliases" xml:space="preserve"><value>json, escape, цитата, строка, обратная косая черта</value></data>
+  <data name="Tool_JsonUnescape_Name" xml:space="preserve"><value>JSON</value></data>
+  <data name="Tool_JsonUnescape_Desc" xml:space="preserve"><value>Превращает экранированную строку JSON обратно в обычный текст.</value></data>
+  <data name="Tool_JsonUnescape_Aliases" xml:space="preserve"><value>json, unescape, снять кавычки, декодировать, строку</value></data>
+  <data name="Tool_SqlEscape_Name" xml:space="preserve"><value>выход SQL</value></data>
+  <data name="Tool_SqlEscape_Desc" xml:space="preserve"><value>Заключает значение в кавычки как строковый литерал SQL. Не замена параметров.</value></data>
+  <data name="Tool_SqlEscape_Aliases" xml:space="preserve"><value>sql, escape, цитата, литерал, инъекция</value></data>
+  <data name="Tool_ShellEscape_Name" xml:space="preserve"><value>Побег из оболочки</value></data>
+  <data name="Tool_ShellEscape_Desc" xml:space="preserve"><value>Безопасно заключает значение в кавычки для командной строки оболочки POSIX.</value></data>
+  <data name="Tool_ShellEscape_Aliases" xml:space="preserve"><value>оболочка, escape, bash, цитата, команда, терминал</value></data>
+  <data name="Tool_Jwt_Name" xml:space="preserve"><value>JWT-декодер</value></data>
+  <data name="Tool_Jwt_Desc" xml:space="preserve"><value>Декодирует заголовок JWT и полезные данные локально и указывает их даты. Подпись не проверена.</value></data>
+  <data name="Tool_Jwt_Aliases" xml:space="preserve"><value>jwt, токен, Хосе, на предъявителя, аутентификация, декодирование</value></data>
+  <data name="Tool_Scientific_Name" xml:space="preserve"><value>Научное обозначение</value></data>
+  <data name="Tool_Scientific_Desc" xml:space="preserve"><value>Показывает число в простой, научной и инженерной форме.</value></data>
+  <data name="Tool_Scientific_Aliases" xml:space="preserve"><value>научное, обозначение, показатель степени, инженерное, с плавающей запятой, число</value></data>
+  <data name="Tool_XmlFormat_Name" xml:space="preserve"><value>форматировщик XML</value></data>
+  <data name="Tool_XmlFormat_Desc" xml:space="preserve"><value>Изменяет отступы XML.</value></data>
+  <data name="Tool_XmlFormat_Aliases" xml:space="preserve"><value>xml, формат, красивый, отступ, украшение</value></data>
+  <data name="Tool_XmlValidate_Name" xml:space="preserve"><value>XML-валидатор</value></data>
+  <data name="Tool_XmlValidate_Desc" xml:space="preserve"><value>Проверяет правильность формата XML и указывает на первую ошибку.</value></data>
+  <data name="Tool_XmlValidate_Aliases" xml:space="preserve"><value>xml, проверка, проверка, правильность формата, ошибка</value></data>
+  <data name="Tool_Regex_Name" xml:space="preserve"><value>Тестер регулярных выражений</value></data>
+  <data name="Tool_Regex_Desc" xml:space="preserve"><value>Первая строка — это шаблон, остальное — текст. Перечисляет все совпадения и группы захвата.</value></data>
+  <data name="Tool_Regex_Aliases" xml:space="preserve"><value>регулярное выражение, регулярное выражение, шаблон, совпадение, проверка, выражение</value></data>
+  <data name="Tool_QueryString_Name" xml:space="preserve"><value>Инспектор URL-запросов</value></data>
+  <data name="Tool_QueryString_Desc" xml:space="preserve"><value>Разбивает строку запроса URL-адреса на один читаемый параметр в каждой строке.</value></data>
+  <data name="Tool_QueryString_Aliases" xml:space="preserve"><value>URL, запрос, параметры, строка запроса, UTM, ссылка</value></data>
+  <data name="Tool_Crlf_Name" xml:space="preserve"><value>Конвертировать в CRLF</value></data>
+  <data name="Tool_Crlf_Desc" xml:space="preserve"><value>Окончания строк Windows.</value></data>
+  <data name="Tool_Crlf_Aliases" xml:space="preserve"><value>crlf, окончание строк, windows, eol, новая строка</value></data>
+  <data name="Tool_Lf_Name" xml:space="preserve"><value>Конвертировать в НЧ</value></data>
+  <data name="Tool_Lf_Desc" xml:space="preserve"><value>Окончания строк Unix.</value></data>
+  <data name="Tool_Lf_Aliases" xml:space="preserve"><value>lf, окончания строк, unix, linux, eol, новая строка</value></data>
+  <data name="Tool_PathConvert_Name" xml:space="preserve"><value>Конвертер пути</value></data>
+  <data name="Tool_PathConvert_Desc" xml:space="preserve"><value>Меняет местами разделители Windows и Unix, направление определяется автоматически.</value></data>
+  <data name="Tool_PathConvert_Aliases" xml:space="preserve"><value>путь, косая черта, обратная косая черта, windows, unix, конвертировать</value></data>
+  <data name="Tool_FilenameClean_Name" xml:space="preserve"><value>Очистить имя файла</value></data>
+  <data name="Tool_FilenameClean_Desc" xml:space="preserve"><value>Удаляет символы, запрещенные Windows, и избегает зарезервированных имен, таких как CON.</value></data>
+  <data name="Tool_FilenameClean_Aliases" xml:space="preserve"><value>имя файла, очистка, недействительный, символы, окна, файл</value></data>
+  <data name="Tool_Spell_Name" xml:space="preserve"><value>Число в слова</value></data>
+  <data name="Tool_Spell_Desc" xml:space="preserve"><value>Произносит число. Добавьте «fr» или «en», чтобы выбрать язык.</value></data>
+  <data name="Tool_Spell_Aliases" xml:space="preserve"><value>слова, заклинание, буквы, чек, чек, цифра, писать</value></data>
+  <data name="Tool_Percent_Name" xml:space="preserve"><value>Калькулятор процентов</value></data>
+  <data name="Tool_Percent_Desc" xml:space="preserve"><value>Введите два числа: дает X% от Y, соотношение и переход от одного к другому.</value></data>
+  <data name="Tool_Percent_Aliases" xml:space="preserve"><value>процент, процент, соотношение, изменение, увеличение, скидка, правило трех</value></data>
+  <data name="Tool_Fraction_Name" xml:space="preserve"><value>Конвертер дробей</value></data>
+  <data name="Tool_Fraction_Desc" xml:space="preserve"><value>Десятичная дробь до простейшей дроби и обратно.</value></data>
+  <data name="Tool_Fraction_Aliases" xml:space="preserve"><value>дробь, десятичная дробь, соотношение, упростить, преобразовать</value></data>
+  <data name="Tool_Factor_Name" xml:space="preserve"><value>Факторы, НОД и НОК</value></data>
+  <data name="Tool_Factor_Desc" xml:space="preserve"><value>Простая факторизация каждого числа плюс НОД и НОК, если вы дадите несколько.</value></data>
+  <data name="Tool_Factor_Aliases" xml:space="preserve"><value>множитель, простое число, НОД, НОК, делитель, факторизация</value></data>
+  <data name="Tool_Statistics_Name" xml:space="preserve"><value>Статистика</value></data>
+  <data name="Tool_Statistics_Desc" xml:space="preserve"><value>Подсчет, сумма, среднее, медиана, минимум, максимум, диапазон и стандартное отклонение списка.</value></data>
+  <data name="Tool_Statistics_Aliases" xml:space="preserve"><value>статистика, среднее, среднее, медиана, стандартное отклонение, отклонение, сумма, мин, максимум</value></data>
+  <data name="Tool_Sequence_Name" xml:space="preserve"><value>Генератор последовательностей</value></data>
+  <data name="Tool_Sequence_Desc" xml:space="preserve"><value>«фиб 10», «простые числа 20», «ариф 2 3 10» или «геом 2 3 10».</value></data>
+  <data name="Tool_Sequence_Aliases" xml:space="preserve"><value>последовательность, Фибоначчи, арифметика, геометрическая, простые числа, ряды</value></data>
+  <data name="Tool_Solve_Name" xml:space="preserve"><value>Решатель уравнений</value></data>
+  <data name="Tool_Solve_Desc" xml:space="preserve"><value>Решает ax² + bx + c = 0 из его коэффициентов. Два коэффициента решают ax + b = 0.</value></data>
+  <data name="Tool_Solve_Aliases" xml:space="preserve"><value>уравнение, решить, квадратное, корни, многочлен, алгебра</value></data>
+  <data name="Tool_Bmi_Name" xml:space="preserve"><value>Калькулятор ИМТ</value></data>
+  <data name="Tool_Bmi_Desc" xml:space="preserve"><value>Введите свой вес в кг и рост: «70 175».</value></data>
+  <data name="Tool_Bmi_Aliases" xml:space="preserve"><value>ИМТ, масса тела, вес, рост, здоровье</value></data>
+  <data name="Tool_Tip_Name" xml:space="preserve"><value>Калькулятор чаевых</value></data>
+  <data name="Tool_Tip_Desc" xml:space="preserve"><value>«48,50 15 3»: чаевые в размере 15% от суммы 48,50, разделенные между 3 людьми.</value></data>
+  <data name="Tool_Tip_Aliases" xml:space="preserve"><value>чаевые, чаевые, ресторан, счет, разделение, доля</value></data>
+  <data name="Tool_Loan_Name" xml:space="preserve"><value>Кредитный калькулятор</value></data>
+  <data name="Tool_Loan_Desc" xml:space="preserve"><value>«200000 3,5 25»: сумма, годовая ставка, годы. Указывает ежемесячный платеж и общую сумму процентов.</value></data>
+  <data name="Tool_Loan_Aliases" xml:space="preserve"><value>кредит, ипотека, ежемесячно, платеж, проценты, кредит, амортизация</value></data>
+  <data name="Tool_Subnet_Name" xml:space="preserve"><value>Калькулятор подсети</value></data>
+  <data name="Tool_Subnet_Desc" xml:space="preserve"><value>«192.168.1.10/24»: сеть, маска, широковещательная рассылка и используемый диапазон хостов.</value></data>
+  <data name="Tool_Subnet_Aliases" xml:space="preserve"><value>подсеть, cidr, ip, сеть, маска, широковещательная рассылка, маска сети</value></data>
+  <data name="Tool_FileHash_Name" xml:space="preserve"><value>Информация о файле и хеш</value></data>
+  <data name="Tool_FileHash_Desc" xml:space="preserve"><value>Размер, даты и SHA-256 файла. Перетащите файл в окно.</value></data>
+  <data name="Tool_FileHash_Aliases" xml:space="preserve"><value>файл, хэш, sha256, контрольная сумма, информация, свойства, размер, проверка</value></data>
+  <data name="Tool_FileCompare_Name" xml:space="preserve"><value>Сравнить два файла</value></data>
+  <data name="Tool_FileCompare_Desc" xml:space="preserve"><value>Эти два файла идентичны? Один путь на строку или отбросьте оба.</value></data>
+  <data name="Tool_FileCompare_Aliases" xml:space="preserve"><value>сравнение, файлы, идентичные, контрольная сумма, разница, дубликат</value></data>
+  <data name="Tool_Tree_Name" xml:space="preserve"><value>Дерево папок</value></data>
+  <data name="Tool_Tree_Desc" xml:space="preserve"><value>Дерево папок в виде текста, готового к вставке. Добавьте число, чтобы изменить глубину.</value></data>
+  <data name="Tool_Tree_Aliases" xml:space="preserve"><value>дерево, папка, каталог, структура, список, файл сведений</value></data>
+  <data name="Tool_FolderSize_Name" xml:space="preserve"><value>Размер папки</value></data>
+  <data name="Tool_FolderSize_Desc" xml:space="preserve"><value>Общий размер, самые большие файлы и типы файлов, занимающие место.</value></data>
+  <data name="Tool_FolderSize_Aliases" xml:space="preserve"><value>размер, папка, диск, пространство, использование, самый большой, большой</value></data>
+  <data name="Tool_Duplicates_Name" xml:space="preserve"><value>Найти дубликаты файлов</value></data>
+  <data name="Tool_Duplicates_Desc" xml:space="preserve"><value>Перечисляет идентичные файлы в папке. Ничего не удаляется.</value></data>
+  <data name="Tool_Duplicates_Aliases" xml:space="preserve"><value>дубликат, дубликаты, идентичные, копии, очистить, дисковое пространство</value></data>
+  <data name="Tool_FileSplit_Name" xml:space="preserve"><value>Разделить файл</value></data>
+  <data name="Tool_FileSplit_Desc" xml:space="preserve"><value>«путь 10 МБ» разрезает файл на пронумерованные части. Оригинал нетронут.</value></data>
+  <data name="Tool_FileSplit_Aliases" xml:space="preserve"><value>разделить, вырезать, части, куски, большой файл, перенести</value></data>
+  <data name="Tool_FileJoin_Name" xml:space="preserve"><value>Повторное присоединение к файлу</value></data>
+  <data name="Tool_FileJoin_Desc" xml:space="preserve"><value>Наведите курсор на любой файл .part, и рядом с ним будет восстановлен оригинал.</value></data>
+  <data name="Tool_FileJoin_Aliases" xml:space="preserve"><value>соединить, объединить, разделить, перестроить, объединить, разбить на части</value></data>
+  <data name="Tool_TestFile_Name" xml:space="preserve"><value>Генератор тестовых файлов</value></data>
+  <data name="Tool_TestFile_Desc" xml:space="preserve"><value>«путь 100 МБ» создает файл именно такого размера.</value></data>
+  <data name="Tool_TestFile_Aliases" xml:space="preserve"><value>тест, файл, создание, манекен, размер, загрузка, квота</value></data>
+  <data name="Tool_ImageInfo_Name" xml:space="preserve"><value>Размеры изображения</value></data>
+  <data name="Tool_ImageInfo_Desc" xml:space="preserve"><value>Формат, размер в пикселях, мегапикселях и соотношение сторон изображения. Перетащите файл в окно.</value></data>
+  <data name="Tool_ImageInfo_Aliases" xml:space="preserve"><value>изображение, размеры, размер, разрешение, пикселей, ширина, высота, мегапикселей, exif, png, jpeg</value></data>
+  <data name="Tool_AspectRatio_Name" xml:space="preserve"><value>Соотношение сторон</value></data>
+  <data name="Tool_AspectRatio_Desc" xml:space="preserve"><value>«1920x1080» дает соотношение 16:9; «16:9 1920» дает соответствующую высоту.</value></data>
+  <data name="Tool_AspectRatio_Aliases" xml:space="preserve"><value>соотношение сторон, соотношение сторон, 16:9, 4:3, разрешение, размеры, пропорции, экран</value></data>
+  <data name="Tool_Qr_Name" xml:space="preserve"><value>QR-код</value></data>
+  <data name="Tool_Qr_Desc" xml:space="preserve"><value>Превращает текст, URL-адрес или строку Wi-Fi в сканируемый QR-код.</value></data>
+  <data name="Tool_Qr_Aliases" xml:space="preserve"><value>qr, qrcode, код, штрих-код, URL, Wi-Fi, сканирование, ссылка</value></data>
+  <data name="Tool_Fancy_Name" xml:space="preserve"><value>Необычный текст</value></data>
+  <data name="Tool_Fancy_Desc" xml:space="preserve"><value>Превращает текст в жирный шрифт, курсив, шрифт и другие стили Unicode для социальных сетей.</value></data>
+  <data name="Tool_Fancy_Aliases" xml:space="preserve"><value>Фантазия, Юникод, шрифт, жирный, курсив, сценарий, фрактур, эстетика, инстаграм, твиттер</value></data>
+  <data name="Tool_CsvToJson_Name" xml:space="preserve"><value>CSV в JSON</value></data>
+  <data name="Tool_CsvToJson_Desc" xml:space="preserve"><value>Преобразует CSV (первая строка = заголовки) в массив объектов JSON.</value></data>
+  <data name="Tool_CsvToJson_Aliases" xml:space="preserve"><value>csv, json, конвертировать, данные, таблица, электронная таблица</value></data>
+  <data name="Tool_JsonToCsv_Name" xml:space="preserve"><value>JSON в CSV</value></data>
+  <data name="Tool_JsonToCsv_Desc" xml:space="preserve"><value>Преобразует массив объектов JSON в CSV.</value></data>
+  <data name="Tool_JsonToCsv_Aliases" xml:space="preserve"><value>json, csv, конвертировать, данные, таблица, электронная таблица, экспорт</value></data>
+  <data name="Tool_MarkdownToHtml_Name" xml:space="preserve"><value>Разметка в HTML</value></data>
+  <data name="Tool_MarkdownToHtml_Desc" xml:space="preserve"><value>Преобразует Markdown (заголовки, списки, ссылки, код, выделение) в HTML.</value></data>
+  <data name="Tool_MarkdownToHtml_Aliases" xml:space="preserve"><value>уценка, html, конвертировать, md, рендеринг, формат</value></data>
+  <data name="Tool_Cron_Name" xml:space="preserve"><value>Объяснитель Cron</value></data>
+  <data name="Tool_Cron_Desc" xml:space="preserve"><value>Описывает выражение cron простыми словами. Попробуйте «0 9 * * 1-5» или «@daily».</value></data>
+  <data name="Tool_Cron_Aliases" xml:space="preserve"><value>cron, crontab, расписание, выражение, объяснение, задание, таймер</value></data>
+  <data name="Tool_PasswordStrength_Name" xml:space="preserve"><value>Надежность пароля</value></data>
+  <data name="Tool_PasswordStrength_Desc" xml:space="preserve"><value>Оценивает энтропию пароля и время, необходимое для его взлома.</value></data>
+  <data name="Tool_PasswordStrength_Aliases" xml:space="preserve"><value>пароль, сила, энтропия, безопасность, взлом, проверка, безопасность</value></data>
+  <data name="Tool_WeekInfo_Name" xml:space="preserve"><value>Номер недели</value></data>
+  <data name="Tool_WeekInfo_Desc" xml:space="preserve"><value>Номер недели ISO, день года и квартал для даты (пусто = сегодня).</value></data>
+  <data name="Tool_WeekInfo_Aliases" xml:space="preserve"><value>неделя, ISO, число, день года, квартал, календарь, дата</value></data>
+  <data name="Tool_Calc_Name" xml:space="preserve"><value>Калькулятор</value></data>
+  <data name="Tool_Calc_Desc" xml:space="preserve"><value>Вычисляет математическое выражение: + - * / ^ %, круглые скобки, функции (sqrt, sin, log…) и константы (pi, e).</value></data>
+  <data name="Tool_Calc_Aliases" xml:space="preserve"><value>Calc, Калькулятор, Математика, выражение, оценить, вычислить, арифметика, научный</value></data>
+  <data name="Tool_Palette_Name" xml:space="preserve"><value>Цветовая палитра</value></data>
+  <data name="Tool_Palette_Desc" xml:space="preserve"><value>Генерирует гармоничные цвета (дополнительные, триадные, аналогичные...) из одного цвета.</value></data>
+  <data name="Tool_Palette_Aliases" xml:space="preserve"><value>палитра, цвет, цвет, гармония, дополнительный, триадный, аналогичный, схема, дизайн</value></data>
+  <data name="Tool_Contrast_Name" xml:space="preserve"><value>Проверка контрастности</value></data>
+  <data name="Tool_Contrast_Desc" xml:space="preserve"><value>Коэффициент контрастности WCAG между двумя цветами (по одному на строку) и уровни, которые он проходит.</value></data>
+  <data name="Tool_Contrast_Aliases" xml:space="preserve"><value>контраст, wcag, доступность, соотношение, a11y, цвет, цвет, разборчивый</value></data>
+  <data name="Tool_ColorTemp_Name" xml:space="preserve"><value>Цветовая температура</value></data>
+  <data name="Tool_ColorTemp_Desc" xml:space="preserve"><value>Преобразует температуру в Кельвинах в цвет белой точки (свеча 1900К, дневной свет 6500К).</value></data>
+  <data name="Tool_ColorTemp_Aliases" xml:space="preserve"><value>температура, Кельвин, цвет, цвет, баланс белого, тепло, прохладно, свет</value></data>
+  <data name="Tool_CssUnits_Name" xml:space="preserve"><value>Конвертер единиц измерения CSS</value></data>
+  <data name="Tool_CssUnits_Desc" xml:space="preserve"><value>Преобразует между px, rem, em и pt (при условии, что корень составляет 16 пикселей).</value></data>
+  <data name="Tool_CssUnits_Aliases" xml:space="preserve"><value>css, px, rem, em, pt, единица измерения, конвертировать, шрифт, размер, сеть</value></data>
+  <data name="Tool_Gradient_Name" xml:space="preserve"><value>CSS-градиент</value></data>
+  <data name="Tool_Gradient_Desc" xml:space="preserve"><value>Превращает два или более цвета в линейный градиент CSS. Добавьте угол, например 45 градусов.</value></data>
+  <data name="Tool_Gradient_Aliases" xml:space="preserve"><value>градиент, css, линейный, цвет, цвет, фон, деградировать, паутина</value></data>
+  <data name="Tool_Toc_Name" xml:space="preserve"><value>Оглавление</value></data>
+  <data name="Tool_Toc_Desc" xml:space="preserve"><value>Создает оглавление Markdown из заголовков с привязными ссылками.</value></data>
+  <data name="Tool_Toc_Aliases" xml:space="preserve"><value>содержание, оглавление, уценка, заголовки, структура, указатель, ссылки</value></data>
+  <data name="Tool_MarkdownTable_Name" xml:space="preserve"><value>Таблица уценки</value></data>
+  <data name="Tool_MarkdownTable_Desc" xml:space="preserve"><value>Превращает строки CSV или TSV в выровненную таблицу Markdown.</value></data>
+  <data name="Tool_MarkdownTable_Aliases" xml:space="preserve"><value>уценка, таблица, csv, tsv, конвертировать, сетка, формат</value></data>
+  <data name="Tool_Gitignore_Name" xml:space="preserve"><value>Генератор Gitignore</value></data>
+  <data name="Tool_Gitignore_Desc" xml:space="preserve"><value>Создает .gitignore из названий языков/инструментов (node, python, dotnet,rust…).</value></data>
+  <data name="Tool_Gitignore_Aliases" xml:space="preserve"><value>gitignore, git, игнорировать, шаблон, узел, python, dotnet, ржавчина, генерировать</value></data>
+  <data name="Tool_HexDump_Name" xml:space="preserve"><value>Шестнадцатеричный просмотрщик</value></data>
+  <data name="Tool_HexDump_Desc" xml:space="preserve"><value>Показывает файл или текст в виде шестнадцатеричного дампа: смещение, байты и печатный ASCII.</value></data>
+  <data name="Tool_HexDump_Aliases" xml:space="preserve"><value>шестнадцатеричный, дамп, шестнадцатеричный, просмотрщик, двоичный, байтовый, ascii, файл</value></data>
+  <data name="Tool_SpeedDistanceTime_Name" xml:space="preserve"><value>Скорость, расстояние, время</value></data>
+  <data name="Tool_SpeedDistanceTime_Desc" xml:space="preserve"><value>Дайте любые два значения скорости, расстояния и времени (с единицами измерения), чтобы получить третье. Попробуйте «100 км 2 часа».</value></data>
+  <data name="Tool_SpeedDistanceTime_Aliases" xml:space="preserve"><value>скорость, расстояние, время, скорость, путешествие, физика, мили в час, км/ч, калькулятор</value></data>
+  <data name="Tool_Combinatorics_Name" xml:space="preserve"><value>Комбинации и перестановки</value></data>
+  <data name="Tool_Combinatorics_Desc" xml:space="preserve"><value>«n k» дает C(n,k) и P(n,k); одно число дает!. Точно для любого размера.</value></data>
+  <data name="Tool_Combinatorics_Aliases" xml:space="preserve"><value>комбинаторика, комбинации, перестановки, факториал, ncr, npr, вероятность, выбрать</value></data>
+  <data name="Tool_TransferTime_Name" xml:space="preserve"><value>Время трансфера</value></data>
+  <data name="Tool_TransferTime_Desc" xml:space="preserve"><value>Сколько времени занимает файл при заданной пропускной способности. Попробуйте «5 ГБ 100 Мбит/с» (биты ≠ байты).</value></data>
+  <data name="Tool_TransferTime_Aliases" xml:space="preserve"><value>передача, загрузка, выгрузка, время, пропускная способность, скорость, Мбит/с, файл, сеть</value></data>
+  <data name="Tool_SqlFormat_Name" xml:space="preserve"><value>форматировщик SQL</value></data>
+  <data name="Tool_SqlFormat_Desc" xml:space="preserve"><value>Ключевые слова переводятся в верхний регистр и помещаются каждое предложение в отдельную строку, чтобы сделать запрос читабельным.</value></data>
+  <data name="Tool_SqlFormat_Aliases" xml:space="preserve"><value>sql, формат, украшение, запрос, красивый, отступ, выбор, база данных</value></data>
+  <data name="Tool_Zalgo_Name" xml:space="preserve"><value>Текст Залго</value></data>
+  <data name="Tool_Zalgo_Desc" xml:space="preserve"><value>Стеки объединяют метки в тексте для создания глючного вида «залго».</value></data>
+  <data name="Tool_Zalgo_Aliases" xml:space="preserve"><value>zalgo, глюк, проклятый, жуткий, объединение, юникод, коррумпированный</value></data>
+  <data name="Tool_ShoeSize_Name" xml:space="preserve"><value>Конвертер размеров обуви</value></data>
+  <data name="Tool_ShoeSize_Desc" xml:space="preserve"><value>Преобразует размер обуви между ЕС, Великобританией, США и см. Добавьте «w» для женщин, «cm»/«uk»/«us» для системы ввода.</value></data>
+  <data name="Tool_ShoeSize_Aliases" xml:space="preserve"><value>башмак, размер, ЕС, Великобритания, США, см, конвертировать, обувь, одежда</value></data>
+  <data name="Tool_Zip_Name" xml:space="preserve"><value>Архивировать</value></data>
+  <data name="Tool_Zip_Desc" xml:space="preserve"><value>Сжимает файл или папку в архив рядом с ним (zip, tar, tar.gz, tar.bz2, 7z).</value></data>
+  <data name="Tool_Zip_Aliases" xml:space="preserve"><value>zip, сжатие, архив, архиватор, папка, пакет, nanazip, 7zip</value></data>
+  <data name="Tool_Unzip_Name" xml:space="preserve"><value>Извлечь архив</value></data>
+  <data name="Tool_Unzip_Desc" xml:space="preserve"><value>Извлекает .zip, .7z, .rar, .tar, .gz и другие файлы в папку. Скиньте архив на окно.</value></data>
+  <data name="Tool_Unzip_Aliases" xml:space="preserve"><value>разархивировать, извлечь, заархивировать, распаковать, zip, 7z, rar, tar, gzip, nanazip</value></data>
+  <data name="Tool_ColorBlind_Name" xml:space="preserve"><value>Симулятор дальтонизма</value></data>
+  <data name="Tool_ColorBlind_Desc" xml:space="preserve"><value>Показывает, как цвет выглядит при распространённых типах дальтонизма.</value></data>
+  <data name="Tool_ColorBlind_Aliases" xml:space="preserve"><value>дальтоник, дальтоник, CVD, протанопия, дейтеранопия, тританопия, доступность, a11y, цвет, цвет</value></data>
+  <data name="Tool_Barcode_Name" xml:space="preserve"><value>Штрих-код (Код 128)</value></data>
+  <data name="Tool_Barcode_Desc" xml:space="preserve"><value>Генерирует штрих-код Code 128 из текста или цифр.</value></data>
+  <data name="Tool_Barcode_Aliases" xml:space="preserve"><value>штрих-код, код 128, код 128, сканирование, ean, upc, этикетка</value></data>
+  <data name="Tool_Exif_Name" xml:space="preserve"><value>EXIF/метаданные</value></data>
+  <data name="Tool_Exif_Desc" xml:space="preserve"><value>Считывает камеру, объектив, экспозицию и дату из файла JPEG. Поместите фотографию на окно.</value></data>
+  <data name="Tool_Exif_Aliases" xml:space="preserve"><value>exif, метаданные, фотография, камера, jpeg, изображение, GPS, IPTC, свойства</value></data>
+  <data name="Tool_PdfMerge_Name" xml:space="preserve"><value>Объединить PDF-файлы</value></data>
+  <data name="Tool_PdfMerge_Desc" xml:space="preserve"><value>Объединяет несколько PDF-файлов в один merged.pdf. Один путь в строке по порядку.</value></data>
+  <data name="Tool_PdfMerge_Aliases" xml:space="preserve"><value>pdf, объединить, объединить, объединить, объединить, документ</value></data>
+  <data name="Tool_PdfSplit_Name" xml:space="preserve"><value>Разделить PDF</value></data>
+  <data name="Tool_PdfSplit_Desc" xml:space="preserve"><value>Разбивает PDF-файл на один файл на каждой странице рядом с ним. Перетащите PDF-файл в окно.</value></data>
+  <data name="Tool_PdfSplit_Aliases" xml:space="preserve"><value>pdf, разделение, отдельные страницы, экстракт, документ</value></data>
+  <data name="Tool_Currency_Name" xml:space="preserve"><value>Конвертер валют</value></data>
+  <data name="Tool_Currency_Desc" xml:space="preserve"><value>Конвертирует валюты с использованием текущих курсов (кэшируется; работает в автономном режиме по последним известным курсам).</value></data>
+  <data name="Tool_Currency_Aliases" xml:space="preserve"><value>валюта, обмен, деньги, конвертировать, форекс, доллары США, евро, курс, онлайн</value></data>
+  <data name="Tool_JsonToYaml_Name" xml:space="preserve"><value>JSON → YAML</value></data>
+  <data name="Tool_JsonToYaml_Desc" xml:space="preserve"><value>Преобразует JSON в YAML (блочный стиль).</value></data>
+  <data name="Tool_JsonToYaml_Aliases" xml:space="preserve"><value>yaml, yml, json, конвертировать, настроить, сериализовать</value></data>
+  <data name="Tool_CssMinify_Name" xml:space="preserve"><value>CSS минимизировать</value></data>
+  <data name="Tool_CssMinify_Desc" xml:space="preserve"><value>Удаляет комментарии и пробелы для сжатия CSS.</value></data>
+  <data name="Tool_CssMinify_Aliases" xml:space="preserve"><value>css, минимизировать, сжать, минификатор, пробелы, сжать, таблицу стилей</value></data>
+  <data name="Tool_SysInfo_Name" xml:space="preserve"><value>Информация о системе</value></data>
+  <data name="Tool_SysInfo_Desc" xml:space="preserve"><value>Показывает сведения об ОС, процессоре, памяти и диске этого компьютера.</value></data>
+  <data name="Tool_SysInfo_Aliases" xml:space="preserve"><value>система, информация, аппаратное обеспечение, процессор, оперативная память, память, диск, ОС, машина, характеристики</value></data>
+  <data name="Tool_Timezone_Name" xml:space="preserve"><value>Конвертер часовых поясов</value></data>
+  <data name="Tool_Timezone_Desc" xml:space="preserve"><value>Показывает время в разных зонах, например. «14:30 Париж, Токио» или «сейчас Нью-Йорк, Лондон».</value></data>
+  <data name="Tool_Timezone_Aliases" xml:space="preserve"><value>часовой пояс, часовой пояс, tz, utc, gmt, часы, мировое время, города, конвертировать время</value></data>
+  <data name="Tool_Cards_Name" xml:space="preserve"><value>Вытягивать карты</value></data>
+  <data name="Tool_Cards_Desc" xml:space="preserve"><value>Вытягивает случайные карты из перетасованной колоды из 52 карт.</value></data>
+  <data name="Tool_Cards_Aliases" xml:space="preserve"><value>карта, карты, колода, розыгрыш, покер, игральные карты, случайный</value></data>
+  <data name="Tool_Teams_Name" xml:space="preserve"><value>Разделитель команды</value></data>
+  <data name="Tool_Teams_Desc" xml:space="preserve"><value>Разбивает список имен на случайные сбалансированные команды, например. «3; Алиса, Боб, ...».</value></data>
+  <data name="Tool_Teams_Aliases" xml:space="preserve"><value>команда, команды, разделить, группы, случайные, нарисовать, разделить, рассортировать по</value></data>
+  <data name="Teams_Label" xml:space="preserve"><value>Команда {0}</value></data>
+  <data name="Error_TimezoneUsage" xml:space="preserve"><value>Введите время и одну или несколько зон, например. «14:30 Париж Токио».</value></data>
+  <data name="Error_UnknownZone" xml:space="preserve"><value>Неизвестный часовой пояс: {0}</value></data>
+  <data name="Error_EmptyInput" xml:space="preserve"><value>Нечего обрабатывать.</value></data>
+  <data name="Percent_A" xml:space="preserve"><value>Значение (А)</value></data>
+  <data name="Percent_B" xml:space="preserve"><value>База (Б)</value></data>
+  <data name="Fraction_Value" xml:space="preserve"><value>Десятичный</value></data>
+  <data name="Solve_A" xml:space="preserve"><value>а (х²)</value></data>
+  <data name="Solve_B" xml:space="preserve"><value>б (х)</value></data>
+  <data name="Solve_C" xml:space="preserve"><value>с</value></data>
+  <data name="Duration_All" xml:space="preserve"><value>В каждом отделении</value></data>
+  <data name="Clock_Title" xml:space="preserve"><value>Часы</value></data>
+  <data name="Audio_Title" xml:space="preserve"><value>Тест аудиоканала</value></data>
+  <data name="Audio_Subtitle" xml:space="preserve"><value>Включите звуковой сигнал на каждом канале, чтобы убедиться, что динамики или наушники находятся с правой стороны.</value></data>
+  <data name="Audio_Left" xml:space="preserve"><value>Левый</value></data>
+  <data name="Audio_Right" xml:space="preserve"><value>Верно</value></data>
+  <data name="Audio_Both" xml:space="preserve"><value>Оба канала</value></data>
+  <data name="Audio_PlayingLeft" xml:space="preserve"><value>♪ Воспроизведение левого канала</value></data>
+  <data name="Audio_PlayingRight" xml:space="preserve"><value>♪ Воспроизведение правого канала</value></data>
+  <data name="Audio_PlayingBoth" xml:space="preserve"><value>♪ Воспроизведение обоих каналов</value></data>
+  <data name="Notepad_New" xml:space="preserve"><value>Новый</value></data>
+  <data name="Notepad_Open" xml:space="preserve"><value>Открыть</value></data>
+  <data name="Notepad_SaveAs" xml:space="preserve"><value>Сохранить как</value></data>
+  <data name="Notepad_Wrap" xml:space="preserve"><value>перенос слов</value></data>
+  <data name="Notepad_ZoomIn" xml:space="preserve"><value>Увеличить масштаб</value></data>
+  <data name="Notepad_ZoomOut" xml:space="preserve"><value>Уменьшить масштаб</value></data>
+  <data name="Notepad_Position" xml:space="preserve"><value>пер {0}, полк {1}</value></data>
+  <data name="Notepad_Counts" xml:space="preserve"><value>{0} символов · {1} слов</value></data>
+  <data name="Notepad_Opened" xml:space="preserve"><value>Открыт {0}</value></data>
+  <data name="Notepad_SavedTo" xml:space="preserve"><value>Сохранено в {0}.</value></data>
+  <data name="Settings_UsageHeader" xml:space="preserve"><value>Использование</value></data>
+  <data name="Settings_UsageTotal" xml:space="preserve"><value>{0} использует инструменты {1} — наиболее часто используемые:</value></data>
+  <data name="Settings_UsageReset" xml:space="preserve"><value>Сбросить статистику</value></data>
+  <data name="Settings_UsageEmpty" xml:space="preserve"><value>Еще ничего не использовалось — откройте несколько инструментов и проверьте снова.</value></data>
+  <data name="Stats_Header" xml:space="preserve"><value>{0} использует инструменты {1}:</value></data>
+  <data name="Stats_Empty" xml:space="preserve"><value>Использование еще не зарегистрировано.</value></data>
+  <data name="Stats_Reset" xml:space="preserve"><value>Сброс статистики использования.</value></data>
+  <data name="Cards_Count" xml:space="preserve"><value>Сколько</value></data>
+  <data name="Cards_Deal" xml:space="preserve"><value>Сделка</value></data>
+  <data name="RandomColor_New" xml:space="preserve"><value>Рандомизировать</value></data>
+  <data name="SysInfo_Refresh" xml:space="preserve"><value>Обновить</value></data>
+  <data name="Sdt_Hint" xml:space="preserve"><value>Заполните любые два — третье оставьте пустым, чтобы решить его.</value></data>
+  <data name="Roman_ToRoman" xml:space="preserve"><value>Число → Римское</value></data>
+  <data name="Roman_ToArabic" xml:space="preserve"><value>Роман → число</value></data>
+  <data name="Tz_In" xml:space="preserve"><value>в</value></data>
+  <data name="Tz_Now" xml:space="preserve"><value>Сейчас</value></data>
+  <data name="Clicker_Title" xml:space="preserve"><value>Счетчик подсчета</value></data>
+  <data name="Clicker_Reset" xml:space="preserve"><value>Сброс</value></data>
+  <data name="Wheel_Title" xml:space="preserve"><value>Колесо фортуны</value></data>
+  <data name="Wheel_EntriesLabel" xml:space="preserve"><value>Опции (по одному в строке)</value></data>
+  <data name="Wheel_Spin" xml:space="preserve"><value>Вращение</value></data>
+  <data name="Wheel_Sample" xml:space="preserve"><value>Пицца
+Суши
+Тако
+Салат
+Бургер
+Рамен</value></data>
+  <data name="Wheel_Winner" xml:space="preserve"><value>🎉 {0}</value></data>
+  <data name="Favicon_Title" xml:space="preserve"><value>Генератор фавиконов</value></data>
+  <data name="Favicon_Subtitle" xml:space="preserve"><value>Превращает изображение в значок .ico разного размера.</value></data>
+  <data name="Favicon_DropHint" xml:space="preserve"><value>Перетащите сюда изображение (лучше всего подойдет квадратный логотип)</value></data>
+  <data name="Favicon_Sizes" xml:space="preserve"><value>Размеры: {0} пикселей</value></data>
+  <data name="Favicon_Save" xml:space="preserve"><value>Сохранить .ico</value></data>
+  <data name="Favicon_Saved" xml:space="preserve"><value>Сохранено {0}</value></data>
+  <data name="Watermark_Title" xml:space="preserve"><value>Водяной знак</value></data>
+  <data name="Watermark_Subtitle" xml:space="preserve"><value>Накладывает текст на изображение. Вывод ограничен 2048 пикселями по длинной стороне.</value></data>
+  <data name="Watermark_DropHint" xml:space="preserve"><value>Перетащите изображение сюда</value></data>
+  <data name="Watermark_Text" xml:space="preserve"><value>Текст водяного знака</value></data>
+  <data name="Watermark_Position" xml:space="preserve"><value>Позиция</value></data>
+  <data name="Watermark_Opacity" xml:space="preserve"><value>Непрозрачность</value></data>
+  <data name="Watermark_Save" xml:space="preserve"><value>Сохранить PNG</value></data>
+  <data name="Watermark_Saved" xml:space="preserve"><value>Сохранено {0}</value></data>
+  <data name="Watermark_Sample" xml:space="preserve"><value>© КРАЭТ</value></data>
+  <data name="Watermark_BottomRight" xml:space="preserve"><value>Внизу справа</value></data>
+  <data name="Watermark_BottomLeft" xml:space="preserve"><value>Внизу слева</value></data>
+  <data name="Watermark_TopRight" xml:space="preserve"><value>Вверху справа</value></data>
+  <data name="Watermark_TopLeft" xml:space="preserve"><value>Вверху слева</value></data>
+  <data name="Watermark_Center" xml:space="preserve"><value>Центр</value></data>
+  <data name="Tool_UrlParse_Name" xml:space="preserve"><value>URL-парсер</value></data>
+  <data name="Tool_UrlParse_Desc" xml:space="preserve"><value>Разбейте URL-адрес на схему, хост, путь и параметры запроса.</value></data>
+  <data name="Tool_UrlParse_Aliases" xml:space="preserve"><value>URL, синтаксический анализ, запрос, URI, ссылка</value></data>
+  <data name="Error_UrlUsage" xml:space="preserve"><value>Укажите действительный абсолютный URL-адрес.</value></data>
+  <data name="Tool_Chmod_Name" xml:space="preserve"><value>Калькулятор Chmod</value></data>
+  <data name="Tool_Chmod_Desc" xml:space="preserve"><value>Преобразуйте номера разрешений Unix (755) в строки (rwxr-xr-x) и наоборот.</value></data>
+  <data name="Tool_Chmod_Aliases" xml:space="preserve"><value>chmod, разрешения, unix, rwx</value></data>
+  <data name="Error_ChmodUsage" xml:space="preserve"><value>Укажите восьмеричное число из 3 или 4 цифр (например, 755) или строку из 9 символов (например, rwxr-xr-x).</value></data>
+  <data name="Tool_HttpStatus_Name" xml:space="preserve"><value>Код состояния HTTP</value></data>
+  <data name="Tool_HttpStatus_Desc" xml:space="preserve"><value>Найдите официальное название кода состояния HTTP.</value></data>
+  <data name="Tool_HttpStatus_Aliases" xml:space="preserve"><value>http, статус, код, ошибка</value></data>
+  <data name="Error_HttpStatusUsage" xml:space="preserve"><value>Укажите действительный числовой код состояния HTTP.</value></data>
+  <data name="HttpStatus_Unknown" xml:space="preserve"><value>Неизвестный код состояния HTTP</value></data>
+  <data name="Weather_Title" xml:space="preserve"><value>Weather</value></data>
+  <data name="Tool_PortLookup_Name" xml:space="preserve"><value>Port Lookup</value></data>
+  <data name="Tool_PortLookup_Desc" xml:space="preserve"><value>Search for default port assignments.</value></data>
+  <data name="Tool_PortLookup_Aliases" xml:space="preserve"><value>port, network</value></data>
+  <data name="Tool_MimeType_Name" xml:space="preserve"><value>MIME Types</value></data>
+  <data name="Tool_MimeType_Desc" xml:space="preserve"><value>Look up MIME types by extension.</value></data>
+  <data name="Tool_MimeType_Aliases" xml:space="preserve"><value>mime, content-type, extension</value></data>
+  <data name="Tool_DnsLookup_Name" xml:space="preserve"><value>DNS Lookup</value></data>
+  <data name="Tool_DnsLookup_Desc" xml:space="preserve"><value>Resolve domains to IP addresses.</value></data>
+  <data name="Tool_DnsLookup_Aliases" xml:space="preserve"><value>dns, ip, resolve</value></data>
+  <data name="Tool_CurlToCode_Name" xml:space="preserve"><value>Curl to Code</value></data>
+  <data name="Tool_CurlToCode_Desc" xml:space="preserve"><value>Convert a curl command into C# code.</value></data>
+  <data name="Tool_CurlToCode_Aliases" xml:space="preserve"><value>curl, csharp, code</value></data>
+  <data name="Tool_EnvVars_Name" xml:space="preserve"><value>Environment Variables</value></data>
+  <data name="Tool_EnvVars_Desc" xml:space="preserve"><value>List all environment variables.</value></data>
+  <data name="Tool_EnvVars_Aliases" xml:space="preserve"><value>env, variables</value></data>
+  <data name="Tool_Inspector_Name" xml:space="preserve"><value>Text Inspector</value></data>
+  <data name="Tool_Inspector_Desc" xml:space="preserve"><value>Analyze text characters, bytes, and unicode.</value></data>
+  <data name="Tool_Inspector_Aliases" xml:space="preserve"><value>inspect, chars, bytes, hex</value></data>
+  <data name="Tool_CaseConverter_Name" xml:space="preserve"><value>Case Converter</value></data>
+  <data name="Tool_CaseConverter_Desc" xml:space="preserve"><value>Convert text case (camel, snake, pascal, etc).</value></data>
+  <data name="Tool_CaseConverter_Aliases" xml:space="preserve"><value>case, camel, snake, kebab</value></data>
+  <data name="Snake_Title" xml:space="preserve"><value>Snake</value></data>
+  <data name="Game2048_Title" xml:space="preserve"><value>2048</value></data>
+  <data name="Tetris_Title" xml:space="preserve"><value>Tetris</value></data>
+  <data name="StripMetadata_Title" xml:space="preserve"><value>Удалить метаданные изображения</value></data>
+  <data name="ImageMetadata_Success" xml:space="preserve"><value>Метаданные удалены. Сохранено в: {0}</value></data>
+  <data name="Error_StripMetadataUsage" xml:space="preserve"><value>Использование: krate stripmetadata &quot;вход.jpg&quot; | &quot;выход.jpg&quot;</value></data>
+  <data name="Tool_Rename_Name" xml:space="preserve"><value>Массовое переименование</value></data>
+  <data name="Tool_Rename_Desc" xml:space="preserve"><value>Находит и заменяет текст в каждом имени файла в папке. Показывает предпросмотр; добавьте «apply», чтобы применить.</value></data>
+  <data name="Tool_Rename_Aliases" xml:space="preserve"><value>переименовать, массовое, пакетное, имя файла, заменить, файлы</value></data>
+  <data name="Tool_StripMetadata_Name" xml:space="preserve"><value>Удалить метаданные</value></data>
+  <data name="Tool_StripMetadata_Desc" xml:space="preserve"><value>Записывает копию изображения без EXIF, GPS и любых других метаданных.</value></data>
+  <data name="Tool_StripMetadata_Aliases" xml:space="preserve"><value>удалить, метаданные, exif, gps, приватность, очистить, анонимизировать</value></data>
+  <data name="Tool_Weather_Name" xml:space="preserve"><value>Погода</value></data>
+  <data name="Tool_Weather_Desc" xml:space="preserve"><value>Текущие условия для любого города. Единственный инструмент, которому нужен интернет.</value></data>
+  <data name="Tool_Weather_Aliases" xml:space="preserve"><value>погода, прогноз, температура, дождь, ветер, город</value></data>
+  <data name="Tool_Snake_Name" xml:space="preserve"><value>Змейка</value></data>
+  <data name="Tool_Snake_Desc" xml:space="preserve"><value>Классическая игра «Змейка». Управляйте стрелками и не кусайте себя.</value></data>
+  <data name="Tool_Snake_Aliases" xml:space="preserve"><value>змейка, snake, игра, играть, аркада, ретро</value></data>
+  <data name="Tool_Game2048_Name" xml:space="preserve"><value>2048</value></data>
+  <data name="Tool_Game2048_Desc" xml:space="preserve"><value>Двигайте плитки, объединяйте одинаковые числа, дойдите до 2048.</value></data>
+  <data name="Tool_Game2048_Aliases" xml:space="preserve"><value>2048, игра, играть, головоломка, плитки, числа</value></data>
+  <data name="Tool_Tetris_Name" xml:space="preserve"><value>Тетрис</value></data>
+  <data name="Tool_Tetris_Desc" xml:space="preserve"><value>Складывайте падающие блоки и убирайте заполненные линии.</value></data>
+  <data name="Tool_Tetris_Aliases" xml:space="preserve"><value>тетрис, tetris, игра, играть, блоки, головоломка, аркада</value></data>
+  <data name="Cli_ClickerTitle" xml:space="preserve"><value>Терминальный счётчик</value></data>
+  <data name="Cli_ClickerHelp" xml:space="preserve"><value>ПРОБЕЛ увеличивает, BACKSPACE уменьшает, R сбрасывает, ESC выходит.</value></data>
+  <data name="Error_FileNotFound" xml:space="preserve"><value>Файл не найден: {0}</value></data>
+  <data name="Error_General" xml:space="preserve"><value>Ошибка: {0}</value></data>
+  <data name="Error_SevenZipMissing" xml:space="preserve"><value>Библиотека 7-Zip не найдена по пути {0}. Используйте zip, tar, tar.gz или tar.bz2.</value></data>
+  <data name="Error_BadBase64" xml:space="preserve"><value>Это не корректный текст Base64.</value></data>
+</root>

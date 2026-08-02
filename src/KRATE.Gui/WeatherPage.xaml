@@ -1,0 +1,63 @@
+<UserControl
+    x:Class="Krate.Gui.WeatherPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Padding="20" RowSpacing="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Weather" Style="{StaticResource TitleTextBlockStyle}" />
+            <TextBlock Text="Check current weather conditions" Opacity="0.7" />
+        </StackPanel>
+
+        <Grid Grid.Row="1" ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="CityInput" PlaceholderText="Enter city (e.g., Paris, Tokyo)" KeyDown="OnKeyDown" />
+            <Button Grid.Column="1" Click="OnSearch" Content="Search" Style="{StaticResource AccentButtonStyle}" />
+        </Grid>
+        
+        <ProgressRing x:Name="Loading" Grid.Row="2" IsActive="False" Visibility="Collapsed" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock x:Name="ErrorOutput" Grid.Row="2" Foreground="{ThemeResource SystemFillColorCriticalBrush}" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+
+        <Border x:Name="ResultCard" Grid.Row="2" Visibility="Collapsed" Padding="30" CornerRadius="12" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Spacing="16" HorizontalAlignment="Center">
+                <TextBlock x:Name="LocName" Style="{StaticResource SubtitleTextBlockStyle}" HorizontalAlignment="Center" Opacity="0.8" />
+                
+                <StackPanel Orientation="Horizontal" Spacing="20" HorizontalAlignment="Center">
+                    <TextBlock x:Name="WxIcon" FontSize="64" FontFamily="Segoe UI Emoji" VerticalAlignment="Center" />
+                    <TextBlock x:Name="WxTemp" FontSize="56" FontWeight="SemiBold" VerticalAlignment="Center" />
+                </StackPanel>
+                
+                <TextBlock x:Name="WxDesc" Style="{StaticResource BodyStrongTextBlockStyle}" HorizontalAlignment="Center" FontSize="18" />
+                
+                <Grid ColumnSpacing="40" RowSpacing="10" Margin="0,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Feels like" Opacity="0.6" HorizontalAlignment="Center" />
+                    <TextBlock x:Name="WxApparent" Grid.Row="1" Grid.Column="0" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                    
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="Humidity" Opacity="0.6" HorizontalAlignment="Center" />
+                    <TextBlock x:Name="WxHumid" Grid.Row="1" Grid.Column="1" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                    
+                    <TextBlock Grid.Row="0" Grid.Column="2" Text="Wind" Opacity="0.6" HorizontalAlignment="Center" />
+                    <TextBlock x:Name="WxWind" Grid.Row="1" Grid.Column="2" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

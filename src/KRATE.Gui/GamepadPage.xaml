@@ -1,0 +1,176 @@
+<UserControl
+    x:Class="Krate.Gui.GamepadPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Loaded="OnLoaded" Unloaded="OnUnloaded">
+
+    <UserControl.Resources>
+        <Style x:Key="Chip" TargetType="Border">
+            <Setter Property="Width" Value="46" />
+            <Setter Property="Height" Value="46" />
+            <Setter Property="CornerRadius" Value="23" />
+            <Setter Property="BorderThickness" Value="2" />
+            <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
+            <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
+        </Style>
+        <Style x:Key="Pill" TargetType="Border">
+            <Setter Property="Height" Value="30" />
+            <Setter Property="MinWidth" Value="52" />
+            <Setter Property="CornerRadius" Value="15" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Padding" Value="10,0" />
+            <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
+            <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
+        </Style>
+    </UserControl.Resources>
+
+    <ScrollViewer>
+        <StackPanel Padding="24" Spacing="16" MaxWidth="640" HorizontalAlignment="Center">
+            <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+            <TextBlock x:Name="Status" Opacity="0.8" TextWrapping="Wrap" />
+
+            <!-- ===== XInput (Xbox) layout ===== -->
+            <Grid x:Name="XboxPanel" ColumnSpacing="40" RowSpacing="14" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Grid.Column="0" Spacing="4">
+                    <TextBlock x:Name="LtLabel" FontSize="12" />
+                    <ProgressBar x:Name="TrigL" Maximum="100" Width="200" />
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1" Spacing="4">
+                    <TextBlock x:Name="RtLabel" FontSize="12" />
+                    <ProgressBar x:Name="TrigR" Maximum="100" Width="200" />
+                </StackPanel>
+
+                <Border Grid.Row="1" Grid.Column="0" x:Name="BtnLB" Style="{StaticResource Pill}" HorizontalAlignment="Left">
+                    <TextBlock Text="LB" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+                <Border Grid.Row="1" Grid.Column="1" x:Name="BtnRB" Style="{StaticResource Pill}" HorizontalAlignment="Right">
+                    <TextBlock Text="RB" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+
+                <StackPanel Grid.Row="2" Grid.Column="0" Spacing="14" HorizontalAlignment="Center">
+                    <Border Width="130" Height="130" CornerRadius="65" BorderThickness="1"
+                            BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                            Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                        <Canvas x:Name="StickL">
+                            <Ellipse x:Name="DotL" Width="26" Height="26" Fill="{ThemeResource AccentFillColorDefaultBrush}" />
+                        </Canvas>
+                    </Border>
+                    <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Center">
+                        <Border x:Name="BtnView" Style="{StaticResource Pill}"><TextBlock Text="⧉" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border x:Name="BtnMenu" Style="{StaticResource Pill}"><TextBlock Text="≡" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                    </StackPanel>
+                    <Grid ColumnSpacing="6" RowSpacing="6" HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                        <Border Grid.Row="0" Grid.Column="1" x:Name="BtnUp" Style="{StaticResource Chip}"><TextBlock Text="↑" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="1" Grid.Column="0" x:Name="BtnLeft" Style="{StaticResource Chip}"><TextBlock Text="←" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="1" Grid.Column="2" x:Name="BtnRight" Style="{StaticResource Chip}"><TextBlock Text="→" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="2" Grid.Column="1" x:Name="BtnDown" Style="{StaticResource Chip}"><TextBlock Text="↓" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                    </Grid>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="1" Spacing="14" HorizontalAlignment="Center">
+                    <Grid ColumnSpacing="6" RowSpacing="6" HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                        <Border Grid.Row="0" Grid.Column="1" x:Name="BtnY" Style="{StaticResource Chip}" BorderBrush="#E3B11E"><TextBlock Text="Y" Foreground="#E3B11E" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="1" Grid.Column="0" x:Name="BtnX" Style="{StaticResource Chip}" BorderBrush="#2E6DB4"><TextBlock Text="X" Foreground="#2E6DB4" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="1" Grid.Column="2" x:Name="BtnB" Style="{StaticResource Chip}" BorderBrush="#D14A3F"><TextBlock Text="B" Foreground="#D14A3F" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="2" Grid.Column="1" x:Name="BtnA" Style="{StaticResource Chip}" BorderBrush="#6CB33F"><TextBlock Text="A" Foreground="#6CB33F" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                    </Grid>
+                    <Border Width="130" Height="130" CornerRadius="65" BorderThickness="1"
+                            BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                            Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                        <Canvas x:Name="StickR">
+                            <Ellipse x:Name="DotR" Width="26" Height="26" Fill="{ThemeResource AccentFillColorDefaultBrush}" />
+                        </Canvas>
+                    </Border>
+                    <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Center">
+                        <Border x:Name="BtnLS" Style="{StaticResource Pill}"><TextBlock Text="LS" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border x:Name="BtnRS" Style="{StaticResource Pill}"><TextBlock Text="RS" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+
+            <!-- ===== DirectInput / HID (generic) controller layout ===== -->
+            <Grid x:Name="GenericPanel" ColumnSpacing="40" RowSpacing="14" HorizontalAlignment="Center" Visibility="Collapsed">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.ColumnSpan="2" x:Name="GenName" FontWeight="SemiBold" HorizontalAlignment="Center" />
+
+                <!-- Triggers (L2/R2) -->
+                <Border Grid.Row="1" Grid.Column="0" x:Name="GL2" Style="{StaticResource Pill}" HorizontalAlignment="Left"><TextBlock Text="L2 · 9" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                <Border Grid.Row="1" Grid.Column="1" x:Name="GR2" Style="{StaticResource Pill}" HorizontalAlignment="Right"><TextBlock Text="R2 · 10" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                <!-- Bumpers (L1/R1) -->
+                <Border Grid.Row="2" Grid.Column="0" x:Name="GL1" Style="{StaticResource Pill}" HorizontalAlignment="Left"><TextBlock Text="L1 · 7" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                <Border Grid.Row="2" Grid.Column="1" x:Name="GR1" Style="{StaticResource Pill}" HorizontalAlignment="Right"><TextBlock Text="R1 · 8" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+
+                <!-- Left cluster: stick, select/start, d-pad(POV), L3 -->
+                <StackPanel Grid.Row="3" Grid.Column="0" Spacing="14" HorizontalAlignment="Center">
+                    <Border Width="130" Height="130" CornerRadius="65" BorderThickness="1"
+                            BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                            Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                        <Canvas x:Name="GStickL"><Ellipse x:Name="GDotL" Width="26" Height="26" Fill="{ThemeResource AccentFillColorDefaultBrush}" /></Canvas>
+                    </Border>
+                    <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Center">
+                        <Border x:Name="GSelect" Style="{StaticResource Pill}"><TextBlock Text="Sel · 11" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border x:Name="GHome" Style="{StaticResource Pill}"><TextBlock Text="Home · 13" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border x:Name="GStart" Style="{StaticResource Pill}"><TextBlock Text="Start · 12" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                    </StackPanel>
+                    <Grid ColumnSpacing="6" RowSpacing="6" HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                        <Border Grid.Row="0" Grid.Column="1" x:Name="PovUp" Style="{StaticResource Chip}"><TextBlock Text="↑" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="1" Grid.Column="0" x:Name="PovLeft" Style="{StaticResource Chip}"><TextBlock Text="←" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="1" Grid.Column="2" x:Name="PovRight" Style="{StaticResource Chip}"><TextBlock Text="→" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="2" Grid.Column="1" x:Name="PovDown" Style="{StaticResource Chip}"><TextBlock Text="↓" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                    </Grid>
+                    <Border x:Name="GL3" Style="{StaticResource Pill}" HorizontalAlignment="Center"><TextBlock Text="L3 · 14" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                </StackPanel>
+
+                <!-- Right cluster: face diamond, stick, R3 -->
+                <StackPanel Grid.Row="3" Grid.Column="1" Spacing="14" HorizontalAlignment="Center">
+                    <Grid ColumnSpacing="6" RowSpacing="6" HorizontalAlignment="Center">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                        <Border Grid.Row="0" Grid.Column="1" x:Name="GFaceTop" Style="{StaticResource Chip}"><TextBlock Text="5" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="1" Grid.Column="0" x:Name="GFaceLeft" Style="{StaticResource Chip}"><TextBlock Text="4" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="1" Grid.Column="2" x:Name="GFaceRight" Style="{StaticResource Chip}"><TextBlock Text="2" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                        <Border Grid.Row="2" Grid.Column="1" x:Name="GFaceBottom" Style="{StaticResource Chip}"><TextBlock Text="1" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                    </Grid>
+                    <Border Width="130" Height="130" CornerRadius="65" BorderThickness="1"
+                            BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                            Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                        <Canvas x:Name="GStickR"><Ellipse x:Name="GDotR" Width="26" Height="26" Fill="{ThemeResource AccentFillColorDefaultBrush}" /></Canvas>
+                    </Border>
+                    <Border x:Name="GR3" Style="{StaticResource Pill}" HorizontalAlignment="Center"><TextBlock Text="R3 · 15" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+                </StackPanel>
+            </Grid>
+
+            <TextBlock x:Name="GenHint" FontSize="12" Opacity="0.7" TextWrapping="Wrap" Visibility="Collapsed" />
+            <StackPanel x:Name="ExtraPanel" Spacing="6" Visibility="Collapsed" HorizontalAlignment="Center">
+                <TextBlock x:Name="ExtraLabel" FontSize="12" Opacity="0.7" HorizontalAlignment="Center" />
+                <Grid x:Name="GenButtons" ColumnSpacing="8" RowSpacing="8" HorizontalAlignment="Center" />
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

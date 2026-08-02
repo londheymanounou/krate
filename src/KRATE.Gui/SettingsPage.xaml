@@ -1,0 +1,62 @@
+<UserControl
+    x:Class="Krate.Gui.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Krate.Gui">
+
+    <ScrollViewer>
+        <StackPanel Padding="28" Spacing="4" MaxWidth="720" HorizontalAlignment="Stretch">
+            <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,12" />
+
+            <TextBlock x:Name="AppearanceHeader" Style="{StaticResource BodyStrongTextBlockStyle}" Margin="0,8,0,4" />
+
+            <local:SettingCard x:Name="ThemeCard" Glyph="&#xE790;">
+                <local:SettingCard.Action>
+                    <ComboBox x:Name="Theme" SelectionChanged="OnTheme" MinWidth="160" />
+                </local:SettingCard.Action>
+            </local:SettingCard>
+
+            <local:SettingCard x:Name="LanguageCard" Glyph="&#xE775;">
+                <local:SettingCard.Action>
+                    <ComboBox x:Name="LangBox" SelectionChanged="OnLanguage" MinWidth="160" />
+                </local:SettingCard.Action>
+            </local:SettingCard>
+
+            <TextBlock x:Name="IntegrationHeader" Style="{StaticResource BodyStrongTextBlockStyle}" Margin="0,16,0,4" />
+
+            <local:SettingCard x:Name="ContextCard" Glyph="&#xE712;">
+                <local:SettingCard.Action>
+                    <ToggleSwitch x:Name="ContextToggle" Toggled="OnContextToggle" />
+                </local:SettingCard.Action>
+            </local:SettingCard>
+
+            <TextBlock x:Name="UsageHeader" Style="{StaticResource BodyStrongTextBlockStyle}" Margin="0,16,0,4" />
+
+            <Border CornerRadius="8" Padding="16" BorderThickness="1"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                <StackPanel Spacing="10">
+                    <TextBlock x:Name="UsageTotal" Opacity="0.8" />
+                    <StackPanel x:Name="UsageList" Spacing="7" />
+                    <Button x:Name="ResetUsage" Click="OnResetUsage" HorizontalAlignment="Left" Margin="0,4,0,0" />
+                </StackPanel>
+            </Border>
+
+            <TextBlock x:Name="AboutHeader" Style="{StaticResource BodyStrongTextBlockStyle}" Margin="0,16,0,4" />
+
+            <local:SettingCard x:Name="AboutCard" Glyph="&#xE946;" />
+            
+            <local:SettingCard Header="GitHub" Description="github.com/londheymanounou" Glyph="&#xE1D3;">
+                <local:SettingCard.Action>
+                    <HyperlinkButton Content="Visit" NavigateUri="https://github.com/londheymanounou" />
+                </local:SettingCard.Action>
+            </local:SettingCard>
+
+            <local:SettingCard Header="Ko-fi" Description="Support me on Ko-fi!" Glyph="&#xE8D9;">
+                <local:SettingCard.Action>
+                    <HyperlinkButton Content="Donate" NavigateUri="https://ko-fi.com/londhey" />
+                </local:SettingCard.Action>
+            </local:SettingCard>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

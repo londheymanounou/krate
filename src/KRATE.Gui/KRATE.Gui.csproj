@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>Krate.Gui</RootNamespace>
+    <AssemblyName>KRATE</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWinUI>true</UseWinUI>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <!-- Embeds the icon in the .exe: Explorer, the taskbar and the shortcut all read it from there.
+         MainWindow additionally calls AppWindow.SetIcon, which an unpackaged window needs for its
+         own title bar and Alt-Tab entry — hence the Content copy below as well. -->
+    <ApplicationIcon>..\..\assets\krate.ico</ApplicationIcon>
+    <Platforms>x86;x64;arm64</Platforms>
+    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+    <!-- Unpackaged, self-contained: a plain .exe that bundles the Windows App Runtime, so it runs
+         on any Windows machine with nothing to install. The self-contained flag MUST live here (not
+         just on the publish command) so the bootstrap that loads the bundled runtime is compiled in. -->
+    <WindowsPackageType>None</WindowsPackageType>
+    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+    <EnableMsixTooling>true</EnableMsixTooling>
+
+    <!-- Shipping metadata. Without these the exe's Details tab is blank and its version reads
+         1.0.0.0, which is what an unfinished build looks like to anyone who downloads it. -->
+    <Product>Krate Toolkit</Product>
+    <AssemblyTitle>Krate Toolkit</AssemblyTitle>
+    <Description>Offline utility toolbox: 140 text, file, image, date and developer tools.</Description>
+    <Company>Krate</Company>
+    <Authors>Krate</Authors>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Copyright>Copyright © 2026</Copyright>
+    <!-- No .pdb in a Release folder. NOT SatelliteResourceLanguages: the per-culture satellite
+         assemblies ARE the 17-language support, and filtering them ships a monolingual app. -->
+    <DebugType Condition="'$(Configuration)' == 'Release'">none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\assets\krate.ico" Link="krate.ico" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\assets\krate-logo-256.png" Link="krate-logo-256.png" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.250228001" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
+    <ProjectReference Include="..\KRATE.Core\KRATE.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,1033 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence><xs:element name="value" type="xsd:string" minOccurs="0" /></xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence><xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" /></xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="App_Name" xml:space="preserve"><value>KRATE</value></data>
+  <data name="App_FullName" xml:space="preserve"><value>Krate Toolkit</value></data>
+  <data name="App_Tagline" xml:space="preserve"><value>数十のツール。すべてローカル、すべてオフライン。</value></data>
+  <data name="Cli_Usage" xml:space="preserve"><value>使用法: krate &lt;tool&gt; [テキスト] (テキストなし = 標準入力を読み取ります)</value></data>
+  <data name="Cli_Options" xml:space="preserve"><value>オプション: --lang &lt;code&gt; はインターフェイス言語 (en、fr など) を設定します。 --lang auto はシステムに従います。</value></data>
+  <data name="Cli_Tools" xml:space="preserve"><value>ツール ({0}) — 「krate search &lt;word&gt;」を実行してフィルターします:</value></data>
+  <data name="Cli_UnknownTool" xml:space="preserve"><value>不明なツール: {0}。 「krate」を実行して、利用可能なツールをリストします。</value></data>
+  <data name="Cli_LanguageSet" xml:space="preserve"><value>言語は{0}に設定されました。</value></data>
+  <data name="Gui_Copy" xml:space="preserve"><value>コピー</value></data>
+  <data name="Gui_SearchPlaceholder" xml:space="preserve"><value>ツールを検索…</value></data>
+  <data name="Gui_Error" xml:space="preserve"><value>エラー: {0}</value></data>
+  <data name="Text_Count_Characters" xml:space="preserve"><value>キャラクター{0}</value></data>
+  <data name="Text_Count_CharactersNoSpaces" xml:space="preserve"><value>スペースなし{0}</value></data>
+  <data name="Text_Count_Words" xml:space="preserve"><value>言葉{0}</value></data>
+  <data name="Text_Count_Lines" xml:space="preserve"><value>{0} 行目</value></data>
+  <data name="Text_Count_ReadingTime" xml:space="preserve"><value>読書時間 ~{0} 分</value></data>
+  <data name="Dates_Exact" xml:space="preserve"><value>{0}年、{1}ヶ月、{2}日</value></data>
+  <data name="Dates_TotalDays" xml:space="preserve"><value>合計日数{0}</value></data>
+  <data name="Dates_TotalWeeks" xml:space="preserve"><value>合計週数 {0} 週と {1} 日</value></data>
+  <data name="Dates_BusinessDays" xml:space="preserve"><value>営業日 {0} (祝祭日はカウントされません)</value></data>
+  <data name="Json_Valid" xml:space="preserve"><value>有効な JSON。</value></data>
+  <data name="Json_Invalid" xml:space="preserve"><value>行 {0}、列 {1} の JSON が無効です。</value></data>
+  <data name="Random_Heads" xml:space="preserve"><value>ヘッズ</value></data>
+  <data name="Random_Tails" xml:space="preserve"><value>テイルス</value></data>
+  <data name="Error_BadColor" xml:space="preserve"><value>色ではありません: {0}。 #3af、#33aaff、rgb(51,170,255) または hsl(204,100%,60%) を試してください。</value></data>
+  <data name="Error_BadDate" xml:space="preserve"><value>日付ではありません: {0}。</value></data>
+  <data name="Error_NeedDate" xml:space="preserve"><value>1 つまたは 2 つの日付を入力します。</value></data>
+  <data name="Error_NeedNumber" xml:space="preserve"><value>数字を入力してください。</value></data>
+  <data name="Error_BadDice" xml:space="preserve"><value>サイコロ表記を使用します。 2d6またはd20。</value></data>
+  <data name="Error_EmptyList" xml:space="preserve"><value>少なくとも 1 つのエントリを 1 行に 1 つ入力します。</value></data>
+  <data name="Error_OutOfRange" xml:space="preserve"><value>{0} から {1} までの数値を入力してください。</value></data>
+  <data name="Error_ConvertUsage" xml:space="preserve"><value>値と 2 つの単位を入力します。例: 「10キロマイル」。</value></data>
+  <data name="Error_UnknownUnit" xml:space="preserve"><value>不明なユニット: {0}。</value></data>
+  <data name="Error_AmbiguousUnit" xml:space="preserve"><value>あいまいな単位: {0}。 {1} の場合には注意してください。</value></data>
+  <data name="Error_DimensionMismatch" xml:space="preserve"><value>{0} と {1} は同じものを測定しません。</value></data>
+  <data name="Error_RomanRange" xml:space="preserve"><value>ローマ数字は 1 から 3999 までです。</value></data>
+  <data name="Error_BadRoman" xml:space="preserve"><value>有効なローマ数字ではありません: {0}。</value></data>
+  <data name="Error_NeedText" xml:space="preserve"><value>テキストを入力します。</value></data>
+  <data name="Error_NeedTwoNumbers" xml:space="preserve"><value>2 つの数字を入力します。</value></data>
+  <data name="Error_DivideByZero" xml:space="preserve"><value>ゼロ除算。</value></data>
+  <data name="Error_DiffUsage" xml:space="preserve"><value>--- のみを含む行で 2 つのテキストを区切ります。</value></data>
+  <data name="Error_RegexUsage" xml:space="preserve"><value>1 行目: パターン。次の行: テストするテキスト。</value></data>
+  <data name="Error_SequenceUsage" xml:space="preserve"><value>「fib 10」、「primes 20」、「arith 2 3 10」、または「geom 2 3 10」を試してください。</value></data>
+  <data name="Error_SolveUsage" xml:space="preserve"><value>係数を入力します: x² - 3x + 2 = 0 の場合は「1 -3 2」。</value></data>
+  <data name="Error_BadJwt" xml:space="preserve"><value>これは JWT ではありません。ドットで区切られた 3 つの部分が予想されます。</value></data>
+  <data name="Error_UnsupportedLanguage" xml:space="preserve"><value>サポートされていない言語: {0}。利用可能: 英語、フランス語。</value></data>
+  <data name="Error_BmiUsage" xml:space="preserve"><value>体重を kg 単位で入力し、身長を入力します。 「70 175」。</value></data>
+  <data name="Error_LoanUsage" xml:space="preserve"><value>金額、年率、年数を入力します。 「200000 3.5 25」。</value></data>
+  <data name="Error_CidrUsage" xml:space="preserve"><value>IPv4 アドレスを CIDR 形式で入力します。 「192.168.1.10/24」。</value></data>
+  <data name="Diff_Identical" xml:space="preserve"><value>2 つのテキストは同一です。</value></data>
+  <data name="Regex_NoMatch" xml:space="preserve"><value>一致しません。</value></data>
+  <data name="Regex_MatchCount" xml:space="preserve"><value>{0} 一致:</value></data>
+  <data name="Xml_Valid" xml:space="preserve"><value>整形式の XML。</value></data>
+  <data name="Xml_Invalid" xml:space="preserve"><value>行 {0}、列 {1} の形式が不正な XML</value></data>
+  <data name="Jwt_Header" xml:space="preserve"><value>ヘッダー</value></data>
+  <data name="Jwt_Payload" xml:space="preserve"><value>ペイロード</value></data>
+  <data name="Jwt_Dates" xml:space="preserve"><value>日付</value></data>
+  <data name="Jwt_Expired" xml:space="preserve"><value>(期限切れ)</value></data>
+  <data name="Jwt_Valid" xml:space="preserve"><value>(まだ有効です)</value></data>
+  <data name="Jwt_NotVerified" xml:space="preserve"><value>署名は検証されず、デコードのみが行われます。</value></data>
+  <data name="Math_Prime" xml:space="preserve"><value>(プライム)</value></data>
+  <data name="Math_Gcd" xml:space="preserve"><value>GCD = {0}</value></data>
+  <data name="Math_Lcm" xml:space="preserve"><value>LCM = {0}</value></data>
+  <data name="Math_NoSolution" xml:space="preserve"><value>解決策はありません。</value></data>
+  <data name="Math_ComplexRoots" xml:space="preserve"><value>実際のルートはありません - 2 つの複雑なルート:</value></data>
+  <data name="Percent_Of" xml:space="preserve"><value>{1} の {0}% = {2}</value></data>
+  <data name="Percent_Ratio" xml:space="preserve"><value>{0} は {1} の {2}% です</value></data>
+  <data name="Percent_Change" xml:space="preserve"><value>{0} から {1} まで: {2}%</value></data>
+  <data name="Bmi_Under" xml:space="preserve"><value>低体重 (18.5 歳未満)</value></data>
+  <data name="Bmi_Normal" xml:space="preserve"><value>ノーマル(18.5～25)</value></data>
+  <data name="Bmi_Over" xml:space="preserve"><value>太りすぎ (25 ～ 30)</value></data>
+  <data name="Bmi_Obese" xml:space="preserve"><value>肥満（30歳以上）</value></data>
+  <data name="Bmi_Disclaimer" xml:space="preserve"><value>診断ではなく指標です。</value></data>
+  <data name="Tip_Tip" xml:space="preserve"><value>チップ ({0}%) {1}</value></data>
+  <data name="Tip_Total" xml:space="preserve"><value>合計{0}</value></data>
+  <data name="Tip_Each" xml:space="preserve"><value>それぞれ ({0}) {1}</value></data>
+  <data name="Loan_Monthly" xml:space="preserve"><value>月々のお支払い {0}</value></data>
+  <data name="Loan_Total" xml:space="preserve"><value>返済総額{0}</value></data>
+  <data name="Loan_Interest" xml:space="preserve"><value>支払った利息 {0}</value></data>
+  <data name="Loan_Payments" xml:space="preserve"><value>支払い {0}</value></data>
+  <data name="Cidr_Private" xml:space="preserve"><value>プライベート範囲 (RFC 1918)。</value></data>
+  <data name="Cidr_Public" xml:space="preserve"><value>公開範囲。</value></data>
+  <data name="Gui_DropHint" xml:space="preserve"><value>このパスを使用してください</value></data>
+  <data name="Error_NoFile" xml:space="preserve"><value>ファイルが見つかりません: {0}</value></data>
+  <data name="Error_NoFolder" xml:space="preserve"><value>フォルダーが見つかりません: {0}</value></data>
+  <data name="Error_FileExists" xml:space="preserve"><value>{0} はすでに存在します。まず移動するか名前を変更します。何も上書きされません。</value></data>
+  <data name="Error_BadSize" xml:space="preserve"><value>読み取れないサイズ: {0}。 10MB、512k、または 2GiB を試してください。</value></data>
+  <data name="Error_NeedTwoFiles" xml:space="preserve"><value>2 つのファイル パスを 1 行に 1 つずつ指定します。</value></data>
+  <data name="Error_SplitUsage" xml:space="preserve"><value>ファイルパスを指定してからパーツサイズを指定します。 「C:\big.zip 10MB」。</value></data>
+  <data name="Error_JoinUsage" xml:space="preserve"><value>いずれかの .part ファイルをポイントします。</value></data>
+  <data name="Error_TestFileUsage" xml:space="preserve"><value>パスを指定してからサイズを指定します。例: 「C:\test.bin 100MB」。</value></data>
+  <data name="Files_Name" xml:space="preserve"><value>名前</value></data>
+  <data name="Files_Size" xml:space="preserve"><value>サイズ</value></data>
+  <data name="Files_Created" xml:space="preserve"><value>作成されました</value></data>
+  <data name="Files_Modified" xml:space="preserve"><value>修正済み</value></data>
+  <data name="Files_Total" xml:space="preserve"><value>{1} ファイル内の {0}</value></data>
+  <data name="Files_Largest" xml:space="preserve"><value>最大のファイル:</value></data>
+  <data name="Files_ByType" xml:space="preserve"><value>ファイルの種類別:</value></data>
+  <data name="Files_Empty" xml:space="preserve"><value>このフォルダーは空です。</value></data>
+  <data name="Files_AccessDenied" xml:space="preserve"><value>（アクセスが拒否されました）</value></data>
+  <data name="Files_TreeTruncated" xml:space="preserve"><value>… {0} エントリで切り捨てられました。</value></data>
+  <data name="Files_NoDuplicates" xml:space="preserve"><value>重複したファイルは見つかりませんでした。</value></data>
+  <data name="Files_DuplicatesFound" xml:space="preserve"><value>同一ファイルの {0} グループ、{1} が無駄になりました。</value></data>
+  <data name="Files_DuplicatesReadOnly" xml:space="preserve"><value>何も削除されていません。これはレポートです。</value></data>
+  <data name="Files_Identical" xml:space="preserve"><value>2 つのファイルは同一です。</value></data>
+  <data name="Files_Different" xml:space="preserve"><value>ファイルは異なります ({0} と {1})。</value></data>
+  <data name="Files_SplitDone" xml:space="preserve"><value>{0} 部分に分割します。</value></data>
+  <data name="Files_JoinDone" xml:space="preserve"><value>{0} は {1} 部品 ({2}) から再構築されました。</value></data>
+  <data name="Files_TestFileDone" xml:space="preserve"><value>{0} ({1}) を作成しました。</value></data>
+  <data name="Error_UnknownImage" xml:space="preserve"><value>認識されない画像 (PNG、JPEG、GIF、BMP、WebP): {0}</value></data>
+  <data name="Error_RatioUsage" xml:space="preserve"><value>「1920x1080」などの寸法を入力するか、「16:9 1920」などの比率とサイズを入力します。</value></data>
+  <data name="Images_Format" xml:space="preserve"><value>フォーマット</value></data>
+  <data name="Images_Size" xml:space="preserve"><value>寸法</value></data>
+  <data name="Images_Pixels" xml:space="preserve"><value>ピクセル</value></data>
+  <data name="Images_Ratio" xml:space="preserve"><value>比率</value></data>
+  <data name="Images_Orientation" xml:space="preserve"><value>向き</value></data>
+  <data name="Images_Landscape" xml:space="preserve"><value>風景</value></data>
+  <data name="Images_Portrait" xml:space="preserve"><value>肖像画</value></data>
+  <data name="Images_Square" xml:space="preserve"><value>正方形</value></data>
+  <data name="Images_FromWidth" xml:space="preserve"><value>幅固定</value></data>
+  <data name="Images_FromHeight" xml:space="preserve"><value>高さ固定</value></data>
+  <data name="Img_Title" xml:space="preserve"><value>画像コンバータ</value></data>
+  <data name="Img_Subtitle" xml:space="preserve"><value>画像を変換、サイズ変更、圧縮します。ここにドロップするか、「名前を付けて保存」を使用します。</value></data>
+  <data name="Img_DropHint" xml:space="preserve"><value>ここに画像をドロップしてください</value></data>
+  <data name="Img_Format" xml:space="preserve"><value>出力フォーマット</value></data>
+  <data name="Img_MaxWidth" xml:space="preserve"><value>最大幅 (px、0 = 維持)</value></data>
+  <data name="Img_Quality" xml:space="preserve"><value>品質 (JPEG / WebP)</value></data>
+  <data name="Img_Save" xml:space="preserve"><value>名前を付けて保存…</value></data>
+  <data name="Img_Saved" xml:space="preserve"><value>{0} を保存しました</value></data>
+  <data name="Timer_Title" xml:space="preserve"><value>タイマー</value></data>
+  <data name="Timer_Start" xml:space="preserve"><value>スタート</value></data>
+  <data name="Timer_Pause" xml:space="preserve"><value>一時停止</value></data>
+  <data name="Timer_Reset" xml:space="preserve"><value>リセット</value></data>
+  <data name="Timer_Stopwatch" xml:space="preserve"><value>ストップウォッチ</value></data>
+  <data name="Timer_Focus" xml:space="preserve"><value>集中 25 分</value></data>
+  <data name="Timer_Break" xml:space="preserve"><value>休憩5分</value></data>
+  <data name="Error_JsonNotArray" xml:space="preserve"><value>[{&quot;a&quot;:1},{&quot;a&quot;:2}] のようなオブジェクトの JSON 配列が必要です。</value></data>
+  <data name="Error_CronUsage" xml:space="preserve"><value>5 つの cron フィールド (分、時、日、月、平日)、または @daily のようなショートカットが必要です。</value></data>
+  <data name="Fancy_Bold" xml:space="preserve"><value>太字</value></data>
+  <data name="Fancy_Italic" xml:space="preserve"><value>イタリック</value></data>
+  <data name="Fancy_Script" xml:space="preserve"><value>スクリプト</value></data>
+  <data name="Fancy_Fraktur" xml:space="preserve"><value>フラクトゥール</value></data>
+  <data name="Fancy_Mono" xml:space="preserve"><value>等空間</value></data>
+  <data name="Fancy_Double" xml:space="preserve"><value>ダブル</value></data>
+  <data name="Fancy_Circled" xml:space="preserve"><value>丸で囲まれた</value></data>
+  <data name="Fancy_Wide" xml:space="preserve"><value>全角</value></data>
+  <data name="Cron_AtTime" xml:space="preserve"><value>{0}に</value></data>
+  <data name="Cron_Minute" xml:space="preserve"><value>分</value></data>
+  <data name="Cron_Hour" xml:space="preserve"><value>時間</value></data>
+  <data name="Cron_DayOfMonth" xml:space="preserve"><value>月の日</value></data>
+  <data name="Cron_EveryUnit" xml:space="preserve"><value>{0}ごと</value></data>
+  <data name="Cron_EveryN" xml:space="preserve"><value>{0} {1}秒ごと</value></data>
+  <data name="Cron_EveryNBare" xml:space="preserve"><value>{0}ごと</value></data>
+  <data name="Cron_Range" xml:space="preserve"><value>{0} {1} から {2}</value></data>
+  <data name="Cron_List" xml:space="preserve"><value>{0} {1}</value></data>
+  <data name="Cron_At" xml:space="preserve"><value>{0} {1}</value></data>
+  <data name="Cron_InMonths" xml:space="preserve"><value>{0}に</value></data>
+  <data name="Cron_OnDays" xml:space="preserve"><value>{0}に</value></data>
+  <data name="Pw_Entropy" xml:space="preserve"><value>エントロピー ~{0} ビット</value></data>
+  <data name="Pw_Rating" xml:space="preserve"><value>評価{0}</value></data>
+  <data name="Pw_Crack" xml:space="preserve"><value>クラック{0}</value></data>
+  <data name="Pw_Note" xml:space="preserve"><value>注意: 繰り返しや連続すると、さらに弱まります。</value></data>
+  <data name="Pw_VeryWeak" xml:space="preserve"><value>とても弱い</value></data>
+  <data name="Pw_Weak" xml:space="preserve"><value>弱い</value></data>
+  <data name="Pw_Reasonable" xml:space="preserve"><value>合理的な</value></data>
+  <data name="Pw_Strong" xml:space="preserve"><value>強い</value></data>
+  <data name="Pw_VeryStrong" xml:space="preserve"><value>とても強い</value></data>
+  <data name="Time_Instant" xml:space="preserve"><value>即座に</value></data>
+  <data name="Time_Seconds" xml:space="preserve"><value>{0}秒</value></data>
+  <data name="Time_Minutes" xml:space="preserve"><value>{0}分</value></data>
+  <data name="Time_Hours" xml:space="preserve"><value>{0}時間</value></data>
+  <data name="Time_Days" xml:space="preserve"><value>{0}日</value></data>
+  <data name="Time_Months" xml:space="preserve"><value>{0}か月</value></data>
+  <data name="Time_Years" xml:space="preserve"><value>{0}年</value></data>
+  <data name="Time_Centuries" xml:space="preserve"><value>何世紀にもわたって</value></data>
+  <data name="Week_Date" xml:space="preserve"><value>日付</value></data>
+  <data name="Week_Iso" xml:space="preserve"><value>ISO週間</value></data>
+  <data name="Week_DayOfYear" xml:space="preserve"><value>年間の日</value></data>
+  <data name="Week_Quarter" xml:space="preserve"><value>四半期</value></data>
+  <data name="Week_Weekend" xml:space="preserve"><value>週末</value></data>
+  <data name="Week_Yes" xml:space="preserve"><value>はい</value></data>
+  <data name="Week_No" xml:space="preserve"><value>いいえ</value></data>
+  <data name="Error_NeedExpression" xml:space="preserve"><value>式を入力します。例: 「2 * (3 + 4)」または「sqrt(2)」。</value></data>
+  <data name="Error_BadExpression" xml:space="preserve"><value>式を解析できませんでした。</value></data>
+  <data name="Error_MissingParen" xml:space="preserve"><value>右括弧がありません。</value></data>
+  <data name="Error_UnknownFunction" xml:space="preserve"><value>不明な関数: {0}。</value></data>
+  <data name="Error_UnknownName" xml:space="preserve"><value>不明な名前: {0}。</value></data>
+  <data name="Error_BadFactorial" xml:space="preserve"><value>階乗には 0 から 170 までの整数が必要です。</value></data>
+  <data name="Error_Undefined" xml:space="preserve"><value>結果は未定義です (例: 負の 2 乗、または 0/0)。</value></data>
+  <data name="Error_Overflow" xml:space="preserve"><value>結果が大きすぎます。</value></data>
+  <data name="Error_NeedTwoColors" xml:space="preserve"><value>2 色を 1 行に 1 つずつ入力します。</value></data>
+  <data name="Error_KelvinRange" xml:space="preserve"><value>1000 ～ 40000 K の温度を入力します。</value></data>
+  <data name="Error_BadCssUnit" xml:space="preserve"><value>読み取れないサイズ: {0}。 16px、1.5rem、または 12pt を試してください。</value></data>
+  <data name="Color_Base" xml:space="preserve"><value>ベース</value></data>
+  <data name="Color_Complementary" xml:space="preserve"><value>補完的</value></data>
+  <data name="Color_Triadic" xml:space="preserve"><value>トライアド</value></data>
+  <data name="Color_Analogous" xml:space="preserve"><value>類似した</value></data>
+  <data name="Color_SplitComp" xml:space="preserve"><value>スプリットコンプ。</value></data>
+  <data name="Color_Tetradic" xml:space="preserve"><value>四項</value></data>
+  <data name="Color_Ratio" xml:space="preserve"><value>比率</value></data>
+  <data name="Color_Pass" xml:space="preserve"><value>パスする</value></data>
+  <data name="Color_Fail" xml:space="preserve"><value>失敗する</value></data>
+  <data name="Color_NormalText" xml:space="preserve"><value>普通の</value></data>
+  <data name="Color_LargeText" xml:space="preserve"><value>大きい</value></data>
+  <data name="Error_GitignoreUsage" xml:space="preserve"><value>1 つ以上の言語/ツールの名前を指定します。利用可能: {0}。</value></data>
+  <data name="Error_GitignoreUnknown" xml:space="preserve"><value>これらはどれも不明です: {0}。利用可能: {1}。</value></data>
+  <data name="Text_NoHeadings" xml:space="preserve"><value>Markdown 見出しが見つかりません。</value></data>
+  <data name="Error_SdtUsage" xml:space="preserve"><value>速度、距離、時間のうち 2 つを正確に指定してください。例: 「100キロ2時間」。</value></data>
+  <data name="Error_SdtDuplicate" xml:space="preserve"><value>同じ種類の 2 つの値 ({0}) が指定されました。</value></data>
+  <data name="Error_SdtToken" xml:space="preserve"><value>「{0}」を読み取れません: 100km のような数値と単位が必要です。</value></data>
+  <data name="Error_SdtUnit" xml:space="preserve"><value>不明なユニット: {0}。 km、m、mi / h、min、s / km/h、mph…を使用します。</value></data>
+  <data name="Error_SdtZeroSpeed" xml:space="preserve"><value>速度はゼロです - 時間は無限になります。</value></data>
+  <data name="Error_SdtZeroTime" xml:space="preserve"><value>時間はゼロです - 速度は無限になります。</value></data>
+  <data name="Sdt_Distance" xml:space="preserve"><value>距離</value></data>
+  <data name="Sdt_Time" xml:space="preserve"><value>時間</value></data>
+  <data name="Sdt_Speed" xml:space="preserve"><value>スピード</value></data>
+  <data name="Error_TooLarge" xml:space="preserve"><value>その数はここで計算するには大きすぎます。</value></data>
+  <data name="Error_CombinatoricsUsage" xml:space="preserve"><value>「n k」を 0 ≤ k ≤ n で入力します。例: 「49 6」。</value></data>
+  <data name="Error_TransferUsage" xml:space="preserve"><value>サイズと帯域幅を指定します。 「5GB 100Mbps」。</value></data>
+  <data name="Error_TransferRate" xml:space="preserve"><value>読み取り不能な帯域幅: {0}。 100Mbps、50MB/s、または 1Gbps を試してください。</value></data>
+  <data name="Transfer_Size" xml:space="preserve"><value>サイズ</value></data>
+  <data name="Transfer_Rate" xml:space="preserve"><value>レート</value></data>
+  <data name="Transfer_TimeLabel" xml:space="preserve"><value>時間</value></data>
+  <data name="Error_ShoeUsage" xml:space="preserve"><value>サイズとそのシステムを入力します。例: 「42 eu」または「26 cm w」。</value></data>
+  <data name="Shoe_Men" xml:space="preserve"><value>メンズ</value></data>
+  <data name="Shoe_Women" xml:space="preserve"><value>女性用</value></data>
+  <data name="Shoe_Note" xml:space="preserve"><value>おおよそのサイズはブランドによって異なります。</value></data>
+  <data name="Cli_Search" xml:space="preserve"><value>検索: クレート検索 &lt;単語&gt;</value></data>
+  <data name="Cli_NoMatch" xml:space="preserve"><value>一致するツールがありません。</value></data>
+  <data name="Home_Title" xml:space="preserve"><value>ホーム</value></data>
+  <data name="Home_Recent" xml:space="preserve"><value>最近のツール</value></data>
+  <data name="Home_Empty" xml:space="preserve"><value>リストからツールを選択するか、上部で検索します。使用したものがここに表示されます。</value></data>
+  <data name="Error_NoCharset" xml:space="preserve"><value>少なくとも 1 つの文字タイプをオンにします。</value></data>
+  <data name="Pwd_Title" xml:space="preserve"><value>パスワードジェネレーター</value></data>
+  <data name="Pwd_Length" xml:space="preserve"><value>長さ</value></data>
+  <data name="Pwd_Upper" xml:space="preserve"><value>大文字 (A ～ Z)</value></data>
+  <data name="Pwd_Lower" xml:space="preserve"><value>小文字 (a ～ z)</value></data>
+  <data name="Pwd_Digits" xml:space="preserve"><value>数字 (0 ～ 9)</value></data>
+  <data name="Pwd_Symbols" xml:space="preserve"><value>記号 (!@#…)</value></data>
+  <data name="Pwd_Regenerate" xml:space="preserve"><value>新規生成</value></data>
+  <data name="Cp_Title" xml:space="preserve"><value>カラーピッカー</value></data>
+  <data name="Rnd_Title" xml:space="preserve"><value>ランダム性</value></data>
+  <data name="Rnd_Flip" xml:space="preserve"><value>フリップ</value></data>
+  <data name="Rnd_Roll" xml:space="preserve"><value>ロール</value></data>
+  <data name="Rnd_Draw" xml:space="preserve"><value>描く</value></data>
+  <data name="Rnd_Generate" xml:space="preserve"><value>生成する</value></data>
+  <data name="Conv_Category" xml:space="preserve"><value>測定する</value></data>
+  <data name="Conv_Value" xml:space="preserve"><value>値</value></data>
+  <data name="Date_From" xml:space="preserve"><value>から</value></data>
+  <data name="Date_To" xml:space="preserve"><value>に</value></data>
+  <data name="Contrast_Fg" xml:space="preserve"><value>文字の色</value></data>
+  <data name="Contrast_Bg" xml:space="preserve"><value>背景</value></data>
+  <data name="Contrast_Sample" xml:space="preserve"><value>サンプルテキスト — Aa Bb 123</value></data>
+  <data name="Bmi_Weight" xml:space="preserve"><value>重量(kg)</value></data>
+  <data name="Bmi_Height" xml:space="preserve"><value>身長(cm)</value></data>
+  <data name="Tip_Bill" xml:space="preserve"><value>ビル</value></data>
+  <data name="Tip_Percent" xml:space="preserve"><value>チップ (%)</value></data>
+  <data name="Tip_People" xml:space="preserve"><value>間で分割</value></data>
+  <data name="Loan_Amount" xml:space="preserve"><value>金額</value></data>
+  <data name="Loan_Rate" xml:space="preserve"><value>年率(%)</value></data>
+  <data name="Loan_Years" xml:space="preserve"><value>年</value></data>
+  <data name="Calc_DivZero" xml:space="preserve"><value>ゼロで割ることはできません</value></data>
+  <data name="Calc_Error" xml:space="preserve"><value>無効な入力</value></data>
+  <data name="Calc_Standard" xml:space="preserve"><value>標準</value></data>
+  <data name="Calc_Scientific" xml:space="preserve"><value>科学的</value></data>
+  <data name="Calc_Programmer" xml:space="preserve"><value>プログラマー</value></data>
+  <data name="Calc_History" xml:space="preserve"><value>歴史</value></data>
+  <data name="Calc_HistoryEmpty" xml:space="preserve"><value>まだ履歴がありません</value></data>
+  <data name="Tool_Graph_Name" xml:space="preserve"><value>関数グラフ</value></data>
+  <data name="Graph_NoPoints" xml:space="preserve"><value>この範囲にはプロットするものはありません。</value></data>
+  <data name="Settings_Title" xml:space="preserve"><value>設定</value></data>
+  <data name="Settings_Theme" xml:space="preserve"><value>外観</value></data>
+  <data name="Theme_System" xml:space="preserve"><value>システム設定を使用する</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>ライト</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>暗い</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>言語</value></data>
+  <data name="Settings_About" xml:space="preserve"><value>KRATE - {0} ツール、すべてローカルおよびオフライン。データがマシンから流出することはありません。</value></data>
+  <data name="Home_Favorites" xml:space="preserve"><value>お気に入り</value></data>
+  <data name="Settings_ThemeCard" xml:space="preserve"><value>アプリのテーマ</value></data>
+  <data name="Settings_ThemeDesc" xml:space="preserve"><value>ライト、ダークを選択するか、Windows に従うかを選択します。</value></data>
+  <data name="Settings_LangDesc" xml:space="preserve"><value>インターフェイス言語をすぐに変更します。</value></data>
+  <data name="Settings_AboutHeader" xml:space="preserve"><value>について</value></data>
+  <data name="Gui_Input" xml:space="preserve"><value>入力</value></data>
+  <data name="Gui_Output" xml:space="preserve"><value>出力</value></data>
+  <data name="Gui_Paste" xml:space="preserve"><value>ペースト</value></data>
+  <data name="Gui_Clear" xml:space="preserve"><value>クリア</value></data>
+  <data name="Gui_Count" xml:space="preserve"><value>{0} 文字 · {1} 行</value></data>
+  <data name="Cli_HelpLine" xml:space="preserve"><value>ヘルプ: krate &lt;ツール&gt; --help · krate --help</value></data>
+  <data name="Cli_Examples" xml:space="preserve"><value>例:</value></data>
+  <data name="Cli_UsageLabel" xml:space="preserve"><value>使用法:</value></data>
+  <data name="Cli_KeywordsLabel" xml:space="preserve"><value>キーワード:</value></data>
+  <data name="Cli_CompletionUsage" xml:space="preserve"><value>使用法: クレート完了 &lt;bash|zsh|powershell&gt;</value></data>
+  <data name="Archive_Zipped" xml:space="preserve"><value>{0} ({1}) を作成しました。</value></data>
+  <data name="Archive_Extracted" xml:space="preserve"><value>{0} ({1} ファイル) に抽出されました。</value></data>
+  <data name="Archive_Format" xml:space="preserve"><value>フォーマット</value></data>
+  <data name="Archive_Compress" xml:space="preserve"><value>圧縮する</value></data>
+  <data name="Archive_Title" xml:space="preserve"><value>アーカイブ</value></data>
+  <data name="Archive_Open" xml:space="preserve"><value>アーカイブを開く</value></data>
+  <data name="Archive_ExtractAll" xml:space="preserve"><value>すべて抽出する</value></data>
+  <data name="Archive_Name" xml:space="preserve"><value>名前</value></data>
+  <data name="Archive_Size" xml:space="preserve"><value>サイズ</value></data>
+  <data name="Archive_Modified" xml:space="preserve"><value>修正済み</value></data>
+  <data name="Archive_Info" xml:space="preserve"><value>{0} — {1} アイテム、{2}</value></data>
+  <data name="Tool_Encrypt_Name" xml:space="preserve"><value>ファイルを暗号化する</value></data>
+  <data name="Tool_Encrypt_Desc" xml:space="preserve"><value>ファイルをパスワードで暗号化します (AES-256、認証済み)。 「パス | パスワード」、またはページを使用します。</value></data>
+  <data name="Tool_Encrypt_Aliases" xml:space="preserve"><value>暗号化、暗号化、aes、パスワード、安全、保護、暗号、ロック、暗号化</value></data>
+  <data name="Tool_Decrypt_Name" xml:space="preserve"><value>ファイルを復号化する</value></data>
+  <data name="Tool_Decrypt_Desc" xml:space="preserve"><value>.krate ファイルを復号化して元に戻します。 「パス | パスワード」、またはページを使用します。</value></data>
+  <data name="Tool_Decrypt_Aliases" xml:space="preserve"><value>復号化、復号化、aes、パスワード、ロック解除、暗号化、オープン</value></data>
+  <data name="Error_CryptUsage" xml:space="preserve"><value>「パス | パスワード」を使用します。</value></data>
+  <data name="Error_NeedPassword" xml:space="preserve"><value>パスワードを入力してください。</value></data>
+  <data name="Error_NotEncrypted" xml:space="preserve"><value>{0} は KRATE で暗号化されたファイルではありません。</value></data>
+  <data name="Error_WrongPassword" xml:space="preserve"><value>パスワードが間違っているか、ファイルが変更されています。</value></data>
+  <data name="Crypt_Encrypted" xml:space="preserve"><value>{0} に暗号化されます。パスワードは安全に保管してください。回復はできません。</value></data>
+  <data name="Crypt_Decrypted" xml:space="preserve"><value>{0} に復号化されました。</value></data>
+  <data name="Cli_CryptUsage" xml:space="preserve"><value>使用法: クレート暗号化|復号化&lt;ファイル&gt;</value></data>
+  <data name="Cli_Password" xml:space="preserve"><value>パスワード:</value></data>
+  <data name="Cli_Confirm" xml:space="preserve"><value>パスワードを確認します:</value></data>
+  <data name="Cli_PasswordMismatch" xml:space="preserve"><value>パスワードが一致しません。</value></data>
+  <data name="Encrypt_Title" xml:space="preserve"><value>ファイルの暗号化</value></data>
+  <data name="Encrypt_Subtitle" xml:space="preserve"><value>AES-256、認証済み。暗号化すると、元のファイルの隣に .krate ファイルが作成されます。復号化すると復元されます。パスワードの回復はありません。</value></data>
+  <data name="Encrypt_Password" xml:space="preserve"><value>パスワード</value></data>
+  <data name="Encrypt_Confirm" xml:space="preserve"><value>パスワードの確認（暗号化用）</value></data>
+  <data name="Encrypt_Do" xml:space="preserve"><value>暗号化する</value></data>
+  <data name="Decrypt_Do" xml:space="preserve"><value>復号化</value></data>
+  <data name="Yt_Title" xml:space="preserve"><value>ビデオダウンローダー</value></data>
+  <data name="Yt_Subtitle" xml:space="preserve"><value>YouTube や yt-dlp がサポートする他の多くのサイトからビデオやオーディオをダウンロードします。</value></data>
+  <data name="Yt_Url" xml:space="preserve"><value>動画のURL</value></data>
+  <data name="Yt_Format" xml:space="preserve"><value>フォーマット</value></data>
+  <data name="Yt_Folder" xml:space="preserve"><value>フォルダー</value></data>
+  <data name="Yt_Change" xml:space="preserve"><value>変更…</value></data>
+  <data name="Yt_Download" xml:space="preserve"><value>ダウンロード</value></data>
+  <data name="Yt_Get" xml:space="preserve"><value>yt-dlp をセットアップする</value></data>
+  <data name="Yt_Getting" xml:space="preserve"><value>yt-dlp をダウンロード中…</value></data>
+  <data name="Yt_Ready" xml:space="preserve"><value>yt-dlp の準備が完了しました。</value></data>
+  <data name="Yt_NeedSetup" xml:space="preserve"><value>yt-dlp はまだセットアップされていません。ダウンロードする必要があります。</value></data>
+  <data name="Yt_NoYtDlp" xml:space="preserve"><value>yt-dlp が設定されていません。最初に「yt-dlp のセットアップ」を使用してください。</value></data>
+  <data name="Yt_NeedUrl" xml:space="preserve"><value>ビデオの URL を入力します。</value></data>
+  <data name="Yt_NeedFfmpeg" xml:space="preserve"><value>オーディオ抽出には ffmpeg が必要です。最初にファイル コンバーターでセットアップします。</value></data>
+  <data name="Yt_Downloading" xml:space="preserve"><value>ダウンロード中…</value></data>
+  <data name="Yt_Done" xml:space="preserve"><value>ダウンロード済み{0}</value></data>
+  <data name="Yt_CliUsage" xml:space="preserve"><value>使用法: krate youtube &lt;url&gt; [mp4|mp3|m4a|…] |   クレート YouTube セットアップ</value></data>
+  <data name="Archive_Staged" xml:space="preserve"><value>準備完了: {0} — 形式を選択し、「圧縮」をクリックします。</value></data>
+  <data name="Ctx_Compress" xml:space="preserve"><value>クレートで圧縮する</value></data>
+  <data name="Ctx_Extract" xml:space="preserve"><value>木枠で抽出する</value></data>
+  <data name="Ctx_Encrypt" xml:space="preserve"><value>クレートで暗号化する</value></data>
+  <data name="Ctx_Convert" xml:space="preserve"><value>クレートで変換</value></data>
+  <data name="Ctx_Edit" xml:space="preserve"><value>クレートで編集する</value></data>
+  <data name="Ctx_TextTools" xml:space="preserve"><value>Krate を使用したテキスト ツール</value></data>
+  <data name="Ctx_Krate" xml:space="preserve"><value>木箱</value></data>
+  <data name="Settings_Integration" xml:space="preserve"><value>Windowsの統合</value></data>
+  <data name="Settings_ContextCard" xml:space="preserve"><value>右クリックメニュー</value></data>
+  <data name="Settings_ContextDesc" xml:space="preserve"><value>エクスプローラーの右クリック メニューに「クレート」サブメニューを追加します。圧縮、暗号化、抽出、変換、編集、およびカーソルを合わせたテキスト ツール (Windows 11 の [その他のオプションを表示] の下)。</value></data>
+  <data name="Error_CannotCreate" xml:space="preserve"><value>{0} アーカイブは抽出できますが、作成できません。</value></data>
+  <data name="Error_UnknownFormat" xml:space="preserve"><value>不明なアーカイブ形式: {0}</value></data>
+  <data name="Error_NotZip" xml:space="preserve"><value>.zip ファイルではありません: {0}</value></data>
+  <data name="Md_Preview_Name" xml:space="preserve"><value>マークダウンプレビュー</value></data>
+  <data name="Cvd_Normal" xml:space="preserve"><value>ノーマル</value></data>
+  <data name="Cvd_Protan" xml:space="preserve"><value>第一色覚</value></data>
+  <data name="Cvd_Deuter" xml:space="preserve"><value>第二盲</value></data>
+  <data name="Cvd_Tritan" xml:space="preserve"><value>トリタノピア</value></data>
+  <data name="Cvd_Achroma" xml:space="preserve"><value>アクロマトプシア</value></data>
+  <data name="Error_BarcodeAscii" xml:space="preserve"><value>コード 128 は印刷可能な ASCII のみを受け取ります。</value></data>
+  <data name="Error_NotArchive" xml:space="preserve"><value>サポートされているアーカイブではありません: {0}。 .zip、.7z、.rar、.tar、.gz…を試してください。</value></data>
+  <data name="Exif_None" xml:space="preserve"><value>EXIF メタデータが見つかりません。</value></data>
+  <data name="Error_RenameUsage" xml:space="preserve"><value>「フォルダー | 検索 | 置換」を使用します。 「C:\写真 | IMG | 写真」。</value></data>
+  <data name="Rename_NoMatch" xml:space="preserve"><value>ファイル名に「{0}」が含まれていません。</value></data>
+  <data name="Rename_Preview" xml:space="preserve"><value>{0} ファイルの名前が変更されます:</value></data>
+  <data name="Rename_ApplyHint" xml:space="preserve"><value>「| apply」を追加して名前を変更します。</value></data>
+  <data name="Rename_Done" xml:space="preserve"><value>{0} ファイルの名前が変更されました。</value></data>
+  <data name="Error_PdfMergeUsage" xml:space="preserve"><value>少なくとも 2 つの PDF パスを 1 行に 1 つずつ指定します。</value></data>
+  <data name="Error_NotPdf" xml:space="preserve"><value>PDF ファイルではありません: {0}</value></data>
+  <data name="Pdf_Merged" xml:space="preserve"><value>{2} ファイルから {0} — {1} ページを作成しました。</value></data>
+  <data name="Pdf_Split" xml:space="preserve"><value>{0} ページ ({1}_p01.pdf …) に分割します。</value></data>
+  <data name="Error_CurrencyUsage" xml:space="preserve"><value>金額と 2 つの通貨コードを入力します。 「100ドルユーロ」。</value></data>
+  <data name="Error_UnknownCurrency" xml:space="preserve"><value>不明な通貨: {0}。</value></data>
+  <data name="Error_NoRates" xml:space="preserve"><value>キャッシュされた料金やインターネットはありません。一度接続して料金を取得します。</value></data>
+  <data name="Cur_Rate" xml:space="preserve"><value>レート</value></data>
+  <data name="Cur_Updated" xml:space="preserve"><value>更新されました</value></data>
+  <data name="Cur_Offline" xml:space="preserve"><value>(オフライン — 最後に知られている料金)</value></data>
+  <data name="Notepad_Title" xml:space="preserve"><value>メモ帳</value></data>
+  <data name="Notepad_Saved" xml:space="preserve"><value>自動保存</value></data>
+  <data name="Clipboard_Title" xml:space="preserve"><value>クリップボード履歴</value></data>
+  <data name="Clipboard_Clear" xml:space="preserve"><value>クリア</value></data>
+  <data name="Clipboard_Hint" xml:space="preserve"><value>KRATE が開いている間にテキストをコピーします。テキストはここに表示されます。項目をクリックして再度コピーします。</value></data>
+  <data name="Img_Open" xml:space="preserve"><value>画像を開く</value></data>
+  <data name="Exif_Drop" xml:space="preserve"><value>ここに写真をドロップするか、「画像を開く」を使用します。</value></data>
+  <data name="Rename_ChooseFolder" xml:space="preserve"><value>フォルダーを選択してください</value></data>
+  <data name="Rename_Apply" xml:space="preserve"><value>名前の変更</value></data>
+  <data name="Rename_Count" xml:space="preserve"><value>{0} ファイルの名前が変更されます。</value></data>
+  <data name="Rename_NoMatchShort" xml:space="preserve"><value>一致するファイルはありません。</value></data>
+  <data name="Pdf_Title" xml:space="preserve"><value>PDFの結合と分割</value></data>
+  <data name="Pdf_MergeLabel" xml:space="preserve"><value>これらの PDF を (順番に) 結合します。</value></data>
+  <data name="Pdf_Drop" xml:space="preserve"><value>ここに PDF をドロップするか、「PDF の追加」を使用します。</value></data>
+  <data name="Pdf_Add" xml:space="preserve"><value>PDFを追加する</value></data>
+  <data name="Pdf_MergeBtn" xml:space="preserve"><value>マージ</value></data>
+  <data name="Pdf_SplitBtn" xml:space="preserve"><value>PDFを分割…</value></data>
+  <data name="Base_Invalid" xml:space="preserve"><value>そのベースには無効です。</value></data>
+  <data name="Lorem_Words" xml:space="preserve"><value>言葉</value></data>
+  <data name="Lorem_Paragraphs" xml:space="preserve"><value>段落</value></data>
+  <data name="Lorem_NWords" xml:space="preserve"><value>{0}語</value></data>
+  <data name="Lorem_NPara" xml:space="preserve"><value>{0}段落</value></data>
+  <data name="Seq_Step" xml:space="preserve"><value>ステップ</value></data>
+  <data name="Seq_Ratio" xml:space="preserve"><value>比率</value></data>
+  <data name="Cron_NextRuns" xml:space="preserve"><value>次の実行</value></data>
+  <data name="Palette_Hint" xml:space="preserve"><value>検索ツール… (Ctrl+K)</value></data>
+  <data name="Ts_FromUnix" xml:space="preserve"><value>Unix タイムスタンプから</value></data>
+  <data name="Ts_FromDate" xml:space="preserve"><value>日付と時刻から</value></data>
+  <data name="Ts_Now" xml:space="preserve"><value>今</value></data>
+  <data name="Pick_ChooseFile" xml:space="preserve"><value>ファイルを選択してください</value></data>
+  <data name="Pick_ChooseFolder" xml:space="preserve"><value>フォルダーを選択してください</value></data>
+  <data name="Pick_DropFile" xml:space="preserve"><value>上でファイルを選択するか、ここにファイルをドロップします。</value></data>
+  <data name="Pick_DropFolder" xml:space="preserve"><value>上のフォルダーを選択するか、ここにフォルダーをドロップします。</value></data>
+  <data name="Compare_FileA" xml:space="preserve"><value>最初のファイル — 選択またはドロップ</value></data>
+  <data name="Compare_FileB" xml:space="preserve"><value>2 番目のファイル — 選択またはドロップ</value></data>
+  <data name="Fs_Go" xml:space="preserve"><value>行く</value></data>
+  <data name="Fs_FileName" xml:space="preserve"><value>ファイル名</value></data>
+  <data name="Comb_N" xml:space="preserve"><value>n (合計)</value></data>
+  <data name="Comb_R" xml:space="preserve"><value>r（選択済み）</value></data>
+  <data name="Factor_Number" xml:space="preserve"><value>番号</value></data>
+  <data name="Ruler_Title" xml:space="preserve"><value>定規</value></data>
+  <data name="Ruler_Calib" xml:space="preserve"><value>調整: 銀行カードを画面に押し当て、0 ～ 8.56 cm がカードの長辺と一致するまで調整します。</value></data>
+  <data name="Gamepad_Title" xml:space="preserve"><value>ゲームパッドテスター</value></data>
+  <data name="Gamepad_None" xml:space="preserve"><value>コントローラー (Xbox または互換性) を接続します。このウィンドウがフォーカスされていない場合でも、入力は読み取られます。</value></data>
+  <data name="Gamepad_Connected" xml:space="preserve"><value>コントローラーが接続されています — ボタンを押し、スティックとトリガーを動かします。</value></data>
+  <data name="Gamepad_LT" xml:space="preserve"><value>左トリガー</value></data>
+  <data name="Gamepad_RT" xml:space="preserve"><value>右トリガー</value></data>
+  <data name="Gamepad_NoXInput" xml:space="preserve"><value>このシステムでは XInput を使用できません。</value></data>
+  <data name="Gamepad_Generic" xml:space="preserve"><value>コントローラー</value></data>
+  <data name="Gamepad_GenericHint" xml:space="preserve"><value>DirectInput/HID コントローラー — Xbox 以外のパッドは固定 A/B/X/Y レイアウトにマップされないため、ボタンには番号が付けられています。</value></data>
+  <data name="Gamepad_Extra" xml:space="preserve"><value>その他のボタン</value></data>
+  <data name="Cli_GamepadWindowsOnly" xml:space="preserve"><value>ゲームパッド テスターは今のところ Windows のみです。</value></data>
+  <data name="Cli_GamepadHeader" xml:space="preserve"><value>KRATE ゲームパッド テスター — 停止するには任意のキーを押します。</value></data>
+  <data name="Media_Downloading" xml:space="preserve"><value>ffmpeg をダウンロード中 (約 110 MB、1 回)…</value></data>
+  <data name="Media_Extracting" xml:space="preserve"><value>ffmpegを抽出中…</value></data>
+  <data name="Media_ExtractFailed" xml:space="preserve"><value>ダウンロードしたアーカイブ内に ffmpeg が見つかりませんでした。</value></data>
+  <data name="Media_UnknownFormat" xml:space="preserve"><value>不明な形式: {0}</value></data>
+  <data name="Media_NoFfmpeg" xml:space="preserve"><value>ffmpegがインストールされていません。最初に「クレートメディアセットアップ」を実行します。</value></data>
+  <data name="Media_NoOutput" xml:space="preserve"><value>変換により出力ファイルが生成されませんでした。</value></data>
+  <data name="Media_Done" xml:space="preserve"><value>変換済み → {0} ({1})</value></data>
+  <data name="Media_Ready" xml:space="preserve"><value>ffmpegの準備ができました。</value></data>
+  <data name="Media_NeedSetup" xml:space="preserve"><value>ffmpeg がインストールされていません — 「クレート メディア セットアップ」を実行してください (1 回の最大 110 MB のダウンロード)。</value></data>
+  <data name="Media_CliUsage" xml:space="preserve"><value>使用法: クレート変換 &lt;ファイル&gt; &lt;フォーマット&gt; |   クレートメディアのセットアップ |   クレートメディアフォーマット</value></data>
+  <data name="Media_Converting" xml:space="preserve"><value>{0} → {1} を変換中…</value></data>
+  <data name="Converter_Title" xml:space="preserve"><value>ファイルコンバータ</value></data>
+  <data name="Converter_Subtitle" xml:space="preserve"><value>オーディオ、ビデオ、画像をフォーマット間で変換します。</value></data>
+  <data name="Converter_AddFiles" xml:space="preserve"><value>ファイルを追加…</value></data>
+  <data name="Converter_Clear" xml:space="preserve"><value>クリア</value></data>
+  <data name="Converter_Convert" xml:space="preserve"><value>変換する</value></data>
+  <data name="Converter_Download" xml:space="preserve"><value>ダウンロード</value></data>
+  <data name="Converter_DropHint" xml:space="preserve"><value>ここにファイルをドロップするか、「ファイルの追加」を使用します。</value></data>
+  <data name="Converter_NeedFfmpeg" xml:space="preserve"><value>変換には ffmpeg が必要です (最大 110 MB を 1 回ダウンロード)。保存され、後でオフラインで再利用されます。</value></data>
+  <data name="Converter_AllDone" xml:space="preserve"><value>終わり。</value></data>
+  <data name="Converter_Cat_audio" xml:space="preserve"><value>オーディオ</value></data>
+  <data name="Converter_Cat_video" xml:space="preserve"><value>ビデオ</value></data>
+  <data name="Converter_Cat_image" xml:space="preserve"><value>画像</value></data>
+  <data name="Coin_Tally" xml:space="preserve"><value>表 {0} · 裏 {1}</value></data>
+  <data name="Dice_Total" xml:space="preserve"><value>合計{0}</value></data>
+  <data name="Dice_Type" xml:space="preserve"><value>死ぬ</value></data>
+  <data name="Dice_Count" xml:space="preserve"><value>幾つか</value></data>
+  <data name="Rnd_Min" xml:space="preserve"><value>最小値</value></data>
+  <data name="Rnd_Max" xml:space="preserve"><value>最大値</value></data>
+  <data name="Category_Text" xml:space="preserve"><value>テキスト</value></data>
+  <data name="Category_Encoding" xml:space="preserve"><value>エンコーディングとデータ</value></data>
+  <data name="Category_Hashing" xml:space="preserve"><value>ハッシュとセキュリティ</value></data>
+  <data name="Category_Developer" xml:space="preserve"><value>開発者</value></data>
+  <data name="Category_Colors" xml:space="preserve"><value>カラー＆デザイン</value></data>
+  <data name="Category_Conversions" xml:space="preserve"><value>コンバージョン</value></data>
+  <data name="Category_Dates" xml:space="preserve"><value>日付と時刻</value></data>
+  <data name="Category_Random" xml:space="preserve"><value>ランダム性</value></data>
+  <data name="Category_Maths" xml:space="preserve"><value>数学</value></data>
+  <data name="Category_Everyday" xml:space="preserve"><value>毎日</value></data>
+  <data name="Category_Files" xml:space="preserve"><value>ファイルとフォルダー</value></data>
+  <data name="Category_Images" xml:space="preserve"><value>画像</value></data>
+  <data name="Tool_Count_Name" xml:space="preserve"><value>テキストカウンター</value></data>
+  <data name="Tool_Count_Desc" xml:space="preserve"><value>文字、単語、行をカウントし、読書時間を推定します。</value></data>
+  <data name="Tool_Count_Aliases" xml:space="preserve"><value>カウント、単語、文字、行、統計、読書時間</value></data>
+  <data name="Tool_Upper_Name" xml:space="preserve"><value>大文字</value></data>
+  <data name="Tool_Upper_Desc" xml:space="preserve"><value>テキストを大文字に変換します。</value></data>
+  <data name="Tool_Upper_Aliases" xml:space="preserve"><value>大文字、大文字、大文字</value></data>
+  <data name="Tool_Lower_Name" xml:space="preserve"><value>小文字</value></data>
+  <data name="Tool_Lower_Desc" xml:space="preserve"><value>テキストを小文字に変換します。</value></data>
+  <data name="Tool_Lower_Aliases" xml:space="preserve"><value>大文字、小文字、小文字</value></data>
+  <data name="Tool_Title_Name" xml:space="preserve"><value>タイトルケース</value></data>
+  <data name="Tool_Title_Desc" xml:space="preserve"><value>すべての単語の最初の文字を大文字にします。</value></data>
+  <data name="Tool_Title_Aliases" xml:space="preserve"><value>大文字、タイトル、大文字、見出し</value></data>
+  <data name="Tool_Invert_Name" xml:space="preserve"><value>逆さまのケース</value></data>
+  <data name="Tool_Invert_Desc" xml:space="preserve"><value>大文字と小文字を入れ替えます。</value></data>
+  <data name="Tool_Invert_Aliases" xml:space="preserve"><value>ケース、反転、交換、ミラー</value></data>
+  <data name="Tool_Base64_Name" xml:space="preserve"><value>Base64エンコード</value></data>
+  <data name="Tool_Base64_Desc" xml:space="preserve"><value>テキストを Base64 (UTF-8) にエンコードします。</value></data>
+  <data name="Tool_Base64_Aliases" xml:space="preserve"><value>Base64、エンコード、b64</value></data>
+  <data name="Tool_Base64Decode_Name" xml:space="preserve"><value>Base64デコード</value></data>
+  <data name="Tool_Base64Decode_Desc" xml:space="preserve"><value>Base64 をデコードしてテキスト (UTF-8) に戻します。</value></data>
+  <data name="Tool_Base64Decode_Aliases" xml:space="preserve"><value>Base64、デコード、b64</value></data>
+  <data name="Tool_UrlEncode_Name" xml:space="preserve"><value>URLエンコード</value></data>
+  <data name="Tool_UrlEncode_Desc" xml:space="preserve"><value>URL で使用するテキストをパーセント エンコードします。</value></data>
+  <data name="Tool_UrlEncode_Aliases" xml:space="preserve"><value>URL、URI、パーセント、エンコード、エスケープ</value></data>
+  <data name="Tool_UrlDecode_Name" xml:space="preserve"><value>URLデコード</value></data>
+  <data name="Tool_UrlDecode_Desc" xml:space="preserve"><value>パーセントエンコードされた URL をデコードします。</value></data>
+  <data name="Tool_UrlDecode_Aliases" xml:space="preserve"><value>URL、URI、パーセント、デコード、アンエスケープ</value></data>
+  <data name="Tool_HtmlEncode_Name" xml:space="preserve"><value>HTMLエンティティのエンコード</value></data>
+  <data name="Tool_HtmlEncode_Desc" xml:space="preserve"><value>&amp;、&lt;、&gt; を HTML エンティティとしてエスケープします。</value></data>
+  <data name="Tool_HtmlEncode_Aliases" xml:space="preserve"><value>html、エンティティ、エスケープ、エンコード</value></data>
+  <data name="Tool_HtmlDecode_Name" xml:space="preserve"><value>HTMLエンティティのデコード</value></data>
+  <data name="Tool_HtmlDecode_Desc" xml:space="preserve"><value>HTML エンティティを文字に戻します。</value></data>
+  <data name="Tool_HtmlDecode_Aliases" xml:space="preserve"><value>html、エンティティ、エスケープ解除、デコード</value></data>
+  <data name="Tool_Bases_Name" xml:space="preserve"><value>基数コンバーター</value></data>
+  <data name="Tool_Bases_Desc" xml:space="preserve"><value>数値を 2 進数、8 進数、10 進数、16 進数で表示します。入力の前に 0b、0o、または 0x を付けます。</value></data>
+  <data name="Tool_Bases_Aliases" xml:space="preserve"><value>基数、2 進数、8 進数、16 進数、16 進数、10 進数、基数</value></data>
+  <data name="Tool_Md5_Name" xml:space="preserve"><value>MD5ハッシュ</value></data>
+  <data name="Tool_Md5_Desc" xml:space="preserve"><value>テキストの MD5 ハッシュを計算します。チェックサムのみ。セキュリティはありません。</value></data>
+  <data name="Tool_Md5_Aliases" xml:space="preserve"><value>ハッシュ、MD5、チェックサム、ダイジェスト</value></data>
+  <data name="Tool_Sha1_Name" xml:space="preserve"><value>SHA-1ハッシュ</value></data>
+  <data name="Tool_Sha1_Desc" xml:space="preserve"><value>テキストの SHA-1 ハッシュを計算します。チェックサムのみ。セキュリティはありません。</value></data>
+  <data name="Tool_Sha1_Aliases" xml:space="preserve"><value>ハッシュ、sha1、チェックサム、ダイジェスト</value></data>
+  <data name="Tool_Sha256_Name" xml:space="preserve"><value>SHA-256ハッシュ</value></data>
+  <data name="Tool_Sha256_Desc" xml:space="preserve"><value>テキストの SHA-256 ハッシュを計算します。</value></data>
+  <data name="Tool_Sha256_Aliases" xml:space="preserve"><value>ハッシュ、sha、sha256、チェックサム、ダイジェスト、フィンガープリント</value></data>
+  <data name="Tool_Sha512_Name" xml:space="preserve"><value>SHA-512ハッシュ</value></data>
+  <data name="Tool_Sha512_Desc" xml:space="preserve"><value>テキストの SHA-512 ハッシュを計算します。</value></data>
+  <data name="Tool_Sha512_Aliases" xml:space="preserve"><value>ハッシュ、sha、sha512、チェックサム、ダイジェスト</value></data>
+  <data name="Tool_HashAll_Name" xml:space="preserve"><value>すべてのハッシュ</value></data>
+  <data name="Tool_HashAll_Desc" xml:space="preserve"><value>同じテキストの MD5、SHA-1、SHA-256、および SHA-512 を一度に。</value></data>
+  <data name="Tool_HashAll_Aliases" xml:space="preserve"><value>ハッシュ、すべて、MD5、SHA、チェックサム、比較</value></data>
+  <data name="Tool_Password_Name" xml:space="preserve"><value>パスワードジェネレーター</value></data>
+  <data name="Tool_Password_Desc" xml:space="preserve"><value>強力なパスワードを生成します。長さを入力します (デフォルトは 20)。曖昧な文字は除外されます。</value></data>
+  <data name="Tool_Password_Aliases" xml:space="preserve"><value>パスワード、生成、ランダム、安全、パスフレーズ</value></data>
+  <data name="Tool_Uuid_Name" xml:space="preserve"><value>UUID / GUID ジェネレーター</value></data>
+  <data name="Tool_Uuid_Desc" xml:space="preserve"><value>ランダムな UUID を生成します。数を入力するには、数を入力します。</value></data>
+  <data name="Tool_Uuid_Aliases" xml:space="preserve"><value>uuid、guid、id、識別子、ランダム</value></data>
+  <data name="Tool_JsonFormat_Name" xml:space="preserve"><value>JSON フォーマッタ</value></data>
+  <data name="Tool_JsonFormat_Desc" xml:space="preserve"><value>インデントを使用して JSON を再フォーマットします。</value></data>
+  <data name="Tool_JsonFormat_Aliases" xml:space="preserve"><value>json、フォーマット、きれい、インデント、美化</value></data>
+  <data name="Tool_JsonMinify_Name" xml:space="preserve"><value>JSONミニファイアー</value></data>
+  <data name="Tool_JsonMinify_Desc" xml:space="preserve"><value>JSON からすべての空白を削除します。</value></data>
+  <data name="Tool_JsonMinify_Aliases" xml:space="preserve"><value>json、縮小、コンパクト、圧縮</value></data>
+  <data name="Tool_JsonValidate_Name" xml:space="preserve"><value>JSONバリデーター</value></data>
+  <data name="Tool_JsonValidate_Desc" xml:space="preserve"><value>JSON が有効であることを確認し、最初のエラーを指摘します。</value></data>
+  <data name="Tool_JsonValidate_Aliases" xml:space="preserve"><value>json、検証、チェック、lint、エラー</value></data>
+  <data name="Tool_Color_Name" xml:space="preserve"><value>カラーコンバーター</value></data>
+  <data name="Tool_Color_Desc" xml:space="preserve"><value>カラーを HEX、RGB、HSL で表示します。 #3af、rgb(...) または hsl(...) を受け入れます。</value></data>
+  <data name="Tool_Color_Aliases" xml:space="preserve"><value>カラー、カラー、16 進数、RGB、HSL、変換、CSS</value></data>
+  <data name="Tool_Convert_Name" xml:space="preserve"><value>単位換算器</value></data>
+  <data name="Tool_Convert_Desc" xml:space="preserve"><value>単位間の変換: 「10 km mi」、「100 F C」、「5 GiB MB」と入力します。</value></data>
+  <data name="Tool_Convert_Aliases" xml:space="preserve"><value>変換、単位、単位、メートル法、インペリアル、長さ、重量、温度、データ、速度</value></data>
+  <data name="Tool_Roman_Name" xml:space="preserve"><value>ローマ数字</value></data>
+  <data name="Tool_Roman_Desc" xml:space="preserve"><value>ローマ数字とアラビア数字を相互に変換します。</value></data>
+  <data name="Tool_Roman_Aliases" xml:space="preserve"><value>ローマ数字、ラテン数字、数字</value></data>
+  <data name="Tool_Timestamp_Name" xml:space="preserve"><value>Unix タイムスタンプ</value></data>
+  <data name="Tool_Timestamp_Desc" xml:space="preserve"><value>タイムスタンプを日付に変換し、逆に変換します。現在の時間では空のままにしておきます。</value></data>
+  <data name="Tool_Timestamp_Aliases" xml:space="preserve"><value>タイムスタンプ、UNIX、エポック、日付、時刻、変換</value></data>
+  <data name="Tool_DateDiff_Name" xml:space="preserve"><value>日付の差</value></data>
+  <data name="Tool_DateDiff_Desc" xml:space="preserve"><value>2 つの日付の間の時間 (年、日、週、営業日)。ある日付を今日と比較します。</value></data>
+  <data name="Tool_DateDiff_Aliases" xml:space="preserve"><value>日付、差、年齢、日数、間、営業日、カレンダー</value></data>
+  <data name="Tool_Duration_Name" xml:space="preserve"><value>持続時間コンバータ</value></data>
+  <data name="Tool_Duration_Desc" xml:space="preserve"><value>継続時間を細分化し、単位ごとに合計します。 「90000」、「1d 2h 30m」、「1.5h」または「2:30:00」を受け入れます。</value></data>
+  <data name="Error_DurationUsage" xml:space="preserve"><value>「90000」、「1d 2h 30m」、「2:30:00」などの期間を入力します。</value></data>
+  <data name="Tool_Duration_Aliases" xml:space="preserve"><value>期間、秒、分、時間、時間、変換</value></data>
+  <data name="Tool_Random_Name" xml:space="preserve"><value>乱数</value></data>
+  <data name="Tool_Random_Desc" xml:space="preserve"><value>範囲内の数値を描画します。 「1 100」と入力するか、1 ～ 100 を空白のままにします。</value></data>
+  <data name="Tool_Random_Aliases" xml:space="preserve"><value>ランダム、数値、描画、範囲、RNG</value></data>
+  <data name="Tool_Dice_Name" xml:space="preserve"><value>サイコロロール</value></data>
+  <data name="Tool_Dice_Desc" xml:space="preserve"><value>2d6表記でサイコロを振る。空は 6 面ダイスを 1 つ振ります。</value></data>
+  <data name="Tool_Dice_Aliases" xml:space="preserve"><value>サイコロ、ダイス、ロール、d20、RPG、ランダム</value></data>
+  <data name="Tool_Coin_Name" xml:space="preserve"><value>コイン投げ</value></data>
+  <data name="Tool_Coin_Desc" xml:space="preserve"><value>表か裏か。</value></data>
+  <data name="Tool_Coin_Aliases" xml:space="preserve"><value>コイン、フリップ、トス、表、裏、ランダム</value></data>
+  <data name="Tool_Pick_Name" xml:space="preserve"><value>ランダムに選択</value></data>
+  <data name="Tool_Pick_Desc" xml:space="preserve"><value>リストからランダムに 1 つのエントリを選択します (1 行に 1 つ、またはカンマ区切り)。</value></data>
+  <data name="Tool_Pick_Aliases" xml:space="preserve"><value>選ぶ、引く、ランダム、選択、宝くじ、リスト</value></data>
+  <data name="Tool_Shuffle_Name" xml:space="preserve"><value>シャッフルリスト</value></data>
+  <data name="Tool_Shuffle_Desc" xml:space="preserve"><value>リストをランダムな順序 (1 行に 1 つ、またはカンマ区切り) で配置します。</value></data>
+  <data name="Tool_Shuffle_Aliases" xml:space="preserve"><value>シャッフル、ランダム、順序、チーム、ミックス、リスト</value></data>
+  <data name="Tool_RandomColor_Name" xml:space="preserve"><value>ランダムな色</value></data>
+  <data name="Tool_RandomColor_Desc" xml:space="preserve"><value>HEX、RGB、HSL でランダムな色を生成します。</value></data>
+  <data name="Tool_RandomColor_Aliases" xml:space="preserve"><value>ランダム、色、色、16 進数、パレット</value></data>
+  <data name="Tool_Naming_Name" xml:space="preserve"><value>命名規則</value></data>
+  <data name="Tool_Naming_Desc" xml:space="preserve"><value>識別子を CamelCase、PascalCase、snake_case、kebab-case、CONSTANT_CASE で表示します。</value></data>
+  <data name="Tool_Naming_Aliases" xml:space="preserve"><value>命名、ケース、キャメル、パスカル、スネーク、ケバブ、定数、識別子、変数</value></data>
+  <data name="Tool_Slug_Name" xml:space="preserve"><value>スラグジェネレーター</value></data>
+  <data name="Tool_Slug_Desc" xml:space="preserve"><value>タイトルを URL スラッグに変換します。アクセントは平坦化され、単語はハイフンで結合されます。</value></data>
+  <data name="Tool_Slug_Aliases" xml:space="preserve"><value>スラグ、URL、パーマリンク、SEO、リンク</value></data>
+  <data name="Tool_Deaccent_Name" xml:space="preserve"><value>アクセントを削除する</value></data>
+  <data name="Tool_Deaccent_Desc" xml:space="preserve"><value>é は e になり、ç は c になります。それ以外はすべて放置されます。</value></data>
+  <data name="Tool_Deaccent_Aliases" xml:space="preserve"><value>アクセント、発音記号、ASCII、正規化、Unicode</value></data>
+  <data name="Tool_Clean_Name" xml:space="preserve"><value>テキストをクリーンアップする</value></data>
+  <data name="Tool_Clean_Desc" xml:space="preserve"><value>繰り返されるスペースを折りたたみ、行をトリミングし、空行を削除します。</value></data>
+  <data name="Tool_Clean_Aliases" xml:space="preserve"><value>クリーン、空白、スペース、トリム、ペースト、整頓、フォーマット</value></data>
+  <data name="Tool_SortLines_Name" xml:space="preserve"><value>行のソート</value></data>
+  <data name="Tool_SortLines_Desc" xml:space="preserve"><value>インターフェイス言語の規則を使用して、行をアルファベット順に並べ替えます。</value></data>
+  <data name="Tool_SortLines_Aliases" xml:space="preserve"><value>並べ替え、行、アルファベット順、順序、リスト</value></data>
+  <data name="Tool_SortByLength_Name" xml:space="preserve"><value>行を長さで並べ替える</value></data>
+  <data name="Tool_SortByLength_Desc" xml:space="preserve"><value>行を最短から最長の順に並べ替えます。</value></data>
+  <data name="Tool_SortByLength_Aliases" xml:space="preserve"><value>並べ替え、行、長さ、サイズ、順序</value></data>
+  <data name="Tool_Dedupe_Name" xml:space="preserve"><value>重複行を削除する</value></data>
+  <data name="Tool_Dedupe_Desc" xml:space="preserve"><value>各行の最初の出現と元の順序を保持します。</value></data>
+  <data name="Tool_Dedupe_Aliases" xml:space="preserve"><value>重複、重複排除、一意、個別、行</value></data>
+  <data name="Tool_Reverse_Name" xml:space="preserve"><value>テキストを反転する</value></data>
+  <data name="Tool_Reverse_Desc" xml:space="preserve"><value>絵文字、アクセント記号を含むテキストを 1 文字ずつ反転します。</value></data>
+  <data name="Tool_Reverse_Aliases" xml:space="preserve"><value>リバース、ミラー、後方、反転</value></data>
+  <data name="Tool_ReverseLines_Name" xml:space="preserve"><value>行の順序を逆にする</value></data>
+  <data name="Tool_ReverseLines_Desc" xml:space="preserve"><value>最後の行を最初に置きます。</value></data>
+  <data name="Tool_ReverseLines_Aliases" xml:space="preserve"><value>反転、線、順序、反転、反転</value></data>
+  <data name="Tool_WordFrequency_Name" xml:space="preserve"><value>単語の頻度</value></data>
+  <data name="Tool_WordFrequency_Desc" xml:space="preserve"><value>各単語が出現する頻度を、頻度の高いものから順にカウントします。</value></data>
+  <data name="Tool_WordFrequency_Aliases" xml:space="preserve"><value>頻度、単語、数、出現、統計</value></data>
+  <data name="Tool_FrenchTypography_Name" xml:space="preserve"><value>フランス語のタイポグラフィー</value></data>
+  <data name="Tool_FrenchTypography_Desc" xml:space="preserve"><value>フランス語のタイポグラフィで必要な改行なしのスペースを ; の前に追加します。 : ! ?そして引用符の内側。</value></data>
+  <data name="Tool_FrenchTypography_Aliases" xml:space="preserve"><value>フランス語、タイポグラフィ、スペース、句読点、nbsp、引用符</value></data>
+  <data name="Tool_Mask_Name" xml:space="preserve"><value>テキストを匿名化する</value></data>
+  <data name="Tool_Mask_Desc" xml:space="preserve"><value>電子メール、電話番号、長い数字をプレースホルダーに置き換えます。</value></data>
+  <data name="Tool_Mask_Aliases" xml:space="preserve"><value>マスク、匿名化、編集、プライバシー、GDPR、電子メール、電話</value></data>
+  <data name="Tool_Lorem_Name" xml:space="preserve"><value>ローレム・イプサム</value></data>
+  <data name="Tool_Lorem_Desc" xml:space="preserve"><value>フィラーテキストを生成します。単語数を入力するか、3 つの段落の場合は「3p」と入力します。</value></data>
+  <data name="Tool_Lorem_Aliases" xml:space="preserve"><value>ローレム、イプサム、プレースホルダー、フィラー、ダミー、テキスト</value></data>
+  <data name="Tool_Morse_Name" xml:space="preserve"><value>モールス信号</value></data>
+  <data name="Tool_Morse_Desc" xml:space="preserve"><value>モールス信号によるテキストの送受信、方向が自動的に検出されます。</value></data>
+  <data name="Tool_Morse_Aliases" xml:space="preserve"><value>モールス信号、電信、ドット、ダッシュ、sos</value></data>
+  <data name="Tool_Diff_Name" xml:space="preserve"><value>2 つのテキストを比較する</value></data>
+  <data name="Tool_Diff_Desc" xml:space="preserve"><value>行ごとの違い。 --- のみを含む行で 2 つのテキストを区切ります。</value></data>
+  <data name="Tool_Diff_Aliases" xml:space="preserve"><value>diff、比較、差分、変更、マージ、パッチ</value></data>
+  <data name="Tool_JsonEscape_Name" xml:space="preserve"><value>JSONエスケープ</value></data>
+  <data name="Tool_JsonEscape_Desc" xml:space="preserve"><value>テキストをエスケープして、JSON 文字列内に貼り付けられるようにします。</value></data>
+  <data name="Tool_JsonEscape_Aliases" xml:space="preserve"><value>json、エスケープ、引用符、文字列、バックスラッシュ</value></data>
+  <data name="Tool_JsonUnescape_Name" xml:space="preserve"><value>JSONエスケープ</value></data>
+  <data name="Tool_JsonUnescape_Desc" xml:space="preserve"><value>エスケープされた JSON 文字列をプレーン テキストに戻します。</value></data>
+  <data name="Tool_JsonUnescape_Aliases" xml:space="preserve"><value>json、エスケープ解除、引用解除、デコード、文字列</value></data>
+  <data name="Tool_SqlEscape_Name" xml:space="preserve"><value>SQLエスケープ</value></data>
+  <data name="Tool_SqlEscape_Desc" xml:space="preserve"><value>値を SQL 文字列リテラルとして引用符で囲みます。パラメータの代替ではありません。</value></data>
+  <data name="Tool_SqlEscape_Aliases" xml:space="preserve"><value>SQL、エスケープ、引用符、リテラル、インジェクション</value></data>
+  <data name="Tool_ShellEscape_Name" xml:space="preserve"><value>シェルエスケープ</value></data>
+  <data name="Tool_ShellEscape_Desc" xml:space="preserve"><value>POSIX シェル コマンド ラインの値を安全に引用符で囲みます。</value></data>
+  <data name="Tool_ShellEscape_Aliases" xml:space="preserve"><value>シェル、エスケープ、bash、引用符、コマンド、ターミナル</value></data>
+  <data name="Tool_Jwt_Name" xml:space="preserve"><value>JWT デコーダ</value></data>
+  <data name="Tool_Jwt_Desc" xml:space="preserve"><value>JWT ヘッダーとペイロードをローカルでデコードし、その日付を詳しく説明します。署名は検証されていません。</value></data>
+  <data name="Tool_Jwt_Aliases" xml:space="preserve"><value>jwt、トークン、ホセ、ベアラー、認証、デコード</value></data>
+  <data name="Tool_Scientific_Name" xml:space="preserve"><value>科学的表記法</value></data>
+  <data name="Tool_Scientific_Desc" xml:space="preserve"><value>数値を科学的および工学的表記でわかりやすく表示します。</value></data>
+  <data name="Tool_Scientific_Aliases" xml:space="preserve"><value>科学、表記法、指数、工学、浮動小数点数、数値</value></data>
+  <data name="Tool_XmlFormat_Name" xml:space="preserve"><value>XML フォーマッタ</value></data>
+  <data name="Tool_XmlFormat_Desc" xml:space="preserve"><value>XML を再インデントします。</value></data>
+  <data name="Tool_XmlFormat_Aliases" xml:space="preserve"><value>XML、フォーマット、整形、インデント、美化</value></data>
+  <data name="Tool_XmlValidate_Name" xml:space="preserve"><value>XML バリデーター</value></data>
+  <data name="Tool_XmlValidate_Desc" xml:space="preserve"><value>XML が整形式であることをチェックし、最初のエラーを指摘します。</value></data>
+  <data name="Tool_XmlValidate_Aliases" xml:space="preserve"><value>XML、検証、チェック、整形式、エラー</value></data>
+  <data name="Tool_Regex_Name" xml:space="preserve"><value>正規表現テスター</value></data>
+  <data name="Tool_Regex_Desc" xml:space="preserve"><value>最初の行はパターン、残りはテキストです。すべての一致およびキャプチャ グループをリストします。</value></data>
+  <data name="Tool_Regex_Aliases" xml:space="preserve"><value>正規表現、正規表現、パターン、一致、テスト、式</value></data>
+  <data name="Tool_QueryString_Name" xml:space="preserve"><value>URLクエリインスペクタ</value></data>
+  <data name="Tool_QueryString_Desc" xml:space="preserve"><value>URL クエリ文字列を 1 行につき 1 つの読み取り可能なパラメータに分割します。</value></data>
+  <data name="Tool_QueryString_Aliases" xml:space="preserve"><value>URL、クエリ、パラメータ、クエリ文字列、utm、リンク</value></data>
+  <data name="Tool_Crlf_Name" xml:space="preserve"><value>CRLFに変換</value></data>
+  <data name="Tool_Crlf_Desc" xml:space="preserve"><value>Windows の行末。</value></data>
+  <data name="Tool_Crlf_Aliases" xml:space="preserve"><value>crlf、行末、windows、eol、改行</value></data>
+  <data name="Tool_Lf_Name" xml:space="preserve"><value>LFに変換</value></data>
+  <data name="Tool_Lf_Desc" xml:space="preserve"><value>Unix の行末。</value></data>
+  <data name="Tool_Lf_Aliases" xml:space="preserve"><value>lf、行末、unix、linux、eol、改行</value></data>
+  <data name="Tool_PathConvert_Name" xml:space="preserve"><value>パスコンバータ</value></data>
+  <data name="Tool_PathConvert_Desc" xml:space="preserve"><value>Windows と Unix の区切り文字を交換し、方向は自動的に検出されます。</value></data>
+  <data name="Tool_PathConvert_Aliases" xml:space="preserve"><value>パス、スラッシュ、バックスラッシュ、Windows、UNIX、変換</value></data>
+  <data name="Tool_FilenameClean_Name" xml:space="preserve"><value>ファイル名をクリーンアップする</value></data>
+  <data name="Tool_FilenameClean_Desc" xml:space="preserve"><value>Windows が禁止する文字を削除し、CON などの予約名を回避します。</value></data>
+  <data name="Tool_FilenameClean_Aliases" xml:space="preserve"><value>ファイル名、サニタイズ、無効、文字、ウィンドウ、ファイル</value></data>
+  <data name="Tool_Spell_Name" xml:space="preserve"><value>数字から単語へ</value></data>
+  <data name="Tool_Spell_Desc" xml:space="preserve"><value>数字を綴ります。 「fr」または「en」を追加して言語を選択します。</value></data>
+  <data name="Tool_Spell_Aliases" xml:space="preserve"><value>単語、スペル、文字、小切手、小切手、数字、書く</value></data>
+  <data name="Tool_Percent_Name" xml:space="preserve"><value>パーセンテージ計算機</value></data>
+  <data name="Tool_Percent_Desc" xml:space="preserve"><value>2 つの数値を入力します。Y の X%、比率、および一方から他方への変化を示します。</value></data>
+  <data name="Tool_Percent_Aliases" xml:space="preserve"><value>パーセント、パーセンテージ、比率、変更、増加、割引、三法則</value></data>
+  <data name="Tool_Fraction_Name" xml:space="preserve"><value>分数変換器</value></data>
+  <data name="Tool_Fraction_Desc" xml:space="preserve"><value>10 進数を最も単純な分数に戻します。</value></data>
+  <data name="Tool_Fraction_Aliases" xml:space="preserve"><value>分数、小数、比、簡略化、変換</value></data>
+  <data name="Tool_Factor_Name" xml:space="preserve"><value>係数、GCD および LCM</value></data>
+  <data name="Tool_Factor_Desc" xml:space="preserve"><value>各数値の素因数分解に、複数の数値を与える場合の GCD と LCM を加えます。</value></data>
+  <data name="Tool_Factor_Aliases" xml:space="preserve"><value>因数、素数、gcd、lcm、除数、因数分解</value></data>
+  <data name="Tool_Statistics_Name" xml:space="preserve"><value>統計</value></data>
+  <data name="Tool_Statistics_Desc" xml:space="preserve"><value>リストの数、合計、平均、中央値、最小、最大、範囲、標準偏差。</value></data>
+  <data name="Tool_Statistics_Aliases" xml:space="preserve"><value>統計、平均、平均、中央値、標準偏差、偏差、合計、最小、最大</value></data>
+  <data name="Tool_Sequence_Name" xml:space="preserve"><value>シーケンスジェネレータ</value></data>
+  <data name="Tool_Sequence_Desc" xml:space="preserve"><value>「fib 10」、「primes 20」、「arith 2 3 10」または「geom 2 3 10」。</value></data>
+  <data name="Tool_Sequence_Aliases" xml:space="preserve"><value>数列、フィボナッチ、算術、幾何学的、素数、級数</value></data>
+  <data name="Tool_Solve_Name" xml:space="preserve"><value>方程式ソルバー</value></data>
+  <data name="Tool_Solve_Desc" xml:space="preserve"><value>ax² + bx + c = 0 を係数から解きます。 2 つの係数で ax + b = 0 を解きます。</value></data>
+  <data name="Tool_Solve_Aliases" xml:space="preserve"><value>方程式、解く、二次方程式、ルート、多項式、代数</value></data>
+  <data name="Tool_Bmi_Name" xml:space="preserve"><value>BMI計算機</value></data>
+  <data name="Tool_Bmi_Desc" xml:space="preserve"><value>体重をkg、身長を「70 175」と入力します。</value></data>
+  <data name="Tool_Bmi_Aliases" xml:space="preserve"><value>bmi、体重、体重、身長、健康状態</value></data>
+  <data name="Tool_Tip_Name" xml:space="preserve"><value>チップ計算機</value></data>
+  <data name="Tool_Tip_Desc" xml:space="preserve"><value>「48.50 15 3」: 48.50 の 15% のチップを 3 人で分けます。</value></data>
+  <data name="Tool_Tip_Aliases" xml:space="preserve"><value>チップ、チップ、レストラン、請求書、分割、シェア</value></data>
+  <data name="Tool_Loan_Name" xml:space="preserve"><value>ローン計算機</value></data>
+  <data name="Tool_Loan_Desc" xml:space="preserve"><value>「200000 3.5 25」: 金額、年率、年数。月々の返済額と利息総額を表示します。</value></data>
+  <data name="Tool_Loan_Aliases" xml:space="preserve"><value>ローン、住宅ローン、毎月、支払い、利息、クレジット、償却</value></data>
+  <data name="Tool_Subnet_Name" xml:space="preserve"><value>サブネット計算機</value></data>
+  <data name="Tool_Subnet_Desc" xml:space="preserve"><value>「192.168.1.10/24」: ネットワーク、マスク、ブロードキャスト、および使用可能なホスト範囲。</value></data>
+  <data name="Tool_Subnet_Aliases" xml:space="preserve"><value>サブネット、cidr、ip、ネットワーク、マスク、ブロードキャスト、ネットマスク</value></data>
+  <data name="Tool_FileHash_Name" xml:space="preserve"><value>ファイル情報とハッシュ</value></data>
+  <data name="Tool_FileHash_Desc" xml:space="preserve"><value>ファイルのサイズ、日付、SHA-256。ファイルをウィンドウにドロップします。</value></data>
+  <data name="Tool_FileHash_Aliases" xml:space="preserve"><value>ファイル、ハッシュ、sha256、チェックサム、情報、プロパティ、サイズ、検証</value></data>
+  <data name="Tool_FileCompare_Name" xml:space="preserve"><value>2 つのファイルを比較する</value></data>
+  <data name="Tool_FileCompare_Desc" xml:space="preserve"><value>これら 2 つのファイルは同一ですか? 1 行に 1 つのパスを指定するか、両方を削除します。</value></data>
+  <data name="Tool_FileCompare_Aliases" xml:space="preserve"><value>比較、ファイル、同一、チェックサム、差分、重複</value></data>
+  <data name="Tool_Tree_Name" xml:space="preserve"><value>フォルダーツリー</value></data>
+  <data name="Tool_Tree_Desc" xml:space="preserve"><value>テキストとしてのフォルダー ツリー。すぐに貼り付けることができます。深さを変更するには、数値を追加します。</value></data>
+  <data name="Tool_Tree_Aliases" xml:space="preserve"><value>ツリー、フォルダー、ディレクトリ、構造、リスト、Readme</value></data>
+  <data name="Tool_FolderSize_Name" xml:space="preserve"><value>フォルダーサイズ</value></data>
+  <data name="Tool_FolderSize_Desc" xml:space="preserve"><value>合計サイズ、最大ファイル、およびスペースを占有しているファイルの種類。</value></data>
+  <data name="Tool_FolderSize_Aliases" xml:space="preserve"><value>サイズ、フォルダー、ディスク、スペース、使用量、最大、大きい</value></data>
+  <data name="Tool_Duplicates_Name" xml:space="preserve"><value>重複ファイルの検索</value></data>
+  <data name="Tool_Duplicates_Desc" xml:space="preserve"><value>フォルダー内の同一のファイルを一覧表示します。何も削除されません。</value></data>
+  <data name="Tool_Duplicates_Aliases" xml:space="preserve"><value>重複、重複、同一、コピー、クリーン、ディスク容量</value></data>
+  <data name="Tool_FileSplit_Name" xml:space="preserve"><value>ファイルを分割する</value></data>
+  <data name="Tool_FileSplit_Desc" xml:space="preserve"><value>「パス 10MB」は、ファイルを番号付きの部分に分割します。オリジナルは手付かずです。</value></data>
+  <data name="Tool_FileSplit_Aliases" xml:space="preserve"><value>分割、カット、パーツ、チャンク、大きなファイル、転送</value></data>
+  <data name="Tool_FileJoin_Name" xml:space="preserve"><value>ファイルに再結合する</value></data>
+  <data name="Tool_FileJoin_Desc" xml:space="preserve"><value>任意の .part ファイルをポイントすると、その横に元のファイルが再構築されます。</value></data>
+  <data name="Tool_FileJoin_Aliases" xml:space="preserve"><value>結合、マージ、パーツ、再構築、連結、チャンク</value></data>
+  <data name="Tool_TestFile_Name" xml:space="preserve"><value>テストファイルジェネレータ</value></data>
+  <data name="Tool_TestFile_Desc" xml:space="preserve"><value>「パス 100MB」では、まさにそのサイズのファイルが作成されます。</value></data>
+  <data name="Tool_TestFile_Aliases" xml:space="preserve"><value>テスト、ファイル、生成、ダミー、サイズ、アップロード、クォータ</value></data>
+  <data name="Tool_ImageInfo_Name" xml:space="preserve"><value>画像の寸法</value></data>
+  <data name="Tool_ImageInfo_Desc" xml:space="preserve"><value>画像の形式、ピクセル、メガピクセル単位のサイズ、およびアスペクト比。ファイルをウィンドウにドロップします。</value></data>
+  <data name="Tool_ImageInfo_Aliases" xml:space="preserve"><value>画像、寸法、サイズ、解像度、ピクセル、幅、高さ、メガピクセル、exif、png、jpeg</value></data>
+  <data name="Tool_AspectRatio_Name" xml:space="preserve"><value>アスペクト比</value></data>
+  <data name="Tool_AspectRatio_Desc" xml:space="preserve"><value>「1920x1080」では 16:9 になります。 「16:9 1920」は一致する高さを示します。</value></data>
+  <data name="Tool_AspectRatio_Aliases" xml:space="preserve"><value>比率、アスペクト、16:9、4:3、解像度、寸法、比率、画面</value></data>
+  <data name="Tool_Qr_Name" xml:space="preserve"><value>QRコード</value></data>
+  <data name="Tool_Qr_Desc" xml:space="preserve"><value>テキスト、URL、または Wi-Fi 文字列をスキャン可能な QR コードに変換します。</value></data>
+  <data name="Tool_Qr_Aliases" xml:space="preserve"><value>qr、qrコード、コード、バーコード、url、wifi、スキャン、リンク</value></data>
+  <data name="Tool_Fancy_Name" xml:space="preserve"><value>ファンシーなテキスト</value></data>
+  <data name="Tool_Fancy_Desc" xml:space="preserve"><value>ソーシャル メディア用にテキストを太字、斜体、スクリプト、その他の Unicode スタイルに変換します。</value></data>
+  <data name="Tool_Fancy_Aliases" xml:space="preserve"><value>ファンシー、ユニコード、フォント、太字、イタリック、スクリプト、フラクトゥール、美的、インスタグラム、ツイッター</value></data>
+  <data name="Tool_CsvToJson_Name" xml:space="preserve"><value>CSVからJSONへ</value></data>
+  <data name="Tool_CsvToJson_Desc" xml:space="preserve"><value>CSV (最初の行 = ヘッダー) をオブジェクトの JSON 配列に変換します。</value></data>
+  <data name="Tool_CsvToJson_Aliases" xml:space="preserve"><value>CSV、JSON、変換、データ、テーブル、スプレッドシート</value></data>
+  <data name="Tool_JsonToCsv_Name" xml:space="preserve"><value>JSONからCSVへ</value></data>
+  <data name="Tool_JsonToCsv_Desc" xml:space="preserve"><value>オブジェクトの JSON 配列を CSV に変換します。</value></data>
+  <data name="Tool_JsonToCsv_Aliases" xml:space="preserve"><value>json、csv、変換、データ、テーブル、スプレッドシート、エクスポート</value></data>
+  <data name="Tool_MarkdownToHtml_Name" xml:space="preserve"><value>HTML へのマークダウン</value></data>
+  <data name="Tool_MarkdownToHtml_Desc" xml:space="preserve"><value>Markdown (見出し、リスト、リンク、コード、強調) を HTML に変換します。</value></data>
+  <data name="Tool_MarkdownToHtml_Aliases" xml:space="preserve"><value>マークダウン、HTML、変換、MD、レンダリング、フォーマット</value></data>
+  <data name="Tool_Cron_Name" xml:space="preserve"><value>クロンの説明者</value></data>
+  <data name="Tool_Cron_Desc" xml:space="preserve"><value>cron 式をわかりやすい言葉で説明します。 「0 9 * * 1-5」または「@daily」を試してください。</value></data>
+  <data name="Tool_Cron_Aliases" xml:space="preserve"><value>cron、crontab、スケジュール、式、説明、ジョブ、タイマー</value></data>
+  <data name="Tool_PasswordStrength_Name" xml:space="preserve"><value>パスワードの強度</value></data>
+  <data name="Tool_PasswordStrength_Desc" xml:space="preserve"><value>パスワードのエントロピーと解読にかかる時間を推定します。</value></data>
+  <data name="Tool_PasswordStrength_Aliases" xml:space="preserve"><value>パスワード、強度、エントロピー、安全、クラック、チェック、セキュリティ</value></data>
+  <data name="Tool_WeekInfo_Name" xml:space="preserve"><value>週番号</value></data>
+  <data name="Tool_WeekInfo_Desc" xml:space="preserve"><value>ISO の週番号、日付、四半期 (空 = 今日)。</value></data>
+  <data name="Tool_WeekInfo_Aliases" xml:space="preserve"><value>週、ISO、数値、曜日、四半期、カレンダー、日付</value></data>
+  <data name="Tool_Calc_Name" xml:space="preserve"><value>電卓</value></data>
+  <data name="Tool_Calc_Desc" xml:space="preserve"><value>数式を評価します: + - * / ^ %、括弧、関数 (sqrt、sin、log…)、および定数 (pi、e)。</value></data>
+  <data name="Tool_Calc_Aliases" xml:space="preserve"><value>計算、電卓、数学、式、評価、計算、算術、科学</value></data>
+  <data name="Tool_Palette_Name" xml:space="preserve"><value>カラーパレット</value></data>
+  <data name="Tool_Palette_Desc" xml:space="preserve"><value>1 つの色から調和のとれた色 (補色、三和色、類似色など) を生成します。</value></data>
+  <data name="Tool_Palette_Aliases" xml:space="preserve"><value>パレット、色、色、調和、相補的、三項、類似、スキーム、デザイン</value></data>
+  <data name="Tool_Contrast_Name" xml:space="preserve"><value>コントラストチェッカー</value></data>
+  <data name="Tool_Contrast_Desc" xml:space="preserve"><value>2 つの色 (ラインごとに 1 つ) 間の WCAG コントラスト比と、それが通過するレベル。</value></data>
+  <data name="Tool_Contrast_Aliases" xml:space="preserve"><value>コントラスト、wcag、アクセシビリティ、比率、a11y、色、色、読みやすい</value></data>
+  <data name="Tool_ColorTemp_Name" xml:space="preserve"><value>色温度</value></data>
+  <data name="Tool_ColorTemp_Desc" xml:space="preserve"><value>ケルビン単位の温度を白色点色 (1900K キャンドル、6500K 昼光) に変換します。</value></data>
+  <data name="Tool_ColorTemp_Aliases" xml:space="preserve"><value>温度、ケルビン、色、色、ホワイトバランス、暖かい、冷たい、光</value></data>
+  <data name="Tool_CssUnits_Name" xml:space="preserve"><value>CSS単位コンバータ</value></data>
+  <data name="Tool_CssUnits_Desc" xml:space="preserve"><value>px、rem、em、pt の間で変換します (16px ルートを想定)。</value></data>
+  <data name="Tool_CssUnits_Aliases" xml:space="preserve"><value>CSS、ピクセル、レム、エム、pt、単位、変換、フォント、サイズ、ウェブ</value></data>
+  <data name="Tool_Gradient_Name" xml:space="preserve"><value>CSS グラデーション</value></data>
+  <data name="Tool_Gradient_Desc" xml:space="preserve"><value>2 つ以上の色を CSS 線形グラデーションに変換します。 45度のような角度を追加します。</value></data>
+  <data name="Tool_Gradient_Aliases" xml:space="preserve"><value>グラデーション、CSS、線形、色、色、背景、劣化、Web</value></data>
+  <data name="Tool_Toc_Name" xml:space="preserve"><value>目次</value></data>
+  <data name="Tool_Toc_Desc" xml:space="preserve"><value>見出しからアンカー リンクを使用して Markdown 目次を作成します。</value></data>
+  <data name="Tool_Toc_Aliases" xml:space="preserve"><value>目次、目次、マークダウン、見出し、概要、索引、リンク</value></data>
+  <data name="Tool_MarkdownTable_Name" xml:space="preserve"><value>マークダウンテーブル</value></data>
+  <data name="Tool_MarkdownTable_Desc" xml:space="preserve"><value>CSV または TSV 行を整列された Markdown テーブルに変換します。</value></data>
+  <data name="Tool_MarkdownTable_Aliases" xml:space="preserve"><value>マークダウン、テーブル、csv、tsv、変換、グリッド、フォーマット</value></data>
+  <data name="Tool_Gitignore_Name" xml:space="preserve"><value>Gitignore ジェネレーター</value></data>
+  <data name="Tool_Gitignore_Desc" xml:space="preserve"><value>言語/ツール名 (node、python、dotnet、rust…) から .gitignore を構築します。</value></data>
+  <data name="Tool_Gitignore_Aliases" xml:space="preserve"><value>gitignore、git、無視、テンプレート、ノード、Python、ドットネット、Rust、生成</value></data>
+  <data name="Tool_HexDump_Name" xml:space="preserve"><value>16 進ビューア</value></data>
+  <data name="Tool_HexDump_Desc" xml:space="preserve"><value>ファイルまたはテキストを 16 進ダンプ (オフセット、バイト、および印刷可能な ASCII) として表示します。</value></data>
+  <data name="Tool_HexDump_Aliases" xml:space="preserve"><value>16 進数、ダンプ、16 進数、ビューア、バイナリ、バイト、ASCII、ファイル</value></data>
+  <data name="Tool_SpeedDistanceTime_Name" xml:space="preserve"><value>速度、距離、時間</value></data>
+  <data name="Tool_SpeedDistanceTime_Desc" xml:space="preserve"><value>速度、距離、時間 (単位付き) のいずれかを 2 つ与えると、3 番目の値が得られます。 「100km 2h」を試してみましょう。</value></data>
+  <data name="Tool_SpeedDistanceTime_Aliases" xml:space="preserve"><value>速度、距離、時間、速度、移動、物理学、mph、kmh、電卓</value></data>
+  <data name="Tool_Combinatorics_Name" xml:space="preserve"><value>組み合わせと順列</value></data>
+  <data name="Tool_Combinatorics_Desc" xml:space="preserve"><value>「n k」は C(n,k) と P(n,k) を与えます。 1 つの数字で n! が得られます。あらゆるサイズにぴったり。</value></data>
+  <data name="Tool_Combinatorics_Aliases" xml:space="preserve"><value>組み合わせ論、組み合わせ、順列、階乗、ncr、npr、確率、選択</value></data>
+  <data name="Tool_TransferTime_Name" xml:space="preserve"><value>乗り換え時間</value></data>
+  <data name="Tool_TransferTime_Desc" xml:space="preserve"><value>特定の帯域幅でのファイルの所要時間。 「5GB 100Mbps」（ビット≠バイト）を試してください。</value></data>
+  <data name="Tool_TransferTime_Aliases" xml:space="preserve"><value>転送、ダウンロード、アップロード、時間、帯域幅、速度、mbps、ファイル、ネットワーク</value></data>
+  <data name="Tool_SqlFormat_Name" xml:space="preserve"><value>SQLフォーマッタ</value></data>
+  <data name="Tool_SqlFormat_Desc" xml:space="preserve"><value>キーワードを大文字にし、各句を独自の行に配置して、クエリを読みやすくします。</value></data>
+  <data name="Tool_SqlFormat_Aliases" xml:space="preserve"><value>SQL、フォーマット、整形、クエリ、整形、インデント、選択、データベース</value></data>
+  <data name="Tool_Zalgo_Name" xml:space="preserve"><value>ザルゴのテキスト</value></data>
+  <data name="Tool_Zalgo_Desc" xml:space="preserve"><value>テキスト上のマークを組み合わせてスタックし、グリッチのある「zalgo」の外観を実現します。</value></data>
+  <data name="Tool_Zalgo_Aliases" xml:space="preserve"><value>zalgo、グリッチ、呪われた、不気味、結合、ユニコード、破損</value></data>
+  <data name="Tool_ShoeSize_Name" xml:space="preserve"><value>靴のサイズコンバーター</value></data>
+  <data name="Tool_ShoeSize_Desc" xml:space="preserve"><value>靴のサイズを EU、UK、US、cm に変換します。レディースの場合は「w」、入力システムの場合は「cm」/「uk」/「us」を追加します。</value></data>
+  <data name="Tool_ShoeSize_Aliases" xml:space="preserve"><value>靴、サイズ、EU、英国、米国、cm、変換、履物、衣類</value></data>
+  <data name="Tool_Zip_Name" xml:space="preserve"><value>圧縮</value></data>
+  <data name="Tool_Zip_Desc" xml:space="preserve"><value>ファイルまたはフォルダーをその隣のアーカイブに圧縮します (zip、tar、tar.gz、tar.bz2、7z)。</value></data>
+  <data name="Tool_Zip_Aliases" xml:space="preserve"><value>zip、圧縮、アーカイブ、アーカイバー、フォルダー、パッケージ、nanazip、7zip</value></data>
+  <data name="Tool_Unzip_Name" xml:space="preserve"><value>アーカイブを抽出する</value></data>
+  <data name="Tool_Unzip_Desc" xml:space="preserve"><value>.zip、.7z、.rar、.tar、.gz などをフォルダーに抽出します。アーカイブをウィンドウにドロップします。</value></data>
+  <data name="Tool_Unzip_Aliases" xml:space="preserve"><value>unzip、抽出、アーカイブ、解凍、zip、7z、rar、tar、gzip、nanazip</value></data>
+  <data name="Tool_ColorBlind_Name" xml:space="preserve"><value>色覚異常シミュレーション</value></data>
+  <data name="Tool_ColorBlind_Desc" xml:space="preserve"><value>一般的な色覚異常の場合に色がどのように見えるかを示します。</value></data>
+  <data name="Tool_ColorBlind_Aliases" xml:space="preserve"><value>色覚異常, 色覚異常, CCVD, 第一色覚, 第二色覚, 三色覚, アクセシビリティ, a11y, 色, カラー</value></data>
+  <data name="Tool_Barcode_Name" xml:space="preserve"><value>バーコード (コード 128)</value></data>
+  <data name="Tool_Barcode_Desc" xml:space="preserve"><value>テキストまたは数字から Code 128 バーコードを生成します。</value></data>
+  <data name="Tool_Barcode_Aliases" xml:space="preserve"><value>バーコード、コード 128、コード 128、スキャン、ean、upc、ラベル</value></data>
+  <data name="Tool_Exif_Name" xml:space="preserve"><value>EXIF/メタデータ</value></data>
+  <data name="Tool_Exif_Desc" xml:space="preserve"><value>JPEG からカメラ、レンズ、露出、日付を読み取ります。写真を窓の上に置きます。</value></data>
+  <data name="Tool_Exif_Aliases" xml:space="preserve"><value>exif、メタデータ、写真、カメラ、jpeg、画像、gps、iptc、プロパティ</value></data>
+  <data name="Tool_PdfMerge_Name" xml:space="preserve"><value>PDFを結合する</value></data>
+  <data name="Tool_PdfMerge_Desc" xml:space="preserve"><value>複数の PDF を 1 つのmerged.pdfに結合します。 1 行に 1 つのパスを順番に配置します。</value></data>
+  <data name="Tool_PdfMerge_Aliases" xml:space="preserve"><value>PDF、マージ、結合、結合、連結、ドキュメント</value></data>
+  <data name="Tool_PdfSplit_Name" xml:space="preserve"><value>PDFの分割</value></data>
+  <data name="Tool_PdfSplit_Desc" xml:space="preserve"><value>PDF をその隣のページごとに 1 つのファイルに分割します。 PDF をウィンドウにドロップします。</value></data>
+  <data name="Tool_PdfSplit_Aliases" xml:space="preserve"><value>PDF、分割、分離、ページ、抽出、ドキュメント</value></data>
+  <data name="Tool_Currency_Name" xml:space="preserve"><value>通貨換算機</value></data>
+  <data name="Tool_Currency_Desc" xml:space="preserve"><value>ライブ レートを使用して通貨間の換算を行います (キャッシュされ、最新の既知のレートでオフラインで動作します)。</value></data>
+  <data name="Tool_Currency_Aliases" xml:space="preserve"><value>通貨、為替、お金、変換、外国為替、米ドル、ユーロ、レート、オンライン</value></data>
+  <data name="Tool_JsonToYaml_Name" xml:space="preserve"><value>JSON → YAML</value></data>
+  <data name="Tool_JsonToYaml_Desc" xml:space="preserve"><value>JSON を YAML (ブロック スタイル) に変換します。</value></data>
+  <data name="Tool_JsonToYaml_Aliases" xml:space="preserve"><value>yaml、yml、json、変換、構成、シリアル化</value></data>
+  <data name="Tool_CssMinify_Name" xml:space="preserve"><value>CSS の縮小</value></data>
+  <data name="Tool_CssMinify_Desc" xml:space="preserve"><value>コメントと空白を削除して CSS を縮小します。</value></data>
+  <data name="Tool_CssMinify_Aliases" xml:space="preserve"><value>CSS、縮小、圧縮、縮小化、空白、縮小、スタイルシート</value></data>
+  <data name="Tool_SysInfo_Name" xml:space="preserve"><value>システム情報</value></data>
+  <data name="Tool_SysInfo_Desc" xml:space="preserve"><value>このマシンの OS、CPU、メモリ、ディスクの詳細を表示します。</value></data>
+  <data name="Tool_SysInfo_Aliases" xml:space="preserve"><value>システム、情報、ハードウェア、CPU、RAM、メモリ、ディスク、OS、マシン、スペック</value></data>
+  <data name="Tool_Timezone_Name" xml:space="preserve"><value>タイムゾーンコンバーター</value></data>
+  <data name="Tool_Timezone_Desc" xml:space="preserve"><value>ゾーン全体の時間を表示します。 「14:30 パリ 東京」または「現在 ニューヨーク ロンドン」。</value></data>
+  <data name="Tool_Timezone_Aliases" xml:space="preserve"><value>タイムゾーン、タイムゾーン、tz、utc、gmt、クロック、世界時計、都市、時間を変換する</value></data>
+  <data name="Tool_Cards_Name" xml:space="preserve"><value>カードを引く</value></data>
+  <data name="Tool_Cards_Desc" xml:space="preserve"><value>シャッフルされた 52 枚のカード デッキからランダムにカードを引きます。</value></data>
+  <data name="Tool_Cards_Aliases" xml:space="preserve"><value>カード、カード、デッキ、ドロー、ポーカー、トランプ、ランダム</value></data>
+  <data name="Tool_Teams_Name" xml:space="preserve"><value>チームスプリッター</value></data>
+  <data name="Tool_Teams_Desc" xml:space="preserve"><value>名前のリストをランダムなバランスの取れたチームに分割します。 「3; アリス、ボブ、...」。</value></data>
+  <data name="Tool_Teams_Aliases" xml:space="preserve"><value>チーム、チーム、分割、グループ、ランダム、描画、分割、並べ替え</value></data>
+  <data name="Teams_Label" xml:space="preserve"><value>チーム{0}</value></data>
+  <data name="Error_TimezoneUsage" xml:space="preserve"><value>時間と 1 つ以上のゾーンを入力します。 「14:30パリ東京」。</value></data>
+  <data name="Error_UnknownZone" xml:space="preserve"><value>不明なタイムゾーン: {0}</value></data>
+  <data name="Error_EmptyInput" xml:space="preserve"><value>処理するものはありません。</value></data>
+  <data name="Percent_A" xml:space="preserve"><value>値(A)</value></data>
+  <data name="Percent_B" xml:space="preserve"><value>ベース(B)</value></data>
+  <data name="Fraction_Value" xml:space="preserve"><value>10進数</value></data>
+  <data name="Solve_A" xml:space="preserve"><value>(x²)</value></data>
+  <data name="Solve_B" xml:space="preserve"><value>b(×)</value></data>
+  <data name="Solve_C" xml:space="preserve"><value>c</value></data>
+  <data name="Duration_All" xml:space="preserve"><value>どの単元でも</value></data>
+  <data name="Clock_Title" xml:space="preserve"><value>時計</value></data>
+  <data name="Audio_Title" xml:space="preserve"><value>オーディオチャンネルテスト</value></data>
+  <data name="Audio_Subtitle" xml:space="preserve"><value>各チャンネルでトーンを再生して、スピーカーまたはヘッドフォンが右側にあることを確認します。</value></data>
+  <data name="Audio_Left" xml:space="preserve"><value>左</value></data>
+  <data name="Audio_Right" xml:space="preserve"><value>右</value></data>
+  <data name="Audio_Both" xml:space="preserve"><value>両方のチャンネル</value></data>
+  <data name="Audio_PlayingLeft" xml:space="preserve"><value>♪ 左チャンネルを再生中</value></data>
+  <data name="Audio_PlayingRight" xml:space="preserve"><value>♪ 右チャンネルを再生中</value></data>
+  <data name="Audio_PlayingBoth" xml:space="preserve"><value>♪ 両方のチャンネルを再生する</value></data>
+  <data name="Notepad_New" xml:space="preserve"><value>新しい</value></data>
+  <data name="Notepad_Open" xml:space="preserve"><value>開く</value></data>
+  <data name="Notepad_SaveAs" xml:space="preserve"><value>名前を付けて保存</value></data>
+  <data name="Notepad_Wrap" xml:space="preserve"><value>ワードラップ</value></data>
+  <data name="Notepad_ZoomIn" xml:space="preserve"><value>ズームイン</value></data>
+  <data name="Notepad_ZoomOut" xml:space="preserve"><value>ズームアウト</value></data>
+  <data name="Notepad_Position" xml:space="preserve"><value>行 {0}、列 {1}</value></data>
+  <data name="Notepad_Counts" xml:space="preserve"><value>{0} 文字 · {1} 単語</value></data>
+  <data name="Notepad_Opened" xml:space="preserve"><value>{0} を開きました</value></data>
+  <data name="Notepad_SavedTo" xml:space="preserve"><value>{0} に保存されました</value></data>
+  <data name="Settings_UsageHeader" xml:space="preserve"><value>使用法</value></data>
+  <data name="Settings_UsageTotal" xml:space="preserve"><value>{0} は {1} ツール全体で使用しています - 最もよく使用されているもの:</value></data>
+  <data name="Settings_UsageReset" xml:space="preserve"><value>統計をリセットする</value></data>
+  <data name="Settings_UsageEmpty" xml:space="preserve"><value>まだ何も使用されていません。いくつかのツールを開いてもう一度確認してください。</value></data>
+  <data name="Stats_Header" xml:space="preserve"><value>{0} は {1} ツール全体で使用します。</value></data>
+  <data name="Stats_Empty" xml:space="preserve"><value>使用状況はまだ記録されていません。</value></data>
+  <data name="Stats_Reset" xml:space="preserve"><value>使用状況統計がリセットされました。</value></data>
+  <data name="Cards_Count" xml:space="preserve"><value>何個</value></data>
+  <data name="Cards_Deal" xml:space="preserve"><value>ディール</value></data>
+  <data name="RandomColor_New" xml:space="preserve"><value>ランダム化</value></data>
+  <data name="SysInfo_Refresh" xml:space="preserve"><value>リフレッシュ</value></data>
+  <data name="Sdt_Hint" xml:space="preserve"><value>任意の 2 つを入力します。3 つ目は空白のままにして解決してください。</value></data>
+  <data name="Roman_ToRoman" xml:space="preserve"><value>数字 → ローマ字</value></data>
+  <data name="Roman_ToArabic" xml:space="preserve"><value>ローマ字 → 数字</value></data>
+  <data name="Tz_In" xml:space="preserve"><value>で</value></data>
+  <data name="Tz_Now" xml:space="preserve"><value>今</value></data>
+  <data name="Clicker_Title" xml:space="preserve"><value>タリーカウンター</value></data>
+  <data name="Clicker_Reset" xml:space="preserve"><value>リセット</value></data>
+  <data name="Wheel_Title" xml:space="preserve"><value>運命の輪</value></data>
+  <data name="Wheel_EntriesLabel" xml:space="preserve"><value>オプション (1 行に 1 つ)</value></data>
+  <data name="Wheel_Spin" xml:space="preserve"><value>スピン</value></data>
+  <data name="Wheel_Sample" xml:space="preserve"><value>ピザ
+寿司
+タコス
+サラダ
+バーガー
+ラーメン</value></data>
+  <data name="Wheel_Winner" xml:space="preserve"><value>🎉 {0}</value></data>
+  <data name="Favicon_Title" xml:space="preserve"><value>ファビコンジェネレーター</value></data>
+  <data name="Favicon_Subtitle" xml:space="preserve"><value>画像を複数サイズの .ico ファビコンに変換します。</value></data>
+  <data name="Favicon_DropHint" xml:space="preserve"><value>ここに画像をドロップしてください (正方形のロゴが最適です)</value></data>
+  <data name="Favicon_Sizes" xml:space="preserve"><value>サイズ: {0} ピクセル</value></data>
+  <data name="Favicon_Save" xml:space="preserve"><value>.ico を保存</value></data>
+  <data name="Favicon_Saved" xml:space="preserve"><value>{0} を保存しました</value></data>
+  <data name="Watermark_Title" xml:space="preserve"><value>透かし</value></data>
+  <data name="Watermark_Subtitle" xml:space="preserve"><value>画像にテキストをスタンプします。出力は長辺が 2048 ピクセルに制限されます。</value></data>
+  <data name="Watermark_DropHint" xml:space="preserve"><value>ここに画像をドロップしてください</value></data>
+  <data name="Watermark_Text" xml:space="preserve"><value>透かしテキスト</value></data>
+  <data name="Watermark_Position" xml:space="preserve"><value>ポジション</value></data>
+  <data name="Watermark_Opacity" xml:space="preserve"><value>不透明度</value></data>
+  <data name="Watermark_Save" xml:space="preserve"><value>PNG を保存</value></data>
+  <data name="Watermark_Saved" xml:space="preserve"><value>{0} を保存しました</value></data>
+  <data name="Watermark_Sample" xml:space="preserve"><value>©クレート</value></data>
+  <data name="Watermark_BottomRight" xml:space="preserve"><value>右下</value></data>
+  <data name="Watermark_BottomLeft" xml:space="preserve"><value>左下</value></data>
+  <data name="Watermark_TopRight" xml:space="preserve"><value>右上</value></data>
+  <data name="Watermark_TopLeft" xml:space="preserve"><value>左上</value></data>
+  <data name="Watermark_Center" xml:space="preserve"><value>センター</value></data>
+  <data name="Tool_UrlParse_Name" xml:space="preserve"><value>URLパーサー</value></data>
+  <data name="Tool_UrlParse_Desc" xml:space="preserve"><value>URL をスキーム、ホスト、パス、クエリ パラメーターに分割します。</value></data>
+  <data name="Tool_UrlParse_Aliases" xml:space="preserve"><value>URL、解析、クエリ、URI、リンク</value></data>
+  <data name="Error_UrlUsage" xml:space="preserve"><value>有効な絶対 URL を入力してください。</value></data>
+  <data name="Tool_Chmod_Name" xml:space="preserve"><value>Chmod 計算機</value></data>
+  <data name="Tool_Chmod_Desc" xml:space="preserve"><value>Unix 権限番号 (755) を文字列 (rwxr-xr-x) に変換したり、その逆に変換したりできます。</value></data>
+  <data name="Tool_Chmod_Aliases" xml:space="preserve"><value>chmod、権限、unix、rwx</value></data>
+  <data name="Error_ChmodUsage" xml:space="preserve"><value>3 桁または 4 桁の 8 進数 (例: 755) または 9 文字の文字列 (例: rwxr-xr-x) を入力してください。</value></data>
+  <data name="Tool_HttpStatus_Name" xml:space="preserve"><value>HTTPステータスコード</value></data>
+  <data name="Tool_HttpStatus_Desc" xml:space="preserve"><value>HTTPステータスコードの正式名称を調べてください。</value></data>
+  <data name="Tool_HttpStatus_Aliases" xml:space="preserve"><value>http、ステータス、コード、エラー</value></data>
+  <data name="Error_HttpStatusUsage" xml:space="preserve"><value>有効な数値の HTTP ステータス コードを入力してください。</value></data>
+  <data name="HttpStatus_Unknown" xml:space="preserve"><value>不明な HTTP ステータス コード</value></data>
+  <data name="Weather_Title" xml:space="preserve"><value>Weather</value></data>
+  <data name="Tool_PortLookup_Name" xml:space="preserve"><value>Port Lookup</value></data>
+  <data name="Tool_PortLookup_Desc" xml:space="preserve"><value>Search for default port assignments.</value></data>
+  <data name="Tool_PortLookup_Aliases" xml:space="preserve"><value>port, network</value></data>
+  <data name="Tool_MimeType_Name" xml:space="preserve"><value>MIME Types</value></data>
+  <data name="Tool_MimeType_Desc" xml:space="preserve"><value>Look up MIME types by extension.</value></data>
+  <data name="Tool_MimeType_Aliases" xml:space="preserve"><value>mime, content-type, extension</value></data>
+  <data name="Tool_DnsLookup_Name" xml:space="preserve"><value>DNS Lookup</value></data>
+  <data name="Tool_DnsLookup_Desc" xml:space="preserve"><value>Resolve domains to IP addresses.</value></data>
+  <data name="Tool_DnsLookup_Aliases" xml:space="preserve"><value>dns, ip, resolve</value></data>
+  <data name="Tool_CurlToCode_Name" xml:space="preserve"><value>Curl to Code</value></data>
+  <data name="Tool_CurlToCode_Desc" xml:space="preserve"><value>Convert a curl command into C# code.</value></data>
+  <data name="Tool_CurlToCode_Aliases" xml:space="preserve"><value>curl, csharp, code</value></data>
+  <data name="Tool_EnvVars_Name" xml:space="preserve"><value>Environment Variables</value></data>
+  <data name="Tool_EnvVars_Desc" xml:space="preserve"><value>List all environment variables.</value></data>
+  <data name="Tool_EnvVars_Aliases" xml:space="preserve"><value>env, variables</value></data>
+  <data name="Tool_Inspector_Name" xml:space="preserve"><value>Text Inspector</value></data>
+  <data name="Tool_Inspector_Desc" xml:space="preserve"><value>Analyze text characters, bytes, and unicode.</value></data>
+  <data name="Tool_Inspector_Aliases" xml:space="preserve"><value>inspect, chars, bytes, hex</value></data>
+  <data name="Tool_CaseConverter_Name" xml:space="preserve"><value>Case Converter</value></data>
+  <data name="Tool_CaseConverter_Desc" xml:space="preserve"><value>Convert text case (camel, snake, pascal, etc).</value></data>
+  <data name="Tool_CaseConverter_Aliases" xml:space="preserve"><value>case, camel, snake, kebab</value></data>
+  <data name="Snake_Title" xml:space="preserve"><value>Snake</value></data>
+  <data name="Game2048_Title" xml:space="preserve"><value>2048</value></data>
+  <data name="Tetris_Title" xml:space="preserve"><value>Tetris</value></data>
+  <data name="StripMetadata_Title" xml:space="preserve"><value>画像のメタデータを削除</value></data>
+  <data name="ImageMetadata_Success" xml:space="preserve"><value>メタデータを削除しました。保存先: {0}</value></data>
+  <data name="Error_StripMetadataUsage" xml:space="preserve"><value>使い方: krate stripmetadata &quot;input.jpg&quot; | &quot;output.jpg&quot;</value></data>
+  <data name="Tool_Rename_Name" xml:space="preserve"><value>一括リネーム</value></data>
+  <data name="Tool_Rename_Desc" xml:space="preserve"><value>フォルダー内のすべてのファイル名から文字列を検索して置換します。まずプレビューを表示し、「apply」を付けると実行します。</value></data>
+  <data name="Tool_Rename_Aliases" xml:space="preserve"><value>リネーム, 一括, 名前変更, ファイル名, 置換, ファイル</value></data>
+  <data name="Tool_StripMetadata_Name" xml:space="preserve"><value>メタデータ削除</value></data>
+  <data name="Tool_StripMetadata_Desc" xml:space="preserve"><value>EXIF・GPS などすべてのメタデータを取り除いた画像のコピーを書き出します。</value></data>
+  <data name="Tool_StripMetadata_Aliases" xml:space="preserve"><value>削除, メタデータ, exif, gps, プライバシー, 消去, 匿名化</value></data>
+  <data name="Tool_Weather_Name" xml:space="preserve"><value>天気</value></data>
+  <data name="Tool_Weather_Desc" xml:space="preserve"><value>任意の都市の現在の天気。インターネットが必要な唯一のツールです。</value></data>
+  <data name="Tool_Weather_Aliases" xml:space="preserve"><value>天気, 天候, 予報, 気温, 雨, 風, 都市</value></data>
+  <data name="Tool_Snake_Name" xml:space="preserve"><value>スネーク</value></data>
+  <data name="Tool_Snake_Desc" xml:space="preserve"><value>定番のヘビゲーム。矢印キーで操作し、自分に噛みつかないように。</value></data>
+  <data name="Tool_Snake_Aliases" xml:space="preserve"><value>スネーク, snake, ヘビ, ゲーム, 遊ぶ, アーケード, レトロ</value></data>
+  <data name="Tool_Game2048_Name" xml:space="preserve"><value>2048</value></data>
+  <data name="Tool_Game2048_Desc" xml:space="preserve"><value>タイルをスライドさせ、同じ数字を合体させて 2048 を目指します。</value></data>
+  <data name="Tool_Game2048_Aliases" xml:space="preserve"><value>2048, ゲーム, 遊ぶ, パズル, タイル, 数字</value></data>
+  <data name="Tool_Tetris_Name" xml:space="preserve"><value>テトリス</value></data>
+  <data name="Tool_Tetris_Desc" xml:space="preserve"><value>落ちてくるブロックを積み上げ、そろった行を消します。</value></data>
+  <data name="Tool_Tetris_Aliases" xml:space="preserve"><value>テトリス, tetris, ゲーム, 遊ぶ, ブロック, パズル, アーケード</value></data>
+  <data name="Cli_ClickerTitle" xml:space="preserve"><value>ターミナルクリッカー</value></data>
+  <data name="Cli_ClickerHelp" xml:space="preserve"><value>SPACE で増加、BACKSPACE で減少、R でリセット、ESC で終了。</value></data>
+  <data name="Error_FileNotFound" xml:space="preserve"><value>ファイルが見つかりません: {0}</value></data>
+  <data name="Error_General" xml:space="preserve"><value>エラー: {0}</value></data>
+  <data name="Error_SevenZipMissing" xml:space="preserve"><value>7-Zip ライブラリが {0} に見つかりません。代わりに zip、tar、tar.gz、tar.bz2 を使用してください。</value></data>
+  <data name="Error_BadBase64" xml:space="preserve"><value>有効な Base64 テキストではありません。</value></data>
+</root>

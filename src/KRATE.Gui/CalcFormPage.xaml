@@ -1,0 +1,16 @@
+<UserControl
+    x:Class="Krate.Gui.CalcFormPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls">
+
+    <StackPanel Padding="24" Spacing="16" MaxWidth="440" HorizontalAlignment="Center">
+        <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+        <muxc:NumberBox x:Name="A" ValueChanged="OnChanged" SpinButtonPlacementMode="Compact" />
+        <muxc:NumberBox x:Name="B" ValueChanged="OnChanged" SpinButtonPlacementMode="Compact" />
+        <muxc:NumberBox x:Name="C" ValueChanged="OnChanged" SpinButtonPlacementMode="Compact" />
+        <Border CornerRadius="8" Padding="16" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+            <TextBlock x:Name="Result" FontFamily="Consolas" FontSize="15" TextWrapping="Wrap" />
+        </Border>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,47 @@
+<UserControl
+    x:Class="Krate.Gui.CardsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Krate.Gui"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls">
+
+    <Grid Padding="24" RowSpacing="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="Title" Grid.Row="0" Style="{StaticResource TitleTextBlockStyle}" />
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
+            <TextBlock x:Name="CountLabel" VerticalAlignment="Center" />
+            <muxc:NumberBox x:Name="Count" Value="5" Minimum="1" Maximum="52"
+                            SpinButtonPlacementMode="Compact" MinWidth="120" ValueChanged="OnCount" />
+            <Button x:Name="DealButton" Click="OnDeal" Style="{StaticResource AccentButtonStyle}" />
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+            <muxc:ItemsRepeater x:Name="Hand">
+                <muxc:ItemsRepeater.Layout>
+                    <muxc:UniformGridLayout MinItemWidth="80" MinItemHeight="112" MinColumnSpacing="10" MinRowSpacing="10" />
+                </muxc:ItemsRepeater.Layout>
+                <muxc:ItemsRepeater.ItemTemplate>
+                    <DataTemplate x:DataType="local:CardVm">
+                        <Border Width="76" Height="106" CornerRadius="8" Background="White"
+                                BorderThickness="1" BorderBrush="#33000000">
+                            <Grid Padding="7">
+                                <TextBlock Text="{x:Bind Rank}" Foreground="{x:Bind Color}" FontWeight="Bold" FontSize="17"
+                                           HorizontalAlignment="Left" VerticalAlignment="Top" />
+                                <TextBlock Text="{x:Bind Suit}" Foreground="{x:Bind Color}" FontSize="36"
+                                           HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                <TextBlock Text="{x:Bind Rank}" Foreground="{x:Bind Color}" FontWeight="Bold" FontSize="17"
+                                           HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </muxc:ItemsRepeater.ItemTemplate>
+            </muxc:ItemsRepeater>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

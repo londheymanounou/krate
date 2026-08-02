@@ -1,0 +1,31 @@
+<UserControl
+    x:Class="Krate.Gui.SequencePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls">
+
+    <Grid Padding="24" RowSpacing="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="Title" Grid.Row="0" Style="{StaticResource TitleTextBlockStyle}" />
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="12">
+            <ComboBox x:Name="Kind" Header="Type" SelectionChanged="OnChanged" MinWidth="150" />
+            <muxc:NumberBox x:Name="Start" Header="Start" Value="1" SpinButtonPlacementMode="Compact" MinWidth="110" ValueChanged="OnChanged" />
+            <muxc:NumberBox x:Name="Step" Header="Step" Value="2" SpinButtonPlacementMode="Compact" MinWidth="110" ValueChanged="OnChanged" />
+            <muxc:NumberBox x:Name="Count" Header="Count" Value="15" Minimum="1" Maximum="1000" SpinButtonPlacementMode="Compact" MinWidth="110" ValueChanged="OnChanged" />
+        </StackPanel>
+
+        <Border Grid.Row="2" CornerRadius="8" BorderThickness="1"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+            <ScrollViewer>
+                <TextBlock x:Name="Output" FontFamily="Consolas" FontSize="15" IsTextSelectionEnabled="True" TextWrapping="Wrap" Padding="16" />
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

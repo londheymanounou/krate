@@ -1,0 +1,19 @@
+<UserControl
+    x:Class="Krate.Gui.CronPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel Padding="24" Spacing="16" MaxWidth="640" HorizontalAlignment="Center">
+        <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+
+        <TextBox x:Name="Expr" Header="Cron expression" FontFamily="Consolas" FontSize="18"
+                 PlaceholderText="0 9 * * 1-5" TextChanged="OnChanged" />
+
+        <Border CornerRadius="8" Padding="16" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+            <TextBlock x:Name="Description" FontSize="16" TextWrapping="Wrap" />
+        </Border>
+
+        <TextBlock x:Name="NextLabel" Style="{StaticResource BodyStrongTextBlockStyle}" />
+        <TextBlock x:Name="NextRuns" FontFamily="Consolas" FontSize="14" IsTextSelectionEnabled="True" />
+    </StackPanel>
+</UserControl>

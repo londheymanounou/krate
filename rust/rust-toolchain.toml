@@ -1,0 +1,5 @@
+# The MSVC linker is not installed on this machine (the same gap that blocks .NET Native AOT),
+# so the GNU toolchain is pinned here — it bundles its own linker. Switch to the msvc toolchain
+# once the VS C++ workload is installed; nothing else needs to change.
+[toolchain]
+channel = "stable-x86_64-pc-windows-gnu"

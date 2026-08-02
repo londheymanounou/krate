@@ -1,0 +1,33 @@
+<UserControl
+    x:Class="Krate.Gui.GradientPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls">
+
+    <StackPanel Padding="24" Spacing="16" MaxWidth="600" HorizontalAlignment="Center">
+        <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+
+        <StackPanel Orientation="Horizontal" Spacing="16" VerticalAlignment="Center">
+            <Button Padding="0" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                <Rectangle x:Name="Swatch1" Width="80" Height="44" />
+                <Button.Flyout><Flyout><muxc:ColorPicker x:Name="Picker1" ColorChanged="OnChanged" IsAlphaEnabled="False" IsColorChannelTextInputVisible="False" /></Flyout></Button.Flyout>
+            </Button>
+            <Button Padding="0" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                <Rectangle x:Name="Swatch2" Width="80" Height="44" />
+                <Button.Flyout><Flyout><muxc:ColorPicker x:Name="Picker2" ColorChanged="OnChanged" IsAlphaEnabled="False" IsColorChannelTextInputVisible="False" /></Flyout></Button.Flyout>
+            </Button>
+            <muxc:NumberBox x:Name="Angle" Header="Angle°" Value="90" Minimum="0" Maximum="360" SpinButtonPlacementMode="Compact" MinWidth="110" ValueChanged="OnChanged" />
+        </StackPanel>
+
+        <Border x:Name="Preview" Height="140" CornerRadius="8" BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" />
+
+        <Grid ColumnSpacing="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="Css" Grid.Column="0" IsReadOnly="True" FontFamily="Consolas" FontSize="13" />
+            <Button x:Name="CopyButton" Grid.Column="1" Click="OnCopy" />
+        </Grid>
+    </StackPanel>
+</UserControl>

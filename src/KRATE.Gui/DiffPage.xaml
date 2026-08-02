@@ -1,0 +1,39 @@
+<UserControl
+    x:Class="Krate.Gui.DiffPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Padding="20" RowSpacing="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="Title" Grid.Row="0" Style="{StaticResource TitleTextBlockStyle}" />
+
+        <Grid Grid.Row="1" ColumnSpacing="12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="A" Grid.Column="0" Header="Original" AcceptsReturn="True" TextWrapping="NoWrap"
+                     FontFamily="Consolas" FontSize="14" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                     ScrollViewer.HorizontalScrollBarVisibility="Auto" TextChanged="OnChanged" />
+            <TextBox x:Name="B" Grid.Column="1" Header="Changed" AcceptsReturn="True" TextWrapping="NoWrap"
+                     FontFamily="Consolas" FontSize="14" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                     ScrollViewer.HorizontalScrollBarVisibility="Auto" TextChanged="OnChanged" />
+        </Grid>
+
+        <TextBlock Grid.Row="2" Text="Differences" Style="{StaticResource BodyStrongTextBlockStyle}" />
+
+        <Border Grid.Row="3" CornerRadius="8" BorderThickness="1"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+            <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                <StackPanel x:Name="Result" Padding="12" />
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,187 @@
+<UserControl
+    x:Class="Krate.Gui.CalculatorPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <UserControl.Resources>
+        <!-- Buttons stretch to fill their cell (keypad grows with the window) and are rounded like
+             Windows Calculator's keys. -->
+        <Style x:Key="NumKey" TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="VerticalAlignment" Value="Stretch" />
+            <Setter Property="Margin" Value="3" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Background" Value="{ThemeResource ControlFillColorDefaultBrush}" />
+        </Style>
+        <Style x:Key="OpKey" TargetType="Button" BasedOn="{StaticResource NumKey}">
+            <Setter Property="FontSize" Value="17" />
+            <Setter Property="FontWeight" Value="Normal" />
+            <Setter Property="Background" Value="{ThemeResource ControlFillColorSecondaryBrush}" />
+        </Style>
+        <Style x:Key="FnKey" TargetType="Button" BasedOn="{StaticResource OpKey}">
+            <Setter Property="FontSize" Value="13" />
+        </Style>
+        <Style x:Key="EqKey" TargetType="Button" BasedOn="{StaticResource AccentButtonStyle}">
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="VerticalAlignment" Value="Stretch" />
+            <Setter Property="Margin" Value="3" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+    </UserControl.Resources>
+
+    <!-- Fills the whole content pane; calc takes the space, history is a side column. -->
+    <Grid Padding="16" ColumnSpacing="16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" MinWidth="300" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Calculator column -->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="12">
+                <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" VerticalAlignment="Center" />
+                <ComboBox x:Name="Mode" SelectionChanged="OnMode" VerticalAlignment="Center" MinWidth="140" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Spacing="2">
+                <TextBlock x:Name="MemoryTag" FontSize="12" Opacity="0.55" MinHeight="16" TextAlignment="Right" />
+                <TextBlock x:Name="Expr" FontSize="14" Opacity="0.55" TextAlignment="Right" MinHeight="20" TextTrimming="CharacterEllipsis" />
+                <TextBlock x:Name="Display" FontSize="40" FontWeight="SemiBold" TextAlignment="Right" Text="0" TextTrimming="CharacterEllipsis" Margin="0,0,0,4" />
+            </StackPanel>
+
+            <StackPanel x:Name="Bases" Grid.Row="2" Spacing="2" Visibility="Collapsed">
+                <StackPanel Orientation="Horizontal" Spacing="4">
+                    <RadioButton x:Name="BaseHex" GroupName="base" Content="HEX" Checked="OnBase" Tag="16" FontSize="12" />
+                    <RadioButton x:Name="BaseDec" GroupName="base" Content="DEC" Checked="OnBase" Tag="10" IsChecked="True" FontSize="12" />
+                    <RadioButton x:Name="BaseOct" GroupName="base" Content="OCT" Checked="OnBase" Tag="8" FontSize="12" />
+                    <RadioButton x:Name="BaseBin" GroupName="base" Content="BIN" Checked="OnBase" Tag="2" FontSize="12" />
+                </StackPanel>
+                <TextBlock x:Name="BaseReadout" FontFamily="Consolas" FontSize="12" Opacity="0.75" TextWrapping="Wrap" />
+            </StackPanel>
+
+            <Grid x:Name="SciPad" Grid.Row="3" Visibility="Collapsed" Height="150">
+                <Grid.RowDefinitions><RowDefinition Height="*" /><RowDefinition Height="*" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+                <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /></Grid.ColumnDefinitions>
+
+                <Button x:Name="AngleButton" Style="{StaticResource FnKey}" Grid.Row="0" Grid.Column="0" Click="OnAngle" Content="DEG" />
+                <Button x:Name="SecondButton" Style="{StaticResource FnKey}" Grid.Row="0" Grid.Column="1" Click="OnSecond" Content="2ⁿᵈ" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="0" Grid.Column="2" Tag="pi" Content="π" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="0" Grid.Column="3" Tag="e" Content="e" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="0" Grid.Column="4" Tag="fact" Content="n!" Click="OnKey" />
+
+                <Button x:Name="SinButton" Style="{StaticResource FnKey}" Grid.Row="1" Grid.Column="0" Tag="sin" Content="sin" Click="OnKey" />
+                <Button x:Name="CosButton" Style="{StaticResource FnKey}" Grid.Row="1" Grid.Column="1" Tag="cos" Content="cos" Click="OnKey" />
+                <Button x:Name="TanButton" Style="{StaticResource FnKey}" Grid.Row="1" Grid.Column="2" Tag="tan" Content="tan" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="1" Grid.Column="3" Tag="ln" Content="ln" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="1" Grid.Column="4" Tag="log" Content="log" Click="OnKey" />
+
+                <Button Style="{StaticResource FnKey}" Grid.Row="2" Grid.Column="0" Tag="^" Content="xʸ" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="2" Grid.Column="1" Tag="tenx" Content="10ˣ" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="2" Grid.Column="2" Tag="exp" Content="eˣ" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="2" Grid.Column="3" Tag="abs" Content="|x|" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="2" Grid.Column="4" Tag="mod" Content="mod" Click="OnKey" />
+            </Grid>
+
+            <!-- Standard / Scientific keypad — star rows fill the remaining height -->
+            <Grid x:Name="StdPad" Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.8*" /><RowDefinition Height="*" /><RowDefinition Height="*" />
+                    <RowDefinition Height="*" /><RowDefinition Height="*" /><RowDefinition Height="*" /><RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /></Grid.ColumnDefinitions>
+
+                <Button Style="{StaticResource FnKey}" Grid.Row="0" Grid.Column="0" Tag="MC" Content="MC" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="0" Grid.Column="1" Tag="MR" Content="MR" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="0" Grid.Column="2" Tag="M+" Content="M+" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="0" Grid.Column="3" Tag="M-" Content="M−" Click="OnKey" />
+
+                <Button Style="{StaticResource FnKey}" Grid.Row="1" Grid.Column="0" Tag="%" Content="%" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="1" Grid.Column="1" Tag="CE" Content="CE" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="1" Grid.Column="2" Tag="C" Content="C" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="1" Grid.Column="3" Tag="back" Content="⌫" Click="OnKey" />
+
+                <Button Style="{StaticResource OpKey}" Grid.Row="2" Grid.Column="0" Tag="1/x" Content="¹⁄ₓ" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="2" Grid.Column="1" Tag="sqr" Content="x²" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="2" Grid.Column="2" Tag="sqrt" Content="√" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="2" Grid.Column="3" Tag="/" Content="÷" Click="OnKey" />
+
+                <Button Style="{StaticResource NumKey}" Grid.Row="3" Grid.Column="0" Tag="7" Content="7" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="3" Grid.Column="1" Tag="8" Content="8" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="3" Grid.Column="2" Tag="9" Content="9" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="3" Grid.Column="3" Tag="*" Content="×" Click="OnKey" />
+
+                <Button Style="{StaticResource NumKey}" Grid.Row="4" Grid.Column="0" Tag="4" Content="4" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="4" Grid.Column="1" Tag="5" Content="5" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="4" Grid.Column="2" Tag="6" Content="6" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="4" Grid.Column="3" Tag="-" Content="−" Click="OnKey" />
+
+                <Button Style="{StaticResource NumKey}" Grid.Row="5" Grid.Column="0" Tag="1" Content="1" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="5" Grid.Column="1" Tag="2" Content="2" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="5" Grid.Column="2" Tag="3" Content="3" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="5" Grid.Column="3" Tag="+" Content="+" Click="OnKey" />
+
+                <Button Style="{StaticResource NumKey}" Grid.Row="6" Grid.Column="0" Tag="+/-" Content="±" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="6" Grid.Column="1" Tag="0" Content="0" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="6" Grid.Column="2" Tag="." Content="." Click="OnKey" />
+                <Button Style="{StaticResource EqKey}" Grid.Row="6" Grid.Column="3" Tag="=" Content="=" Click="OnKey" />
+            </Grid>
+
+            <!-- Programmer keypad -->
+            <Grid x:Name="ProgPad" Grid.Row="4" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" /><RowDefinition Height="*" /><RowDefinition Height="*" />
+                    <RowDefinition Height="*" /><RowDefinition Height="*" /><RowDefinition Height="*" /><RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /><ColumnDefinition /></Grid.ColumnDefinitions>
+
+                <Button Style="{StaticResource OpKey}" Grid.Row="0" Grid.Column="0" Tag="A" Content="A" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="0" Grid.Column="1" Tag="B" Content="B" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="0" Grid.Column="2" Tag="C" Content="C" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="0" Grid.Column="3" Tag="D" Content="D" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="1" Grid.Column="0" Tag="E" Content="E" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="1" Grid.Column="1" Tag="F" Content="F" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="1" Grid.Column="2" Tag="back" Content="⌫" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="1" Grid.Column="3" Tag="C" Content="C" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="2" Grid.Column="0" Tag="and" Content="AND" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="2" Grid.Column="1" Tag="or" Content="OR" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="2" Grid.Column="2" Tag="xor" Content="XOR" Click="OnKey" />
+                <Button Style="{StaticResource FnKey}" Grid.Row="2" Grid.Column="3" Tag="not" Content="NOT" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="3" Grid.Column="0" Tag="lsh" Content="≪" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="3" Grid.Column="1" Tag="rsh" Content="≫" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="3" Grid.Column="2" Tag="7" Content="7" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="3" Grid.Column="3" Tag="8" Content="8" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="4" Grid.Column="0" Tag="9" Content="9" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="4" Grid.Column="1" Tag="4" Content="4" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="4" Grid.Column="2" Tag="5" Content="5" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="4" Grid.Column="3" Tag="6" Content="6" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="5" Grid.Column="0" Tag="1" Content="1" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="5" Grid.Column="1" Tag="2" Content="2" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="5" Grid.Column="2" Tag="3" Content="3" Click="OnKey" />
+                <Button Style="{StaticResource NumKey}" Grid.Row="5" Grid.Column="3" Tag="0" Content="0" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="6" Grid.Column="0" Tag="/" Content="÷" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="6" Grid.Column="1" Tag="*" Content="×" Click="OnKey" />
+                <Button Style="{StaticResource OpKey}" Grid.Row="6" Grid.Column="2" Tag="-" Content="−" Click="OnKey" />
+                <Button Style="{StaticResource EqKey}" Grid.Row="6" Grid.Column="3" Tag="=" Content="=" Click="OnKey" />
+            </Grid>
+        </Grid>
+
+        <!-- History (fixed side column, fills height) -->
+        <Grid Grid.Column="1" Width="220">
+            <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+            <TextBlock x:Name="HistoryLabel" Grid.Row="0" Style="{StaticResource BodyStrongTextBlockStyle}" Margin="0,0,0,6" />
+            <ListView x:Name="History" Grid.Row="1" SelectionMode="None" />
+            <TextBlock x:Name="HistoryEmpty" Grid.Row="1" Opacity="0.5" FontSize="12" VerticalAlignment="Top" />
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,38 @@
+<UserControl
+    x:Class="Krate.Gui.PdfPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Padding="24" RowSpacing="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="Title" Grid.Row="0" Style="{StaticResource TitleTextBlockStyle}" />
+
+        <TextBlock x:Name="MergeLabel" Grid.Row="1" Style="{StaticResource BodyStrongTextBlockStyle}" />
+
+        <Border Grid.Row="2" CornerRadius="8" BorderThickness="1" MinHeight="120"
+                AllowDrop="True" DragOver="OnDragOver" Drop="OnDrop"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+            <Grid>
+                <TextBlock x:Name="DropHint" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.6" TextAlignment="Center" TextWrapping="Wrap" />
+                <ListView x:Name="Files" SelectionMode="None" />
+            </Grid>
+        </Border>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Spacing="8">
+            <Button x:Name="AddButton" Click="OnAdd" />
+            <Button x:Name="MergeButton" Click="OnMerge" Style="{StaticResource AccentButtonStyle}" />
+            <Button x:Name="ClearButton" Click="OnClearList" />
+            <Button x:Name="SplitButton" Click="OnSplit" />
+        </StackPanel>
+
+        <TextBlock x:Name="Status" Grid.Row="4" Opacity="0.8" TextWrapping="Wrap" />
+    </Grid>
+</UserControl>

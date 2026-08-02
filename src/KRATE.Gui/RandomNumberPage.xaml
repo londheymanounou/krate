@@ -1,0 +1,18 @@
+<UserControl
+    x:Class="Krate.Gui.RandomNumberPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls">
+
+    <StackPanel Padding="24" Spacing="16" MaxWidth="480" HorizontalAlignment="Center">
+        <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+        <StackPanel Orientation="Horizontal" Spacing="12">
+            <muxc:NumberBox x:Name="Min" Value="1" SpinButtonPlacementMode="Compact" MinWidth="130" />
+            <muxc:NumberBox x:Name="Max" Value="100" SpinButtonPlacementMode="Compact" MinWidth="130" />
+            <Button x:Name="DrawButton" Click="OnDraw" Style="{StaticResource AccentButtonStyle}" VerticalAlignment="Bottom" />
+        </StackPanel>
+        <Border CornerRadius="8" Padding="18" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+            <TextBlock x:Name="Result" FontSize="26" FontWeight="SemiBold" HorizontalAlignment="Center" IsTextSelectionEnabled="True" />
+        </Border>
+    </StackPanel>
+</UserControl>

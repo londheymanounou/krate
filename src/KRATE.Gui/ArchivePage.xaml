@@ -1,0 +1,130 @@
+<UserControl
+    x:Class="Krate.Gui.ArchivePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Krate.Gui">
+
+    <Grid AllowDrop="True" DragOver="OnDragOver" Drop="OnDrop">
+        <Grid Padding="24" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="Title" Grid.Row="0" Style="{StaticResource TitleTextBlockStyle}" />
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                <Button x:Name="OpenBtn" Click="OnOpen">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <FontIcon Glyph="&#xE8E5;" FontSize="15" />
+                        <TextBlock x:Name="OpenLabel" />
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ExtractBtn" Click="OnExtract" IsEnabled="False" Style="{StaticResource AccentButtonStyle}">
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <FontIcon Glyph="&#xE896;" FontSize="15" />
+                        <TextBlock x:Name="ExtractLabel" />
+                    </StackPanel>
+                </Button>
+                <AppBarSeparator />
+                <TextBlock x:Name="FormatLabel" VerticalAlignment="Center" />
+                <ComboBox x:Name="Format" MinWidth="110" />
+                <Button x:Name="AddFileBtn" Click="OnAddFile" />
+                <Button x:Name="AddFolderBtn" Click="OnAddFolder" />
+                <Button x:Name="CompressBtn" Click="OnCompress" IsEnabled="False" Style="{StaticResource AccentButtonStyle}" />
+            </StackPanel>
+            
+            <Expander Grid.Row="2" Header="Advanced 7-Zip Options (Compression)" HorizontalAlignment="Stretch">
+                <Grid ColumnSpacing="16" RowSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <ComboBox x:Name="LevelBox" Grid.Row="0" Grid.Column="0" Header="Compression Level" SelectedIndex="2">
+                        <x:String>None</x:String>
+                        <x:String>Fast</x:String>
+                        <x:String>Normal</x:String>
+                        <x:String>Maximum</x:String>
+                        <x:String>Ultra</x:String>
+                    </ComboBox>
+                    
+                    <ComboBox x:Name="DictBox" Grid.Row="0" Grid.Column="1" Header="Dictionary Size" SelectedIndex="3">
+                        <x:String>1 MB</x:String>
+                        <x:String>16 MB</x:String>
+                        <x:String>32 MB</x:String>
+                        <x:String>64 MB</x:String>
+                        <x:String>128 MB</x:String>
+                    </ComboBox>
+
+                    <ComboBox x:Name="SolidBox" Grid.Row="0" Grid.Column="2" Header="Solid Block" SelectedIndex="1">
+                        <x:String>Non-Solid</x:String>
+                        <x:String>Solid</x:String>
+                    </ComboBox>
+
+                    <TextBox x:Name="PasswordBox" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Header="Password (Optional)" PlaceholderText="Encrypt archive" />
+                    <CheckBox x:Name="MultithreadBox" Grid.Row="1" Grid.Column="2" Content="Multithreading" IsChecked="True" VerticalAlignment="Bottom" />
+                </Grid>
+            </Expander>
+
+            <Border Grid.Row="3" Padding="12,4" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}"
+                    CornerRadius="6,6,0,0" BorderThickness="1,1,1,0" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="110" />
+                        <ColumnDefinition Width="150" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="NameHdr" Grid.Column="0" FontWeight="SemiBold" Opacity="0.8" />
+                    <TextBlock x:Name="SizeHdr" Grid.Column="1" FontWeight="SemiBold" Opacity="0.8" HorizontalAlignment="Right" />
+                    <TextBlock x:Name="DateHdr" Grid.Column="2" FontWeight="SemiBold" Opacity="0.8" />
+                </Grid>
+            </Border>
+
+            <ListView x:Name="Entries" Grid.Row="4" Padding="0" SelectionMode="None"
+                      BorderThickness="1" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                      ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Padding" Value="12,4" />
+                        <Setter Property="MinHeight" Value="0" />
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:ArchiveEntryVm">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="110" />
+                                <ColumnDefinition Width="150" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="{x:Bind Name}" TextTrimming="CharacterEllipsis" />
+                            <TextBlock Grid.Column="1" Text="{x:Bind Size}" HorizontalAlignment="Right" FontFamily="Consolas" Opacity="0.85" />
+                            <TextBlock Grid.Column="2" Text="{x:Bind Modified}" FontFamily="Consolas" Opacity="0.7" />
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <InfoBar x:Name="Status" Grid.Row="5" IsOpen="False" IsClosable="True" />
+        </Grid>
+
+        <!-- Animation Overlay (Nanazip style) -->
+        <Grid x:Name="Overlay" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Opacity="0.95" Visibility="Collapsed" Canvas.ZIndex="100">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="24">
+                <ProgressRing x:Name="ProgressSpinner" IsActive="False" Width="80" Height="80" />
+                <TextBlock x:Name="OverlayText" Text="Working..." FontSize="22" FontWeight="SemiBold" HorizontalAlignment="Center" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

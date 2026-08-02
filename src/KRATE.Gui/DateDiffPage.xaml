@@ -1,0 +1,14 @@
+<UserControl
+    x:Class="Krate.Gui.DateDiffPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel Padding="24" Spacing="16" MaxWidth="520" HorizontalAlignment="Center">
+        <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+        <StackPanel Orientation="Horizontal" Spacing="12">
+            <CalendarDatePicker x:Name="From" DateChanged="OnChanged" MinWidth="200" />
+            <CalendarDatePicker x:Name="To" DateChanged="OnChanged" MinWidth="200" />
+        </StackPanel>
+        <TextBlock x:Name="Result" FontFamily="Consolas" FontSize="15" TextWrapping="Wrap" />
+    </StackPanel>
+</UserControl>

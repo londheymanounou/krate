@@ -1,0 +1,27 @@
+<UserControl
+    x:Class="Krate.Gui.RulerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Padding="24" RowSpacing="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
+            <TextBlock x:Name="CalibLabel" VerticalAlignment="Center" Opacity="0.8" TextWrapping="Wrap" MaxWidth="360" />
+            <Slider x:Name="Calib" Minimum="0.8" Maximum="1.2" StepFrequency="0.002" Value="1" Width="200"
+                    ValueChanged="OnCalib" VerticalAlignment="Center" />
+        </StackPanel>
+
+        <Border Grid.Row="2" CornerRadius="8" BorderThickness="1" MinHeight="180"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+            <Canvas x:Name="Board" SizeChanged="OnResize" />
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The KRATE mark: three uprights, a rail, and the crate body.
+
+  Coordinates are the logo's own 256 viewBox so they can be read straight off
+  krate-logo.svg. The group shrinks it into the adaptive icon's safe zone — a
+  launcher can mask anything outside the centre 66/108 of the canvas, so art drawn
+  edge-to-edge gets its corners eaten by whatever mask the device applies.
+  The dark rounded rect from the SVG is deliberately absent: that is the background
+  layer, and duplicating it here would defeat the parallax adaptive icons apply.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="256" android:viewportHeight="256">
+    <group android:pivotX="128" android:pivotY="131" android:scaleX="0.62" android:scaleY="0.62">
+        <path android:fillColor="#000000" android:pathData="M63,52h26v34h-26z" />
+        <path android:fillColor="#000000" android:pathData="M115,40h26v46h-26z" />
+        <path android:fillColor="#000000" android:pathData="M167,60h26v26h-26z" />
+        <path android:fillColor="#000000" android:pathData="M44,112h168v30h-168z" />
+        <path android:fillColor="#000000" android:pathData="M56,168h144v54a4,4 0 0,1 -4,4h-136a4,4 0 0,1 -4,-4z" />
+    </group>
+</vector>

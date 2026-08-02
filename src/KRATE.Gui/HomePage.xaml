@@ -1,0 +1,20 @@
+<UserControl
+    x:Class="Krate.Gui.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ScrollViewer>
+        <StackPanel Padding="32" Spacing="16" MaxWidth="640" HorizontalAlignment="Center">
+            <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+            <TextBlock x:Name="Subtitle" Opacity="0.7" TextWrapping="Wrap" />
+
+            <TextBlock x:Name="FavLabel" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,16,0,0" />
+            <StackPanel x:Name="FavPanel" Spacing="6" />
+
+            <TextBlock x:Name="RecentLabel" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,16,0,0" />
+            <StackPanel x:Name="RecentPanel" Spacing="6" />
+
+            <TextBlock x:Name="Hint" Opacity="0.6" TextWrapping="Wrap" />
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

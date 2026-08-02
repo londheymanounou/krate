@@ -1,0 +1,29 @@
+# Build directories
+bin/
+obj/
+
+# Visual Studio / IDE
+.vs/
+.idea/
+*.user
+*.suo
+
+# Graphify
+graphify-out/
+
+Output/
+publish/
+publish2/
+
+build/
+.gradle/
+local.properties
+*.iml
+.idea/
+app/build/
+app/.gradle/
+app/app/build/
+
+rust/target/
+rust/build/
+target/

@@ -1,0 +1,17 @@
+<UserControl
+    x:Class="Krate.Gui.CssUnitsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls">
+
+    <StackPanel Padding="24" Spacing="16" MaxWidth="480" HorizontalAlignment="Center">
+        <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+        <StackPanel Orientation="Horizontal" Spacing="12">
+            <muxc:NumberBox x:Name="Value" Value="16" SpinButtonPlacementMode="Compact" MinWidth="180" ValueChanged="OnChanged" />
+            <ComboBox x:Name="Unit" SelectionChanged="OnChanged" MinWidth="110" VerticalAlignment="Bottom" />
+        </StackPanel>
+        <Border CornerRadius="8" Padding="16" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+            <TextBlock x:Name="Result" FontFamily="Consolas" FontSize="16" TextWrapping="Wrap" IsTextSelectionEnabled="True" />
+        </Border>
+    </StackPanel>
+</UserControl>

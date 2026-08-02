@@ -1,0 +1,41 @@
+<UserControl
+    x:Class="Krate.Gui.FileComparePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel Padding="24" Spacing="14" MaxWidth="640" HorizontalAlignment="Center">
+        <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+
+        <Border x:Name="SlotA" CornerRadius="8" BorderThickness="1" Padding="14" Tag="A"
+                AllowDrop="True" DragOver="OnDragOver" Drop="OnDrop"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+            <Grid ColumnSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="PathA" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+                <Button x:Name="ButtonA" Grid.Column="1" Click="OnPickA" />
+            </Grid>
+        </Border>
+
+        <Border x:Name="SlotB" CornerRadius="8" BorderThickness="1" Padding="14" Tag="B"
+                AllowDrop="True" DragOver="OnDragOver" Drop="OnDrop"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+            <Grid ColumnSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="PathB" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" />
+                <Button x:Name="ButtonB" Grid.Column="1" Click="OnPickB" />
+            </Grid>
+        </Border>
+
+        <Border CornerRadius="8" Padding="16" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+            <TextBlock x:Name="Result" FontSize="16" TextWrapping="Wrap" IsTextSelectionEnabled="True" />
+        </Border>
+    </StackPanel>
+</UserControl>

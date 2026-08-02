@@ -1,0 +1,1033 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence><xs:element name="value" type="xsd:string" minOccurs="0" /></xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence><xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" /></xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="App_Name" xml:space="preserve"><value>KRATE</value></data>
+  <data name="App_FullName" xml:space="preserve"><value>Krate Toolkit</value></data>
+  <data name="App_Tagline" xml:space="preserve"><value>Dezenas de ferramentas. Tudo local, tudo offline.</value></data>
+  <data name="Cli_Usage" xml:space="preserve"><value>Uso: krate &lt;ferramenta&gt; [texto] (sem texto = leitura da entrada padrão)</value></data>
+  <data name="Cli_Options" xml:space="preserve"><value>Opções: --lang &lt;código&gt; define o idioma da interface (por exemplo, en, fr), --lang auto segue o sistema.</value></data>
+  <data name="Cli_Tools" xml:space="preserve"><value>Ferramentas ({0}) — execute &apos;krate search &lt;word&gt;&apos; para filtrar:</value></data>
+  <data name="Cli_UnknownTool" xml:space="preserve"><value>Ferramenta desconhecida: {0}. Execute &apos;krate&apos; para listar as ferramentas disponíveis.</value></data>
+  <data name="Cli_LanguageSet" xml:space="preserve"><value>Idioma definido como {0}.</value></data>
+  <data name="Gui_Copy" xml:space="preserve"><value>Copiar</value></data>
+  <data name="Gui_SearchPlaceholder" xml:space="preserve"><value>Pesquise uma ferramenta…</value></data>
+  <data name="Gui_Error" xml:space="preserve"><value>Erro: {0}</value></data>
+  <data name="Text_Count_Characters" xml:space="preserve"><value>Personagens {0}</value></data>
+  <data name="Text_Count_CharactersNoSpaces" xml:space="preserve"><value>Sem espaços {0}</value></data>
+  <data name="Text_Count_Words" xml:space="preserve"><value>Palavras {0}</value></data>
+  <data name="Text_Count_Lines" xml:space="preserve"><value>Linhas {0}</value></data>
+  <data name="Text_Count_ReadingTime" xml:space="preserve"><value>Tempo de leitura ~{0} min</value></data>
+  <data name="Dates_Exact" xml:space="preserve"><value>{0} anos, {1} meses, {2} dias</value></data>
+  <data name="Dates_TotalDays" xml:space="preserve"><value>Total de dias {0}</value></data>
+  <data name="Dates_TotalWeeks" xml:space="preserve"><value>Total de semanas {0} semanas e {1} dias</value></data>
+  <data name="Dates_BusinessDays" xml:space="preserve"><value>Dias úteis {0} (feriados não contados)</value></data>
+  <data name="Json_Valid" xml:space="preserve"><value>JSON válido.</value></data>
+  <data name="Json_Invalid" xml:space="preserve"><value>JSON inválido na linha {0}, coluna {1}.</value></data>
+  <data name="Random_Heads" xml:space="preserve"><value>Cabeças</value></data>
+  <data name="Random_Tails" xml:space="preserve"><value>Caudas</value></data>
+  <data name="Error_BadColor" xml:space="preserve"><value>Não é uma cor: {0}. Experimente #3af, #33aaff, rgb(51.170.255) ou hsl(204.100%,60%).</value></data>
+  <data name="Error_BadDate" xml:space="preserve"><value>Não é um encontro: {0}.</value></data>
+  <data name="Error_NeedDate" xml:space="preserve"><value>Insira uma ou duas datas.</value></data>
+  <data name="Error_NeedNumber" xml:space="preserve"><value>Digite um número.</value></data>
+  <data name="Error_BadDice" xml:space="preserve"><value>Use notação de dados, por ex. 2d6 ou d20.</value></data>
+  <data name="Error_EmptyList" xml:space="preserve"><value>Insira pelo menos uma entrada, uma por linha.</value></data>
+  <data name="Error_OutOfRange" xml:space="preserve"><value>Insira um número entre {0} e {1}.</value></data>
+  <data name="Error_ConvertUsage" xml:space="preserve"><value>Digite um valor e duas unidades, por ex. &quot;10 km mi&quot;.</value></data>
+  <data name="Error_UnknownUnit" xml:space="preserve"><value>Unidade desconhecida: {0}.</value></data>
+  <data name="Error_AmbiguousUnit" xml:space="preserve"><value>Unidade ambígua: {0}. Cuidado com o caso: {1}.</value></data>
+  <data name="Error_DimensionMismatch" xml:space="preserve"><value>{0} e {1} não medem a mesma coisa.</value></data>
+  <data name="Error_RomanRange" xml:space="preserve"><value>Os algarismos romanos vão de 1 a 3999.</value></data>
+  <data name="Error_BadRoman" xml:space="preserve"><value>Não é um algarismo romano válido: {0}.</value></data>
+  <data name="Error_NeedText" xml:space="preserve"><value>Digite algum texto.</value></data>
+  <data name="Error_NeedTwoNumbers" xml:space="preserve"><value>Digite dois números.</value></data>
+  <data name="Error_DivideByZero" xml:space="preserve"><value>Divisão por zero.</value></data>
+  <data name="Error_DiffUsage" xml:space="preserve"><value>Separe os dois textos com uma linha contendo apenas ---</value></data>
+  <data name="Error_RegexUsage" xml:space="preserve"><value>Primeira linha: o padrão. Linhas seguintes: o texto a testar.</value></data>
+  <data name="Error_SequenceUsage" xml:space="preserve"><value>Tente &quot;fib 10&quot;, &quot;primos 20&quot;, &quot;arith 2 3 10&quot; ou &quot;geom 2 3 10&quot;.</value></data>
+  <data name="Error_SolveUsage" xml:space="preserve"><value>Insira os coeficientes: &quot;1 -3 2&quot; para x² - 3x + 2 = 0.</value></data>
+  <data name="Error_BadJwt" xml:space="preserve"><value>Este não é um JWT: espera-se três partes separadas por pontos.</value></data>
+  <data name="Error_UnsupportedLanguage" xml:space="preserve"><value>Idioma não suportado: {0}. Disponível: en, fr.</value></data>
+  <data name="Error_BmiUsage" xml:space="preserve"><value>Insira um peso em kg e uma altura, por ex. &quot;70 175&quot;.</value></data>
+  <data name="Error_LoanUsage" xml:space="preserve"><value>Insira o valor, a taxa anual e o número de anos, por ex. &quot;200000 3,5 25&quot;.</value></data>
+  <data name="Error_CidrUsage" xml:space="preserve"><value>Insira um endereço IPv4 no formato CIDR, por exemplo. &quot;192.168.1.10/24&quot;.</value></data>
+  <data name="Diff_Identical" xml:space="preserve"><value>Os dois textos são idênticos.</value></data>
+  <data name="Regex_NoMatch" xml:space="preserve"><value>Nenhuma correspondência.</value></data>
+  <data name="Regex_MatchCount" xml:space="preserve"><value>{0} correspondência(s):</value></data>
+  <data name="Xml_Valid" xml:space="preserve"><value>XML bem formado.</value></data>
+  <data name="Xml_Invalid" xml:space="preserve"><value>XML malformado na linha {0}, coluna {1}</value></data>
+  <data name="Jwt_Header" xml:space="preserve"><value>CABEÇALHO</value></data>
+  <data name="Jwt_Payload" xml:space="preserve"><value>CARGA</value></data>
+  <data name="Jwt_Dates" xml:space="preserve"><value>DATAS</value></data>
+  <data name="Jwt_Expired" xml:space="preserve"><value>(expirado)</value></data>
+  <data name="Jwt_Valid" xml:space="preserve"><value>(ainda válido)</value></data>
+  <data name="Jwt_NotVerified" xml:space="preserve"><value>A assinatura NÃO é verificada – apenas decodificação.</value></data>
+  <data name="Math_Prime" xml:space="preserve"><value>(principal)</value></data>
+  <data name="Math_Gcd" xml:space="preserve"><value>MDC = {0}</value></data>
+  <data name="Math_Lcm" xml:space="preserve"><value>MMC = {0}</value></data>
+  <data name="Math_NoSolution" xml:space="preserve"><value>Nenhuma solução.</value></data>
+  <data name="Math_ComplexRoots" xml:space="preserve"><value>Nenhuma raiz real – duas raízes complexas:</value></data>
+  <data name="Percent_Of" xml:space="preserve"><value>{0}% de {1} = {2}</value></data>
+  <data name="Percent_Ratio" xml:space="preserve"><value>{0} é {2}% de {1}</value></data>
+  <data name="Percent_Change" xml:space="preserve"><value>De {0} a {1}: {2}%</value></data>
+  <data name="Bmi_Under" xml:space="preserve"><value>Abaixo do peso (menos de 18,5)</value></data>
+  <data name="Bmi_Normal" xml:space="preserve"><value>Normal (18,5 a 25)</value></data>
+  <data name="Bmi_Over" xml:space="preserve"><value>Excesso de peso (25 a 30)</value></data>
+  <data name="Bmi_Obese" xml:space="preserve"><value>Obeso (30 anos ou mais)</value></data>
+  <data name="Bmi_Disclaimer" xml:space="preserve"><value>Um indicador, não um diagnóstico.</value></data>
+  <data name="Tip_Tip" xml:space="preserve"><value>Dica ({0}%) {1}</value></data>
+  <data name="Tip_Total" xml:space="preserve"><value>Total _0__</value></data>
+  <data name="Tip_Each" xml:space="preserve"><value>Cada ({0}) {1}</value></data>
+  <data name="Loan_Monthly" xml:space="preserve"><value>Pagamento mensal {0}</value></data>
+  <data name="Loan_Total" xml:space="preserve"><value>Total reembolsado {0}</value></data>
+  <data name="Loan_Interest" xml:space="preserve"><value>Juros pagos {0}</value></data>
+  <data name="Loan_Payments" xml:space="preserve"><value>Pagamentos{0}</value></data>
+  <data name="Cidr_Private" xml:space="preserve"><value>Gama privada (RFC 1918).</value></data>
+  <data name="Cidr_Public" xml:space="preserve"><value>Alcance público.</value></data>
+  <data name="Gui_DropHint" xml:space="preserve"><value>Utilize este caminho</value></data>
+  <data name="Error_NoFile" xml:space="preserve"><value>Arquivo não encontrado: {0}</value></data>
+  <data name="Error_NoFolder" xml:space="preserve"><value>Pasta não encontrada: {0}</value></data>
+  <data name="Error_FileExists" xml:space="preserve"><value>{0} já existe. Mova ou renomeie-o primeiro – nada foi substituído.</value></data>
+  <data name="Error_BadSize" xml:space="preserve"><value>Tamanho ilegível: {0}. Experimente 10 MB, 512k ou 2GiB.</value></data>
+  <data name="Error_NeedTwoFiles" xml:space="preserve"><value>Forneça dois caminhos de arquivo, um por linha.</value></data>
+  <data name="Error_SplitUsage" xml:space="preserve"><value>Forneça um caminho de arquivo e depois um tamanho de peça, por exemplo. &quot;C:\big.zip 10MB&quot;.</value></data>
+  <data name="Error_JoinUsage" xml:space="preserve"><value>Aponte para um dos arquivos .part.</value></data>
+  <data name="Error_TestFileUsage" xml:space="preserve"><value>Dê um caminho e depois um tamanho, por ex. &quot;C:\teste.bin 100 MB&quot;.</value></data>
+  <data name="Files_Name" xml:space="preserve"><value>NOME</value></data>
+  <data name="Files_Size" xml:space="preserve"><value>TAMANHO</value></data>
+  <data name="Files_Created" xml:space="preserve"><value>CRIADO</value></data>
+  <data name="Files_Modified" xml:space="preserve"><value>MODIFICADO</value></data>
+  <data name="Files_Total" xml:space="preserve"><value>{0} em {1} arquivos</value></data>
+  <data name="Files_Largest" xml:space="preserve"><value>Maiores arquivos:</value></data>
+  <data name="Files_ByType" xml:space="preserve"><value>Por tipo de arquivo:</value></data>
+  <data name="Files_Empty" xml:space="preserve"><value>Esta pasta está vazia.</value></data>
+  <data name="Files_AccessDenied" xml:space="preserve"><value>(Acesso negado)</value></data>
+  <data name="Files_TreeTruncated" xml:space="preserve"><value>… truncado em {0} entradas.</value></data>
+  <data name="Files_NoDuplicates" xml:space="preserve"><value>Nenhum arquivo duplicado encontrado.</value></data>
+  <data name="Files_DuplicatesFound" xml:space="preserve"><value>{0} grupos de arquivos idênticos, {1} desperdiçados.</value></data>
+  <data name="Files_DuplicatesReadOnly" xml:space="preserve"><value>Nada foi excluído – este é um relatório.</value></data>
+  <data name="Files_Identical" xml:space="preserve"><value>Os dois arquivos são idênticos.</value></data>
+  <data name="Files_Different" xml:space="preserve"><value>Os arquivos são diferentes ({0} e {1}).</value></data>
+  <data name="Files_SplitDone" xml:space="preserve"><value>Divida em {0} partes:</value></data>
+  <data name="Files_JoinDone" xml:space="preserve"><value>{0} reconstruído a partir de {1} peças ({2}).</value></data>
+  <data name="Files_TestFileDone" xml:space="preserve"><value>Criado em {0} ({1}).</value></data>
+  <data name="Error_UnknownImage" xml:space="preserve"><value>Não é uma imagem reconhecida (PNG, JPEG, GIF, BMP, WebP): {0}</value></data>
+  <data name="Error_RatioUsage" xml:space="preserve"><value>Digite dimensões como &quot;1920x1080&quot; ou uma proporção e um tamanho como &quot;16:9 1920&quot;.</value></data>
+  <data name="Images_Format" xml:space="preserve"><value>FORMATO</value></data>
+  <data name="Images_Size" xml:space="preserve"><value>DIMENSÕES</value></data>
+  <data name="Images_Pixels" xml:space="preserve"><value>PIXÉIS</value></data>
+  <data name="Images_Ratio" xml:space="preserve"><value>RELAÇÃO</value></data>
+  <data name="Images_Orientation" xml:space="preserve"><value>ORIENTAÇÃO</value></data>
+  <data name="Images_Landscape" xml:space="preserve"><value>paisagem</value></data>
+  <data name="Images_Portrait" xml:space="preserve"><value>retrato</value></data>
+  <data name="Images_Square" xml:space="preserve"><value>quadrado</value></data>
+  <data name="Images_FromWidth" xml:space="preserve"><value>largura fixa</value></data>
+  <data name="Images_FromHeight" xml:space="preserve"><value>altura fixa</value></data>
+  <data name="Img_Title" xml:space="preserve"><value>Conversor de imagem</value></data>
+  <data name="Img_Subtitle" xml:space="preserve"><value>Converta, redimensione e comprima uma imagem. Solte-o aqui ou use Salvar como.</value></data>
+  <data name="Img_DropHint" xml:space="preserve"><value>Solte uma imagem aqui</value></data>
+  <data name="Img_Format" xml:space="preserve"><value>Formato de saída</value></data>
+  <data name="Img_MaxWidth" xml:space="preserve"><value>Largura máxima (px, 0 = manter)</value></data>
+  <data name="Img_Quality" xml:space="preserve"><value>Qualidade (JPEG/WebP)</value></data>
+  <data name="Img_Save" xml:space="preserve"><value>Salvar como…</value></data>
+  <data name="Img_Saved" xml:space="preserve"><value>Salvo {0}</value></data>
+  <data name="Timer_Title" xml:space="preserve"><value>Temporizador</value></data>
+  <data name="Timer_Start" xml:space="preserve"><value>Começar</value></data>
+  <data name="Timer_Pause" xml:space="preserve"><value>Pausa</value></data>
+  <data name="Timer_Reset" xml:space="preserve"><value>Redefinir</value></data>
+  <data name="Timer_Stopwatch" xml:space="preserve"><value>Cronômetro</value></data>
+  <data name="Timer_Focus" xml:space="preserve"><value>Concentre-se 25 minutos</value></data>
+  <data name="Timer_Break" xml:space="preserve"><value>Pausa 5 minutos</value></data>
+  <data name="Error_JsonNotArray" xml:space="preserve"><value>Esperava uma matriz JSON de objetos, como [{&quot;a&quot;:1},{&quot;a&quot;:2}].</value></data>
+  <data name="Error_CronUsage" xml:space="preserve"><value>Esperados 5 campos cron (minuto hora dia mês dia da semana) ou um atalho como @daily.</value></data>
+  <data name="Fancy_Bold" xml:space="preserve"><value>Ousado</value></data>
+  <data name="Fancy_Italic" xml:space="preserve"><value>itálico</value></data>
+  <data name="Fancy_Script" xml:space="preserve"><value>Roteiro</value></data>
+  <data name="Fancy_Fraktur" xml:space="preserve"><value>Fratura</value></data>
+  <data name="Fancy_Mono" xml:space="preserve"><value>Monoespaçado</value></data>
+  <data name="Fancy_Double" xml:space="preserve"><value>Duplo</value></data>
+  <data name="Fancy_Circled" xml:space="preserve"><value>Circulado</value></data>
+  <data name="Fancy_Wide" xml:space="preserve"><value>Largura total</value></data>
+  <data name="Cron_AtTime" xml:space="preserve"><value>às {0}</value></data>
+  <data name="Cron_Minute" xml:space="preserve"><value>minuto</value></data>
+  <data name="Cron_Hour" xml:space="preserve"><value>hora</value></data>
+  <data name="Cron_DayOfMonth" xml:space="preserve"><value>dia do mês</value></data>
+  <data name="Cron_EveryUnit" xml:space="preserve"><value>cada {0}</value></data>
+  <data name="Cron_EveryN" xml:space="preserve"><value>a cada {0} {1}s</value></data>
+  <data name="Cron_EveryNBare" xml:space="preserve"><value>cada {0}</value></data>
+  <data name="Cron_Range" xml:space="preserve"><value>{0} {1} a {2}</value></data>
+  <data name="Cron_List" xml:space="preserve"><value>{0} {1}</value></data>
+  <data name="Cron_At" xml:space="preserve"><value>{0} {1}</value></data>
+  <data name="Cron_InMonths" xml:space="preserve"><value>em {0}</value></data>
+  <data name="Cron_OnDays" xml:space="preserve"><value>em {0}</value></data>
+  <data name="Pw_Entropy" xml:space="preserve"><value>Entropia ~{0} bits</value></data>
+  <data name="Pw_Rating" xml:space="preserve"><value>Avaliação {0}</value></data>
+  <data name="Pw_Crack" xml:space="preserve"><value>Rachadura{0}</value></data>
+  <data name="Pw_Note" xml:space="preserve"><value>Nota: repetições ou sequências enfraquecem ainda mais.</value></data>
+  <data name="Pw_VeryWeak" xml:space="preserve"><value>muito fraco</value></data>
+  <data name="Pw_Weak" xml:space="preserve"><value>fraco</value></data>
+  <data name="Pw_Reasonable" xml:space="preserve"><value>razoável</value></data>
+  <data name="Pw_Strong" xml:space="preserve"><value>forte</value></data>
+  <data name="Pw_VeryStrong" xml:space="preserve"><value>muito forte</value></data>
+  <data name="Time_Instant" xml:space="preserve"><value>instantaneamente</value></data>
+  <data name="Time_Seconds" xml:space="preserve"><value>{0} segundos</value></data>
+  <data name="Time_Minutes" xml:space="preserve"><value>{0} minutos</value></data>
+  <data name="Time_Hours" xml:space="preserve"><value>{0} horas</value></data>
+  <data name="Time_Days" xml:space="preserve"><value>{0} dias</value></data>
+  <data name="Time_Months" xml:space="preserve"><value>{0} meses</value></data>
+  <data name="Time_Years" xml:space="preserve"><value>{0} anos</value></data>
+  <data name="Time_Centuries" xml:space="preserve"><value>séculos</value></data>
+  <data name="Week_Date" xml:space="preserve"><value>DATA</value></data>
+  <data name="Week_Iso" xml:space="preserve"><value>SEMANA ISO</value></data>
+  <data name="Week_DayOfYear" xml:space="preserve"><value>DIA DO ANO</value></data>
+  <data name="Week_Quarter" xml:space="preserve"><value>TRIMESTRE</value></data>
+  <data name="Week_Weekend" xml:space="preserve"><value>FIM DE SEMANA</value></data>
+  <data name="Week_Yes" xml:space="preserve"><value>sim</value></data>
+  <data name="Week_No" xml:space="preserve"><value>não</value></data>
+  <data name="Error_NeedExpression" xml:space="preserve"><value>Insira uma expressão, por ex. &quot;2 * (3 + 4)&quot; ou &quot;sqrt(2)&quot;.</value></data>
+  <data name="Error_BadExpression" xml:space="preserve"><value>A expressão não pôde ser analisada.</value></data>
+  <data name="Error_MissingParen" xml:space="preserve"><value>Falta um parêntese de fechamento.</value></data>
+  <data name="Error_UnknownFunction" xml:space="preserve"><value>Função desconhecida: {0}.</value></data>
+  <data name="Error_UnknownName" xml:space="preserve"><value>Nome desconhecido: {0}.</value></data>
+  <data name="Error_BadFactorial" xml:space="preserve"><value>Fatorial precisa de um número inteiro de 0 a 170.</value></data>
+  <data name="Error_Undefined" xml:space="preserve"><value>O resultado é indefinido (por exemplo, sqrt negativo ou 0/0).</value></data>
+  <data name="Error_Overflow" xml:space="preserve"><value>O resultado é muito grande.</value></data>
+  <data name="Error_NeedTwoColors" xml:space="preserve"><value>Insira duas cores, uma por linha.</value></data>
+  <data name="Error_KelvinRange" xml:space="preserve"><value>Insira uma temperatura entre 1.000 e 40.000 K.</value></data>
+  <data name="Error_BadCssUnit" xml:space="preserve"><value>Tamanho ilegível: {0}. Experimente 16px, 1,5rem ou 12pt.</value></data>
+  <data name="Color_Base" xml:space="preserve"><value>Base</value></data>
+  <data name="Color_Complementary" xml:space="preserve"><value>Complementar</value></data>
+  <data name="Color_Triadic" xml:space="preserve"><value>Triádico</value></data>
+  <data name="Color_Analogous" xml:space="preserve"><value>Análogo</value></data>
+  <data name="Color_SplitComp" xml:space="preserve"><value>Comp. dividido.</value></data>
+  <data name="Color_Tetradic" xml:space="preserve"><value>Tetrádico</value></data>
+  <data name="Color_Ratio" xml:space="preserve"><value>Razão</value></data>
+  <data name="Color_Pass" xml:space="preserve"><value>passar</value></data>
+  <data name="Color_Fail" xml:space="preserve"><value>falhar</value></data>
+  <data name="Color_NormalText" xml:space="preserve"><value>normalmente</value></data>
+  <data name="Color_LargeText" xml:space="preserve"><value>grande</value></data>
+  <data name="Error_GitignoreUsage" xml:space="preserve"><value>Nomeie uma ou mais linguagens/ferramentas. Disponível: {0}.</value></data>
+  <data name="Error_GitignoreUnknown" xml:space="preserve"><value>Nenhum destes é conhecido: {0}. Disponível: {1}.</value></data>
+  <data name="Text_NoHeadings" xml:space="preserve"><value>Nenhum título Markdown encontrado.</value></data>
+  <data name="Error_SdtUsage" xml:space="preserve"><value>Dê exatamente dois de velocidade, distância e tempo, por ex. “100km 2h”.</value></data>
+  <data name="Error_SdtDuplicate" xml:space="preserve"><value>Dois valores do mesmo tipo ({0}) foram fornecidos.</value></data>
+  <data name="Error_SdtToken" xml:space="preserve"><value>Não é possível ler &quot;{0}&quot;: esperava um número e uma unidade como 100km.</value></data>
+  <data name="Error_SdtUnit" xml:space="preserve"><value>Unidade desconhecida: {0}. Use km, m, mi/h, min, s/km/h, mph…</value></data>
+  <data name="Error_SdtZeroSpeed" xml:space="preserve"><value>A velocidade é zero – o tempo seria infinito.</value></data>
+  <data name="Error_SdtZeroTime" xml:space="preserve"><value>O tempo é zero – a velocidade seria infinita.</value></data>
+  <data name="Sdt_Distance" xml:space="preserve"><value>DISTÂNCIA</value></data>
+  <data name="Sdt_Time" xml:space="preserve"><value>TEMPO</value></data>
+  <data name="Sdt_Speed" xml:space="preserve"><value>VELOCIDADE</value></data>
+  <data name="Error_TooLarge" xml:space="preserve"><value>Esse número é muito grande para ser computado aqui.</value></data>
+  <data name="Error_CombinatoricsUsage" xml:space="preserve"><value>Insira &quot;n k&quot; com 0 ≤ k ≤ n, por ex. &quot;49 6&quot;.</value></data>
+  <data name="Error_TransferUsage" xml:space="preserve"><value>Dê um tamanho e uma largura de banda, por ex. &quot;5 GB 100 Mbps&quot;.</value></data>
+  <data name="Error_TransferRate" xml:space="preserve"><value>Largura de banda ilegível: {0}. Experimente 100 Mbps, 50 MB/s ou 1 Gbps.</value></data>
+  <data name="Transfer_Size" xml:space="preserve"><value>TAMANHO</value></data>
+  <data name="Transfer_Rate" xml:space="preserve"><value>TAXA</value></data>
+  <data name="Transfer_TimeLabel" xml:space="preserve"><value>TEMPO</value></data>
+  <data name="Error_ShoeUsage" xml:space="preserve"><value>Insira um tamanho e seu sistema, por ex. &quot;42 eu&quot; ou &quot;26 cm de largura&quot;.</value></data>
+  <data name="Shoe_Men" xml:space="preserve"><value>Masculino</value></data>
+  <data name="Shoe_Women" xml:space="preserve"><value>Feminino</value></data>
+  <data name="Shoe_Note" xml:space="preserve"><value>Aproximado – os tamanhos variam de acordo com a marca.</value></data>
+  <data name="Cli_Search" xml:space="preserve"><value>Pesquisa: pesquisa de caixa &lt;palavra&gt;</value></data>
+  <data name="Cli_NoMatch" xml:space="preserve"><value>Nenhuma ferramenta corresponde.</value></data>
+  <data name="Home_Title" xml:space="preserve"><value>Página inicial</value></data>
+  <data name="Home_Recent" xml:space="preserve"><value>Ferramentas recentes</value></data>
+  <data name="Home_Empty" xml:space="preserve"><value>Escolha uma ferramenta na lista ou pesquise no topo. Os que você usa aparecerão aqui.</value></data>
+  <data name="Error_NoCharset" xml:space="preserve"><value>Ative pelo menos um tipo de caractere.</value></data>
+  <data name="Pwd_Title" xml:space="preserve"><value>Gerador de senha</value></data>
+  <data name="Pwd_Length" xml:space="preserve"><value>Comprimento</value></data>
+  <data name="Pwd_Upper" xml:space="preserve"><value>Maiúsculas (A – Z)</value></data>
+  <data name="Pwd_Lower" xml:space="preserve"><value>Minúsculas (a – z)</value></data>
+  <data name="Pwd_Digits" xml:space="preserve"><value>Dígitos (0–9)</value></data>
+  <data name="Pwd_Symbols" xml:space="preserve"><value>Símbolos (!@#…)</value></data>
+  <data name="Pwd_Regenerate" xml:space="preserve"><value>Gerar novo</value></data>
+  <data name="Cp_Title" xml:space="preserve"><value>Seletor de cores</value></data>
+  <data name="Rnd_Title" xml:space="preserve"><value>Aleatoriedade</value></data>
+  <data name="Rnd_Flip" xml:space="preserve"><value>Virar</value></data>
+  <data name="Rnd_Roll" xml:space="preserve"><value>Rolar</value></data>
+  <data name="Rnd_Draw" xml:space="preserve"><value>Desenhar</value></data>
+  <data name="Rnd_Generate" xml:space="preserve"><value>Gerar</value></data>
+  <data name="Conv_Category" xml:space="preserve"><value>Medir</value></data>
+  <data name="Conv_Value" xml:space="preserve"><value>Valor</value></data>
+  <data name="Date_From" xml:space="preserve"><value>De</value></data>
+  <data name="Date_To" xml:space="preserve"><value>Para</value></data>
+  <data name="Contrast_Fg" xml:space="preserve"><value>Cor do texto</value></data>
+  <data name="Contrast_Bg" xml:space="preserve"><value>Plano de fundo</value></data>
+  <data name="Contrast_Sample" xml:space="preserve"><value>Exemplo de texto — Aa Bb 123</value></data>
+  <data name="Bmi_Weight" xml:space="preserve"><value>Peso (kg)</value></data>
+  <data name="Bmi_Height" xml:space="preserve"><value>Altura (cm)</value></data>
+  <data name="Tip_Bill" xml:space="preserve"><value>conta</value></data>
+  <data name="Tip_Percent" xml:space="preserve"><value>Dica (%)</value></data>
+  <data name="Tip_People" xml:space="preserve"><value>Dividir entre</value></data>
+  <data name="Loan_Amount" xml:space="preserve"><value>Quantidade</value></data>
+  <data name="Loan_Rate" xml:space="preserve"><value>Taxa anual (%)</value></data>
+  <data name="Loan_Years" xml:space="preserve"><value>Anos</value></data>
+  <data name="Calc_DivZero" xml:space="preserve"><value>Não é possível dividir por zero</value></data>
+  <data name="Calc_Error" xml:space="preserve"><value>Entrada inválida</value></data>
+  <data name="Calc_Standard" xml:space="preserve"><value>Padrão</value></data>
+  <data name="Calc_Scientific" xml:space="preserve"><value>Científico</value></data>
+  <data name="Calc_Programmer" xml:space="preserve"><value>Programador</value></data>
+  <data name="Calc_History" xml:space="preserve"><value>História</value></data>
+  <data name="Calc_HistoryEmpty" xml:space="preserve"><value>Ainda não há histórico</value></data>
+  <data name="Tool_Graph_Name" xml:space="preserve"><value>Gráfico de função</value></data>
+  <data name="Graph_NoPoints" xml:space="preserve"><value>Nada a traçar neste intervalo.</value></data>
+  <data name="Settings_Title" xml:space="preserve"><value>Configurações</value></data>
+  <data name="Settings_Theme" xml:space="preserve"><value>Aparência</value></data>
+  <data name="Theme_System" xml:space="preserve"><value>Usar configuração do sistema</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Luz</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Escuro</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Idioma</value></data>
+  <data name="Settings_About" xml:space="preserve"><value>KRATE - {0} ferramentas, todas locais e offline. Nenhum dado sai da sua máquina.</value></data>
+  <data name="Home_Favorites" xml:space="preserve"><value>Favoritos</value></data>
+  <data name="Settings_ThemeCard" xml:space="preserve"><value>Tema do aplicativo</value></data>
+  <data name="Settings_ThemeDesc" xml:space="preserve"><value>Escolha claro, escuro ou siga o Windows.</value></data>
+  <data name="Settings_LangDesc" xml:space="preserve"><value>Altera o idioma da interface imediatamente.</value></data>
+  <data name="Settings_AboutHeader" xml:space="preserve"><value>Sobre</value></data>
+  <data name="Gui_Input" xml:space="preserve"><value>Entrada</value></data>
+  <data name="Gui_Output" xml:space="preserve"><value>Saída</value></data>
+  <data name="Gui_Paste" xml:space="preserve"><value>Colar</value></data>
+  <data name="Gui_Clear" xml:space="preserve"><value>Limpar</value></data>
+  <data name="Gui_Count" xml:space="preserve"><value>{0} caracteres · {1} linhas</value></data>
+  <data name="Cli_HelpLine" xml:space="preserve"><value>Ajuda: krate &lt;ferramenta&gt; --help · krate --help</value></data>
+  <data name="Cli_Examples" xml:space="preserve"><value>Exemplos:</value></data>
+  <data name="Cli_UsageLabel" xml:space="preserve"><value>Uso:</value></data>
+  <data name="Cli_KeywordsLabel" xml:space="preserve"><value>Palavras-chave:</value></data>
+  <data name="Cli_CompletionUsage" xml:space="preserve"><value>Uso: conclusão da caixa &lt;bash|zsh|powershell&gt;</value></data>
+  <data name="Archive_Zipped" xml:space="preserve"><value>Criado em {0} ({1}).</value></data>
+  <data name="Archive_Extracted" xml:space="preserve"><value>Extraído para {0} (arquivos {1}).</value></data>
+  <data name="Archive_Format" xml:space="preserve"><value>Formato</value></data>
+  <data name="Archive_Compress" xml:space="preserve"><value>Comprimir</value></data>
+  <data name="Archive_Title" xml:space="preserve"><value>Arquivos</value></data>
+  <data name="Archive_Open" xml:space="preserve"><value>Abrir arquivo</value></data>
+  <data name="Archive_ExtractAll" xml:space="preserve"><value>Extraia tudo</value></data>
+  <data name="Archive_Name" xml:space="preserve"><value>Nome</value></data>
+  <data name="Archive_Size" xml:space="preserve"><value>Tamanho</value></data>
+  <data name="Archive_Modified" xml:space="preserve"><value>Modificado</value></data>
+  <data name="Archive_Info" xml:space="preserve"><value>{0} — {1} itens, {2}</value></data>
+  <data name="Tool_Encrypt_Name" xml:space="preserve"><value>Criptografar arquivo</value></data>
+  <data name="Tool_Encrypt_Desc" xml:space="preserve"><value>Criptografa um arquivo com senha (AES-256, autenticado). &quot;caminho | senha&quot;, ou use a página.</value></data>
+  <data name="Tool_Encrypt_Aliases" xml:space="preserve"><value>criptografar, criptografia, aes, senha, seguro, proteger, cifrar, bloquear, cripta</value></data>
+  <data name="Tool_Decrypt_Name" xml:space="preserve"><value>Descriptografar arquivo</value></data>
+  <data name="Tool_Decrypt_Desc" xml:space="preserve"><value>Descriptografa um arquivo .krate de volta ao original. &quot;caminho | senha&quot;, ou use a página.</value></data>
+  <data name="Tool_Decrypt_Aliases" xml:space="preserve"><value>descriptografar, descriptografia, aes, senha, desbloquear, criptografar, abrir</value></data>
+  <data name="Error_CryptUsage" xml:space="preserve"><value>Use &quot;caminho | senha&quot;.</value></data>
+  <data name="Error_NeedPassword" xml:space="preserve"><value>Digite uma senha.</value></data>
+  <data name="Error_NotEncrypted" xml:space="preserve"><value>{0} não é um arquivo criptografado pelo KRATE.</value></data>
+  <data name="Error_WrongPassword" xml:space="preserve"><value>Senha errada ou o arquivo foi alterado.</value></data>
+  <data name="Crypt_Encrypted" xml:space="preserve"><value>Criptografado para {0}. Mantenha sua senha segura – não há recuperação.</value></data>
+  <data name="Crypt_Decrypted" xml:space="preserve"><value>Descriptografado para {0}.</value></data>
+  <data name="Cli_CryptUsage" xml:space="preserve"><value>Uso: encriptar krate | descriptografar &lt;arquivo&gt;</value></data>
+  <data name="Cli_Password" xml:space="preserve"><value>Senha:</value></data>
+  <data name="Cli_Confirm" xml:space="preserve"><value>Confirme a senha:</value></data>
+  <data name="Cli_PasswordMismatch" xml:space="preserve"><value>As senhas não coincidem.</value></data>
+  <data name="Encrypt_Title" xml:space="preserve"><value>Criptografia de arquivo</value></data>
+  <data name="Encrypt_Subtitle" xml:space="preserve"><value>AES-256, autenticado. A criptografia cria um arquivo .krate próximo ao original; descriptografar o restaura. Não há recuperação de senha.</value></data>
+  <data name="Encrypt_Password" xml:space="preserve"><value>Senha</value></data>
+  <data name="Encrypt_Confirm" xml:space="preserve"><value>Confirme a senha (para criptografar)</value></data>
+  <data name="Encrypt_Do" xml:space="preserve"><value>Criptografar</value></data>
+  <data name="Decrypt_Do" xml:space="preserve"><value>Descriptografar</value></data>
+  <data name="Yt_Title" xml:space="preserve"><value>Baixador de vídeo</value></data>
+  <data name="Yt_Subtitle" xml:space="preserve"><value>Baixe vídeo ou áudio do YouTube e de muitos outros sites suportados pelo yt-dlp.</value></data>
+  <data name="Yt_Url" xml:space="preserve"><value>URL do vídeo</value></data>
+  <data name="Yt_Format" xml:space="preserve"><value>Formato</value></data>
+  <data name="Yt_Folder" xml:space="preserve"><value>Pasta</value></data>
+  <data name="Yt_Change" xml:space="preserve"><value>Mudar…</value></data>
+  <data name="Yt_Download" xml:space="preserve"><value>Baixar</value></data>
+  <data name="Yt_Get" xml:space="preserve"><value>Configurar o yt-dlp</value></data>
+  <data name="Yt_Getting" xml:space="preserve"><value>Baixando yt-dlp…</value></data>
+  <data name="Yt_Ready" xml:space="preserve"><value>yt-dlp está pronto.</value></data>
+  <data name="Yt_NeedSetup" xml:space="preserve"><value>yt-dlp ainda não está configurado – é necessário fazer o download.</value></data>
+  <data name="Yt_NoYtDlp" xml:space="preserve"><value>yt-dlp não está configurado. Use &quot;Configurar yt-dlp&quot; primeiro.</value></data>
+  <data name="Yt_NeedUrl" xml:space="preserve"><value>Insira um URL de vídeo.</value></data>
+  <data name="Yt_NeedFfmpeg" xml:space="preserve"><value>A extração de áudio precisa do ffmpeg – configure-o primeiro no conversor de arquivo.</value></data>
+  <data name="Yt_Downloading" xml:space="preserve"><value>Baixando…</value></data>
+  <data name="Yt_Done" xml:space="preserve"><value>Baixado {0}</value></data>
+  <data name="Yt_CliUsage" xml:space="preserve"><value>Uso: krate youtube &lt;url&gt; [mp4|mp3|m4a|…] |   configuração da caixa do youtube</value></data>
+  <data name="Archive_Staged" xml:space="preserve"><value>Pronto: {0} — escolha um formato e clique em Compactar.</value></data>
+  <data name="Ctx_Compress" xml:space="preserve"><value>Comprimir com caixa</value></data>
+  <data name="Ctx_Extract" xml:space="preserve"><value>Extrair com caixa</value></data>
+  <data name="Ctx_Encrypt" xml:space="preserve"><value>Criptografar com Krate</value></data>
+  <data name="Ctx_Convert" xml:space="preserve"><value>Converter com caixa</value></data>
+  <data name="Ctx_Edit" xml:space="preserve"><value>Editar com caixa</value></data>
+  <data name="Ctx_TextTools" xml:space="preserve"><value>Ferramentas de texto com Krate</value></data>
+  <data name="Ctx_Krate" xml:space="preserve"><value>Caixa</value></data>
+  <data name="Settings_Integration" xml:space="preserve"><value>Integração com Windows</value></data>
+  <data name="Settings_ContextCard" xml:space="preserve"><value>Menu do botão direito</value></data>
+  <data name="Settings_ContextDesc" xml:space="preserve"><value>Adicione um submenu “Krate” ao menu do botão direito do Explorer – Compactar, Criptografar, Extrair, Converter, Editar e ferramentas de texto ao passar o mouse (em Mostrar mais opções no Windows 11).</value></data>
+  <data name="Error_CannotCreate" xml:space="preserve"><value>{0} arquivos podem ser extraídos, mas não criados.</value></data>
+  <data name="Error_UnknownFormat" xml:space="preserve"><value>Formato de arquivo desconhecido: {0}</value></data>
+  <data name="Error_NotZip" xml:space="preserve"><value>Não é um arquivo .zip: {0}</value></data>
+  <data name="Md_Preview_Name" xml:space="preserve"><value>Visualização de redução</value></data>
+  <data name="Cvd_Normal" xml:space="preserve"><value>Normais</value></data>
+  <data name="Cvd_Protan" xml:space="preserve"><value>Protanopia</value></data>
+  <data name="Cvd_Deuter" xml:space="preserve"><value>Deuteranopia</value></data>
+  <data name="Cvd_Tritan" xml:space="preserve"><value>Tritanopia</value></data>
+  <data name="Cvd_Achroma" xml:space="preserve"><value>Acromatopsia</value></data>
+  <data name="Error_BarcodeAscii" xml:space="preserve"><value>O código 128 aceita apenas ASCII imprimível.</value></data>
+  <data name="Error_NotArchive" xml:space="preserve"><value>Não é um arquivo suportado: {0}. Experimente .zip, .7z, .rar, .tar, .gz…</value></data>
+  <data name="Exif_None" xml:space="preserve"><value>Nenhum metadado EXIF ​​encontrado.</value></data>
+  <data name="Error_RenameUsage" xml:space="preserve"><value>Use &quot;pasta | localizar | substituir&quot;, por exemplo. &quot;C:\fotos | IMG | foto&quot;.</value></data>
+  <data name="Rename_NoMatch" xml:space="preserve"><value>Nenhum nome de arquivo contém &quot;{0}&quot;.</value></data>
+  <data name="Rename_Preview" xml:space="preserve"><value>{0} arquivos seriam renomeados:</value></data>
+  <data name="Rename_ApplyHint" xml:space="preserve"><value>Adicione &quot;| apply&quot; para renomeá-los.</value></data>
+  <data name="Rename_Done" xml:space="preserve"><value>Arquivo(s) {0} renomeados.</value></data>
+  <data name="Error_PdfMergeUsage" xml:space="preserve"><value>Forneça pelo menos dois caminhos de PDF, um por linha.</value></data>
+  <data name="Error_NotPdf" xml:space="preserve"><value>Não é um arquivo PDF: {0}</value></data>
+  <data name="Pdf_Merged" xml:space="preserve"><value>Criou {0} — {1} páginas de {2} arquivos.</value></data>
+  <data name="Pdf_Split" xml:space="preserve"><value>Dividido em {0} páginas ({1}_p01.pdf…).</value></data>
+  <data name="Error_CurrencyUsage" xml:space="preserve"><value>Insira um valor e dois códigos de moeda, por exemplo. &quot;100 USD EUR&quot;.</value></data>
+  <data name="Error_UnknownCurrency" xml:space="preserve"><value>Moeda desconhecida: {0}.</value></data>
+  <data name="Error_NoRates" xml:space="preserve"><value>Sem taxas em cache e sem internet – conecte-se uma vez para buscá-las.</value></data>
+  <data name="Cur_Rate" xml:space="preserve"><value>TAXA</value></data>
+  <data name="Cur_Updated" xml:space="preserve"><value>ATUALIZADO</value></data>
+  <data name="Cur_Offline" xml:space="preserve"><value>(off-line — últimas taxas conhecidas)</value></data>
+  <data name="Notepad_Title" xml:space="preserve"><value>Bloco de notas</value></data>
+  <data name="Notepad_Saved" xml:space="preserve"><value>Salvo automaticamente</value></data>
+  <data name="Clipboard_Title" xml:space="preserve"><value>Histórico da área de transferência</value></data>
+  <data name="Clipboard_Clear" xml:space="preserve"><value>Limpar</value></data>
+  <data name="Clipboard_Hint" xml:space="preserve"><value>Copie algum texto enquanto o KRATE estiver aberto – ele aparecerá aqui. Clique em um item para copiá-lo novamente.</value></data>
+  <data name="Img_Open" xml:space="preserve"><value>Abrir imagem</value></data>
+  <data name="Exif_Drop" xml:space="preserve"><value>Solte uma foto aqui ou use Abrir imagem.</value></data>
+  <data name="Rename_ChooseFolder" xml:space="preserve"><value>Escolha a pasta</value></data>
+  <data name="Rename_Apply" xml:space="preserve"><value>Renomear</value></data>
+  <data name="Rename_Count" xml:space="preserve"><value>{0} arquivos serão renomeados.</value></data>
+  <data name="Rename_NoMatchShort" xml:space="preserve"><value>Nenhum arquivo correspondente.</value></data>
+  <data name="Pdf_Title" xml:space="preserve"><value>Mesclar e dividir PDF</value></data>
+  <data name="Pdf_MergeLabel" xml:space="preserve"><value>Mesclar esses PDFs (em ordem):</value></data>
+  <data name="Pdf_Drop" xml:space="preserve"><value>Solte PDFs aqui ou use Adicionar PDFs.</value></data>
+  <data name="Pdf_Add" xml:space="preserve"><value>Adicionar PDFs</value></data>
+  <data name="Pdf_MergeBtn" xml:space="preserve"><value>Mesclar</value></data>
+  <data name="Pdf_SplitBtn" xml:space="preserve"><value>Dividir um PDF…</value></data>
+  <data name="Base_Invalid" xml:space="preserve"><value>Não é válido para essa base.</value></data>
+  <data name="Lorem_Words" xml:space="preserve"><value>Palavras</value></data>
+  <data name="Lorem_Paragraphs" xml:space="preserve"><value>Parágrafos</value></data>
+  <data name="Lorem_NWords" xml:space="preserve"><value>{0} palavras</value></data>
+  <data name="Lorem_NPara" xml:space="preserve"><value>{0} parágrafos</value></data>
+  <data name="Seq_Step" xml:space="preserve"><value>Passo</value></data>
+  <data name="Seq_Ratio" xml:space="preserve"><value>Proporção</value></data>
+  <data name="Cron_NextRuns" xml:space="preserve"><value>Próximas corridas</value></data>
+  <data name="Palette_Hint" xml:space="preserve"><value>Ferramentas de pesquisa… (Ctrl+K)</value></data>
+  <data name="Ts_FromUnix" xml:space="preserve"><value>De um carimbo de data/hora Unix</value></data>
+  <data name="Ts_FromDate" xml:space="preserve"><value>De uma data e hora</value></data>
+  <data name="Ts_Now" xml:space="preserve"><value>Agora</value></data>
+  <data name="Pick_ChooseFile" xml:space="preserve"><value>Escolha o arquivo</value></data>
+  <data name="Pick_ChooseFolder" xml:space="preserve"><value>Escolha a pasta</value></data>
+  <data name="Pick_DropFile" xml:space="preserve"><value>Escolha um arquivo acima ou solte um aqui.</value></data>
+  <data name="Pick_DropFolder" xml:space="preserve"><value>Escolha uma pasta acima ou solte uma aqui.</value></data>
+  <data name="Compare_FileA" xml:space="preserve"><value>Primeiro arquivo – escolha ou solte</value></data>
+  <data name="Compare_FileB" xml:space="preserve"><value>Segundo arquivo – escolha ou solte</value></data>
+  <data name="Fs_Go" xml:space="preserve"><value>Vá</value></data>
+  <data name="Fs_FileName" xml:space="preserve"><value>Nome do arquivo</value></data>
+  <data name="Comb_N" xml:space="preserve"><value>n (total)</value></data>
+  <data name="Comb_R" xml:space="preserve"><value>r (escolhido)</value></data>
+  <data name="Factor_Number" xml:space="preserve"><value>Número</value></data>
+  <data name="Ruler_Title" xml:space="preserve"><value>Régua</value></data>
+  <data name="Ruler_Calib" xml:space="preserve"><value>Calibrar: segure um cartão bancário contra a tela e ajuste até que 0–8,56 cm corresponda à sua borda longa.</value></data>
+  <data name="Gamepad_Title" xml:space="preserve"><value>Testador de gamepad</value></data>
+  <data name="Gamepad_None" xml:space="preserve"><value>Conecte um controlador (Xbox ou compatível). A entrada é lida mesmo quando esta janela não está em foco.</value></data>
+  <data name="Gamepad_Connected" xml:space="preserve"><value>Controlador conectado – pressione botões, mova os manípulos e gatilhos.</value></data>
+  <data name="Gamepad_LT" xml:space="preserve"><value>Gatilho esquerdo</value></data>
+  <data name="Gamepad_RT" xml:space="preserve"><value>Gatilho direito</value></data>
+  <data name="Gamepad_NoXInput" xml:space="preserve"><value>XInput não está disponível neste sistema.</value></data>
+  <data name="Gamepad_Generic" xml:space="preserve"><value>Controlador</value></data>
+  <data name="Gamepad_GenericHint" xml:space="preserve"><value>Controlador DirectInput/HID – os botões são numerados porque os pads que não são do Xbox não são mapeados para um layout A/B/X/Y fixo.</value></data>
+  <data name="Gamepad_Extra" xml:space="preserve"><value>Outros botões</value></data>
+  <data name="Cli_GamepadWindowsOnly" xml:space="preserve"><value>O testador de gamepad é apenas para Windows por enquanto.</value></data>
+  <data name="Cli_GamepadHeader" xml:space="preserve"><value>Testador de gamepad KRATE – pressione qualquer tecla para parar.</value></data>
+  <data name="Media_Downloading" xml:space="preserve"><value>Baixando ffmpeg (~110 MB, uma vez)…</value></data>
+  <data name="Media_Extracting" xml:space="preserve"><value>Extraindo ffmpeg…</value></data>
+  <data name="Media_ExtractFailed" xml:space="preserve"><value>Não foi possível encontrar o ffmpeg no arquivo baixado.</value></data>
+  <data name="Media_UnknownFormat" xml:space="preserve"><value>Formato desconhecido: {0}</value></data>
+  <data name="Media_NoFfmpeg" xml:space="preserve"><value>ffmpeg não está instalado. Execute &apos;configuração de mídia da caixa&apos; primeiro.</value></data>
+  <data name="Media_NoOutput" xml:space="preserve"><value>A conversão não produziu nenhum arquivo de saída.</value></data>
+  <data name="Media_Done" xml:space="preserve"><value>Convertido → {0} ({1})</value></data>
+  <data name="Media_Ready" xml:space="preserve"><value>ffmpeg está pronto.</value></data>
+  <data name="Media_NeedSetup" xml:space="preserve"><value>ffmpeg não instalado - execute &apos;krate media setup&apos; (download único de aproximadamente 110 MB).</value></data>
+  <data name="Media_CliUsage" xml:space="preserve"><value>Uso: krate convert &lt;arquivo&gt; &lt;formato&gt; |   configuração de mídia de caixa |   formatos de mídia de caixa</value></data>
+  <data name="Media_Converting" xml:space="preserve"><value>Convertendo {0} → {1}…</value></data>
+  <data name="Converter_Title" xml:space="preserve"><value>Conversor de arquivo</value></data>
+  <data name="Converter_Subtitle" xml:space="preserve"><value>Converta áudio, vídeo e imagens entre formatos.</value></data>
+  <data name="Converter_AddFiles" xml:space="preserve"><value>Adicionar arquivos…</value></data>
+  <data name="Converter_Clear" xml:space="preserve"><value>Limpar</value></data>
+  <data name="Converter_Convert" xml:space="preserve"><value>Converter</value></data>
+  <data name="Converter_Download" xml:space="preserve"><value>Baixar ffmpeg</value></data>
+  <data name="Converter_DropHint" xml:space="preserve"><value>Solte os arquivos aqui ou use “Adicionar arquivos”.</value></data>
+  <data name="Converter_NeedFfmpeg" xml:space="preserve"><value>A conversão precisa de ffmpeg (um download único de aproximadamente 110 MB). Ele é salvo e reutilizado off-line posteriormente.</value></data>
+  <data name="Converter_AllDone" xml:space="preserve"><value>Feito.</value></data>
+  <data name="Converter_Cat_audio" xml:space="preserve"><value>áudio</value></data>
+  <data name="Converter_Cat_video" xml:space="preserve"><value>vídeo</value></data>
+  <data name="Converter_Cat_image" xml:space="preserve"><value>imagem</value></data>
+  <data name="Coin_Tally" xml:space="preserve"><value>Cara {0} · Coroa {1}</value></data>
+  <data name="Dice_Total" xml:space="preserve"><value>Total _0__</value></data>
+  <data name="Dice_Type" xml:space="preserve"><value>Morrer</value></data>
+  <data name="Dice_Count" xml:space="preserve"><value>Quantos</value></data>
+  <data name="Rnd_Min" xml:space="preserve"><value>Mínimo</value></data>
+  <data name="Rnd_Max" xml:space="preserve"><value>Máximo</value></data>
+  <data name="Category_Text" xml:space="preserve"><value>Texto</value></data>
+  <data name="Category_Encoding" xml:space="preserve"><value>Codificação e dados</value></data>
+  <data name="Category_Hashing" xml:space="preserve"><value>Hashing e segurança</value></data>
+  <data name="Category_Developer" xml:space="preserve"><value>Desenvolvedor</value></data>
+  <data name="Category_Colors" xml:space="preserve"><value>Cores e design</value></data>
+  <data name="Category_Conversions" xml:space="preserve"><value>Conversões</value></data>
+  <data name="Category_Dates" xml:space="preserve"><value>Datas e hora</value></data>
+  <data name="Category_Random" xml:space="preserve"><value>Aleatoriedade</value></data>
+  <data name="Category_Maths" xml:space="preserve"><value>Matemática</value></data>
+  <data name="Category_Everyday" xml:space="preserve"><value>Todos os dias</value></data>
+  <data name="Category_Files" xml:space="preserve"><value>Arquivos e pastas</value></data>
+  <data name="Category_Images" xml:space="preserve"><value>Imagens</value></data>
+  <data name="Tool_Count_Name" xml:space="preserve"><value>Contador de texto</value></data>
+  <data name="Tool_Count_Desc" xml:space="preserve"><value>Conta caracteres, palavras, linhas e estima o tempo de leitura.</value></data>
+  <data name="Tool_Count_Aliases" xml:space="preserve"><value>contagem, palavras, caracteres, linhas, estatísticas, tempo de leitura</value></data>
+  <data name="Tool_Upper_Name" xml:space="preserve"><value>MAIÚSCULAS</value></data>
+  <data name="Tool_Upper_Desc" xml:space="preserve"><value>Converte o texto em maiúsculas.</value></data>
+  <data name="Tool_Upper_Aliases" xml:space="preserve"><value>maiúsculas, minúsculas, maiúsculas, maiúsculas</value></data>
+  <data name="Tool_Lower_Name" xml:space="preserve"><value>minúscula</value></data>
+  <data name="Tool_Lower_Desc" xml:space="preserve"><value>Converte o texto em minúsculas.</value></data>
+  <data name="Tool_Lower_Aliases" xml:space="preserve"><value>maiúsculas, minúsculas, minúsculas</value></data>
+  <data name="Tool_Title_Name" xml:space="preserve"><value>Caso de título</value></data>
+  <data name="Tool_Title_Desc" xml:space="preserve"><value>Coloca em maiúscula a primeira letra de cada palavra.</value></data>
+  <data name="Tool_Title_Aliases" xml:space="preserve"><value>caso, título, capitalizar, manchete</value></data>
+  <data name="Tool_Invert_Name" xml:space="preserve"><value>CASO INVERTIDO</value></data>
+  <data name="Tool_Invert_Desc" xml:space="preserve"><value>Troca maiúsculas e minúsculas.</value></data>
+  <data name="Tool_Invert_Aliases" xml:space="preserve"><value>caso, inverter, trocar, espelhar</value></data>
+  <data name="Tool_Base64_Name" xml:space="preserve"><value>Codificação Base64</value></data>
+  <data name="Tool_Base64_Desc" xml:space="preserve"><value>Codifica o texto para Base64 (UTF-8).</value></data>
+  <data name="Tool_Base64_Aliases" xml:space="preserve"><value>base64, codificação, b64</value></data>
+  <data name="Tool_Base64Decode_Name" xml:space="preserve"><value>Decodificação Base64</value></data>
+  <data name="Tool_Base64Decode_Desc" xml:space="preserve"><value>Decodifica Base64 de volta ao texto (UTF-8).</value></data>
+  <data name="Tool_Base64Decode_Aliases" xml:space="preserve"><value>base64, decodificação, b64</value></data>
+  <data name="Tool_UrlEncode_Name" xml:space="preserve"><value>Codificação de URL</value></data>
+  <data name="Tool_UrlEncode_Desc" xml:space="preserve"><value>Codifica percentualmente o texto para uso em um URL.</value></data>
+  <data name="Tool_UrlEncode_Aliases" xml:space="preserve"><value>url, uri, porcentagem, codificar, escapar</value></data>
+  <data name="Tool_UrlDecode_Name" xml:space="preserve"><value>Decodificação de URL</value></data>
+  <data name="Tool_UrlDecode_Desc" xml:space="preserve"><value>Decodifica um URL codificado por porcentagem.</value></data>
+  <data name="Tool_UrlDecode_Aliases" xml:space="preserve"><value>url, uri, porcentagem, decodificar, remover escape</value></data>
+  <data name="Tool_HtmlEncode_Name" xml:space="preserve"><value>Codificação de entidades HTML</value></data>
+  <data name="Tool_HtmlEncode_Desc" xml:space="preserve"><value>Escapes &amp;, &lt; e &gt; como entidades HTML.</value></data>
+  <data name="Tool_HtmlEncode_Aliases" xml:space="preserve"><value>html, entidades, escape, codificar</value></data>
+  <data name="Tool_HtmlDecode_Name" xml:space="preserve"><value>Decodificação de entidades HTML</value></data>
+  <data name="Tool_HtmlDecode_Desc" xml:space="preserve"><value>Transforma entidades HTML novamente em caracteres.</value></data>
+  <data name="Tool_HtmlDecode_Aliases" xml:space="preserve"><value>html, entidades, unscape, decodificar</value></data>
+  <data name="Tool_Bases_Name" xml:space="preserve"><value>Conversor de base numérica</value></data>
+  <data name="Tool_Bases_Desc" xml:space="preserve"><value>Mostra um número em binário, octal, decimal e hexadecimal. Prefixe a entrada com 0b, 0o ou 0x.</value></data>
+  <data name="Tool_Bases_Aliases" xml:space="preserve"><value>base, binário, octal, hexadecimal, hexadecimal, decimal, raiz</value></data>
+  <data name="Tool_Md5_Name" xml:space="preserve"><value>Hash MD5</value></data>
+  <data name="Tool_Md5_Desc" xml:space="preserve"><value>Calcula o hash MD5 de um texto. Somente somas de verificação, não segurança.</value></data>
+  <data name="Tool_Md5_Aliases" xml:space="preserve"><value>hash, md5, soma de verificação, resumo</value></data>
+  <data name="Tool_Sha1_Name" xml:space="preserve"><value>Hash SHA-1</value></data>
+  <data name="Tool_Sha1_Desc" xml:space="preserve"><value>Calcula o hash SHA-1 de um texto. Somente somas de verificação, não segurança.</value></data>
+  <data name="Tool_Sha1_Aliases" xml:space="preserve"><value>hash, sha1, soma de verificação, resumo</value></data>
+  <data name="Tool_Sha256_Name" xml:space="preserve"><value>Hash SHA-256</value></data>
+  <data name="Tool_Sha256_Desc" xml:space="preserve"><value>Calcula o hash SHA-256 de um texto.</value></data>
+  <data name="Tool_Sha256_Aliases" xml:space="preserve"><value>hash, sha, sha256, soma de verificação, resumo, impressão digital</value></data>
+  <data name="Tool_Sha512_Name" xml:space="preserve"><value>Hash SHA-512</value></data>
+  <data name="Tool_Sha512_Desc" xml:space="preserve"><value>Calcula o hash SHA-512 de um texto.</value></data>
+  <data name="Tool_Sha512_Aliases" xml:space="preserve"><value>hash, sha, sha512, soma de verificação, resumo</value></data>
+  <data name="Tool_HashAll_Name" xml:space="preserve"><value>Todos os hashes</value></data>
+  <data name="Tool_HashAll_Desc" xml:space="preserve"><value>MD5, SHA-1, SHA-256 e SHA-512 do mesmo texto de uma só vez.</value></data>
+  <data name="Tool_HashAll_Aliases" xml:space="preserve"><value>hash, tudo, md5, sha, soma de verificação, comparar</value></data>
+  <data name="Tool_Password_Name" xml:space="preserve"><value>Gerador de senha</value></data>
+  <data name="Tool_Password_Desc" xml:space="preserve"><value>Gera uma senha forte. Digite um comprimento (padrão 20). Caracteres ambíguos são excluídos.</value></data>
+  <data name="Tool_Password_Aliases" xml:space="preserve"><value>senha, gerar, aleatório, seguro, senha</value></data>
+  <data name="Tool_Uuid_Name" xml:space="preserve"><value>Gerador UUID/GUID</value></data>
+  <data name="Tool_Uuid_Desc" xml:space="preserve"><value>Gera UUIDs aleatórios. Digite uma contagem para obter vários.</value></data>
+  <data name="Tool_Uuid_Aliases" xml:space="preserve"><value>uuid, guid, id, identificador, aleatório</value></data>
+  <data name="Tool_JsonFormat_Name" xml:space="preserve"><value>Formatador JSON</value></data>
+  <data name="Tool_JsonFormat_Desc" xml:space="preserve"><value>Reformata JSON com recuo.</value></data>
+  <data name="Tool_JsonFormat_Aliases" xml:space="preserve"><value>json, formatar, bonito, recuar, embelezar</value></data>
+  <data name="Tool_JsonMinify_Name" xml:space="preserve"><value>Minificador JSON</value></data>
+  <data name="Tool_JsonMinify_Desc" xml:space="preserve"><value>Remove todos os espaços em branco do JSON.</value></data>
+  <data name="Tool_JsonMinify_Aliases" xml:space="preserve"><value>json, minificar, compactar, compactar</value></data>
+  <data name="Tool_JsonValidate_Name" xml:space="preserve"><value>Validador JSON</value></data>
+  <data name="Tool_JsonValidate_Desc" xml:space="preserve"><value>Verifica se o JSON é válido e aponta para o primeiro erro.</value></data>
+  <data name="Tool_JsonValidate_Aliases" xml:space="preserve"><value>json, validar, verificar, lint, erro</value></data>
+  <data name="Tool_Color_Name" xml:space="preserve"><value>Conversor de cores</value></data>
+  <data name="Tool_Color_Desc" xml:space="preserve"><value>Mostra uma cor como HEX, RGB e HSL. Aceita #3af, rgb(...) ou hsl(...).</value></data>
+  <data name="Tool_Color_Aliases" xml:space="preserve"><value>cor, cor, hexadecimal, rgb, hsl, converter, css</value></data>
+  <data name="Tool_Convert_Name" xml:space="preserve"><value>Conversor de unidades</value></data>
+  <data name="Tool_Convert_Desc" xml:space="preserve"><value>Converte entre unidades: digite &quot;10 km mi&quot;, &quot;100 F C&quot;, &quot;5 GiB MB&quot;.</value></data>
+  <data name="Tool_Convert_Aliases" xml:space="preserve"><value>converter, unidade, unidades, métrica, imperial, comprimento, peso, temperatura, dados, velocidade</value></data>
+  <data name="Tool_Roman_Name" xml:space="preserve"><value>Algarismos romanos</value></data>
+  <data name="Tool_Roman_Desc" xml:space="preserve"><value>Converte algarismos romanos em arábicos e vice-versa.</value></data>
+  <data name="Tool_Roman_Aliases" xml:space="preserve"><value>romano, algarismos, latim, número</value></data>
+  <data name="Tool_Timestamp_Name" xml:space="preserve"><value>Carimbo de data/hora Unix</value></data>
+  <data name="Tool_Timestamp_Desc" xml:space="preserve"><value>Converte um carimbo de data/hora em uma data e vice-versa. Deixe em branco para a hora atual.</value></data>
+  <data name="Tool_Timestamp_Aliases" xml:space="preserve"><value>timestamp, unix, época, data, hora, converter</value></data>
+  <data name="Tool_DateDiff_Name" xml:space="preserve"><value>Diferença de data</value></data>
+  <data name="Tool_DateDiff_Desc" xml:space="preserve"><value>Tempo entre duas datas, em anos, dias, semanas e dias úteis. Uma data se compara com hoje.</value></data>
+  <data name="Tool_DateDiff_Aliases" xml:space="preserve"><value>data, diferença, idade, dias, entre, dias úteis, calendário</value></data>
+  <data name="Tool_Duration_Name" xml:space="preserve"><value>Conversor de duração</value></data>
+  <data name="Tool_Duration_Desc" xml:space="preserve"><value>Divide uma duração e totaliza-a em cada unidade. Aceita &quot;90000&quot;, &quot;1d 2h 30m&quot;, &quot;1,5h&quot; ou &quot;2:30:00&quot;.</value></data>
+  <data name="Error_DurationUsage" xml:space="preserve"><value>Insira uma duração como “90000”, “1d 2h 30m” ou “2:30:00”.</value></data>
+  <data name="Tool_Duration_Aliases" xml:space="preserve"><value>duração, segundos, minutos, horas, hora, converter</value></data>
+  <data name="Tool_Random_Name" xml:space="preserve"><value>Número aleatório</value></data>
+  <data name="Tool_Random_Desc" xml:space="preserve"><value>Desenha um número em um intervalo. Digite &quot;1 100&quot; ou deixe em branco para 1-100.</value></data>
+  <data name="Tool_Random_Aliases" xml:space="preserve"><value>aleatório, número, sorteio, intervalo, rng</value></data>
+  <data name="Tool_Dice_Name" xml:space="preserve"><value>Rolagem de dados</value></data>
+  <data name="Tool_Dice_Desc" xml:space="preserve"><value>Lança dados em notação 2d6. Vazio rola um dado de seis lados.</value></data>
+  <data name="Tool_Dice_Aliases" xml:space="preserve"><value>dados, morrer, rolar, d20, rpg, aleatório</value></data>
+  <data name="Tool_Coin_Name" xml:space="preserve"><value>Jogada de moeda</value></data>
+  <data name="Tool_Coin_Desc" xml:space="preserve"><value>Cara ou coroa.</value></data>
+  <data name="Tool_Coin_Aliases" xml:space="preserve"><value>moeda, lançamento, lançamento, cara, coroa, aleatório</value></data>
+  <data name="Tool_Pick_Name" xml:space="preserve"><value>Escolha aleatória</value></data>
+  <data name="Tool_Pick_Desc" xml:space="preserve"><value>Escolhe uma entrada aleatoriamente da sua lista (uma por linha ou separada por vírgula).</value></data>
+  <data name="Tool_Pick_Aliases" xml:space="preserve"><value>escolher, sortear, aleatório, escolher, loteria, lista</value></data>
+  <data name="Tool_Shuffle_Name" xml:space="preserve"><value>Lista aleatória</value></data>
+  <data name="Tool_Shuffle_Desc" xml:space="preserve"><value>Coloca sua lista em ordem aleatória (uma por linha ou separada por vírgula).</value></data>
+  <data name="Tool_Shuffle_Aliases" xml:space="preserve"><value>embaralhar, aleatório, ordem, equipes, misturar, listar</value></data>
+  <data name="Tool_RandomColor_Name" xml:space="preserve"><value>Cor aleatória</value></data>
+  <data name="Tool_RandomColor_Desc" xml:space="preserve"><value>Gera uma cor aleatória em HEX, RGB e HSL.</value></data>
+  <data name="Tool_RandomColor_Aliases" xml:space="preserve"><value>aleatório, cor, cor, hexadecimal, paleta</value></data>
+  <data name="Tool_Naming_Name" xml:space="preserve"><value>Convenções de nomenclatura</value></data>
+  <data name="Tool_Naming_Desc" xml:space="preserve"><value>Mostra um identificador em camelCase, PascalCase, snake_case, kebab-case e CONSTANT_CASE.</value></data>
+  <data name="Tool_Naming_Aliases" xml:space="preserve"><value>nomenclatura, caso, camelo, pascal, cobra, kebab, constante, identificador, variável</value></data>
+  <data name="Tool_Slug_Name" xml:space="preserve"><value>Gerador de lesmas</value></data>
+  <data name="Tool_Slug_Desc" xml:space="preserve"><value>Transforma um título em um slug de URL: acentos achatados, palavras unidas por hífens.</value></data>
+  <data name="Tool_Slug_Aliases" xml:space="preserve"><value>slug, URL, link permanente, SEO, link</value></data>
+  <data name="Tool_Deaccent_Name" xml:space="preserve"><value>Remover acentos</value></data>
+  <data name="Tool_Deaccent_Desc" xml:space="preserve"><value>é se torna e, ç se torna c. Todo o resto é deixado em paz.</value></data>
+  <data name="Tool_Deaccent_Aliases" xml:space="preserve"><value>acentos, diacríticos, ascii, normalizar, unicode</value></data>
+  <data name="Tool_Clean_Name" xml:space="preserve"><value>Limpar texto</value></data>
+  <data name="Tool_Clean_Desc" xml:space="preserve"><value>Recolhe espaços repetidos, corta linhas e remove sequências de linhas em branco.</value></data>
+  <data name="Tool_Clean_Aliases" xml:space="preserve"><value>limpar, espaço em branco, espaços, aparar, colar, arrumar, formatar</value></data>
+  <data name="Tool_SortLines_Name" xml:space="preserve"><value>Classificar linhas</value></data>
+  <data name="Tool_SortLines_Desc" xml:space="preserve"><value>Classifica as linhas em ordem alfabética, usando as regras do idioma da interface.</value></data>
+  <data name="Tool_SortLines_Aliases" xml:space="preserve"><value>classificar, linhas, alfabética, ordem, lista</value></data>
+  <data name="Tool_SortByLength_Name" xml:space="preserve"><value>Classifique as linhas por comprimento</value></data>
+  <data name="Tool_SortByLength_Desc" xml:space="preserve"><value>Classifica as linhas da mais curta para a mais longa.</value></data>
+  <data name="Tool_SortByLength_Aliases" xml:space="preserve"><value>classificar, linhas, comprimento, tamanho, ordem</value></data>
+  <data name="Tool_Dedupe_Name" xml:space="preserve"><value>Remover linhas duplicadas</value></data>
+  <data name="Tool_Dedupe_Desc" xml:space="preserve"><value>Mantém a primeira ocorrência de cada linha e a ordem original.</value></data>
+  <data name="Tool_Dedupe_Aliases" xml:space="preserve"><value>duplicar, desduplicar, único, distinto, linhas</value></data>
+  <data name="Tool_Reverse_Name" xml:space="preserve"><value>Texto reverso</value></data>
+  <data name="Tool_Reverse_Desc" xml:space="preserve"><value>Inverte o texto caractere por caractere, incluindo emojis e acentos.</value></data>
+  <data name="Tool_Reverse_Aliases" xml:space="preserve"><value>reverter, espelho, para trás, virar</value></data>
+  <data name="Tool_ReverseLines_Name" xml:space="preserve"><value>Ordem de linha reversa</value></data>
+  <data name="Tool_ReverseLines_Desc" xml:space="preserve"><value>Coloca a última linha primeiro.</value></data>
+  <data name="Tool_ReverseLines_Aliases" xml:space="preserve"><value>reverter, linhas, ordem, inverter, inverter</value></data>
+  <data name="Tool_WordFrequency_Name" xml:space="preserve"><value>Frequência de palavras</value></data>
+  <data name="Tool_WordFrequency_Desc" xml:space="preserve"><value>Conta quantas vezes cada palavra aparece, a mais frequente primeiro.</value></data>
+  <data name="Tool_WordFrequency_Aliases" xml:space="preserve"><value>frequência, palavras, contagem, ocorrências, estatísticas</value></data>
+  <data name="Tool_FrenchTypography_Name" xml:space="preserve"><value>Tipografia francesa</value></data>
+  <data name="Tool_FrenchTypography_Desc" xml:space="preserve"><value>Adiciona os espaços ininterruptos que a tipografia francesa exige antes; : ! ? e entre aspas.</value></data>
+  <data name="Tool_FrenchTypography_Aliases" xml:space="preserve"><value>francês, tipografia, espaços, pontuação, nbsp, citações</value></data>
+  <data name="Tool_Mask_Name" xml:space="preserve"><value>Anonimizar texto</value></data>
+  <data name="Tool_Mask_Desc" xml:space="preserve"><value>Substitui e-mails, números de telefone e dígitos longos por espaços reservados.</value></data>
+  <data name="Tool_Mask_Aliases" xml:space="preserve"><value>mascarar, anonimizar, redigir, privacidade, GDPR, e-mail, telefone</value></data>
+  <data name="Tool_Lorem_Name" xml:space="preserve"><value>Lorem Ipsum</value></data>
+  <data name="Tool_Lorem_Desc" xml:space="preserve"><value>Gera texto de preenchimento. Digite uma contagem de palavras ou “3p” para três parágrafos.</value></data>
+  <data name="Tool_Lorem_Aliases" xml:space="preserve"><value>lorem, ipsum, espaço reservado, preenchimento, manequim, texto</value></data>
+  <data name="Tool_Morse_Name" xml:space="preserve"><value>Código Morse</value></data>
+  <data name="Tool_Morse_Desc" xml:space="preserve"><value>Texto para Morse e vice-versa, direção detectada automaticamente.</value></data>
+  <data name="Tool_Morse_Aliases" xml:space="preserve"><value>morse, código, telégrafo, pontos, traços, sos</value></data>
+  <data name="Tool_Diff_Name" xml:space="preserve"><value>Compare dois textos</value></data>
+  <data name="Tool_Diff_Desc" xml:space="preserve"><value>Diferenças linha por linha. Separe os dois textos com uma linha contendo apenas ---</value></data>
+  <data name="Tool_Diff_Aliases" xml:space="preserve"><value>diferir, comparar, diferença, alterações, mesclar, corrigir</value></data>
+  <data name="Tool_JsonEscape_Name" xml:space="preserve"><value>Escape JSON</value></data>
+  <data name="Tool_JsonEscape_Desc" xml:space="preserve"><value>Escapa um texto para que ele possa ser colado dentro de uma string JSON.</value></data>
+  <data name="Tool_JsonEscape_Aliases" xml:space="preserve"><value>json, escape, citação, string, barra invertida</value></data>
+  <data name="Tool_JsonUnescape_Name" xml:space="preserve"><value>JSON sem escape</value></data>
+  <data name="Tool_JsonUnescape_Desc" xml:space="preserve"><value>Transforma uma string JSON com escape novamente em texto simples.</value></data>
+  <data name="Tool_JsonUnescape_Aliases" xml:space="preserve"><value>json, retirar escape, citar, decodificar, string</value></data>
+  <data name="Tool_SqlEscape_Name" xml:space="preserve"><value>Escape SQL</value></data>
+  <data name="Tool_SqlEscape_Desc" xml:space="preserve"><value>Cita um valor como uma string SQL literal. Não é um substituto para parâmetros.</value></data>
+  <data name="Tool_SqlEscape_Aliases" xml:space="preserve"><value>sql, escape, citação, literal, injeção</value></data>
+  <data name="Tool_ShellEscape_Name" xml:space="preserve"><value>Fuga de concha</value></data>
+  <data name="Tool_ShellEscape_Desc" xml:space="preserve"><value>Cita um valor com segurança para uma linha de comando do shell POSIX.</value></data>
+  <data name="Tool_ShellEscape_Aliases" xml:space="preserve"><value>shell, escape, bash, citação, comando, terminal</value></data>
+  <data name="Tool_Jwt_Name" xml:space="preserve"><value>Decodificador JWT</value></data>
+  <data name="Tool_Jwt_Desc" xml:space="preserve"><value>Decodifica um cabeçalho JWT e uma carga útil localmente e especifica suas datas. A assinatura não foi verificada.</value></data>
+  <data name="Tool_Jwt_Aliases" xml:space="preserve"><value>jwt, token, jose, portador, autenticação, decodificação</value></data>
+  <data name="Tool_Scientific_Name" xml:space="preserve"><value>Notação científica</value></data>
+  <data name="Tool_Scientific_Desc" xml:space="preserve"><value>Mostra um número em notação simples, científica e de engenharia.</value></data>
+  <data name="Tool_Scientific_Aliases" xml:space="preserve"><value>científico, notação, expoente, engenharia, flutuador, número</value></data>
+  <data name="Tool_XmlFormat_Name" xml:space="preserve"><value>Formatador XML</value></data>
+  <data name="Tool_XmlFormat_Desc" xml:space="preserve"><value>Reindenta o XML.</value></data>
+  <data name="Tool_XmlFormat_Aliases" xml:space="preserve"><value>xml, formatar, bonito, recuar, embelezar</value></data>
+  <data name="Tool_XmlValidate_Name" xml:space="preserve"><value>Validador XML</value></data>
+  <data name="Tool_XmlValidate_Desc" xml:space="preserve"><value>Verifica se o XML está bem formado e aponta para o primeiro erro.</value></data>
+  <data name="Tool_XmlValidate_Aliases" xml:space="preserve"><value>xml, validar, verificar, bem formado, erro</value></data>
+  <data name="Tool_Regex_Name" xml:space="preserve"><value>Testador Regex</value></data>
+  <data name="Tool_Regex_Desc" xml:space="preserve"><value>A primeira linha é o padrão, o resto é o texto. Lista todas as partidas e grupos de captura.</value></data>
+  <data name="Tool_Regex_Aliases" xml:space="preserve"><value>regex, regexp, padrão, correspondência, teste, expressão</value></data>
+  <data name="Tool_QueryString_Name" xml:space="preserve"><value>Inspetor de consulta de URL</value></data>
+  <data name="Tool_QueryString_Desc" xml:space="preserve"><value>Divide uma string de consulta de URL em um parâmetro legível por linha.</value></data>
+  <data name="Tool_QueryString_Aliases" xml:space="preserve"><value>url, consulta, parâmetros, querystring, utm, link</value></data>
+  <data name="Tool_Crlf_Name" xml:space="preserve"><value>Converter para CRLF</value></data>
+  <data name="Tool_Crlf_Desc" xml:space="preserve"><value>Terminais de linha do Windows.</value></data>
+  <data name="Tool_Crlf_Aliases" xml:space="preserve"><value>crlf, finais de linha, windows, eol, nova linha</value></data>
+  <data name="Tool_Lf_Name" xml:space="preserve"><value>Converter para LF</value></data>
+  <data name="Tool_Lf_Desc" xml:space="preserve"><value>Terminações de linha Unix.</value></data>
+  <data name="Tool_Lf_Aliases" xml:space="preserve"><value>lf, finais de linha, unix, linux, eol, nova linha</value></data>
+  <data name="Tool_PathConvert_Name" xml:space="preserve"><value>Conversor de caminho</value></data>
+  <data name="Tool_PathConvert_Desc" xml:space="preserve"><value>Troca separadores Windows e Unix, direção detectada automaticamente.</value></data>
+  <data name="Tool_PathConvert_Aliases" xml:space="preserve"><value>caminho, barra, barra invertida, windows, unix, converter</value></data>
+  <data name="Tool_FilenameClean_Name" xml:space="preserve"><value>Limpe um nome de arquivo</value></data>
+  <data name="Tool_FilenameClean_Desc" xml:space="preserve"><value>Remove caracteres proibidos pelo Windows e evita nomes reservados como CON.</value></data>
+  <data name="Tool_FilenameClean_Aliases" xml:space="preserve"><value>nome do arquivo, higienizar, inválido, caracteres, janelas, arquivo</value></data>
+  <data name="Tool_Spell_Name" xml:space="preserve"><value>Número em palavras</value></data>
+  <data name="Tool_Spell_Desc" xml:space="preserve"><value>Soletra um número. Adicione &quot;fr&quot; ou &quot;en&quot; para escolher o idioma.</value></data>
+  <data name="Tool_Spell_Aliases" xml:space="preserve"><value>palavras, feitiço, cartas, cheque, cheque, número, escrever</value></data>
+  <data name="Tool_Percent_Name" xml:space="preserve"><value>Calculadora de porcentagem</value></data>
+  <data name="Tool_Percent_Desc" xml:space="preserve"><value>Digite dois números: fornece X% de Y, a proporção e a mudança de um para outro.</value></data>
+  <data name="Tool_Percent_Aliases" xml:space="preserve"><value>porcentagem, porcentagem, proporção, mudança, aumento, desconto, regra de três</value></data>
+  <data name="Tool_Fraction_Name" xml:space="preserve"><value>Conversor de frações</value></data>
+  <data name="Tool_Fraction_Desc" xml:space="preserve"><value>Decimal para a fração mais simples e vice-versa.</value></data>
+  <data name="Tool_Fraction_Aliases" xml:space="preserve"><value>fração, decimal, razão, simplificar, converter</value></data>
+  <data name="Tool_Factor_Name" xml:space="preserve"><value>Fatores, GCD e LCM</value></data>
+  <data name="Tool_Factor_Desc" xml:space="preserve"><value>Fatoração primária de cada número, mais MDC e MMC quando você fornece vários.</value></data>
+  <data name="Tool_Factor_Aliases" xml:space="preserve"><value>fator, primo, mdc, lcm, divisor, fatoração</value></data>
+  <data name="Tool_Statistics_Name" xml:space="preserve"><value>Estatísticas</value></data>
+  <data name="Tool_Statistics_Desc" xml:space="preserve"><value>Contagem, soma, média, mediana, mínimo, máximo, intervalo e desvio padrão de uma lista.</value></data>
+  <data name="Tool_Statistics_Aliases" xml:space="preserve"><value>estatísticas, média, média, mediana, stddev, desvio, soma, mínimo, máximo</value></data>
+  <data name="Tool_Sequence_Name" xml:space="preserve"><value>Gerador de sequência</value></data>
+  <data name="Tool_Sequence_Desc" xml:space="preserve"><value>&quot;fib 10&quot;, &quot;primos 20&quot;, &quot;arith 2 3 10&quot; ou &quot;geom 2 3 10&quot;.</value></data>
+  <data name="Tool_Sequence_Aliases" xml:space="preserve"><value>sequência, fibonacci, aritmética, geométrica, primos, série</value></data>
+  <data name="Tool_Solve_Name" xml:space="preserve"><value>Solucionador de equações</value></data>
+  <data name="Tool_Solve_Desc" xml:space="preserve"><value>Resolve ax² + bx + c = 0 a partir de seus coeficientes. Dois coeficientes resolvem ax + b = 0.</value></data>
+  <data name="Tool_Solve_Aliases" xml:space="preserve"><value>equação, resolver, quadrática, raízes, polinômio, álgebra</value></data>
+  <data name="Tool_Bmi_Name" xml:space="preserve"><value>Calculadora de IMC</value></data>
+  <data name="Tool_Bmi_Desc" xml:space="preserve"><value>Digite seu peso em kg e sua altura: “70 175”.</value></data>
+  <data name="Tool_Bmi_Aliases" xml:space="preserve"><value>IMC, massa corporal, peso, altura, saúde</value></data>
+  <data name="Tool_Tip_Name" xml:space="preserve"><value>Calculadora de gorjetas</value></data>
+  <data name="Tool_Tip_Desc" xml:space="preserve"><value>&quot;48,50 15 3&quot;: gorjeta de 15% sobre 48,50, dividida entre 3 pessoas.</value></data>
+  <data name="Tool_Tip_Aliases" xml:space="preserve"><value>gorjeta, gorjeta, restaurante, conta, dividir, compartilhar</value></data>
+  <data name="Tool_Loan_Name" xml:space="preserve"><value>Calculadora de empréstimo</value></data>
+  <data name="Tool_Loan_Desc" xml:space="preserve"><value>&quot;200000 3,5 25&quot;: valor, taxa anual, anos. Dá o pagamento mensal e os juros totais.</value></data>
+  <data name="Tool_Loan_Aliases" xml:space="preserve"><value>empréstimo, hipoteca, mensal, pagamento, juros, crédito, amortização</value></data>
+  <data name="Tool_Subnet_Name" xml:space="preserve"><value>Calculadora de sub-rede</value></data>
+  <data name="Tool_Subnet_Desc" xml:space="preserve"><value>&quot;192.168.1.10/24&quot;: rede, máscara, transmissão e intervalo de hosts utilizável.</value></data>
+  <data name="Tool_Subnet_Aliases" xml:space="preserve"><value>sub-rede, cidr, ip, rede, máscara, transmissão, máscara de rede</value></data>
+  <data name="Tool_FileHash_Name" xml:space="preserve"><value>Informações do arquivo e hash</value></data>
+  <data name="Tool_FileHash_Desc" xml:space="preserve"><value>Tamanho, datas e SHA-256 de um arquivo. Solte o arquivo na janela.</value></data>
+  <data name="Tool_FileHash_Aliases" xml:space="preserve"><value>arquivo, hash, sha256, soma de verificação, informações, propriedades, tamanho, verificar</value></data>
+  <data name="Tool_FileCompare_Name" xml:space="preserve"><value>Compare two files</value></data>
+  <data name="Tool_FileCompare_Desc" xml:space="preserve"><value>Are these two files identical? One path per line, or drop both.</value></data>
+  <data name="Tool_FileCompare_Aliases" xml:space="preserve"><value>compare, files, identical, checksum, diff, duplicate</value></data>
+  <data name="Tool_Tree_Name" xml:space="preserve"><value>Folder tree</value></data>
+  <data name="Tool_Tree_Desc" xml:space="preserve"><value>The folder tree as text, ready to paste. Add a number to change the depth.</value></data>
+  <data name="Tool_Tree_Aliases" xml:space="preserve"><value>tree, folder, directory, structure, listing, readme</value></data>
+  <data name="Tool_FolderSize_Name" xml:space="preserve"><value>Folder size</value></data>
+  <data name="Tool_FolderSize_Desc" xml:space="preserve"><value>Total size, largest files and the file types taking the room.</value></data>
+  <data name="Tool_FolderSize_Aliases" xml:space="preserve"><value>size, folder, disk, space, usage, largest, big</value></data>
+  <data name="Tool_Duplicates_Name" xml:space="preserve"><value>Find duplicate files</value></data>
+  <data name="Tool_Duplicates_Desc" xml:space="preserve"><value>Lists identical files under a folder. Nothing is deleted.</value></data>
+  <data name="Tool_Duplicates_Aliases" xml:space="preserve"><value>duplicate, duplicates, identical, copies, clean, disk space</value></data>
+  <data name="Tool_FileSplit_Name" xml:space="preserve"><value>Split a file</value></data>
+  <data name="Tool_FileSplit_Desc" xml:space="preserve"><value>&quot;path 10MB&quot; cuts a file into numbered parts. The original is untouched.</value></data>
+  <data name="Tool_FileSplit_Aliases" xml:space="preserve"><value>split, cut, parts, chunks, large file, transfer</value></data>
+  <data name="Tool_FileJoin_Name" xml:space="preserve"><value>Rejoin a file</value></data>
+  <data name="Tool_FileJoin_Desc" xml:space="preserve"><value>Point at any .part file and the original is rebuilt beside it.</value></data>
+  <data name="Tool_FileJoin_Aliases" xml:space="preserve"><value>join, merge, parts, rebuild, concatenate, chunks</value></data>
+  <data name="Tool_TestFile_Name" xml:space="preserve"><value>Test file generator</value></data>
+  <data name="Tool_TestFile_Desc" xml:space="preserve"><value>&quot;path 100MB&quot; creates a file of exactly that size.</value></data>
+  <data name="Tool_TestFile_Aliases" xml:space="preserve"><value>test, file, generate, dummy, size, upload, quota</value></data>
+  <data name="Tool_ImageInfo_Name" xml:space="preserve"><value>Image dimensions</value></data>
+  <data name="Tool_ImageInfo_Desc" xml:space="preserve"><value>Format, size in pixels, megapixels and aspect ratio of an image. Drop the file on the window.</value></data>
+  <data name="Tool_ImageInfo_Aliases" xml:space="preserve"><value>image, dimensions, size, resolution, pixels, width, height, megapixels, exif, png, jpeg</value></data>
+  <data name="Tool_AspectRatio_Name" xml:space="preserve"><value>Aspect ratio</value></data>
+  <data name="Tool_AspectRatio_Desc" xml:space="preserve"><value>&quot;1920x1080&quot; gives 16:9; &quot;16:9 1920&quot; gives the matching height.</value></data>
+  <data name="Tool_AspectRatio_Aliases" xml:space="preserve"><value>ratio, aspect, 16:9, 4:3, resolution, dimensions, proportion, screen</value></data>
+  <data name="Tool_Qr_Name" xml:space="preserve"><value>QR code</value></data>
+  <data name="Tool_Qr_Desc" xml:space="preserve"><value>Turns a text, URL or Wi-Fi string into a scannable QR code.</value></data>
+  <data name="Tool_Qr_Aliases" xml:space="preserve"><value>qr, qrcode, code, barcode, url, wifi, scan, link</value></data>
+  <data name="Tool_Fancy_Name" xml:space="preserve"><value>Fancy text</value></data>
+  <data name="Tool_Fancy_Desc" xml:space="preserve"><value>Turns text into bold, italic, script and other Unicode styles for social media.</value></data>
+  <data name="Tool_Fancy_Aliases" xml:space="preserve"><value>fancy, unicode, font, bold, italic, script, fraktur, aesthetic, instagram, twitter</value></data>
+  <data name="Tool_CsvToJson_Name" xml:space="preserve"><value>CSV to JSON</value></data>
+  <data name="Tool_CsvToJson_Desc" xml:space="preserve"><value>Converts CSV (first row = headers) into a JSON array of objects.</value></data>
+  <data name="Tool_CsvToJson_Aliases" xml:space="preserve"><value>csv, json, convert, data, table, spreadsheet</value></data>
+  <data name="Tool_JsonToCsv_Name" xml:space="preserve"><value>JSON to CSV</value></data>
+  <data name="Tool_JsonToCsv_Desc" xml:space="preserve"><value>Converts a JSON array of objects into CSV.</value></data>
+  <data name="Tool_JsonToCsv_Aliases" xml:space="preserve"><value>json, csv, convert, data, table, spreadsheet, export</value></data>
+  <data name="Tool_MarkdownToHtml_Name" xml:space="preserve"><value>Markdown to HTML</value></data>
+  <data name="Tool_MarkdownToHtml_Desc" xml:space="preserve"><value>Converts Markdown (headings, lists, links, code, emphasis) to HTML.</value></data>
+  <data name="Tool_MarkdownToHtml_Aliases" xml:space="preserve"><value>markdown, html, convert, md, render, format</value></data>
+  <data name="Tool_Cron_Name" xml:space="preserve"><value>Cron explainer</value></data>
+  <data name="Tool_Cron_Desc" xml:space="preserve"><value>Describes a cron expression in plain words. Try &quot;0 9 * * 1-5&quot; or &quot;@daily&quot;.</value></data>
+  <data name="Tool_Cron_Aliases" xml:space="preserve"><value>cron, crontab, schedule, expression, explain, job, timer</value></data>
+  <data name="Tool_PasswordStrength_Name" xml:space="preserve"><value>Password strength</value></data>
+  <data name="Tool_PasswordStrength_Desc" xml:space="preserve"><value>Estimates a password&apos;s entropy and how long it would take to crack.</value></data>
+  <data name="Tool_PasswordStrength_Aliases" xml:space="preserve"><value>password, strength, entropy, secure, crack, check, security</value></data>
+  <data name="Tool_WeekInfo_Name" xml:space="preserve"><value>Week number</value></data>
+  <data name="Tool_WeekInfo_Desc" xml:space="preserve"><value>ISO week number, day of year and quarter for a date (empty = today).</value></data>
+  <data name="Tool_WeekInfo_Aliases" xml:space="preserve"><value>week, iso, number, day of year, quarter, calendar, date</value></data>
+  <data name="Tool_Calc_Name" xml:space="preserve"><value>Calculator</value></data>
+  <data name="Tool_Calc_Desc" xml:space="preserve"><value>Evaluates a math expression: + - * / ^ %, parentheses, functions (sqrt, sin, log…) and constants (pi, e).</value></data>
+  <data name="Tool_Calc_Aliases" xml:space="preserve"><value>calc, calculator, math, expression, evaluate, compute, arithmetic, scientific</value></data>
+  <data name="Tool_Palette_Name" xml:space="preserve"><value>Colour palette</value></data>
+  <data name="Tool_Palette_Desc" xml:space="preserve"><value>Generates harmonious colours (complementary, triadic, analogous…) from one colour.</value></data>
+  <data name="Tool_Palette_Aliases" xml:space="preserve"><value>palette, colour, color, harmony, complementary, triadic, analogous, scheme, design</value></data>
+  <data name="Tool_Contrast_Name" xml:space="preserve"><value>Contrast checker</value></data>
+  <data name="Tool_Contrast_Desc" xml:space="preserve"><value>WCAG contrast ratio between two colours (one per line) and which levels it passes.</value></data>
+  <data name="Tool_Contrast_Aliases" xml:space="preserve"><value>contrast, wcag, accessibility, ratio, a11y, colour, color, legible</value></data>
+  <data name="Tool_ColorTemp_Name" xml:space="preserve"><value>Colour temperature</value></data>
+  <data name="Tool_ColorTemp_Desc" xml:space="preserve"><value>Converts a temperature in Kelvin to its white-point colour (1900K candle, 6500K daylight).</value></data>
+  <data name="Tool_ColorTemp_Aliases" xml:space="preserve"><value>temperature, kelvin, colour, color, white balance, warm, cool, light</value></data>
+  <data name="Tool_CssUnits_Name" xml:space="preserve"><value>CSS unit converter</value></data>
+  <data name="Tool_CssUnits_Desc" xml:space="preserve"><value>Converts between px, rem, em and pt (assuming a 16px root).</value></data>
+  <data name="Tool_CssUnits_Aliases" xml:space="preserve"><value>css, px, rem, em, pt, unit, convert, font, size, web</value></data>
+  <data name="Tool_Gradient_Name" xml:space="preserve"><value>CSS gradient</value></data>
+  <data name="Tool_Gradient_Desc" xml:space="preserve"><value>Turns two or more colours into a CSS linear-gradient. Add an angle like 45deg.</value></data>
+  <data name="Tool_Gradient_Aliases" xml:space="preserve"><value>gradient, css, linear, colour, color, background, degrade, web</value></data>
+  <data name="Tool_Toc_Name" xml:space="preserve"><value>Table of contents</value></data>
+  <data name="Tool_Toc_Desc" xml:space="preserve"><value>Builds a Markdown table of contents from the headings, with anchor links.</value></data>
+  <data name="Tool_Toc_Aliases" xml:space="preserve"><value>toc, table of contents, markdown, headings, outline, index, links</value></data>
+  <data name="Tool_MarkdownTable_Name" xml:space="preserve"><value>Markdown table</value></data>
+  <data name="Tool_MarkdownTable_Desc" xml:space="preserve"><value>Turns CSV or TSV rows into an aligned Markdown table.</value></data>
+  <data name="Tool_MarkdownTable_Aliases" xml:space="preserve"><value>markdown, table, csv, tsv, convert, grid, format</value></data>
+  <data name="Tool_Gitignore_Name" xml:space="preserve"><value>Gitignore generator</value></data>
+  <data name="Tool_Gitignore_Desc" xml:space="preserve"><value>Builds a .gitignore from language/tool names (node, python, dotnet, rust…).</value></data>
+  <data name="Tool_Gitignore_Aliases" xml:space="preserve"><value>gitignore, git, ignore, template, node, python, dotnet, rust, generate</value></data>
+  <data name="Tool_HexDump_Name" xml:space="preserve"><value>Hex viewer</value></data>
+  <data name="Tool_HexDump_Desc" xml:space="preserve"><value>Shows a file or text as a hex dump: offset, bytes and printable ASCII.</value></data>
+  <data name="Tool_HexDump_Aliases" xml:space="preserve"><value>hex, dump, hexadecimal, viewer, binary, bytes, ascii, file</value></data>
+  <data name="Tool_SpeedDistanceTime_Name" xml:space="preserve"><value>Speed, distance, time</value></data>
+  <data name="Tool_SpeedDistanceTime_Desc" xml:space="preserve"><value>Give any two of speed, distance and time (with units) to get the third. Try &quot;100km 2h&quot;.</value></data>
+  <data name="Tool_SpeedDistanceTime_Aliases" xml:space="preserve"><value>speed, distance, time, velocity, travel, physics, mph, kmh, calculator</value></data>
+  <data name="Tool_Combinatorics_Name" xml:space="preserve"><value>Combinations &amp; permutations</value></data>
+  <data name="Tool_Combinatorics_Desc" xml:space="preserve"><value>&quot;n k&quot; gives C(n,k) and P(n,k); one number gives n!. Exact for any size.</value></data>
+  <data name="Tool_Combinatorics_Aliases" xml:space="preserve"><value>combinatorics, combinations, permutations, factorial, ncr, npr, probability, choose</value></data>
+  <data name="Tool_TransferTime_Name" xml:space="preserve"><value>Transfer time</value></data>
+  <data name="Tool_TransferTime_Desc" xml:space="preserve"><value>How long a file takes at a given bandwidth. Try &quot;5GB 100Mbps&quot; (bits ≠ bytes).</value></data>
+  <data name="Tool_TransferTime_Aliases" xml:space="preserve"><value>transfer, download, upload, time, bandwidth, speed, mbps, file, network</value></data>
+  <data name="Tool_SqlFormat_Name" xml:space="preserve"><value>SQL formatter</value></data>
+  <data name="Tool_SqlFormat_Desc" xml:space="preserve"><value>Uppercases keywords and puts each clause on its own line to make a query readable.</value></data>
+  <data name="Tool_SqlFormat_Aliases" xml:space="preserve"><value>sql, format, beautify, query, pretty, indent, select, database</value></data>
+  <data name="Tool_Zalgo_Name" xml:space="preserve"><value>Zalgo text</value></data>
+  <data name="Tool_Zalgo_Desc" xml:space="preserve"><value>Stacks combining marks on text for the glitchy &quot;zalgo&quot; look.</value></data>
+  <data name="Tool_Zalgo_Aliases" xml:space="preserve"><value>zalgo, glitch, cursed, creepy, combining, unicode, corrupt</value></data>
+  <data name="Tool_ShoeSize_Name" xml:space="preserve"><value>Shoe size converter</value></data>
+  <data name="Tool_ShoeSize_Desc" xml:space="preserve"><value>Converts a shoe size between EU, UK, US and cm. Add &quot;w&quot; for women&apos;s, &quot;cm&quot;/&quot;uk&quot;/&quot;us&quot; for the input system.</value></data>
+  <data name="Tool_ShoeSize_Aliases" xml:space="preserve"><value>shoe, size, eu, uk, us, cm, convert, footwear, clothing</value></data>
+  <data name="Tool_Zip_Name" xml:space="preserve"><value>Zip / compress</value></data>
+  <data name="Tool_Zip_Desc" xml:space="preserve"><value>Compresses a file or folder into an archive beside it (zip, tar, tar.gz, tar.bz2).</value></data>
+  <data name="Tool_Zip_Aliases" xml:space="preserve"><value>zip, compress, archive, archiver, folder, package, nanazip, 7zip</value></data>
+  <data name="Tool_Unzip_Name" xml:space="preserve"><value>Extract archive</value></data>
+  <data name="Tool_Unzip_Desc" xml:space="preserve"><value>Extracts .zip, .7z, .rar, .tar, .gz and more into a folder. Drop the archive on the window.</value></data>
+  <data name="Tool_Unzip_Aliases" xml:space="preserve"><value>unzip, extract, archive, decompress, zip, 7z, rar, tar, gzip, nanazip</value></data>
+  <data name="Tool_ColorBlind_Name" xml:space="preserve"><value>Colour-blindness sim</value></data>
+  <data name="Tool_ColorBlind_Desc" xml:space="preserve"><value>Shows how a colour looks under the common colour-blindness types.</value></data>
+  <data name="Tool_ColorBlind_Aliases" xml:space="preserve"><value>colorblind, colour blind, cvd, protanopia, deuteranopia, tritanopia, accessibility, a11y, color, colour</value></data>
+  <data name="Tool_Barcode_Name" xml:space="preserve"><value>Barcode (Code 128)</value></data>
+  <data name="Tool_Barcode_Desc" xml:space="preserve"><value>Generates a Code 128 barcode from text or digits.</value></data>
+  <data name="Tool_Barcode_Aliases" xml:space="preserve"><value>barcode, code128, code 128, scan, ean, upc, label</value></data>
+  <data name="Tool_Exif_Name" xml:space="preserve"><value>EXIF / metadata</value></data>
+  <data name="Tool_Exif_Desc" xml:space="preserve"><value>Reads camera, lens, exposure and date from a JPEG. Drop the photo on the window.</value></data>
+  <data name="Tool_Exif_Aliases" xml:space="preserve"><value>exif, metadata, photo, camera, jpeg, image, gps, iptc, properties</value></data>
+  <data name="Tool_PdfMerge_Name" xml:space="preserve"><value>Merge PDFs</value></data>
+  <data name="Tool_PdfMerge_Desc" xml:space="preserve"><value>Combines several PDFs into one merged.pdf. One path per line, in order.</value></data>
+  <data name="Tool_PdfMerge_Aliases" xml:space="preserve"><value>pdf, merge, combine, join, concat, document</value></data>
+  <data name="Tool_PdfSplit_Name" xml:space="preserve"><value>Split PDF</value></data>
+  <data name="Tool_PdfSplit_Desc" xml:space="preserve"><value>Splits a PDF into one file per page beside it. Drop the PDF on the window.</value></data>
+  <data name="Tool_PdfSplit_Aliases" xml:space="preserve"><value>pdf, split, separate, pages, extract, document</value></data>
+  <data name="Tool_Currency_Name" xml:space="preserve"><value>Currency converter</value></data>
+  <data name="Tool_Currency_Desc" xml:space="preserve"><value>Converts between currencies using live rates (cached; works offline on the last known rates).</value></data>
+  <data name="Tool_Currency_Aliases" xml:space="preserve"><value>currency, exchange, money, convert, forex, usd, eur, rate, online</value></data>
+  <data name="Tool_JsonToYaml_Name" xml:space="preserve"><value>JSON → YAML</value></data>
+  <data name="Tool_JsonToYaml_Desc" xml:space="preserve"><value>Converts JSON to YAML (block style).</value></data>
+  <data name="Tool_JsonToYaml_Aliases" xml:space="preserve"><value>yaml, yml, json, convert, config, serialize</value></data>
+  <data name="Tool_CssMinify_Name" xml:space="preserve"><value>CSS minify</value></data>
+  <data name="Tool_CssMinify_Desc" xml:space="preserve"><value>Strips comments and whitespace to shrink CSS.</value></data>
+  <data name="Tool_CssMinify_Aliases" xml:space="preserve"><value>css, minify, compress, minifier, whitespace, shrink, stylesheet</value></data>
+  <data name="Tool_SysInfo_Name" xml:space="preserve"><value>System info</value></data>
+  <data name="Tool_SysInfo_Desc" xml:space="preserve"><value>Shows OS, CPU, memory and disk details of this machine.</value></data>
+  <data name="Tool_SysInfo_Aliases" xml:space="preserve"><value>system, info, hardware, cpu, ram, memory, disk, os, machine, specs</value></data>
+  <data name="Tool_Timezone_Name" xml:space="preserve"><value>Time zone converter</value></data>
+  <data name="Tool_Timezone_Desc" xml:space="preserve"><value>Shows a time across zones, e.g. &quot;14:30 paris tokyo&quot; or &quot;now nyc london&quot;.</value></data>
+  <data name="Tool_Timezone_Aliases" xml:space="preserve"><value>timezone, time zone, tz, utc, gmt, clock, world clock, cities, convert time</value></data>
+  <data name="Tool_Cards_Name" xml:space="preserve"><value>Draw cards</value></data>
+  <data name="Tool_Cards_Desc" xml:space="preserve"><value>Draws random cards from a shuffled 52-card deck.</value></data>
+  <data name="Tool_Cards_Aliases" xml:space="preserve"><value>card, cards, deck, draw, poker, playing cards, random</value></data>
+  <data name="Tool_Teams_Name" xml:space="preserve"><value>Team splitter</value></data>
+  <data name="Tool_Teams_Desc" xml:space="preserve"><value>Splits a list of names into random balanced teams, e.g. &quot;3; alice, bob, ...&quot;.</value></data>
+  <data name="Tool_Teams_Aliases" xml:space="preserve"><value>team, teams, split, groups, random, draw, divide, sort into</value></data>
+  <data name="Teams_Label" xml:space="preserve"><value>Team {0}</value></data>
+  <data name="Error_TimezoneUsage" xml:space="preserve"><value>Enter a time and one or more zones, e.g. &quot;14:30 paris tokyo&quot;.</value></data>
+  <data name="Error_UnknownZone" xml:space="preserve"><value>Unknown time zone: {0}</value></data>
+  <data name="Error_EmptyInput" xml:space="preserve"><value>Nothing to process.</value></data>
+  <data name="Percent_A" xml:space="preserve"><value>Value (A)</value></data>
+  <data name="Percent_B" xml:space="preserve"><value>Base (B)</value></data>
+  <data name="Fraction_Value" xml:space="preserve"><value>Decimal</value></data>
+  <data name="Solve_A" xml:space="preserve"><value>a (x²)</value></data>
+  <data name="Solve_B" xml:space="preserve"><value>b (x)</value></data>
+  <data name="Solve_C" xml:space="preserve"><value>c</value></data>
+  <data name="Duration_All" xml:space="preserve"><value>In every unit</value></data>
+  <data name="Clock_Title" xml:space="preserve"><value>Clock</value></data>
+  <data name="Audio_Title" xml:space="preserve"><value>Audio channel test</value></data>
+  <data name="Audio_Subtitle" xml:space="preserve"><value>Play a tone in each channel to check your speakers or headphones are on the right side.</value></data>
+  <data name="Audio_Left" xml:space="preserve"><value>Left</value></data>
+  <data name="Audio_Right" xml:space="preserve"><value>Right</value></data>
+  <data name="Audio_Both" xml:space="preserve"><value>Both channels</value></data>
+  <data name="Audio_PlayingLeft" xml:space="preserve"><value>♪ Playing left channel</value></data>
+  <data name="Audio_PlayingRight" xml:space="preserve"><value>♪ Playing right channel</value></data>
+  <data name="Audio_PlayingBoth" xml:space="preserve"><value>♪ Playing both channels</value></data>
+  <data name="Notepad_New" xml:space="preserve"><value>New</value></data>
+  <data name="Notepad_Open" xml:space="preserve"><value>Open</value></data>
+  <data name="Notepad_SaveAs" xml:space="preserve"><value>Save as</value></data>
+  <data name="Notepad_Wrap" xml:space="preserve"><value>Word wrap</value></data>
+  <data name="Notepad_ZoomIn" xml:space="preserve"><value>Zoom in</value></data>
+  <data name="Notepad_ZoomOut" xml:space="preserve"><value>Zoom out</value></data>
+  <data name="Notepad_Position" xml:space="preserve"><value>Ln {0}, Col {1}</value></data>
+  <data name="Notepad_Counts" xml:space="preserve"><value>{0} chars · {1} words</value></data>
+  <data name="Notepad_Opened" xml:space="preserve"><value>Opened {0}</value></data>
+  <data name="Notepad_SavedTo" xml:space="preserve"><value>Saved to {0}</value></data>
+  <data name="Settings_UsageHeader" xml:space="preserve"><value>Usage</value></data>
+  <data name="Settings_UsageTotal" xml:space="preserve"><value>{0} uses across {1} tools — your most used:</value></data>
+  <data name="Settings_UsageReset" xml:space="preserve"><value>Reset statistics</value></data>
+  <data name="Settings_UsageEmpty" xml:space="preserve"><value>Nothing used yet — open a few tools and check back.</value></data>
+  <data name="Stats_Header" xml:space="preserve"><value>{0} uses across {1} tools:</value></data>
+  <data name="Stats_Empty" xml:space="preserve"><value>No usage recorded yet.</value></data>
+  <data name="Stats_Reset" xml:space="preserve"><value>Usage statistics reset.</value></data>
+  <data name="Cards_Count" xml:space="preserve"><value>How many</value></data>
+  <data name="Cards_Deal" xml:space="preserve"><value>Deal</value></data>
+  <data name="RandomColor_New" xml:space="preserve"><value>Randomize</value></data>
+  <data name="SysInfo_Refresh" xml:space="preserve"><value>Refresh</value></data>
+  <data name="Sdt_Hint" xml:space="preserve"><value>Fill in any two — leave the third blank to solve for it.</value></data>
+  <data name="Roman_ToRoman" xml:space="preserve"><value>Number → Roman</value></data>
+  <data name="Roman_ToArabic" xml:space="preserve"><value>Roman → number</value></data>
+  <data name="Tz_In" xml:space="preserve"><value>in</value></data>
+  <data name="Tz_Now" xml:space="preserve"><value>Now</value></data>
+  <data name="Clicker_Title" xml:space="preserve"><value>Tally counter</value></data>
+  <data name="Clicker_Reset" xml:space="preserve"><value>Reset</value></data>
+  <data name="Wheel_Title" xml:space="preserve"><value>Wheel of fortune</value></data>
+  <data name="Wheel_EntriesLabel" xml:space="preserve"><value>Options (one per line)</value></data>
+  <data name="Wheel_Spin" xml:space="preserve"><value>Spin</value></data>
+  <data name="Wheel_Sample" xml:space="preserve"><value>Pizza
+Sushi
+Tacos
+Salad
+Burger
+Ramen</value></data>
+  <data name="Wheel_Winner" xml:space="preserve"><value>🎉 {0}</value></data>
+  <data name="Favicon_Title" xml:space="preserve"><value>Favicon generator</value></data>
+  <data name="Favicon_Subtitle" xml:space="preserve"><value>Turns an image into a multi-size .ico favicon.</value></data>
+  <data name="Favicon_DropHint" xml:space="preserve"><value>Drop an image here (a square logo works best)</value></data>
+  <data name="Favicon_Sizes" xml:space="preserve"><value>Sizes: {0} px</value></data>
+  <data name="Favicon_Save" xml:space="preserve"><value>Save .ico</value></data>
+  <data name="Favicon_Saved" xml:space="preserve"><value>Saved {0}</value></data>
+  <data name="Watermark_Title" xml:space="preserve"><value>Watermark</value></data>
+  <data name="Watermark_Subtitle" xml:space="preserve"><value>Stamps text onto an image. Output is capped at 2048 px on the long side.</value></data>
+  <data name="Watermark_DropHint" xml:space="preserve"><value>Drop an image here</value></data>
+  <data name="Watermark_Text" xml:space="preserve"><value>Watermark text</value></data>
+  <data name="Watermark_Position" xml:space="preserve"><value>Position</value></data>
+  <data name="Watermark_Opacity" xml:space="preserve"><value>Opacity</value></data>
+  <data name="Watermark_Save" xml:space="preserve"><value>Save PNG</value></data>
+  <data name="Watermark_Saved" xml:space="preserve"><value>Saved {0}</value></data>
+  <data name="Watermark_Sample" xml:space="preserve"><value>© KRATE</value></data>
+  <data name="Watermark_BottomRight" xml:space="preserve"><value>Bottom right</value></data>
+  <data name="Watermark_BottomLeft" xml:space="preserve"><value>Bottom left</value></data>
+  <data name="Watermark_TopRight" xml:space="preserve"><value>Top right</value></data>
+  <data name="Watermark_TopLeft" xml:space="preserve"><value>Top left</value></data>
+  <data name="Watermark_Center" xml:space="preserve"><value>Center</value></data>
+  <data name="Tool_UrlParse_Name" xml:space="preserve"><value>URL Parser</value></data>
+  <data name="Tool_UrlParse_Desc" xml:space="preserve"><value>Break down a URL into scheme, host, path, and query parameters.</value></data>
+  <data name="Tool_UrlParse_Aliases" xml:space="preserve"><value>url, parse, query, uri, link</value></data>
+  <data name="Error_UrlUsage" xml:space="preserve"><value>Please provide a valid absolute URL.</value></data>
+  <data name="Tool_Chmod_Name" xml:space="preserve"><value>Chmod Calculator</value></data>
+  <data name="Tool_Chmod_Desc" xml:space="preserve"><value>Convert Unix permission numbers (755) to strings (rwxr-xr-x) and vice versa.</value></data>
+  <data name="Tool_Chmod_Aliases" xml:space="preserve"><value>chmod, permissions, unix, rwx</value></data>
+  <data name="Error_ChmodUsage" xml:space="preserve"><value>Please provide a 3 or 4 digit octal number (e.g. 755) or a 9-character string (e.g. rwxr-xr-x).</value></data>
+  <data name="Tool_HttpStatus_Name" xml:space="preserve"><value>HTTP Status Code</value></data>
+  <data name="Tool_HttpStatus_Desc" xml:space="preserve"><value>Look up the official name of an HTTP status code.</value></data>
+  <data name="Tool_HttpStatus_Aliases" xml:space="preserve"><value>http, status, code, error</value></data>
+  <data name="Error_HttpStatusUsage" xml:space="preserve"><value>Please provide a valid numeric HTTP status code.</value></data>
+  <data name="HttpStatus_Unknown" xml:space="preserve"><value>Unknown HTTP Status Code</value></data>
+  <data name="Weather_Title" xml:space="preserve"><value>Weather</value></data>
+  <data name="Tool_PortLookup_Name" xml:space="preserve"><value>Port Lookup</value></data>
+  <data name="Tool_PortLookup_Desc" xml:space="preserve"><value>Search for default port assignments.</value></data>
+  <data name="Tool_PortLookup_Aliases" xml:space="preserve"><value>port, network</value></data>
+  <data name="Tool_MimeType_Name" xml:space="preserve"><value>MIME Types</value></data>
+  <data name="Tool_MimeType_Desc" xml:space="preserve"><value>Look up MIME types by extension.</value></data>
+  <data name="Tool_MimeType_Aliases" xml:space="preserve"><value>mime, content-type, extension</value></data>
+  <data name="Tool_DnsLookup_Name" xml:space="preserve"><value>DNS Lookup</value></data>
+  <data name="Tool_DnsLookup_Desc" xml:space="preserve"><value>Resolve domains to IP addresses.</value></data>
+  <data name="Tool_DnsLookup_Aliases" xml:space="preserve"><value>dns, ip, resolve</value></data>
+  <data name="Tool_CurlToCode_Name" xml:space="preserve"><value>Curl to Code</value></data>
+  <data name="Tool_CurlToCode_Desc" xml:space="preserve"><value>Convert a curl command into C# code.</value></data>
+  <data name="Tool_CurlToCode_Aliases" xml:space="preserve"><value>curl, csharp, code</value></data>
+  <data name="Tool_EnvVars_Name" xml:space="preserve"><value>Environment Variables</value></data>
+  <data name="Tool_EnvVars_Desc" xml:space="preserve"><value>List all environment variables.</value></data>
+  <data name="Tool_EnvVars_Aliases" xml:space="preserve"><value>env, variables</value></data>
+  <data name="Tool_Inspector_Name" xml:space="preserve"><value>Text Inspector</value></data>
+  <data name="Tool_Inspector_Desc" xml:space="preserve"><value>Analyze text characters, bytes, and unicode.</value></data>
+  <data name="Tool_Inspector_Aliases" xml:space="preserve"><value>inspect, chars, bytes, hex</value></data>
+  <data name="Tool_CaseConverter_Name" xml:space="preserve"><value>Case Converter</value></data>
+  <data name="Tool_CaseConverter_Desc" xml:space="preserve"><value>Convert text case (camel, snake, pascal, etc).</value></data>
+  <data name="Tool_CaseConverter_Aliases" xml:space="preserve"><value>case, camel, snake, kebab</value></data>
+  <data name="Snake_Title" xml:space="preserve"><value>Snake</value></data>
+  <data name="Game2048_Title" xml:space="preserve"><value>2048</value></data>
+  <data name="Tetris_Title" xml:space="preserve"><value>Tetris</value></data>
+  <data name="StripMetadata_Title" xml:space="preserve"><value>Remover metadados da imagem</value></data>
+  <data name="ImageMetadata_Success" xml:space="preserve"><value>Metadados removidos. Salvo em: {0}</value></data>
+  <data name="Error_StripMetadataUsage" xml:space="preserve"><value>Uso: krate stripmetadata &quot;entrada.jpg&quot; | &quot;saida.jpg&quot;</value></data>
+  <data name="Tool_Rename_Name" xml:space="preserve"><value>Renomear em lote</value></data>
+  <data name="Tool_Rename_Desc" xml:space="preserve"><value>Localiza e substitui texto em cada nome de arquivo de uma pasta. Mostra uma prévia; adicione &quot;apply&quot; para confirmar.</value></data>
+  <data name="Tool_Rename_Aliases" xml:space="preserve"><value>renomear, lote, massa, nome de arquivo, substituir, arquivos</value></data>
+  <data name="Tool_StripMetadata_Name" xml:space="preserve"><value>Remover metadados</value></data>
+  <data name="Tool_StripMetadata_Desc" xml:space="preserve"><value>Grava uma cópia da imagem sem EXIF, GPS e qualquer outra marca de metadados.</value></data>
+  <data name="Tool_StripMetadata_Aliases" xml:space="preserve"><value>remover, metadados, exif, gps, privacidade, limpar, anonimizar</value></data>
+  <data name="Tool_Weather_Name" xml:space="preserve"><value>Clima</value></data>
+  <data name="Tool_Weather_Desc" xml:space="preserve"><value>Condições atuais de qualquer cidade. A única ferramenta que precisa de internet.</value></data>
+  <data name="Tool_Weather_Aliases" xml:space="preserve"><value>clima, tempo, previsão, temperatura, chuva, vento, cidade</value></data>
+  <data name="Tool_Snake_Name" xml:space="preserve"><value>Snake</value></data>
+  <data name="Tool_Snake_Desc" xml:space="preserve"><value>O clássico jogo da cobrinha. Conduza com as setas e não se morda.</value></data>
+  <data name="Tool_Snake_Aliases" xml:space="preserve"><value>snake, cobrinha, jogo, jogar, arcade, retrô</value></data>
+  <data name="Tool_Game2048_Name" xml:space="preserve"><value>2048</value></data>
+  <data name="Tool_Game2048_Desc" xml:space="preserve"><value>Deslize as peças, junte números iguais e chegue a 2048.</value></data>
+  <data name="Tool_Game2048_Aliases" xml:space="preserve"><value>2048, jogo, jogar, quebra-cabeça, peças, números</value></data>
+  <data name="Tool_Tetris_Name" xml:space="preserve"><value>Tetris</value></data>
+  <data name="Tool_Tetris_Desc" xml:space="preserve"><value>Empilhe os blocos que caem e complete linhas.</value></data>
+  <data name="Tool_Tetris_Aliases" xml:space="preserve"><value>tetris, jogo, jogar, blocos, quebra-cabeça, arcade</value></data>
+  <data name="Cli_ClickerTitle" xml:space="preserve"><value>Contador do terminal</value></data>
+  <data name="Cli_ClickerHelp" xml:space="preserve"><value>ESPAÇO incrementa, BACKSPACE decrementa, R zera, ESC sai.</value></data>
+  <data name="Error_FileNotFound" xml:space="preserve"><value>Arquivo não encontrado: {0}</value></data>
+  <data name="Error_General" xml:space="preserve"><value>Erro: {0}</value></data>
+  <data name="Error_SevenZipMissing" xml:space="preserve"><value>Biblioteca 7-Zip não encontrada em {0}. Use zip, tar, tar.gz ou tar.bz2.</value></data>
+  <data name="Error_BadBase64" xml:space="preserve"><value>Esse texto não é Base64 válido.</value></data>
+</root>

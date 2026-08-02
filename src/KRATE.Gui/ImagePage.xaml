@@ -1,0 +1,55 @@
+<UserControl
+    x:Class="Krate.Gui.ImagePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Padding="24" RowSpacing="12" ColumnSpacing="24"
+          AllowDrop="True" DragOver="OnDragOver" Drop="OnDrop">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="280" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2">
+            <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+            <TextBlock x:Name="Subtitle" Opacity="0.7" TextWrapping="Wrap" />
+        </StackPanel>
+
+        <Border Grid.Row="1" BorderThickness="1" CornerRadius="8"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+            <Grid>
+                <TextBlock x:Name="DropHint" HorizontalAlignment="Center" VerticalAlignment="Center"
+                           Opacity="0.6" TextWrapping="Wrap" TextAlignment="Center" Padding="24" />
+                <Image x:Name="Preview" Stretch="Uniform" Margin="12" />
+            </Grid>
+        </Border>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Spacing="12">
+            <TextBlock x:Name="InfoLabel" FontFamily="Consolas" TextWrapping="Wrap" Opacity="0.8" />
+
+            <TextBlock x:Name="FormatLabel" />
+            <ComboBox x:Name="Format" HorizontalAlignment="Stretch">
+                <ComboBoxItem Content="PNG" Tag="png" IsSelected="True" />
+                <ComboBoxItem Content="JPEG" Tag="jpeg" />
+                <ComboBoxItem Content="TIFF" Tag="tiff" />
+                <ComboBoxItem Content="BMP" Tag="bmp" />
+            </ComboBox>
+
+            <TextBlock x:Name="MaxWidthLabel" />
+            <NumberBox x:Name="WidthBox" SpinButtonPlacementMode="Compact" Minimum="0" Value="0" />
+
+            <TextBlock x:Name="QualityLabel" />
+            <Slider x:Name="Quality" Minimum="1" Maximum="100" Value="85" />
+
+            <Button x:Name="SaveButton" Click="OnSave" HorizontalAlignment="Stretch" Style="{StaticResource AccentButtonStyle}" />
+        </StackPanel>
+
+        <InfoBar x:Name="Status" Grid.Row="2" Grid.ColumnSpan="2" IsOpen="False" IsClosable="True" />
+    </Grid>
+</UserControl>

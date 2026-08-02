@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Krate.Core</RootNamespace>
+    <IsAotCompatible>true</IsAotCompatible>
+    <!-- LibraryImport's source generator emits unsafe code for the marshalling stubs. -->
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NeutralResourcesLanguage>en</NeutralResourcesLanguage>
+    <SevenZipInteropVersion>19.1.0</SevenZipInteropVersion>
+  </PropertyGroup>
+
+  <!-- The Interop package copies 7z.dll via its own .targets, and MSBuild targets do not flow
+       across a ProjectReference — so the CLI and GUI shipped without it and every 7z compress
+       died on a raw COM error. Content items DO flow to referencing projects; declare it here. -->
+  <ItemGroup>
+    <Content Include="$(NuGetPackageRoot)sevenzipsharp.interop\$(SevenZipInteropVersion)\build\x64\7z.dll"
+             Link="x64\7z.dll" CopyToOutputDirectory="PreserveNewest" Visible="false" />
+    <Content Include="$(NuGetPackageRoot)sevenzipsharp.interop\$(SevenZipInteropVersion)\build\x86\7z.dll"
+             Link="x86\7z.dll" CopyToOutputDirectory="PreserveNewest" Visible="false" />
+  </ItemGroup>
+
+  <!-- The Rust core. Content items flow across a ProjectReference, so declaring it here puts it
+       beside the CLI and the GUI as well. If it is absent the app still runs: RustCore probes for
+       it once and falls back to the managed implementation. -->
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)..\..\rust\target\release\krate_core.dll"
+             Link="krate_core.dll" CopyToOutputDirectory="PreserveNewest" Visible="false"
+             Condition="Exists('$(MSBuildThisFileDirectory)..\..\rust\target\release\krate_core.dll')" />
+  </ItemGroup>
+
+  <!-- Third-party tools KRATE would otherwise download on first use. Bundling them means the media,
+       download and notepad tools work offline and out of the box, which is the whole premise of the
+       app. Each is found beside the exe before any cache or PATH lookup:
+         ffmpeg  -> Media.FindFfmpeg  (ffmpeg\ffmpeg.exe)
+         yt-dlp  -> YouTube.FindYtDlp (yt-dlp.exe)
+         micro   -> Notepad.Exe       (micro.exe)
+       Licences travel with the binaries — ffmpeg's build is GPL, micro is MIT, yt-dlp is Unlicense.
+       Conditioned on Exists() so a checkout without the binaries still builds. -->
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)..\..\assets\tools\ffmpeg\ffmpeg.exe"
+             Link="ffmpeg\ffmpeg.exe" CopyToOutputDirectory="PreserveNewest" Visible="false"
+             Condition="Exists('$(MSBuildThisFileDirectory)..\..\assets\tools\ffmpeg\ffmpeg.exe')" />
+    <Content Include="$(MSBuildThisFileDirectory)..\..\assets\tools\ffmpeg\LICENSE.txt"
+             Link="ffmpeg\LICENSE.txt" CopyToOutputDirectory="PreserveNewest" Visible="false"
+             Condition="Exists('$(MSBuildThisFileDirectory)..\..\assets\tools\ffmpeg\LICENSE.txt')" />
+    <Content Include="$(MSBuildThisFileDirectory)..\..\assets\tools\yt-dlp.exe"
+             Link="yt-dlp.exe" CopyToOutputDirectory="PreserveNewest" Visible="false"
+             Condition="Exists('$(MSBuildThisFileDirectory)..\..\assets\tools\yt-dlp.exe')" />
+    <Content Include="$(MSBuildThisFileDirectory)..\..\assets\tools\micro.exe"
+             Link="micro.exe" CopyToOutputDirectory="PreserveNewest" Visible="false"
+             Condition="Exists('$(MSBuildThisFileDirectory)..\..\assets\tools\micro.exe')" />
+    <Content Include="$(MSBuildThisFileDirectory)..\..\assets\tools\micro-LICENSE.txt"
+             Link="micro-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" Visible="false"
+             Condition="Exists('$(MSBuildThisFileDirectory)..\..\assets\tools\micro-LICENSE.txt')" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PDFsharp" Version="6.2.4" />
+    <PackageReference Include="QRCoder" Version="1.8.0" />
+    <PackageReference Include="SevenZipSharp.Interop" Version="$(SevenZipInteropVersion)" />
+    <PackageReference Include="SharpCompress" Version="0.50.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.11" />
+    <PackageReference Include="Squid-Box.SevenZipSharp" Version="1.6.2.24" />
+  </ItemGroup>
+
+</Project>

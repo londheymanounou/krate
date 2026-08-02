@@ -1,0 +1,27 @@
+<UserControl
+    x:Class="Krate.Gui.ClipboardPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Padding="20" RowSpacing="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" ColumnSpacing="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="Title" Grid.Column="0" Style="{StaticResource TitleTextBlockStyle}" />
+            <Button x:Name="ClearButton" Grid.Column="1" Click="OnClear" VerticalAlignment="Center" />
+        </Grid>
+
+        <TextBlock x:Name="Hint" Grid.Row="1" Opacity="0.6" TextWrapping="Wrap" />
+
+        <ListView x:Name="History" Grid.Row="2" IsItemClickEnabled="True" ItemClick="OnItemClick"
+                  SelectionMode="None" />
+    </Grid>
+</UserControl>

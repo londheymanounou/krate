@@ -1,0 +1,105 @@
+<UserControl
+    x:Class="Krate.Gui.ToolView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <UserControl.Resources>
+        <Style x:Key="CmdButton" TargetType="Button">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="8,5" />
+            <Setter Property="MinWidth" Value="0" />
+        </Style>
+        <Style x:Key="EditorCard" TargetType="Border">
+            <Setter Property="CornerRadius" Value="8" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
+            <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Padding="20" RowSpacing="12"
+          AllowDrop="True" DragOver="OnDragOver" Drop="OnDrop">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header: title, description, favourite star -->
+        <Grid Grid.Row="0" ColumnSpacing="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <TextBlock x:Name="ToolName" Style="{StaticResource TitleTextBlockStyle}" />
+                <TextBlock x:Name="ToolDesc" Opacity="0.7" TextWrapping="Wrap" />
+            </StackPanel>
+            <Button x:Name="StarButton" Grid.Column="1" Click="OnStar" VerticalAlignment="Top" Style="{StaticResource CmdButton}">
+                <FontIcon x:Name="StarIcon" FontFamily="Segoe Fluent Icons" Glyph="&#xE734;" />
+            </Button>
+        </Grid>
+
+        <!-- Editor grid: side-by-side when wide, stacked when narrow (set in code on resize). -->
+        <Grid x:Name="EditorGrid" Grid.Row="1" RowSpacing="12" ColumnSpacing="12" SizeChanged="OnEditorResize">
+            <Border x:Name="InputCard" Style="{StaticResource EditorCard}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Padding="12,4,6,4" ColumnSpacing="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="InputLabel" Grid.Column="0" Style="{StaticResource BodyStrongTextBlockStyle}" VerticalAlignment="Center" />
+                        <TextBlock x:Name="InputCount" Grid.Column="1" Opacity="0.5" FontSize="12" VerticalAlignment="Center" Margin="10,0,0,0" />
+                        <StackPanel Grid.Column="2" Orientation="Horizontal">
+                            <Button x:Name="PasteButton" Style="{StaticResource CmdButton}" Click="OnPaste">
+                                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE77F;" FontSize="15" />
+                            </Button>
+                            <Button x:Name="ClearButton" Style="{StaticResource CmdButton}" Click="OnClear">
+                                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE894;" FontSize="15" />
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                    <Border Grid.Row="1" BorderThickness="0,1,0,0" BorderBrush="{ThemeResource DividerStrokeColorDefaultBrush}">
+                        <TextBox x:Name="Input" BorderThickness="0" Background="Transparent"
+                                 AcceptsReturn="True" TextWrapping="Wrap"
+                                 FontFamily="Consolas" FontSize="14"
+                                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                 TextChanged="OnInputChanged" />
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Border x:Name="OutputCard" Style="{StaticResource EditorCard}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Padding="12,4,6,4" ColumnSpacing="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="OutputLabel" Grid.Column="0" Style="{StaticResource BodyStrongTextBlockStyle}" VerticalAlignment="Center" />
+                        <Button x:Name="CopyButton" Grid.Column="1" Style="{StaticResource CmdButton}" Click="OnCopy">
+                            <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE8C8;" FontSize="15" />
+                        </Button>
+                    </Grid>
+                    <Border Grid.Row="1" BorderThickness="0,1,0,0" BorderBrush="{ThemeResource DividerStrokeColorDefaultBrush}">
+                        <TextBox x:Name="Output" BorderThickness="0" Background="Transparent"
+                                 IsReadOnly="True" AcceptsReturn="True" TextWrapping="NoWrap"
+                                 FontFamily="Consolas" FontSize="14"
+                                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                 ScrollViewer.HorizontalScrollBarVisibility="Auto" />
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

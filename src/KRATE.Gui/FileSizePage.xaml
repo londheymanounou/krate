@@ -1,0 +1,26 @@
+<UserControl
+    x:Class="Krate.Gui.FileSizePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls">
+
+    <StackPanel Padding="24" Spacing="14" MaxWidth="580" HorizontalAlignment="Center">
+        <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+
+        <StackPanel Orientation="Horizontal" Spacing="8">
+            <Button x:Name="ChooseButton" Click="OnChoose" Style="{StaticResource AccentButtonStyle}" VerticalAlignment="Bottom" />
+            <TextBox x:Name="NameBox" Header="File name" Width="220" TextChanged="OnChanged" />
+        </StackPanel>
+        <TextBlock x:Name="SelectedPath" Opacity="0.7" TextTrimming="CharacterEllipsis" />
+
+        <StackPanel Orientation="Horizontal" Spacing="12">
+            <muxc:NumberBox x:Name="Size" Header="Size" Value="10" SpinButtonPlacementMode="Compact" MinWidth="160" ValueChanged="OnChanged" />
+            <ComboBox x:Name="Unit" Header="Unit" SelectionChanged="OnChanged" MinWidth="100" VerticalAlignment="Bottom" />
+            <Button x:Name="RunButton" Click="OnRun" Content="Go" VerticalAlignment="Bottom" />
+        </StackPanel>
+
+        <Border CornerRadius="8" Padding="16" Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+            <TextBlock x:Name="Result" FontFamily="Consolas" FontSize="14" TextWrapping="Wrap" IsTextSelectionEnabled="True" />
+        </Border>
+    </StackPanel>
+</UserControl>

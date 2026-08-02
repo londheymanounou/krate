@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\KRATE.Core\KRATE.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Krate.Cli</RootNamespace>
+    <AssemblyName>krate</AssemblyName>
+    <Version>1.0.0</Version>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <!-- Native AOT + trimming: small, instant-start executable (dotnet publish -r win-x64). -->
+    <PublishAot>true</PublishAot>
+    <PublishTrimmed>true</PublishTrimmed>
+    <!-- PublishAot turns off built-in COM interop, even for a plain Debug build. SevenZipSharp is
+         COM-based, so without this every 7z compress failed with "your 7-zip library does not
+         support this archive type" — a message that points nowhere near the actual cause. -->
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+# getrandom's default Windows backend imports from bcryptprimitives.dll, and generating that import
+# library needs `dlltool`, which on this GNU toolchain fails because GNU `as` is not installed.
+#
+# The `windows_legacy` backend uses RtlGenRandom from advapi32 instead — the same API `csprng.rs`
+# calls directly — so nothing has to be installed. It is documented as equivalent on Windows 10 and
+# later, differing only in also loading advapi32.dll.
+#
+# Without this, any dependency that pulls getrandom (lopdf, rand, rustls) fails to link.
+#
+# SCOPED TO WINDOWS deliberately: as a bare [build] rustflags it was applied to every target, and
+# getrandom rejects the flag outright on non-Windows ("`windows_legacy` backend can be enabled only
+# for Windows targets"), which broke the Android cross-build before a single line of it was written.
+[target.'cfg(windows)']
+rustflags = ['--cfg', 'getrandom_backend="windows_legacy"']
+
+[target.aarch64-linux-android]
+linker = "C:/Users/londh/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/bin/aarch64-linux-android35-clang.cmd"
+ar = "C:/Users/londh/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar.exe"
+
+[target.armv7-linux-androideabi]
+linker = "C:/Users/londh/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/bin/armv7a-linux-androideabi35-clang.cmd"
+ar = "C:/Users/londh/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar.exe"
+
+[target.x86_64-linux-android]
+linker = "C:/Users/londh/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android35-clang.cmd"
+ar = "C:/Users/londh/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar.exe"

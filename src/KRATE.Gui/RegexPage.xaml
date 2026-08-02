@@ -1,0 +1,52 @@
+<UserControl
+    x:Class="Krate.Gui.RegexPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Padding="20" RowSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="Title" Grid.Row="0" Style="{StaticResource TitleTextBlockStyle}" />
+
+        <TextBox x:Name="Pattern" Grid.Row="1" Header="Pattern" FontFamily="Consolas" FontSize="14"
+                 PlaceholderText="\w+@\w+\.\w+" TextChanged="OnChanged" />
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="8">
+            <ToggleButton x:Name="IgnoreCase" Click="OnChanged" ToolTipService.ToolTip="Ignore case">Aa</ToggleButton>
+            <ToggleButton x:Name="Multiline" Click="OnChanged" ToolTipService.ToolTip="^ and $ match each line">^$</ToggleButton>
+            <ToggleButton x:Name="Singleline" Click="OnChanged" ToolTipService.ToolTip=". matches newlines">.*</ToggleButton>
+            <TextBlock x:Name="MatchCount" VerticalAlignment="Center" Opacity="0.7" Margin="8,0,0,0" />
+        </StackPanel>
+
+        <Border Grid.Row="3" CornerRadius="8" BorderThickness="1"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+            <Grid>
+                <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Test string" Style="{StaticResource BodyStrongTextBlockStyle}" Padding="12,6" />
+                <Border Grid.Row="1" BorderThickness="0,1,0,0" BorderBrush="{ThemeResource DividerStrokeColorDefaultBrush}">
+                    <TextBox x:Name="Subject" BorderThickness="0" Background="Transparent" AcceptsReturn="True"
+                             TextWrapping="Wrap" FontFamily="Consolas" FontSize="14"
+                             ScrollViewer.VerticalScrollBarVisibility="Auto" TextChanged="OnChanged" />
+                </Border>
+            </Grid>
+        </Border>
+
+        <TextBlock Grid.Row="4" Text="Matches" Style="{StaticResource BodyStrongTextBlockStyle}" Margin="0,4,0,0" />
+        <Border Grid.Row="5" CornerRadius="8" BorderThickness="1"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                Background="{ThemeResource CardBackgroundFillColorSecondaryBrush}">
+            <ScrollViewer>
+                <TextBlock x:Name="Result" FontFamily="Consolas" FontSize="13" IsTextSelectionEnabled="True"
+                           TextWrapping="Wrap" Padding="12" />
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

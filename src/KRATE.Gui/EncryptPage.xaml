@@ -1,0 +1,32 @@
+<UserControl
+    x:Class="Krate.Gui.EncryptPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ScrollViewer>
+        <StackPanel Padding="24" Spacing="14" MaxWidth="480" HorizontalAlignment="Center"
+                    AllowDrop="True" DragOver="OnDragOver" Drop="OnDrop">
+            <TextBlock x:Name="Title" Style="{StaticResource TitleTextBlockStyle}" />
+            <TextBlock x:Name="Subtitle" Opacity="0.75" TextWrapping="Wrap" />
+
+            <Button x:Name="ChooseBtn" Click="OnChoose" HorizontalAlignment="Stretch" />
+            <TextBlock x:Name="SelectedPath" FontFamily="Consolas" Opacity="0.8" TextWrapping="Wrap" />
+
+            <PasswordBox x:Name="Pwd" />
+            <PasswordBox x:Name="ConfirmPwd" />
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="EncryptBtn" Grid.Column="0" Click="OnEncrypt" IsEnabled="False"
+                        HorizontalAlignment="Stretch" Style="{StaticResource AccentButtonStyle}" />
+                <Button x:Name="DecryptBtn" Grid.Column="1" Click="OnDecrypt" IsEnabled="False"
+                        HorizontalAlignment="Stretch" />
+            </Grid>
+
+            <InfoBar x:Name="Status" IsOpen="False" IsClosable="True" />
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
